@@ -29,6 +29,7 @@ namespace Classes
             Console.Clear();
             Console.WriteLine("Welcome to a new version of TerminalX");
             Console.WriteLine("Do you want to read about TerminalX and its features?");
+            Console.Write("> ");
             var c = Console.ReadLine();
             if(c == "Yes")
             {
@@ -46,6 +47,7 @@ namespace Classes
                 Console.ReadKey();
                 Console.Clear();
                 Console.WriteLine("What version do you want to start?");
+                Console.Write("> ");
                 string vname = Console.ReadLine();
                 viOne v = new viOne();
                     if(vname == "vi.1")
@@ -82,7 +84,7 @@ namespace Classes
                         
                         Console.WriteLine("Welcome to the main system!");
                         Console.WriteLine("Kindly write your name : ");
-
+                        Console.Write("> ");
                         string name = Console.ReadLine();
                         if(string.IsNullOrWhiteSpace(name)){
                             Console.WriteLine("Kindly input name");
@@ -94,6 +96,7 @@ namespace Classes
                         Console.WriteLine(name  + " huh?");
                         Console.ReadKey();
                         Console.WriteLine("Do you want to the command screen?");
+                        Console.Write("> ");
                         string ans = Console.ReadLine();
                         if(ans == "Yes")
                         {
@@ -120,6 +123,7 @@ namespace Classes
                         Console.Clear();
                         
                         Console.WriteLine("Which command do you want to execute?");
+                        
 
                         List<commands> cm = ListManager.Manager();
 
@@ -127,7 +131,7 @@ namespace Classes
                             Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\nTheDebug");
 
                         }
-                        Console.Write(">");
+                        Console.Write("> ");
                         string commandRead = Console.ReadLine();
                         
                         
@@ -236,6 +240,7 @@ class CommandAllReplica
         Console.WriteLine("Welcome to Note! The place where you can learn how to use TerminalX");
         
         Console.WriteLine("What Note do you want to read?");
+        Console.Write("> ");
         var readInput = Console.ReadLine();
 
         Console.ReadKey();
@@ -273,6 +278,7 @@ class CommandsAll
                             {
                                     Console.ReadKey();
                                     Console.WriteLine("Do you want to exit the program?");
+                                    Console.Write("> ");
                                     var Q = Console.ReadLine();
                                     if(Q == "Yes" || Q == "yes")
                                     {
@@ -296,6 +302,7 @@ class CommandsAll
                                
                                 Console.Clear();
                                 Console.WriteLine("Do you want to Exit?");
+                                Console.Write("> ");
                                 string ansres = Console.ReadLine();
                                 if(ansres == "Yes")
                                 {
@@ -326,6 +333,7 @@ class CommandsAll
         if(string.IsNullOrWhiteSpace(s)) // If the user doesn't input anything
         {
             Console.WriteLine("Do you want to exit the program?");
+            Console.Write("> ");
             var v = Console.ReadLine();
             if(v == "Yes" || v == "yes")
             {
@@ -353,6 +361,7 @@ class CommandsAll
 
         Console.Clear();
         Console.WriteLine("Do you want to exit?");
+        Console.Write("> ");
         string c = Console.ReadLine();
 
         if(c == "Yes")
@@ -404,6 +413,7 @@ class CommandsAll
             Console.WriteLine(listList[3]);
             Console.ReadKey();
             Console.WriteLine("Type Exit or Stay");
+            Console.Write("> ");
             string v = Console.ReadLine();
             if(v == "Exit")
             {
@@ -428,6 +438,7 @@ class CommandsAll
         Console.WriteLine("Welcome to Note! The place where you can learn how to use TerminalX");
         
         Console.WriteLine("What Note do you want to read?");
+        Console.Write("> ");
         var readInput = Console.ReadLine();
         if(string.IsNullOrWhiteSpace(readInput))
         {
