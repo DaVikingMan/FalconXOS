@@ -20,13 +20,14 @@ namespace Classes
             
         }
     }
+    // This is the first class that loads when you run the program
     class kernel
     {
         public void KernelMain()
         {
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.Clear();
-            Console.WriteLine("Welcome to a new version of TerminalX(a new version of InfiDOSX)");
+            Console.WriteLine("Welcome to a new version of TerminalX");
             Console.WriteLine("Do you want to read about TerminalX and its features?");
             var c = Console.ReadLine();
             if(c == "Yes")
@@ -51,7 +52,7 @@ namespace Classes
                     {
                        v.Start();
 
-                    }else
+                    }else // If the user doesn't input anything
                     {
                         Console.WriteLine("Kindly input version");
                         Console.ReadKey();
@@ -70,6 +71,7 @@ namespace Classes
             }
         }
     }
+    // Main class
     class viOne{
         public void Start()
         {
@@ -95,17 +97,19 @@ namespace Classes
                         string ans = Console.ReadLine();
                         if(ans == "Yes")
                         {
+                            // Opens the command screen
                             vi();
-                        }else if(ans == "No")
+                        }else if(ans == "No") // If the User says No
                         {
                             Start();
-                        }else if(string.IsNullOrWhiteSpace(ans))
+                        }else if(string.IsNullOrWhiteSpace(ans)) // If the user doesn't input anything
                         {
                             Console.WriteLine("Kindly give Input");
                             Console.ReadKey();
                             Start();
                         }
         }
+          // Command Class
           public void vi()
           {
 
@@ -139,7 +143,7 @@ namespace Classes
                         }
 
 
-                        else if(commandRead == "TerminalInfo")
+                        else if(commandRead == "TerminalInfo") // If the user types the following command
                         {
                             CommandsAll commands = new CommandsAll();
                             commands.TerminalInfo("");
@@ -164,7 +168,7 @@ namespace Classes
                             Console.ReadKey();
                             vi();
                         }
-                        else if(commandRead == "TheDebug")
+                        else if(commandRead == "TheDebug") // TheDebug command is used to go to a certain class(Not completed)
                         {
                             Console.WriteLine("The debug is used to view Debug info");
                             Console.Clear();
@@ -174,9 +178,9 @@ namespace Classes
                             Console.Clear();
                             Console.WriteLine("You can open the following States : ");
                             Console.ReadKey();
-                            Console.WriteLine("Notes");
-                            Console.WriteLine("Start");
-                            Console.WriteLine("MainTerminal");
+                            Console.WriteLine("Notes"); // About TerminalX(Not complete)
+                            Console.WriteLine("Start"); // Start Menu(Not complete)
+                            Console.WriteLine("MainTerminal"); // Starting of the program(Not complete)
                             Console.ReadKey();
                             Console.Clear();
                             Console.Write("> ");
@@ -220,10 +224,10 @@ namespace Classes
         
         
 }
-
+// Used by the TheDebug command
 class CommandAllReplica
 {
-    public void NotesRe()
+    public void NotesRe() // Notes Replica
     {
         var c = new CommandsAll();
         c.Note();
@@ -236,7 +240,7 @@ class CommandAllReplica
         Console.ReadKey();
 
     }
-    public void StartRe()
+    public void StartRe() // Start Replica
     {
         var m = new viOne();
         m.Start();
@@ -247,16 +251,17 @@ class CommandAllReplica
     }
 
 }
-
+// All commands
 class CommandsAll
 {
-    public void Games(string comment5)
+    public void Games(string comment5) // Games command
     {
                             Console.Clear();
                             Console.WriteLine("What type of game would you like to play?");
+                            Console.WriteLine("PacSays");
                             Console.Write("> ");
-                            string no = Console.ReadLine();
-                            if(string.IsNullOrWhiteSpace(no))
+                            string no = Console.ReadLine(); // Asks for name of Game
+                            if(string.IsNullOrWhiteSpace(no)) // If the user inputs nothing
                             {
                                     Console.ReadKey();
                                     Console.WriteLine("Do you want to exit the program?");
@@ -276,7 +281,7 @@ class CommandsAll
                                     }
 
                             }
-                            else if(no == "PacMan Says")
+                            else if(no == "PacSays") // PacSays
                             {
                                 GamesAll c = new GamesAll();
                                 c.PacSays();
@@ -295,7 +300,7 @@ class CommandsAll
 
                                 }
 
-                            }else if(no == "Text Adventure")
+                            }else if(no == "Text Adventure") // Not Finished
                             {
                                 Textadventure a = new Textadventure();
                                 a.ExtraClass();
@@ -304,13 +309,13 @@ class CommandsAll
                             }
     } 
 
-    public void TerminalInfo(string comment)
+    public void TerminalInfo(string comment) // TerminalInfo command
     {
         Console.Clear();
         Console.WriteLine("The driver version's are as follows : \nKernel versiom : vi.1\nDriver version : v.2\ncommands version : v.2\nOverall version : vi.4");
         Console.ReadKey();
         string s = Console.ReadLine();
-        if(string.IsNullOrWhiteSpace(s))
+        if(string.IsNullOrWhiteSpace(s)) // If the user doesn't input anything
         {
             Console.WriteLine("Do you want to exit the program?");
             var v = Console.ReadLine();
@@ -330,7 +335,7 @@ class CommandsAll
         }
 
     }
-    public void Exit(string comment1)
+    public void Exit(string comment1) // Exit command
     {
         Console.Clear();
         Console.WriteLine("The next update of TerminalX will be vi.5(The XriFeature Update)");
@@ -352,7 +357,7 @@ class CommandsAll
         
 
     }
-    public void ListMaker(string comment2)
+    public void ListMaker(string comment2) // ListMaker command
     {
         Console.Clear();
         Console.WriteLine("Welcome to the list interface");
@@ -409,7 +414,7 @@ class CommandsAll
     }
 
 
-    public void Note()
+    public void Note() // Note feature(can only be accessed from the starting screen and from 'TheDebug' command)Not finished
     {
         Console.Clear();
         Console.WriteLine("Welcome to Note! The place where you can learn how to use TerminalX");
@@ -450,7 +455,7 @@ class CommandsAll
 
 
     
-    
+    // Initializes commands
     public class commands{
        
             public string command1 { get; set; }
@@ -463,6 +468,7 @@ class CommandsAll
         
     
     }
+    // All commands are created here
     public class ListManager
     {
         public static List<commands> Manager()
