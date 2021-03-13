@@ -61,11 +61,13 @@ ChangeLog
 
 ChangeLog v1.1
 {
+  :
   -Cleaned code
   -Now you can access Note only from the MainTerminal
   -Added more Notes
   -Fixed some bugs
   -Update Finished
+  :
 
 }
 Known Bugs
@@ -74,6 +76,7 @@ Known Bugs
 }
 ToAdd Features
 {
+  :
   -Add Notes
   -Easter Egg(Type Buster on the name screen and the debugTerminalX will open)
   -Fix Bugs related to PacManSays
@@ -81,4 +84,5 @@ ToAdd Features
   -Fix some Bugs
   -Clean Code
   -Update ChangeLog
+  :
 }
