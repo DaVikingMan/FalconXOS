@@ -4,9 +4,4 @@ obj
 obj\MCD\Debug\net5.0
 Debug/*
 net5.0/*
-*.csproj
-
-
-
-
-
+/TerminalMainV.csproj
