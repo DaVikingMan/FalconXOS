@@ -254,6 +254,7 @@ class CommandsAll
     {
                             Console.Clear();
                             Console.WriteLine("What type of game would you like to play?");
+                            Console.Write("> ");
                             string no = Console.ReadLine();
                             if(string.IsNullOrWhiteSpace(no))
                             {
