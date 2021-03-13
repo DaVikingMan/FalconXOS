@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KOrjUo82CpGMOn/CWa7yWYacI5+rOIRI+JRuBD/mQ4B2QYgsZKoZarM4P1Kb2uVrWDu1zBzQZAAMKqoQbn6tjg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\KHUSHI\\TerminalMainV\\TerminalMainV.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KHUSHI\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
