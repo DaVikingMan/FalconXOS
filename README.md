@@ -67,10 +67,11 @@ ChangeLog
 }
 
 Some rules{
-  -Only type 'Yes' or 'No' not 'no' or 'yes'
-  -Only type when the '>' symbol appears
-  -If some features don't work as intended please write them in the issues section
-  -If the '>' symbol doesn't appear that means you have to press a key
+
+  -Only type 'Yes' or 'No' not 'no' or 'yes'.
+  -Only type when the '>' symbol appears.
+  -If some features don't work as intended please write them in the issues section.
+  -If the '>' symbol doesn't appear that means you have to press a key.
    
 }
 
