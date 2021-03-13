@@ -1,7 +1,7 @@
-# TerminalX
+# TerminalXOS
 
 
-About TerminalX
+About TerminalXOS
 :
 
 Welcome to TerminalX, a TerminalOs made by DaVikingMan
