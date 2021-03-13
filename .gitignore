@@ -1,9 +1,12 @@
 bin
-obj/*
+obj
 *.cache
-MCD/*
+obj\MCD\Debug\net5.0
 Debug/*
 net5.0/*
+*.csproj
+
+
 
 
 
