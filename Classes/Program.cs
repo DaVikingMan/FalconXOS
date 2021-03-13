@@ -255,7 +255,7 @@ class CommandsAll
                             Console.Clear();
                             Console.WriteLine("What type of game would you like to play?");
 
-                            Console.ReadKey();
+                            
                             string no = Console.ReadLine();
                             if(string.IsNullOrWhiteSpace(no))
                             {
@@ -276,7 +276,8 @@ class CommandsAll
                                         Games("Games method");
                                     }
 
-                            }else if(no == "PacMan Says")
+                            }
+                            else if(no == "PacMan Says")
                             {
                                 GamesAll c = new GamesAll();
                                 c.PacSays();
