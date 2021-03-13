@@ -201,6 +201,8 @@ namespace Classes
                             }
                             else if(Tread == "Start")
                             {
+                                CommandAllReplica c = new CommandAllReplica();
+                                c.StartRe();
 
                             }
                             else if(Tread == "MainTerminal")
@@ -230,7 +232,12 @@ class CommandAllReplica
     public void NotesRe() // Notes Replica
     {
         var c = new CommandsAll();
-        c.Note();
+        Console.Clear();
+        Console.WriteLine("Welcome to Note! The place where you can learn how to use TerminalX");
+        
+        Console.WriteLine("What Note do you want to read?");
+        var readInput = Console.ReadLine();
+
         Console.ReadKey();
         Console.Clear();
         Console.WriteLine("Copyright virtual Note : v.r1");
@@ -247,6 +254,7 @@ class CommandAllReplica
         Console.ReadKey();
         Console.WriteLine("Virtualization is carried by Re:Virtual");
         Console.WriteLine("");
+        Console.ReadKey();
         
     }
 
