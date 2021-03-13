@@ -4,7 +4,7 @@
 About TerminalX
 :
 
-Welcome to TerminalX, a TerminalOs made by Infinity
+Welcome to TerminalX, a TerminalOs made by DaVikingMan
 
 What is a TerminalOs?
 
