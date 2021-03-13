@@ -52,7 +52,7 @@ ChangeLog
 
       -More Features To Come
 
-      |Next update is XriBug Update{This update will fix some bugs}|
+      |Next update is XriFeature Update{This update will fix some bugs}|
 
 
 
@@ -60,16 +60,6 @@ ChangeLog
 
 }
 
-ChangeLog v1.1{
-  :
-  The chngelogs are as follows
-  :
-    -Cleaned code
-    -Now you can access Note only from the MainTerminal
-    -Added more Notes
-    -Fixed some bugs
-    -Update Finished
-  :
-  }
+
   
  End of File
