@@ -38,6 +38,12 @@ TRelease Updates
     XriFeature
 :
 
+Known Bugs
+{
+  -Only Note command is available(and that is Exit).
+  -Some options in TextAdventure close the program without asking whether to exit or not.
+}
+
 ChangeLog
 {
 
@@ -55,13 +61,14 @@ ChangeLog
       -Now you can access Note only from the MainTerminal
       -Added more Notes
       -Fixed some bugs
+      -Added TextAdventure(Note : In Alpha Stages)
       -Added all commands in 'TheDebug' command
 
       
 
       -More Features To Come
 
-      |Next update is XriBug Update{This update will fix some bugs}|
+      |Next update is XriFeature Update{This update will fix add Features}|
 
 
 
