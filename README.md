@@ -113,7 +113,7 @@ How to use this repository
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-Note : Always run this project with externalTerminal
+Note : Always run this project with externalTerminal.
 
 
 
