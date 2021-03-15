@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 namespace Classes
 {
@@ -109,8 +110,7 @@ namespace Classes
 
         public void TextAdventure()
         {
-            Console.WriteLine("More features will be added later!");
-            Console.ReadKey();
+            throw new NotImplementedException();
         }
     }
 }
