@@ -91,8 +91,11 @@ Some rules{
 How to use this repository
 {
     Step 1 : Clone this repository
+    
     Step 2 : Open this in vsCode
+    
     Step 3 : VsCode should generate the obj and bin folder
+    
     Step 4 : Now you can start coding!
 
 }
