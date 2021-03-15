@@ -7,7 +7,7 @@ namespace Classes
 {
     public interface GamesProperty
     {
-        void TextAdventure();
+        
         void MainMenu();
         void ExtraClass();
     }

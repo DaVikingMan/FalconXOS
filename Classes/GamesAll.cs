@@ -108,9 +108,6 @@ namespace Classes
           
         }
 
-        public void TextAdventure()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
