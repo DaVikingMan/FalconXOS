@@ -129,7 +129,7 @@ namespace Classes
                         List<commands> cm = ListManager.Manager();
 
                         foreach(var m in cm){
-                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\nTheDebug");
+                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\nTheDebug\nWritePad");
 
                         }
                         Console.Write("> ");
@@ -217,6 +217,11 @@ namespace Classes
 
                             }
                             
+                        }else if(commandRead == "WritePad")
+                        {
+                            CommandsAll v = new CommandsAll();
+                            v.WriteConsolePad();
+
                         }
 
                         
@@ -411,7 +416,7 @@ class CommandsAll
     public void TerminalInfo(string comment) // TerminalInfo command
     {
         Console.Clear();
-        Console.WriteLine("The driver version's are as follows : \nKernel versiom : vi.1\nDriver version : v.2\ncommands version : v.2\nOverall version : vi.4");
+        Console.WriteLine("The driver version's are as follows : \nKernel versiom : vi.2\nDriver version : v.4\ncommands version : v.5\nOverall version : vi.9");
         Console.ReadKey();
         string s = Console.ReadLine();
         if(string.IsNullOrWhiteSpace(s)) // If the user doesn't input anything
@@ -513,6 +518,53 @@ class CommandsAll
                 ListMaker("");
             }
 
+    }
+
+    public void WriteConsolePad()
+    {
+        Console.Clear();
+        Console.WriteLine("Welcome to WritePad!");
+        Console.WriteLine("In this app you can write stuff");
+        Console.ReadKey();
+        Console.WriteLine("One second setting up");
+        Console.WriteLine("Okay!");
+        Console.ReadKey();
+        Console.Clear();
+        Console.Write(">");
+        string firstLine = Console.ReadLine();
+        Console.Write(">");
+        string secondLine = Console.ReadLine();
+        Console.Write(">");
+        string ThirdLine = Console.ReadLine();
+        Console.Write(">");
+        string FourthLine = Console.ReadLine();
+        Console.ReadKey();
+        Console.Clear();
+        Console.WriteLine("Printing written lines");
+        Console.ReadKey();
+        Console.WriteLine(firstLine);
+        Console.WriteLine(secondLine);
+        Console.WriteLine(ThirdLine);
+        Console.WriteLine(FourthLine);
+        Console.ReadKey();
+        Console.Clear();
+        Console.WriteLine("Do you want to exit?");
+        Console.Write(">");
+        string m = Console.ReadLine();
+        if(m == "Yes")
+        {
+            Console.ReadKey();
+            viOne v = new viOne();
+            v.vi();
+        }else if(m == "No")
+        {
+            Console.ReadKey();
+            WriteConsolePad();
+        }
+
+
+
+        
     }
 
 
