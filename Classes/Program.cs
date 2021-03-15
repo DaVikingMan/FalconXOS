@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+ 
 
 
 
@@ -354,6 +355,7 @@ class CommandsAll
                             Console.Clear();
                             Console.WriteLine("What type of game would you like to play?");
                             Console.WriteLine("PacSays");
+                            Console.WriteLine("Text Adventure");
                             Console.Write("> ");
                             string no = Console.ReadLine(); // Asks for name of Game
                             if(string.IsNullOrWhiteSpace(no)) // If the user inputs nothing
