@@ -114,9 +114,13 @@ How to use this repository
 
 ToAdd Features
 {
+      
       -UI
+      
       -Fix some Bugs
+      
       -Seperate the Name screen from the MainTerminal screen
+      
       -Finish the update
 }
 
