@@ -110,6 +110,15 @@ How to use this repository
     Step 4 : Now you can start coding!
 
 }
+---------------------------------------------------------------------------------------------------------------------------------------
+
+ToAdd Features
+{
+      -UI
+      -Fix some Bugs
+      -Seperate the Name screen from the MainTerminal screen
+      -Finish the update
+}
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
