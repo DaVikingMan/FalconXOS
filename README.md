@@ -42,14 +42,18 @@ The first two updates XriBug and TerminalR are available publically
 
 TRelease Updates
 :
-    XriFeature
+    XriFeatureTwo
 :
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 Known Bugs
 {
-  -Only Note command is available(and that is Exit).
-  -Some options in TextAdventure close the program without asking whether to exit or not.
+   |
+
+   - Only Exit command works in Note.
+   -Some options in TextAdventure close the program without asking whether to exit or not.
+   
+   |
 }
 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -73,6 +77,7 @@ ChangeLog
       -Fixed some bugs
       -Added TextAdventure(Note : In Alpha Stages)
       -Added all commands in 'TheDebug' command
+      -Update finished
 
       
 
