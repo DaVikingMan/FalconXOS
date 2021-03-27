@@ -9,7 +9,7 @@ Welcome to TerminalXOS, a TerminalOs made by DaVikingMan
 
 What is a TerminalOS?
 
-A TerminalOs is a OS built into a terminal
+A TerminalOs is a OS built into a Terminal
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
