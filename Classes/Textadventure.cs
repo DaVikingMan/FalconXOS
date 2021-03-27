@@ -148,6 +148,11 @@ namespace Classes
                           }
                           break;
                       }
+                    
+                    
+
+
+                    
                    
                    string rh = Console.ReadLine();
                    switch (rh)
@@ -170,32 +175,32 @@ namespace Classes
                }
 
             }
-            else if(n == "Option 3")
-            {
-                Console.WriteLine("You open the door and go for a walk");
-                   Console.WriteLine("Your stamina is decreased by 2 and strength increased by 4");
-                   Console.ReadKey();
-                   Console.WriteLine("Your current stats are : stamina : 7.5, strength : 6, hunger : 2, hygiene : 8");
-                   Console.ReadKey();
-                   string r = Console.ReadLine();
-                   switch (r)
-                   {
+            // else if(n == "Option 3")
+            // {
+            //     Console.WriteLine("You open the door and go for a walk");
+            //        Console.WriteLine("Your stamina is decreased by 2 and strength increased by 4");
+            //        Console.ReadKey();
+            //        Console.WriteLine("Your current stats are : stamina : 7.5, strength : 6, hunger : 2, hygiene : 8");
+            //        Console.ReadKey();
+            //        string r = Console.ReadLine();
+            //        switch (r)
+            //        {
                        
-                       case "Yes":
-                       Console.WriteLine("Exiting::");
-                       viOne v = new viOne();
-                       v.vi();
-                       break;
+            //            case "Yes":
+            //            Console.WriteLine("Exiting::");
+            //            viOne v = new viOne();
+            //            v.vi();
+            //            break;
 
-                       case "No":
-                       Console.WriteLine("Okay!");
-                       Console.WriteLine("Returning Back");
-                       Console.ReadKey();
-                       TextAdventure();
-                       break;
-                   }
+            //            case "No":
+            //            Console.WriteLine("Okay!");
+            //            Console.WriteLine("Returning Back");
+            //            Console.ReadKey();
+            //            TextAdventure();
+            //            break;
+            //        }
 
-            }
+            // }
             else if(n == "Option 4")
             {
                 Console.WriteLine("You grab your sword and go outside");
