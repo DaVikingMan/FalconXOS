@@ -3,6 +3,8 @@
 About TerminalXOS
 :
 
+Note : This branch includes alpha versions of TerminalOS
+
 Welcome to TerminalXOS, a TerminalOs made by DaVikingMan
 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -40,7 +42,7 @@ The first two updates XriBug and TerminalR are available publically
 
 TRelease Updates
 :
-    XriFeature
+    XriFeatureTwo
 :
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -72,6 +74,7 @@ ChangeLog
       -Fixed some bugs
       -Added TextAdventure(Note : In Alpha Stages)
       -Added all commands in 'TheDebug' command
+      -Update finished
 
       
 
