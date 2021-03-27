@@ -48,6 +48,7 @@ Known Bugs
 {
   -Only Note command is available(and that is Exit).
   -Some options in TextAdventure close the program without asking whether to exit or not.
+  -Option 4 in the first option doesn't work.
 }
 
 ---------------------------------------------------------------------------------------------------------------------------------------
