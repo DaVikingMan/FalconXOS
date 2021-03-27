@@ -1,6 +1,6 @@
 # TerminalXOS
 
-Note : This branch includes alpha versions of TerminalOS
+
 
 About TerminalXOS
 :
