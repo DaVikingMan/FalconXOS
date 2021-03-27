@@ -126,7 +126,7 @@ ToAdd Features
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-Note : Always run this project with externalTerminal
+Note : Always run this project with externalTerminal as the default config in launch.json
 
 
 
