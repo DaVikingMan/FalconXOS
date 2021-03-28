@@ -30,6 +30,7 @@ namespace Classes
 
         void TextAdventure()
         {
+            Console.Clear();
             Console.WriteLine("What is the Player's name?");
             string c = Console.ReadLine();
             Console.WriteLine(c + " gets out of his bed?What should he do?");
@@ -79,8 +80,8 @@ namespace Classes
                        
                        case "Yes":
                        Console.WriteLine("Exiting::");
-                       viOne v = new viOne();
-                       v.vi();
+                       viOne w = new viOne();
+                       w.vi();
                        break;
 
                        case "No":
@@ -107,8 +108,8 @@ namespace Classes
                        
                        case "Yes":
                        Console.WriteLine("Exiting::");
-                       viOne v = new viOne();
-                       v.vi();
+                       viOne o = new viOne();
+                       o.vi();
                        break;
 
                        case "No":
@@ -121,11 +122,13 @@ namespace Classes
                    break;
 
                    case "Option 3":
+
                    Console.WriteLine("You grab your sword and go outside");
                    Console.WriteLine("You realize it's raining");
                    Console.WriteLine("Do you still want to kill monsters?");
                    string na = Console.ReadLine();
-                      switch (na){
+                      switch (na)
+                      {
                           case "Yes":
                           Console.WriteLine("Okay");
                           Console.Clear();
@@ -134,6 +137,7 @@ namespace Classes
                           Console.WriteLine("You found a monster!");
                           Console.WriteLine("Do you want to kill it or run");
                           string m = Console.ReadLine();
+                          
                           switch (m)
                           {
                               
@@ -146,9 +150,18 @@ namespace Classes
                               Console.WriteLine("You didn't gain anything and lost 2 stamina");
                               break;
                           }
+
                           break;
+                          
+                          
                       }
-                    
+                      
+
+                      
+               
+
+             
+                      
                     
 
 
@@ -156,6 +169,55 @@ namespace Classes
                    
                    string rh = Console.ReadLine();
                    switch (rh)
+                   {
+                       
+                       case "Yes":
+                       Console.WriteLine("Exiting::");
+                       viOne l = new viOne();
+                       l.vi();
+                       break;
+
+                       case "No":
+                       Console.WriteLine("Okay!");
+                       Console.WriteLine("Returning Back");
+                       Console.ReadKey();
+                       TextAdventure();
+                       break;
+                   }
+
+                   break;
+
+                   case "Option 4":
+                     Console.WriteLine("You go to the dining room and start eating");
+                     Console.ReadKey();
+                     Console.WriteLine("The bread tastes good ");
+                     Console.WriteLine("Do you want to exit?");
+                     string v = Console.ReadLine();
+                     if(v == "Yes")
+                     {
+                         Console.ReadKey();
+                         var g = new viOne();
+                         g.vi();
+
+                     }else if(v == "No"){
+                         Console.ReadKey();
+                         TextAdventure();
+                     }
+                   break;
+                   
+               }
+               
+
+            }
+            else if(n == "Option 3")
+            {
+                Console.WriteLine("You open the door and go for a walk");
+                   Console.WriteLine("Your stamina is decreased by 2 and strength increased by 4");
+                   Console.ReadKey();
+                   Console.WriteLine("Your current stats are : stamina : 7.5, strength : 6, hunger : 2, hygiene : 8");
+                   Console.ReadKey();
+                   string r = Console.ReadLine();
+                   switch (r)
                    {
                        
                        case "Yes":
@@ -171,36 +233,8 @@ namespace Classes
                        TextAdventure();
                        break;
                    }
-                   break;
-               }
 
             }
-            // else if(n == "Option 3")
-            // {
-            //     Console.WriteLine("You open the door and go for a walk");
-            //        Console.WriteLine("Your stamina is decreased by 2 and strength increased by 4");
-            //        Console.ReadKey();
-            //        Console.WriteLine("Your current stats are : stamina : 7.5, strength : 6, hunger : 2, hygiene : 8");
-            //        Console.ReadKey();
-            //        string r = Console.ReadLine();
-            //        switch (r)
-            //        {
-                       
-            //            case "Yes":
-            //            Console.WriteLine("Exiting::");
-            //            viOne v = new viOne();
-            //            v.vi();
-            //            break;
-
-            //            case "No":
-            //            Console.WriteLine("Okay!");
-            //            Console.WriteLine("Returning Back");
-            //            Console.ReadKey();
-            //            TextAdventure();
-            //            break;
-            //        }
-
-            // }
             else if(n == "Option 4")
             {
                 Console.WriteLine("You grab your sword and go outside");
