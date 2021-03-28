@@ -3,6 +3,8 @@
 About TerminalXOS
 :
 
+Note : New Alpha version v.1.Alpha
+
 Note : This branch includes alpha versions of TerminalOS
 
 Welcome to TerminalXOS, a TerminalOs made by DaVikingMan
