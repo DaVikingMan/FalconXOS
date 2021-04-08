@@ -228,6 +228,11 @@ namespace Classes
         Console.WriteLine("Welcome to Note! The place where you can learn how to use TerminalX");
         
         Console.WriteLine("What Note do you want to read?");
+        Console.WriteLine("TerminalInfo");
+        Console.WriteLine("CommansdInfo");
+        Console.WriteLine("Exit");
+        Console.WriteLine("Copyright Info");
+        Console.ReadKey();
         Console.Write("> ");
         var readInput = Console.ReadLine();
         if(string.IsNullOrWhiteSpace(readInput))
@@ -239,10 +244,80 @@ namespace Classes
         }
         else if(readInput == "TerminalInfo")
         {
+            Console.Clear();
+            Console.WriteLine("This note is about this TerminalOS");
+            Console.WriteLine("This TerminalOS is built using C# and vscode");
+            Console.ReadKey();
+            Console.WriteLine("Do you want to see some rules?");
+            dynamic check = Console.ReadLine();
+            if(check == "Yes")
+            {
+                Console.ReadKey();
+                Console.Clear();
+                Console.WriteLine("The rules are :-");
+                Console.ReadKey();
+                Console.WriteLine("Only type 'Yes' or 'No' not 'no' or 'yes'.");
+                Console.WriteLine("Only type when the '>' symbol appears.");
+                Console.WriteLine("If some features don't work as intended please write them in the issues section.");
+                Console.WriteLine("If the '>' symbol doesn't appear that means you have to press a key.");
+
+                Console.WriteLine("Do you want to exit?");
+                string b = Console.ReadLine();
+                if(b == "Yes")
+                {
+                    Console.ReadKey();
+                    Note();
+
+                }else if(b == "No")
+                {
+                    Console.WriteLine("There is nothing more in this command");
+                    Console.WriteLine("Kindly type exit");
+                    string y = Console.ReadLine();
+                    if(y == "Yes")
+                    {
+                        Console.ReadKey();
+                        Note();
+                    }
+                }
+                Console.ReadKey();
+            }else if(check == "No")
+            {
+                Console.ReadKey();
+                Console.WriteLine("Do you want to exit?");
+                string m = Console.ReadLine();
+                if(m == "Yes")
+                {
+                    Console.ReadKey();
+                    Note();
+                }else if(check == "No")
+                {
+                    Console.WriteLine("This program doesn't have anything else");
+                    Console.WriteLine("Do you want to exit?");
+                    string h = Console.ReadLine();
+                    if(h == "Yes")
+                    {
+                        Console.ReadKey();
+                        Note();
+                    }
+                }
+
+                
+            }
 
         }
         else if(readInput == "CommandsInfo")
         {
+            Console.Clear();
+            Console.WriteLine("The commands are written in the form of either different classes or different methods");
+            Console.WriteLine("Commands perform different functions");
+            Console.WriteLine("If you want to execute a command then you can write the command when you are prompted to");
+            Console.WriteLine("Type Yes to exit");
+            string t = Console.ReadLine();
+            if(t == "Yes")
+            {
+                Console.ReadKey();
+                Note();
+            }
 
         }
         else if(readInput == "Exit")
@@ -253,6 +328,10 @@ namespace Classes
         }
         else if(readInput == "Copyright Info")
         {
+            Console.Clear();
+            Console.WriteLine("Copyright Re:Note(Method)");
+            Console.ReadKey();
+            Note();
 
         }
 
