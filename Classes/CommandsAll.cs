@@ -270,9 +270,17 @@ namespace Classes
 
     public void WriteConsolePad()
     {
+        Console.WriteLine("Do you want to generate a file for this command?");
+        Console.Write("> ");
+        var Read = Console.ReadLine();
+        if(Read == "Yes")
+        {
         Console.Clear();
         Console.WriteLine("Welcome to WritePad!");
         Console.WriteLine("In this app you can write stuff");
+        Console.WriteLine("Kindly write the file path where the file will be stored");
+        var filePath = Console.ReadLine();
+        var ConvertToFilepath = $@"{filePath}";
         Console.ReadKey();
         Console.WriteLine("One second setting up");
         Console.WriteLine("Okay!");
@@ -295,7 +303,19 @@ namespace Classes
         Console.WriteLine(ThirdLine);
         Console.WriteLine(FourthLine);
         Console.ReadKey();
+
         Console.Clear();
+        Console.WriteLine("Creating Files");
+        FileStream stream = new FileStream(ConvertToFilepath, FileMode.OpenOrCreate);
+
+        stream.Close();
+        string[] Lines = { firstLine, secondLine, ThirdLine, FourthLine };
+        File.WriteAllLines(ConvertToFilepath, Lines);
+        Console.ReadKey();
+        Console.WriteLine("Reading Lines");
+         var fileRead = File.ReadAllText(ConvertToFilepath);
+         Console.WriteLine(fileRead);
+         Console.ReadKey();
         Console.WriteLine("Do you want to exit?");
         Console.Write(">");
         string m = Console.ReadLine();
@@ -312,7 +332,63 @@ namespace Classes
 
 
 
-        
+        }else if(Read == "No")
+        {
+            Console.Clear();
+        Console.WriteLine("Welcome to WritePad!");
+        Console.WriteLine("In this app you can write stuff");
+        Console.WriteLine("Kindly write the file path where the file will be stored");
+        var filePath = Console.ReadLine();
+        var ConvertToFilepath = $@"{filePath}";
+        Console.ReadKey();
+        Console.WriteLine("One second setting up");
+        Console.WriteLine("Okay!");
+        Console.ReadKey();
+        Console.Clear();
+        Console.Write(">");
+        string firstLine = Console.ReadLine();
+        Console.Write(">");
+        string secondLine = Console.ReadLine();
+        Console.Write(">");
+        string ThirdLine = Console.ReadLine();
+        Console.Write(">");
+        string FourthLine = Console.ReadLine();
+        Console.ReadKey();
+        Console.Clear();
+        Console.WriteLine("Printing written lines");
+        Console.ReadKey();
+        Console.WriteLine(firstLine);
+        Console.WriteLine(secondLine);
+        Console.WriteLine(ThirdLine);
+        Console.WriteLine(FourthLine);
+        Console.ReadKey();
+
+        Console.Clear();
+        Console.WriteLine("Creating Files");
+        FileStream stream = new FileStream(ConvertToFilepath, FileMode.OpenOrCreate);
+
+        stream.Close();
+        string[] Lines = { firstLine, secondLine, ThirdLine, FourthLine };
+        File.WriteAllLines(ConvertToFilepath, Lines);
+        Console.ReadKey();
+        Console.WriteLine("Reading Lines");
+         var fileRead = File.ReadAllText(ConvertToFilepath);
+         Console.WriteLine(fileRead);
+         Console.ReadKey();
+        Console.WriteLine("Do you want to exit?");
+        Console.Write(">");
+        string m = Console.ReadLine();
+        if(m == "Yes")
+        {
+            Console.ReadKey();
+            viOne v = new viOne();
+            v.vi();
+        }else if(m == "No")
+        {
+            Console.ReadKey();
+            WriteConsolePad();
+        }
+        }
     }
 
 
