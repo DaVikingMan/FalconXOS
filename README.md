@@ -64,6 +64,7 @@ ChangeLog
     :
 
       -Added File system in ListMaker.
+      -Added File System in WritePad
       -Fixed Bugs
       
 
