@@ -1,6 +1,6 @@
 # TerminalXOS
 
-
+TerminalOS Alpha build
 
 About TerminalXOS
 :
@@ -42,7 +42,7 @@ Welcome to the new Release of TerminalX
 
 The updates XriFeature and XriBug are live and out of Alpha stages.
 
-TRelease Updates
+ToRelease Updates
 :
     Xrig
 :
@@ -62,32 +62,14 @@ ChangeLog
 
     The changelog are as follows
     :
-<<<<<<< HEAD
+
       -Added File system in ListMaker.
       -Fixed Bugs
-=======
-      -Added Exit Feature
-      -Added Note Feature
-      -Fixed some crash issues
-      -Fixed some Bugs
-      -Added ListMaker Feature
-      -Updated Commands
-      -Changed Text Colour to DarkGreen
-      -Cleaned code
-      -Now you can access Note only from the MainTerminal
-      -Added more Notes
-      -Fixed some bugs
-      -Added TextAdventure(Note : In Alpha Stages)
-      -Added all commands in 'TheDebug' command
-      -Fixed Bugs
-      -Added All Note commands
-
->>>>>>> 39e3fb3e6638c83ef1671f9e8fcbfcc0dc1ededd
       
 
       -More Features To Come
 
-      |Next update is Xrig Update{This update will fix add Features}|
+      |Next update is Xrig Update{This update will fix some bugs and add Features}|
       Xrig update might take some time as it will be the largest update.
 
 
