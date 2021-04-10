@@ -119,8 +119,17 @@ namespace Classes
     
     public void ListMaker(string comment2) // ListMaker command
     {
+        Console.WriteLine("Do you want to store the list in a file?");
+        Console.Write(">");
+        var created = Console.ReadLine();
+
+        if(created == "Yes")
+        {
+        
         Console.Clear();
         Console.WriteLine("Welcome to the list interface");
+        Console.WriteLine("Kindly type the directory where the file should be stored");
+        
         Console.WriteLine("Kindly type the path where you want to store the List");
         DateTime dateOfCreation = DateTime.Now;
         
@@ -193,6 +202,69 @@ namespace Classes
             {
                 ListMaker("");
             }
+        }else if(created == "No")
+        {
+            Console.Clear();
+        Console.WriteLine("Welcome to the list interface");
+                
+        
+        
+        Console.WriteLine("Kindly give your List a title");
+        Console.Write("> ");
+        string nameList = Console.ReadLine();
+        Console.WriteLine("Your list's name is " + nameList);
+        Console.ReadKey();
+        Console.Clear();
+        Console.WriteLine("Okay Lets start creating the list " + nameList);
+        Console.ReadKey();
+        
+        string commandName = Console.ReadLine();
+        
+        
+            Console.WriteLine("Start typing : ");
+            string line1 = Console.ReadLine();
+            string line2 = Console.ReadLine();
+            string line3 = Console.ReadLine();
+            string line4 = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine("Creating List : ");
+            Console.ReadKey();
+            List<string> listList  = new List<string>();
+            listList.Add(line1);
+            listList.Add(line2);
+            listList.Add(line3);
+            listList.Add(line4);
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("The list are as follows : ");
+            Console.WriteLine(listList[0]);
+            Console.WriteLine(listList[1]);
+            Console.WriteLine(listList[2]);
+            Console.WriteLine(listList[3]);
+            Console.ReadKey();
+            Console.Clear();
+                    Console.ReadKey();
+            Console.Clear();
+           
+            Console.WriteLine("Type Exit or Stay");
+            Console.Write("> ");
+            string v = Console.ReadLine();
+            if(v == "Exit")
+            {
+                    viOne p = new viOne();
+                    p.vi();
+                    
+                   
+
+
+            }
+            else if(v == "Stay")
+            {
+                ListMaker("");
+            }
+
+        }
 
     }
 
