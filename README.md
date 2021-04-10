@@ -63,21 +63,8 @@ ChangeLog
 
     The changelog are as follows
     :
-      -Added Exit Feature
-      -Added Note Feature
-      -Fixed some crash issues
-      -Fixed some Bugs
-      -Added ListMaker Feature
-      -Updated Commands
-      -Changed Text Colour to DarkGreen
-      -Cleaned code
-      -Now you can access Note only from the MainTerminal
-      -Added more Notes
-      -Fixed some bugs
-      -Added TextAdventure(Note : In Alpha Stages)
-      -Added all commands in 'TheDebug' command
-      -Update finished
-
+      -Added File system in ListMaker.
+      -Fixed Bugs
       
 
       -More Features To Come
