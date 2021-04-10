@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
-
-
+using System.IO;
 
 
 namespace Classes
@@ -117,10 +116,20 @@ namespace Classes
         
 
     }
+    
     public void ListMaker(string comment2) // ListMaker command
     {
         Console.Clear();
         Console.WriteLine("Welcome to the list interface");
+        Console.WriteLine("Kindly type the path where you want to store the List");
+        DateTime dateOfCreation = DateTime.Now;
+        
+        string filePath = Console.ReadLine();
+        if(string.IsNullOrWhiteSpace(filePath))
+        {
+            ListMaker("List");
+        }
+        string ListfilePath = $@"{filePath}";
         Console.WriteLine("Kindly give your List a title");
         Console.Write("> ");
         string nameList = Console.ReadLine();
@@ -155,6 +164,19 @@ namespace Classes
             Console.WriteLine(listList[2]);
             Console.WriteLine(listList[3]);
             Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Generating file");
+            var ConversionOfdateTime = Convert.ToString(dateOfCreation);
+            string[] Lists = new string[]{ConversionOfdateTime ," ", nameList , " " ,listList[0], listList[1], listList[2], listList[3] };
+            FileStream sc = new FileStream(ListfilePath , FileMode.OpenOrCreate);
+
+            sc.Close();
+            File.WriteAllLines(ListfilePath, Lists);
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Reading lines");
+            var f = File.ReadAllText(ListfilePath);
+            Console.WriteLine(f);
             Console.WriteLine("Type Exit or Stay");
             Console.Write("> ");
             string v = Console.ReadLine();
