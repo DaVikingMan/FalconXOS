@@ -62,7 +62,7 @@ ChangeLog
 
     The changelog are as follows
     :
-<<<<<<< HEAD
+
       -Added File system in ListMaker.
       -Fixed Bugs
 =======
