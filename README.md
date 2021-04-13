@@ -17,7 +17,9 @@ A TerminalOs is a OS built into a Terminal
 
 Why build a TerminalOS if we already have an os?
 
-This is a tribute to the old OS's and this was also made to help people understand on how OS's work.This was also made as an open source CLi so that people can integerate this in their on OS by changing only a few lines of code.
+This is a tribute to the old command-line os's which existed in the 90s.
+This was also made as a beginner code template so people can learn how to program in C#.
+The last reason for creating a TerminalOS was to make a template for intermediate coders who want to create command-line apps.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 Is this Project open-source?
@@ -26,9 +28,9 @@ Yes, this project is available on github
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-Can we use this project freely?
+Can we use this project free of cost?
 
-Yes, you can even integerate this in your own project
+Yes, you can use this project free of cost.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 :
@@ -38,18 +40,18 @@ News Area
 Welcome to the new Release of TerminalX
 
 
-The first two updates XriBug and TerminalR are available publically
+The updates XriFeature and XriBug are live and out of Alpha stages.
 
 TRelease Updates
 :
-    XriFeature
+    Xrig
 :
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 Known Bugs
 {
-  -Only Note command is available(and that is Exit).
-  -Some options in TextAdventure close the program without asking whether to exit or not.
+  
+  -No Bugs.YAY!
 }
 
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -73,12 +75,15 @@ ChangeLog
       -Fixed some bugs
       -Added TextAdventure(Note : In Alpha Stages)
       -Added all commands in 'TheDebug' command
+      -Fixed Bugs
+      -Added All Note commands
 
       
 
       -More Features To Come
 
-      |Next update is XriFeature Update{This update will fix add Features}|
+      |Next update is Xrig Update{This update will fix add Features}|
+      Xrig update might take some time as it will be the largest update.
 
 
 
@@ -117,13 +122,6 @@ How to use this repository
 ToAdd Features
 {
       
-      -UI
-      
-      -Fix some Bugs
-      
-      -Seperate the Name screen from the MainTerminal screen
-      
-      -Finish the update
 }
 
 ---------------------------------------------------------------------------------------------------------------------------------------
