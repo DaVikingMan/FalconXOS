@@ -42,7 +42,7 @@ Welcome to the new Release of TerminalX
 
 The updates XriFeature and XriBug are live and out of Alpha stages.
 
-TRelease Updates
+ToRelease Updates
 :
     Xrig
 :
@@ -56,40 +56,10 @@ Known Bugs
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-ChangeLog
-{
+You can support this repo by making a new issue if you found an issue and make a pull request
+This ensures the smooth functioning of the app
 
-
-    The changelog are as follows
-    :
-      -Added Exit Feature
-      -Added Note Feature
-      -Fixed some crash issues
-      -Fixed some Bugs
-      -Added ListMaker Feature
-      -Updated Commands
-      -Changed Text Colour to DarkGreen
-      -Cleaned code
-      -Now you can access Note only from the MainTerminal
-      -Added more Notes
-      -Fixed some bugs
-      -Added TextAdventure(Note : In Alpha Stages)
-      -Added all commands in 'TheDebug' command
-      -Fixed Bugs
-      -Added All Note commands
-
-      
-
-      -More Features To Come
-
-      |Next update is Xrig Update{This update will fix add Features}|
-      Xrig update might take some time as it will be the largest update.
-
-
-
-    :
-
-}
+You can also recommend a feature by making a pull request
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
