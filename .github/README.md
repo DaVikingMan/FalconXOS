@@ -1,0 +1,1 @@
+This folder contains all the stuff related to github
