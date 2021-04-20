@@ -3,7 +3,7 @@ using System;
 
 
 
-namespace Classes
+namespace src
 {
     // Used by the TheDebug command
     class CommandAllReplica
