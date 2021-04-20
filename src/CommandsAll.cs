@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 
 
-namespace Classes
+namespace src
 {
     // All commands
     class CommandsAll
