@@ -1,4 +1,4 @@
-﻿namespace Classes
+﻿namespace src
 {
 
     public class Program
