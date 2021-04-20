@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Classes
+namespace src
 {
     // Main class
     class viOne{
