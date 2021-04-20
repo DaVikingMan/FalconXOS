@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Classes
+namespace src
 {
     public class GamesAll : GamesProperty
     {
