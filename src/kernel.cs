@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics.Tracing;
 using System.Diagnostics;
 
-namespace Classes
+namespace src
 {
     // This is the first class that loads when you run the program
     class kernel
