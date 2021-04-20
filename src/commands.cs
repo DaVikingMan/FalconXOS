@@ -1,4 +1,4 @@
-namespace Classes
+namespace src
 {
     // Initializes commands
     public class commands{
