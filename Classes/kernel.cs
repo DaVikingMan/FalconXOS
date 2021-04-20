@@ -1,4 +1,6 @@
 using System;
+using System.Diagnostics.Tracing;
+using System.Diagnostics;
 
 namespace Classes
 {
@@ -24,6 +26,13 @@ namespace Classes
                 ReKernel l = new ReKernel();
                 l.Rek();
 
+            }
+                
+            else{ 
+                Console.WriteLine("wrong expression");
+                Console.ReadKey();
+                kernel k = new kernel();
+                k.KernelMain();
             }
                
         }
