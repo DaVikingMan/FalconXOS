@@ -59,7 +59,7 @@ namespace src
                         List<commands> cm = ListManager.Manager();
 
                         foreach(var m in cm){
-                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\nDebug\nWritePad");
+                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\nDebug\nWritePad\nRun");
 
                         }
                         Console.Write("> ");
@@ -113,6 +113,10 @@ namespace src
                             CommandsAll v = new CommandsAll();
                             v.WriteConsolePad();
 
+                        }else if(commandRead == "Run")
+                        {
+                            CommandsAll b = new CommandsAll();
+                            b.RunCommand();
                         }
 
                         
@@ -139,6 +143,7 @@ namespace src
             string ans = Console.ReadLine();
             if (ans == "Alpha")
             {
+                Console.WriteLine("What Alpha build do you want to open");
                 ProcessHandler handler = new ProcessHandler();
                 handler.ProcessHandle();
                 Console.ReadKey();
