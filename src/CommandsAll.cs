@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 
 
@@ -119,7 +120,29 @@ namespace src
     
     public void ListMaker(string comment2) // ListMaker command
     {
-        Console.WriteLine("Do you want to store the list in a file?");
+        Console.Clear();
+        Console.WriteLine("Do you want to open the UI version or the terminal version(type Terminal for terminal version or UI for UI versiom)");
+        string anscommand = Console.ReadLine();
+        if(anscommand == "UI")
+        {
+            ProcessHandler handler = new ProcessHandler();
+            handler.ProcessHandle();
+            Console.ReadKey();
+            Console.WriteLine("Type Exit or Stay");
+            string Ycommand = Console.ReadLine();
+            if(Ycommand == "Exit")
+            {
+                viOne i = new viOne();
+                i.vi();
+
+            }else if(Ycommand == "Stay")
+            {
+                ListMaker("Make List");
+            }
+
+        }else if(anscommand == "Terminal")
+        {
+            Console.WriteLine("Do you want to store the list in a file?");
         Console.Write(">");
         var created = Console.ReadLine();
 
@@ -268,8 +291,32 @@ namespace src
 
     }
 
+        }
+        
+
     public void WriteConsolePad()
     {
+        Console.Clear();
+        Console.WriteLine("Do you want to open the UI version or the Terminal Version?(Type Terminal for terminal version or type UI for ui versiom)");
+        string anscommand = Console.ReadLine();
+        if(anscommand == "UI")
+        {
+            ProcessHandler handler = new ProcessHandler();
+            handler.ProcessWritePadUI();
+            Console.ReadKey();
+            Console.WriteLine("Do you want to exit or stay?");
+            string ans = Console.ReadLine();
+            if(ans == "Exit")
+            {
+                viOne V = new viOne();
+                V.vi();
+            }else if(ans == "Stay")
+            {
+                WriteConsolePad();
+            }
+
+            
+        }
         Console.WriteLine("Do you want to generate a file for this command?");
         Console.Write("> ");
         var Read = Console.ReadLine();
@@ -388,6 +435,27 @@ namespace src
             Console.ReadKey();
             WriteConsolePad();
         }
+        }
+    }
+
+    public void RunCommand()
+    {
+        Console.Clear();
+        Console.WriteLine("Type the exe file name of the file which you want to run");
+        Console.Write(">");
+        string Fie = Console.ReadLine();
+        Process.Start(Fie);
+        Console.ReadKey();
+        Console.WriteLine("Do you want to Exit or Stay");
+        string ansj = Console.ReadLine();
+        if(ansj == "Exit")
+        {
+            viOne b = new viOne();
+            b.vi();            
+        }else if(ansj == "Stay")
+        {
+            RunCommand();
+
         }
     }
 
