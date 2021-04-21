@@ -24,5 +24,14 @@ namespace src{
             
            Process.Start(startInfo);
         }
+        public void ProcessWritePadUI()
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "CMD.exe";
+            startInfo.Arguments = "/c java WritePad.java";
+            startInfo.CreateNoWindow = true;
+            startInfo.UseShellExecute = false;
+            Process.Start(startInfo);
+        }
     }
 }
