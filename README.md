@@ -1,4 +1,4 @@
-# TerminalXOS
+# TerminalXOS : a Operating Shell
 
 TerminalOS Alpha build
 
