@@ -121,11 +121,12 @@ namespace src
     public void ListMaker(string comment2) // ListMaker command
     {
         Console.Clear();
-        Console.WriteLine("Do you want to open the UI version or the terminal version(type Terminal for terminal version or UI for UI versiom)");
+        Console.WriteLine("Do you want to open the UI version or the \nterminal version(type Terminal for terminal version or UI for UI versiom)");
         string anscommand = Console.ReadLine();
         if(anscommand == "UI")
         {
             ProcessHandler handler = new ProcessHandler();
+
             handler.ProcessHandle();
             Console.ReadKey();
             Console.WriteLine("Type Exit or Stay");
