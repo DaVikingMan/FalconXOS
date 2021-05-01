@@ -32,7 +32,8 @@ namespace src
                         if(ans == "Yes")
                         {
                             // Opens the command screen
-                            vi();
+                            Menu m = new Menu();
+                            m.MenuMain();
                         }else if(ans == "No") // If the User says No
                         {
                             Start();
@@ -59,7 +60,7 @@ namespace src
                         List<commands> cm = ListManager.Manager();
 
                         foreach(var m in cm){
-                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\nDebug\nWritePad\nRun");
+                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\nDebug\nWritePad\nRun\nShortcut");
 
                         }
                         Console.Write("> ");
@@ -68,8 +69,8 @@ namespace src
                         
                         if(commandRead == "Exit")
                         {
-                            CommandsAll commands = new CommandsAll();
-                            commands.Exit("");
+                            Menu commands = new Menu();
+                            commands.MenuMain();
                             
                             
 
