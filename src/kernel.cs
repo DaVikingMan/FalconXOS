@@ -11,30 +11,20 @@ namespace src
         {
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.Clear();
-            Console.WriteLine("Welcome to a new version of TerminalX");
-            Console.WriteLine("Do you want to read about TerminalX and its features?");
-            Console.Write("> ");
-            var c = Console.ReadLine();
-            if(c == "Yes")
+            Console.WriteLine("Type start -oss n to start a Operating Shell session");
+            Console.Write(">");
+            string commandStart = Console.ReadLine();
+            if(commandStart == "start -oss n")
             {
-                
-                CommandsAll cp = new CommandsAll();
-                cp.Note();
-
-            }else if(c == "No")
+                viOne v = new viOne();
+                v.Start();
+            }else 
             {
-                ReKernel l = new ReKernel();
-                l.Rek();
-
-            }
-                
-            else{ 
-                Console.WriteLine("wrong expression");
+                Console.WriteLine("Wrong command");
                 Console.ReadKey();
-                kernel k = new kernel();
-                k.KernelMain();
+                KernelMain();
             }
-               
+          
         }
     }
 }
