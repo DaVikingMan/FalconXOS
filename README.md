@@ -1,131 +1,67 @@
 # TerminalXOS : a Operating Shell
 
-TerminalOS Alpha build
+# Welcome to TerminalXOS
 
-About TerminalXOS
+Welcome to a more modern and better terminal
+
+# Note
+
+This part lists some of the future updates this project will have
+
+
+TerminalXOS is a terminal for the future
+
+It brings the 'live in the terminal' quote to reality
+This means that you will be able to do everything from the terminal
+
+Managing shortcuts
+Running apps
+And much more,
+
+
+# About the future of this app
+
+We want to make this app the best terminal possible
+
+This are some of the things which we will add in the upcoming updates
+
+-A in-built terminal because as of now the app launches powershell by default
+-A package manager for the terminal
+-Some utilities for enhancing the terminal. For example we will be adding a build tool called tr which will help you run your projects in a more enhanced way.
+-Full support for Linux and macOs(as for now this has only support for windows as this uses windows tools for execution)
+
+Note : Terminal doesnt refer to the app but refers to a standalone terminal which will come up when executing the terminal command in the app's menu.
+
+
+# Some FAQS
+
+You may have noticed that at the top of the README that it says TerminalXOS : a Operating Shell
+
+Well we wanted to make modify some principles used to a terminal
+
+First, 
+
+Definition of Operating Shell-
+A Operating Shell is a supporting shell which gives command to a terminal which then gives command to the Operating system.
+
+
+This is different from a terminal as a terminal is a shell which directly gives command to the Operating System.
+
+# Now you may ask that why build a Operating Shell?
+
+Because what I want to build is a ram-efficient , cpu-efficient and efficient terminal without sacrificing stability and performance.
+
+And this can only be done when we use the principles of Operating shell.
+
+
+Because if you notice the pre-installed terminals which come with your Operaing system are the most efficient but they compormise efficiency and good UI.
+
+
+For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
+
+So this is how TerminalXOS will executes commands
+:
+   command(In TerminalXOS) ---> command(execution in CMD(or any other terminal)) ---> Output(In TerminalXOS terminal)
 :
 
-Welcome to TerminalXOS, a TerminalOs made by DaVikingMan
 
----------------------------------------------------------------------------------------------------------------------------------------
-
-What is a TerminalOS?
-
-A TerminalOs is a OS built into a Terminal
-
----------------------------------------------------------------------------------------------------------------------------------------
-
-Why build a TerminalOS if we already have an os?
-
-This is a tribute to the old command-line os's which existed in the 90s.
-This was also made as a beginner code template so people can learn how to program in C#.
-The last reason for creating a TerminalOS was to make a template for intermediate coders who want to create command-line apps.
-
----------------------------------------------------------------------------------------------------------------------------------------
-Is this Project open-source?
-
-Yes, this project is available on github
-
----------------------------------------------------------------------------------------------------------------------------------------
-
-Can we use this project free of cost?
-
-Yes, you can use this project free of cost.
-
----------------------------------------------------------------------------------------------------------------------------------------
-:
-
-News Area
-
-Welcome to the new Release of TerminalX
-
-
-The updates XriFeature and XriBug are live and out of Alpha stages.
-
-ToRelease Updates
-:
-    Xrig
-:
----------------------------------------------------------------------------------------------------------------------------------------
-
-Known Bugs
-{
-  
-  -No Bugs.YAY!
-}
-
----------------------------------------------------------------------------------------------------------------------------------------
-
-ChangeLog
-{
-
-
-    The changelog are as follows
-    :
-
-      -Added File system in ListMaker.
-      -Added File System in WritePad
-      -Fixed Bugs
-      
-
-      -More Features To Come
-
-      |Next update is Xrig Update{This update will fix some bugs and add Features}|
-      Xrig update might take some time as it will be the largest update.
-
-
-
-    :
-
-}
-
----------------------------------------------------------------------------------------------------------------------------------------
-
-Some rules{
-
-  -Only type 'Yes' or 'No' not 'no' or 'yes'.
-  
-  -Only type when the '>' symbol appears.
-  
-  -If some features don't work as intended please write them in the issues section.
-  
-  -If the '>' symbol doesn't appear that means you have to press a key.
-   
-}
-
-How to use this repository
-{
-    
-    Step 1 : Clone this repository
-    
-    Step 2 : Open this in vsCode
-    
-    Step 3 : VsCode should generate the obj and bin folder
-    
-    Step 4 : Now you can start coding!
-
-}
----------------------------------------------------------------------------------------------------------------------------------------
-
-ToAdd Features
-{
-      
-}
-
----------------------------------------------------------------------------------------------------------------------------------------
-
-Note : Always run this project with externalTerminal as the default config in launch.json
-
-
-
-
-
-
-
-
-
-
-
-
-
-End of File
