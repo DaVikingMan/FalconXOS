@@ -86,7 +86,8 @@ namespace src
             
             var f = Console.ReadLine();
             string filePath = $@"{f}";
-            var h = File.ReadAllLines(filePath).ToArray();
+            var h = File.ReadAllText(filePath).ToArray();
+            Console.WriteLine(h);
             if(h.Length == 1)
             {
                 
@@ -196,6 +197,9 @@ namespace src
             if(v == "run n<1>")
             {
                 var g = File.ReadAllLines(filePath).Skip(1).Take(1).First();
+                ProcessStartInfo p = new ProcessStartInfo();
+                p.UseShellExecute = true;
+                p.FileName = g;
                 Process.Start(g);
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
@@ -214,7 +218,11 @@ namespace src
             if(v == "run n<2>")
             {
                 var g = File.ReadAllLines(filePath).Skip(3).Take(1).First();
+                ProcessStartInfo o = new ProcessStartInfo();
+                o.UseShellExecute = true;
+                o.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
                 Console.Write(">");
@@ -232,7 +240,11 @@ namespace src
             if(v == "run n<3>")
             {
                 var g = File.ReadAllLines(filePath).Skip(5).Take(1).First();
+                ProcessStartInfo info = new ProcessStartInfo();
+                info.UseShellExecute = true;
+                info.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
                 Console.Write(">");
@@ -250,7 +262,11 @@ namespace src
             if(v == "run n<4>")
             {
                 var g = File.ReadAllLines(filePath).Skip(7).Take(1).First();
+                ProcessStartInfo u = new ProcessStartInfo();
+                u.UseShellExecute = true;
+                u.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
                 Console.Write(">");
@@ -268,7 +284,11 @@ namespace src
             if(v == "run n<5>")
             {
                 var g = File.ReadAllLines(filePath).Skip(9).Take(1).First();
+                ProcessStartInfo z = new ProcessStartInfo();
+                z.UseShellExecute = true;
+                z.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
                 Console.Write(">");
@@ -286,7 +306,11 @@ namespace src
             if(v == "run n<6>")
             {
                 var g = File.ReadAllLines(filePath).Skip(11).Take(1).First();
+                ProcessStartInfo w = new ProcessStartInfo();
+                w.UseShellExecute = true;
+                w.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
                 Console.Write(">");
@@ -304,7 +328,11 @@ namespace src
             if(v == "run n<7>")
             {
                 var g = File.ReadAllLines(filePath).Skip(13).Take(1).First();
+                ProcessStartInfo n = new ProcessStartInfo();
+                n.UseShellExecute = true;
+                n.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
                 Console.Write(">");
@@ -321,7 +349,11 @@ namespace src
             if(v == "run n<8>")
             {
                 var g = File.ReadAllLines(filePath).Skip(15).Take(1).First();
+                ProcessStartInfo x = new ProcessStartInfo();
+                x.UseShellExecute = true;
+                x.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
                 Console.Write(">");
@@ -338,7 +370,11 @@ namespace src
             if(v == "run n<9>")
             {
                 var g = File.ReadAllLines(filePath).Skip(17).Take(1).First();
+                ProcessStartInfo K = new ProcessStartInfo();
+                K.UseShellExecute = true;
+                K.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit or Stay");
                 Console.Write(">");
@@ -355,7 +391,11 @@ namespace src
             if(v == "run n<10>")
             {
                 var g = File.ReadAllLines(filePath).Skip(19).Take(1).First();
+                ProcessStartInfo l = new ProcessStartInfo();
+                l.UseShellExecute = true;
+                l.FileName = g;
                 Process.Start(g);
+                
                 Console.ReadKey();
                 Console.WriteLine("Type Exit");
                 Console.Write(">");
@@ -399,7 +439,7 @@ namespace src
                         n,
                         l
                     };
-                    File.WriteAllLines(filePath1, a);
+                    File.AppendAllLines(filePath1, a);
                     Console.WriteLine("Type Exit");
                     string r = Console.ReadLine();
                     if(r == "Exit")
