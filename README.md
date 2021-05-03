@@ -67,4 +67,4 @@ So this is how TerminalXOS will executes commands
 
 # For Further Reading on Operating Shell
 :
-<a href = "https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SHELL.md"></a>
+<a href = "https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SHELL.md">About Operating Shell and its principles</a>
