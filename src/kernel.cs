@@ -9,8 +9,10 @@ namespace src
     {
         public void KernelMain()
         {
+
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.Clear();
+            
             Console.WriteLine("Type start -oss n to start a Operating Shell session");
             Console.Write(">");
             string commandStart = Console.ReadLine();
