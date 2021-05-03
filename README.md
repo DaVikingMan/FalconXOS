@@ -37,7 +37,7 @@ Note : Terminal doesnt refer to the app but refers to a standalone terminal whic
 
 You may have noticed that at the top of the README that it says TerminalXOS : a Operating Shell
 
-Well we wanted to make modify some principles used to a terminal
+Well we wanted to make modify some principles used to make a terminal
 
 First, 
 
