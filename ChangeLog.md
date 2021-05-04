@@ -10,6 +10,8 @@
    -Added Apps
    -Added Exit
    -Added Menu
+   -Added Re-command utility in some classes
+   -Added Utility for managing your project to-do lists
     
 }
 Note : In ProcessHandler.cs the class uses cmd as the executing shell,if you dont have cmd then you can change it in the fileName field
