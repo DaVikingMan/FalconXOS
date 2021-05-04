@@ -2,11 +2,11 @@
 
 Well lets extend the 'why build a Operating Shell?' question
 
-Well the short answer : For making a better terminal without comprimising anything.
+Well the short answer is 'For making a better terminal without comprimising anything'.
 
 So you can also say that Operating Shells are a superset of Terminals
 
-This app uses default terminals because I have noticed that this makes it more ram-efficient and cpu-efficient and makes reduces error rates for the app.
+This app uses default terminals because I have noticed that this makes it more ram-efficient and cpu-efficient and reduces error rates for the app.
 
 The Operating Shell's UI will be amazing and the Operating shell itself will be ram-efficient
 
