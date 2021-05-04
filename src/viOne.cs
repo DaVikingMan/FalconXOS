@@ -60,7 +60,7 @@ namespace src
                         List<commands> cm = ListManager.Manager();
 
                         foreach(var m in cm){
-                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\nDebug\nWritePad\nRun\nShortcut");
+                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}");
 
                         }
                         Console.Write("> ");
@@ -86,13 +86,7 @@ namespace src
                             
 
                         }
-                        else if(commandRead == "Games")
-                        {
-                            CommandsAll commands = new CommandsAll();
-                            commands.Games("");
-                            
-
-                        }
+                        
                         else if(commandRead == "ListMaker")
                         {
                             CommandsAll commands = new CommandsAll();
