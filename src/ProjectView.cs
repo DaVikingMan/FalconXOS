@@ -6,6 +6,7 @@ namespace src{
     {
         public void View()
         {
+            Console.Clear();
             Console.WriteLine("Type scc -- view");
             Console.Write(">");
             string Bcommand = Console.ReadLine();
