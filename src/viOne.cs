@@ -8,41 +8,9 @@ namespace src
     class viOne{
         public void Start()
         {
-            Console.Clear();
-            DateTime date = DateTime.Now;
-                        Console.WriteLine(date);
-                        Console.ReadKey();
-                        
-                        Console.WriteLine("Welcome to the main system!");
-                        Console.WriteLine("Kindly write your name : ");
-                        Console.Write("> ");
-                        string name = Console.ReadLine();
-                        if(string.IsNullOrWhiteSpace(name)){
-                            Console.WriteLine("Kindly input name");
-                            Console.ReadKey();
-                            Start();
-                        }
-                        
-                        Console.Clear();
-                        Console.WriteLine(name  + " huh?");
-                        Console.ReadKey();
-                        Console.WriteLine("Do you want to the command screen?");
-                        Console.Write("> ");
-                        string ans = Console.ReadLine();
-                        if(ans == "Yes")
-                        {
-                            // Opens the command screen
-                            Menu m = new Menu();
-                            m.MenuMain();
-                        }else if(ans == "No") // If the User says No
-                        {
-                            Start();
-                        }else if(string.IsNullOrWhiteSpace(ans)) // If the user doesn't input anything
-                        {
-                            Console.WriteLine("Kindly give Input");
-                            Console.ReadKey();
-                            Start();
-                        }
+                Console.Clear();
+                Menu mk = new Menu();
+                mk.MenuMain();
         }
           // Command Class
           public void vi()
