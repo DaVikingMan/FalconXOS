@@ -73,3 +73,5 @@ So this is how TerminalXOS will executes commands
 <a href = "https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SHELL.md">About Operating Shell and its principles</a>
 <br>
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SystemRequirements.md">System Requirements</a>
+<br>
+<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/BranchManagement.md">About the Branches in this repository</a>
