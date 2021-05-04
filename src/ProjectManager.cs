@@ -6,6 +6,7 @@ namespace src{
     {
         public void Manager()
         {
+            Console.Clear();
             Console.WriteLine("Type scp -new for creating a new project(This is used to add the projects for better organization of the projects which you have created)");
             Console.Write(">");
             string n = Console.ReadLine();
