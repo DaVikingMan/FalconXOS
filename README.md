@@ -25,11 +25,14 @@ We want to make this app the best terminal possible
 
 This are some of the things which we will add in the upcoming updates
 
--A in-built terminal because as of now the app launches powershell by default
+-A built-In terminal because as of now the app launches powershell by default
+<br>
 -A package manager for the terminal
+<br>
 -Some utilities for enhancing the terminal. For example we will be adding a build tool called tr which will help you run your projects in a more enhanced way.
+<br>
 -Full support for Linux and macOs(as for now this has only support for windows as this uses windows tools for execution)
-
+<br>
 Note : Terminal doesnt refer to the app but refers to a standalone terminal which will come up when executing the terminal command in the app's menu.
 
 
@@ -54,7 +57,7 @@ Because what I want to build is a ram-efficient , cpu-efficient and efficient te
 And this can only be done when we use the principles of Operating shell.
 
 
-Because if you notice the pre-installed terminals which come with your Operaing system are the most efficient but they compormise efficiency and good UI.
+If you notice the terminals which come with your Operating System(such as CMD for windows 10), they are actually the most ram-efficient but they compromise good UI and features.
 
 
 For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
@@ -68,3 +71,4 @@ So this is how TerminalXOS will executes commands
 # For Further Reading on Operating Shell
 :
 <a href = "https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SHELL.md">About Operating Shell and its principles</a>
+<a href=""></a>
