@@ -7,6 +7,7 @@ namespace src
     {
         public void AccessProject()
         {
+            Console.Clear();
             Console.WriteLine("Type scp -access");
             Console.Write(">");
             string terminalcommand = Console.ReadLine();
@@ -19,12 +20,13 @@ namespace src
                 
                 Console.ReadKey();
                 Console.WriteLine("Adding a to-do list");
-                Console.Write(">");
+                
                 string hcommand = "Yes";
                 if(hcommand == "Yes")
                 {
                     
                     Console.WriteLine("How many items do you want in the list(min : 1, max : 10)");
+                    Console.Write(">");
                     string Hjcommand = Console.ReadLine();
                     if(Hjcommand == "1")
                     {
