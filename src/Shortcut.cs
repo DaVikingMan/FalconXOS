@@ -30,6 +30,10 @@ namespace src
             }else if(Kcommand == "scc --o")
             {
                 e();
+            }else{
+                Console.WriteLine("Wrong command");
+                Console.ReadKey();
+                ShortcutPage();
             }
         }
         public void ShortcutInteface()
