@@ -1,8 +1,8 @@
-# This article this about Operating Shells
+# This article is about Operating Shells
 
 Well lets extend the 'why build a Operating Shell?' question
 
-Well the short answer is 'For making a better terminal without comprimising anything'.
+Well the short answer is 'For making a better terminal without compromising anything'.
 
 So you can also say that Operating Shells are a superset of Terminals
 
