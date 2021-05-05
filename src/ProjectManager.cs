@@ -4,7 +4,7 @@ using System.IO;
 namespace src{
     class ProjectManager
     {
-        public void Manager()
+        public void Manager(string Zcommand)
         {
             Console.Clear();
             Console.WriteLine("Type scp -new for creating a new project(This is used to add the projects for better organization of the projects which you have created)");
@@ -12,7 +12,7 @@ namespace src{
             string n = Console.ReadLine();
             if(n == "scp -new")
             {
-                Console.WriteLine("Type your project name : ");
+                Console.WriteLine("Type the project's name : ");
                 string h = Console.ReadLine();
                 Console.WriteLine("Adding Project-Manager object, press a key to continue");
                 
@@ -20,10 +20,8 @@ namespace src{
                 if(k == "Yes")
                 {
                     Console.WriteLine("Okay!\nAdding");
-                    Console.WriteLine("Type your file which you want to create which will store the projects info");
-                    Console.Write(">");
-                    string j = Console.ReadLine();
-                    string filePath = $@"{j}";
+                    
+                    string filePath = $@"{Zcommand}/{h}.txt";
                     FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate);
                     fileStream.Close();
                     Console.WriteLine("Type Exit for finshing the request");
@@ -32,7 +30,7 @@ namespace src{
                     if(u == "Exit")
                     {
                         Utility kUtlity = new Utility();
-                        kUtlity.VirtualUtility();
+                        kUtlity.VirtualUtility(Zcommand);
                     }
                     
                 }
