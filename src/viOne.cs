@@ -8,6 +8,7 @@ namespace src
     class viOne{
         public void Start()
         {
+            
                 Console.Clear();
                 Menu mk = new Menu();
                 mk.MenuMain();
