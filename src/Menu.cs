@@ -11,7 +11,7 @@ namespace src{
             Console.WriteLine("Apps and other commands(type Apps for running this command)");
             Console.WriteLine("Shortcuts");
             Console.WriteLine("Terminal");
-            Console.WriteLine("Project Manager(in alpha stages)");
+            Console.WriteLine("Project Manager");
             Console.WriteLine("Exit");
             Console.Write(">");
             string y = Console.ReadLine();
