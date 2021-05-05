@@ -4,7 +4,7 @@ using System.IO;
 namespace src{
     class ProjectView
     {
-        public void View()
+        public void View(string dirFile)
         {
             Console.Clear();
             Console.WriteLine("Type scc -- view");
@@ -12,10 +12,10 @@ namespace src{
             string Bcommand = Console.ReadLine();
             if(Bcommand == "scc --view")
             {
-               Console.WriteLine("Type the filePath where your project to-do list is stored");
+               Console.WriteLine("Type the project's name");
                Console.Write(">");
                string yCommand = Console.ReadLine();
-               string filePath = $@"{yCommand}";
+               string filePath = $@"{dirFile}/{yCommand}.txt";
                Console.Clear();
                var t = File.ReadAllText(filePath);
                Console.WriteLine(t);
@@ -25,10 +25,10 @@ namespace src{
                if(hcommand == "Exit")
                {
                    Utility m = new Utility();
-                   m.VirtualUtility();
+                   m.VirtualUtility(dirFile);
                }else if(hcommand == "Stay")
                {
-                   View();
+                   View(dirFile);
                }
                   
             }
