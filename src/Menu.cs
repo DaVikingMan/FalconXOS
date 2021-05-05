@@ -43,7 +43,10 @@ namespace src{
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
-               m.VirtualUtility();    
+               Console.WriteLine("Type Directory Path(type full path)");
+               Console.Write(">");
+               string Jcommmand = Console.ReadLine();
+               m.VirtualUtility(Jcommmand);    
             }
             
             else{                                    // When the wrong command is executed
