@@ -18,6 +18,7 @@ namespace src
             string commandStart = Console.ReadLine();
             if(commandStart == "start -oss n") // When the listed command is executed
             {
+                
                 viOne v = new viOne();
                 v.Start();
             }else  // When the wrong command is executed
