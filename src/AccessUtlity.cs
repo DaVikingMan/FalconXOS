@@ -5,7 +5,7 @@ namespace src
 {
     class AccessUtlity
     {
-        public void AccessProject()
+        public void AccessProject(string FileK)
         {
             Console.Clear();
             Console.WriteLine("Type scp -access");
@@ -13,10 +13,10 @@ namespace src
             string terminalcommand = Console.ReadLine();
             if(terminalcommand == "scp -access")
             {
-                Console.WriteLine("Type the full file path where you have stored the project");
+                Console.WriteLine("Tyoe the project name(dont include file extensio)");
                 Console.Write(">");
-                string commandY = Console.ReadLine();
-                string filePath = $@"{commandY}";
+                string yUCommand = Console.ReadLine();
+                string filePathY = $@"{FileK}/{yUCommand}.txt";
                 
                 Console.ReadKey();
                 Console.WriteLine("Adding a to-do list");
@@ -39,7 +39,7 @@ namespace src
                         cone
                         
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -47,7 +47,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
 
@@ -63,7 +63,7 @@ namespace src
                         ctwo
 
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -71,7 +71,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
 
@@ -89,7 +89,7 @@ namespace src
                         cthree
                         
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -97,7 +97,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
                         
@@ -118,7 +118,7 @@ namespace src
                         cfour
                         
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -126,7 +126,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
                         
@@ -148,7 +148,7 @@ namespace src
                         cfour,
                         cfive
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -156,7 +156,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
                         
@@ -179,7 +179,7 @@ namespace src
                         cfive,
                         csix
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -187,7 +187,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
                         
@@ -213,7 +213,7 @@ namespace src
                         csix,
                         cseven
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -221,7 +221,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
                         
@@ -249,7 +249,7 @@ namespace src
                         cseven, 
                         ceight
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -257,7 +257,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
                         
@@ -286,7 +286,7 @@ namespace src
                         ceight,
                         cnine
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -294,7 +294,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                     
                         
@@ -325,7 +325,7 @@ namespace src
                         cnine,
                         cten
                     };
-                    File.WriteAllLines(filePath, a);
+                    File.WriteAllLines(filePathY, a);
 
                     Console.WriteLine("Type Exit");
                     Console.Write(">");
@@ -333,7 +333,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility();
+                        l.VirtualUtility(FileK);
                     }
                         
                     }
