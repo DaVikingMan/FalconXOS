@@ -67,7 +67,7 @@ So this is how TerminalXOS will executes commands
    command(In TerminalXOS) ---> command(execution in CMD(or any other terminal)) ---> Output(In TerminalXOS terminal)
 :
 
-#System requirements
+# System requirements
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SystemRequirements.md">System Requirements</a>
 <br>
