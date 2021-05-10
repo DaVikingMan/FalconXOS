@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 namespace src 
 {
@@ -26,6 +27,11 @@ namespace src
             {
                 ProjectView j = new ProjectView();
                 j.View(filePathg);
+            }else
+            {
+                Console.WriteLine("Wrong command");
+                Thread.Sleep(100);
+                VirtualUtility(Yfile);
             }
             
         }
