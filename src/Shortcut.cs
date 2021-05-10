@@ -8,7 +8,7 @@ namespace src
 {
     class Shortcut
     {
-        public void ShortcutPage()
+        public void ShortcutPage() // Start for the Shortcuts command
         {
             Console.Clear();
             Console.WriteLine("Type 'scc --new' for a new instance of shortcut or type 'scc --runload' for running a created shortcut\nRun scc --o for adding shortcuts\nTypr Exit to exit");
