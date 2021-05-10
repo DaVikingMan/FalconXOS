@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics.Tracing;
 using System.Diagnostics;
+using System.Threading;
 
 namespace src
 {
@@ -24,7 +25,7 @@ namespace src
             }else  // When the wrong command is executed
             {
                 Console.WriteLine("Wrong command");
-                Console.ReadKey();
+                Thread.Sleep(100);
                 KernelMain();
             }
           
