@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 
 namespace src{
     class Menu
@@ -28,11 +29,17 @@ namespace src{
             {
                  TerminalKernel l = new TerminalKernel();
                  l.TerminalHandler();
+                 Thread.Sleep(100);
                  Console.WriteLine("Type Exit");
                  Console.Write(">");
                  string v = Console.ReadLine();
                  if(v == "Exit")
                  {
+                     MenuMain();
+                 }else
+                 {
+                     Console.WriteLine("Wrong command");
+                     Thread.Sleep(100);
                      MenuMain();
                  }
 
@@ -51,7 +58,7 @@ namespace src{
             
             else{                                    // When the wrong command is executed
                 Console.WriteLine("Wrong command");
-                Console.ReadKey();
+                Thread.Sleep(100);
                 MenuMain();
             }
         }
