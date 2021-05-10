@@ -2,15 +2,8 @@
 
 ## Supported Versions
 
-All versions of TerminalOS support security updates(including Beta and Alpha versions) 
-
-
-| Version | Supported          |
-| ---------------------------- |
-| XriFeature     | Yes         |
-| TerminalOS     | Yes         |
-| TerminalOSBeta | Yes         |
-| TerminalAlpha  | Yes         |
+Every version of TerminalXOS supports security updates.
+The versions which will be released will also support security updates
 
 ## Reporting a Vulnerability
 

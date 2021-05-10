@@ -67,11 +67,14 @@ So this is how TerminalXOS will executes commands
    command(In TerminalXOS) ---> command(execution in CMD(or any other terminal)) ---> Output(In TerminalXOS terminal)
 :
 
+# System requirements
+
+<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SystemRequirements.md">System Requirements</a>
+<br>
+
 
 # For Further Reading on Operating Shell
 
 <a href = "https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SHELL.md">About Operating Shell and its principles</a>
-<br>
-<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SystemRequirements.md">System Requirements</a>
 <br>
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/BranchManagement.md">About the Branches in this repository</a>
