@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Threading;
 
 namespace src
 {
@@ -18,7 +19,7 @@ namespace src
                 string yUCommand = Console.ReadLine();
                 string filePathY = $@"{FileK}/{yUCommand}.txt";
                 
-                Console.ReadKey();
+                Thread.Sleep(100);
                 Console.WriteLine("Adding a to-do list");
                 
                 string hcommand = "Yes";
@@ -334,6 +335,11 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Thread.Sleep(100);
+                        AccessProject(filePathY);
                     }
                         
                     }
