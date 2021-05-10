@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Threading;
 
 namespace src
 {
@@ -39,6 +40,11 @@ namespace src
         public void ShortcutInteface()
         {
             Console.Clear();
+            Console.WriteLine("Do you want to create a new directory for storing the shortcuts or use an existing one");
+            string readt = Console.ReadLine();
+            if(readt == "new")
+            {
+                Console.Clear();
             Console.WriteLine("Type the path where you want to store the directory(C:/exampleuser/exampledir)");
             string secondaryDirectory = Console.ReadLine();
             Console.WriteLine("Creating Directory for storing shortcuts....");
@@ -73,7 +79,68 @@ namespace src
                 
                 
 
+            }else
+            {
+                Console.WriteLine("Wrong command");
+                Console.WriteLine("Exiting as nothing exists after this in this utility");
+                Thread.Sleep(100);
+                ShortcutPage();
             }
+            
+
+            }else if(readt == "existing")
+            {
+                Console.Clear();
+            Console.WriteLine("Write the full path of the directory where the shortcuts are stored");
+            
+            string secondaryDirectory = Console.ReadLine();
+            Console.WriteLine("Type the name of the file which you want to create(dont include file extension)");
+            string secondaryFile = Console.ReadLine();
+            Console.WriteLine("Creating File for storing shortcuts....");
+            string dirs = $@"{secondaryDirectory}\{secondaryFile}.txt";
+            if(File.Exists(dirs))
+            {
+
+            }else if(!File.Exists(dirs))
+            {
+                File.Create(dirs);
+            }
+            
+
+            Console.Clear();
+                        
+            
+            
+            
+            
+
+
+            Console.WriteLine("Type Exit");
+            Console.Write(">");
+            string Lcomamnd = Console.ReadLine();
+            if(Lcomamnd == "Exit")
+            {
+                ShortcutPage();
+                
+                    
+                
+                
+
+            }else
+            {
+                Console.WriteLine("Wrong command");
+                Console.WriteLine("Exiting as nothing exists after this in this utility");
+                Thread.Sleep(100);
+                ShortcutPage();
+            }
+            
+                
+            }
+
+
+
+
+            
             
 
             
@@ -84,7 +151,7 @@ namespace src
         
         public void AlSharp()
         {
-            Console.Clear();
+            
             Console.Clear();
             Console.WriteLine("Type the path : ");
             
@@ -218,8 +285,7 @@ namespace src
                     ShortcutPage();
                 }
 
-            }
-            if(v == "run n<2>")
+            }else if(v == "run n<2>")
             {
                 var g = File.ReadAllLines(filePath).Skip(3).Take(1).First();
                 ProcessStartInfo o = new ProcessStartInfo();
@@ -240,8 +306,7 @@ namespace src
                     ShortcutPage();
                 }
                 
-            }
-            if(v == "run n<3>")
+            }else if(v == "run n<3>")
             {
                 var g = File.ReadAllLines(filePath).Skip(5).Take(1).First();
                 ProcessStartInfo info = new ProcessStartInfo();
@@ -262,8 +327,7 @@ namespace src
                     ShortcutPage();
                 }
                 
-            }
-            if(v == "run n<4>")
+            }else if(v == "run n<4>")
             {
                 var g = File.ReadAllLines(filePath).Skip(7).Take(1).First();
                 ProcessStartInfo u = new ProcessStartInfo();
@@ -284,8 +348,7 @@ namespace src
                     ShortcutPage();
                 }
                 
-            }
-            if(v == "run n<5>")
+            }else if(v == "run n<5>")
             {
                 var g = File.ReadAllLines(filePath).Skip(9).Take(1).First();
                 ProcessStartInfo z = new ProcessStartInfo();
@@ -306,8 +369,7 @@ namespace src
                     ShortcutPage();
                 }
                 
-            }
-            if(v == "run n<6>")
+            }else if(v == "run n<6>")
             {
                 var g = File.ReadAllLines(filePath).Skip(11).Take(1).First();
                 ProcessStartInfo w = new ProcessStartInfo();
@@ -328,8 +390,7 @@ namespace src
                     ShortcutPage();
                 }
                 
-            }
-            if(v == "run n<7>")
+            }else if(v == "run n<7>")
             {
                 var g = File.ReadAllLines(filePath).Skip(13).Take(1).First();
                 ProcessStartInfo n = new ProcessStartInfo();
@@ -349,8 +410,7 @@ namespace src
                 {
                     ShortcutPage();
                 }
-            }
-            if(v == "run n<8>")
+            }else if(v == "run n<8>")
             {
                 var g = File.ReadAllLines(filePath).Skip(15).Take(1).First();
                 ProcessStartInfo x = new ProcessStartInfo();
@@ -370,8 +430,7 @@ namespace src
                 {
                     ShortcutPage();
                 }
-            }
-            if(v == "run n<9>")
+            }else if(v == "run n<9>")
             {
                 var g = File.ReadAllLines(filePath).Skip(17).Take(1).First();
                 ProcessStartInfo K = new ProcessStartInfo();
@@ -391,8 +450,7 @@ namespace src
                 {
                     ShortcutPage();
                 }
-            }
-            if(v == "run n<10>")
+            }else if(v == "run n<10>")
             {
                 var g = File.ReadAllLines(filePath).Skip(19).Take(1).First();
                 ProcessStartInfo l = new ProcessStartInfo();
@@ -408,6 +466,12 @@ namespace src
                 {
                     ShortcutPage();
                 }
+            }else
+            {
+                Console.WriteLine("Wrong command");
+                Console.WriteLine("Returning back to start");
+                Thread.Sleep(100);
+                AlSharp();
             }
             
             
@@ -449,6 +513,11 @@ namespace src
                     if(r == "Exit")
                     {
                         ShortcutPage();
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Thread.Sleep(100);
+                        e();
                     }
 
                 }else if(v == "-ss")
@@ -461,10 +530,20 @@ namespace src
                     if(n == "Exit")
                     {
                         ShortcutPage();   
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Thread.Sleep(100);
+                        e();
                     }
 
                     
 
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
+                    e();
                 }
             }
 
