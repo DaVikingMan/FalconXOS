@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Threading;
 
 namespace src{
     class ProjectManager
@@ -14,7 +15,7 @@ namespace src{
             {
                 Console.WriteLine("Type the project's name : ");
                 string h = Console.ReadLine();
-                Console.WriteLine("Adding Project-Manager object, press a key to continue");
+                Console.WriteLine("Adding Project-Manager object");
                 
                 string k = "Yes";
                 if(k == "Yes")
@@ -31,10 +32,27 @@ namespace src{
                     {
                         Utility kUtlity = new Utility();
                         kUtlity.VirtualUtility(Zcommand);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+
+                        Thread.Sleep(100);
+                        Console.WriteLine("Exiting the utility as no state exists after this");
+                        Thread.Sleep(100);
+                        Utility utility = new Utility();
+                        utility.VirtualUtility(Zcommand);
                     }
                     
                 }
                 
+            }else if(n == "/command Exit")
+            {
+
+            }else
+            {
+                Console.WriteLine("Wrong command");
+                Thread.Sleep(100);
+                Manager(Zcommand);
             }
         }
     }
