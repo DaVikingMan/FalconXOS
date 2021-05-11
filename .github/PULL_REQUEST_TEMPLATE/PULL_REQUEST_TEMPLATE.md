@@ -2,6 +2,6 @@
 
 # Summary of the pull request(optional)
 
-<Code>
+Code
 
 # Additional Comments
