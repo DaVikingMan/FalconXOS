@@ -22,7 +22,20 @@ namespace src
                 
                 viOne v = new viOne();
                 v.Start();
-            }else  // When the wrong command is executed
+            }else if(commandStart == "/command Exit")
+            {
+                Thread.Sleep(1000);
+
+            }else if(commandStart == "/state note")
+            {
+                Console.WriteLine("Starting class Note");
+                Thread.Sleep(100);
+                CommandsAll commandsAll = new CommandsAll();
+                commandsAll.Note();
+                
+            }
+            
+            else  // When the wrong command is executed
             {
                 Console.WriteLine("Wrong command");
                 Thread.Sleep(100);
