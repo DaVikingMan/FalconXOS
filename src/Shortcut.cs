@@ -11,7 +11,7 @@ namespace src
         public void ShortcutPage() // Start for the Shortcuts command
         {
             Console.Clear();
-            Console.WriteLine("Type 'scc --new' for a new instance of shortcut or type 'scc --runload' for running a created shortcut\nRun scc --o for adding shortcuts\nTypr Exit to exit");
+            Console.WriteLine("Type 'scc --new' for a new instance of shortcut or type 'scc --runload' for running a created shortcut\nRun scc --o for adding shortcuts\nType '/command Exit' to exit");
             
             Console.Write(">");
             string Kcommand = Console.ReadLine();
@@ -19,11 +19,7 @@ namespace src
             {
 
                      ShortcutInteface();
-            }else if(Kcommand == "Exit")
-            {
-                Menu m = new Menu();
-                m.MenuMain();
-                   
+              
             }else if(Kcommand == "scc --runload")
             {
                 
@@ -31,6 +27,12 @@ namespace src
             }else if(Kcommand == "scc --o")
             {
                 e();
+            }else if(Kcommand == "/command Exit")
+            {
+                Thread.Sleep(100);
+                Menu m = new Menu();
+                m.MenuMain();
+
             }else{
                 Console.WriteLine("Wrong command");
                 Console.ReadKey();
@@ -49,13 +51,13 @@ namespace src
             string secondaryDirectory = Console.ReadLine();
             Console.WriteLine("Creating Directory for storing shortcuts....");
             string dirs = $@"{secondaryDirectory}\Shortcuts";
-            if(Directory.Exists(dirs))
-            {
+                if(Directory.Exists(dirs))
+                {
 
-            }else if(!Directory.Exists(dirs))
-            {
-                Directory.CreateDirectory(dirs);
-            }
+                }else if(!Directory.Exists(dirs))
+                {
+                    Directory.CreateDirectory(dirs);
+                }
             
 
             Console.Clear();
@@ -156,6 +158,10 @@ namespace src
             Console.WriteLine("Type the path : ");
             
             var f = Console.ReadLine();
+            if(f == "/command Exit")
+            {
+                ShortcutPage();
+            }
             string filePath = $@"{f}";
             var h = File.ReadAllText(filePath).ToArray();
             Console.WriteLine(h);
@@ -465,7 +471,14 @@ namespace src
                 if(command == "Exit")
                 {
                     ShortcutPage();
+                }else if(command == "Stay")
+                {
+                    AlSharp();
                 }
+            }else if(v == "/command Exit")
+            {
+                ShortcutPage();
+
             }else
             {
                 Console.WriteLine("Wrong command");
@@ -538,6 +551,10 @@ namespace src
                     }
 
                     
+
+                }else if(v == "/command Exit")
+                {
+                    ShortcutPage();
 
                 }else
                 {
