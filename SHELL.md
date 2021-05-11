@@ -16,9 +16,11 @@ The Operating Shell will also have built-In WSL(Windows Subsystem for Linux) and
 
 # Some more FAQS
 {
+    <br>
     The Operating Shell will have a standalone app.
     Only the commands will be executed in the Operating System's terminal
     So you will write the command in the Operating Shell but the execution process will be in the terminal(such as CMD)
+    
     
     
     Note : All the command outputs will be shown in the Operating Shell so you can say that the execution process will be a kind of background process
