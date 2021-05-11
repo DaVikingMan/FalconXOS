@@ -16,6 +16,6 @@ The main developements main objective is to add
 }
 <b>
 
-You can see the developement of this project here
-<a href = "https://github.com/DaVikingMan/TerminalXOS/projects/1">Project developement</a>
+You can see the developement of this project 
+<a href = "https://github.com/DaVikingMan/TerminalXOS/projects/1">here</a>
 
