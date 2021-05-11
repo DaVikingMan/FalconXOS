@@ -46,7 +46,7 @@ namespace src{
             }else if(y == "Exit") // When executing the 'Exit' command
             {
                 Console.WriteLine("Cya!");
-                Console.ReadKey();
+                Thread.Sleep(100);
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
