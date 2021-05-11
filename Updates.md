@@ -7,7 +7,7 @@ The main developements main objective is to add
 
 {
     <br>
-    -a built-in Terminal(Operating Shell, read about Operating Shell here <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SHELL.md">About</a>)
+    -a built-in Terminal(Operating Shell, read about Operating Shell <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SHELL.md">here</a>)
     <br>
     -a more cleaner UI
     <br>
