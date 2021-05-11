@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading;
 
 namespace src
 {
@@ -17,7 +18,7 @@ namespace src
           public void vi()
           {
 
-              Console.ForegroundColor = ConsoleColor.Cyan;
+              Console.ForegroundColor = ConsoleColor.Cyan; // Sets the colour of the text to the colour specified
               
               
                     
@@ -29,7 +30,7 @@ namespace src
                         List<commands> cm = ListManager.Manager();
 
                         foreach(var m in cm){
-                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}");
+                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\n{m.command5}\n{m.command6}");
 
                         }
                         Console.Write("> ");
@@ -67,7 +68,7 @@ namespace src
                             Console.ReadKey();
                             vi();
                         }
-                        else if(commandRead == "Debug") // TheDebug command is used to go to a certain class(Not completed)
+                        else if(commandRead == "Debug") // Debug command is used for testing your own projects -- for adding your test add it in the test class
                         {
                             DebugMethod();
 
@@ -81,7 +82,14 @@ namespace src
                         {
                             CommandsAll b = new CommandsAll();
                             b.RunCommand();
+                        }else
+                        {
+                            Console.WriteLine("Wrong command");
+                            Thread.Sleep(100);
+                            viOne v = new viOne();
+                            v.vi();
                         }
+                        
 
                         
                         
@@ -94,75 +102,16 @@ namespace src
 
         }
 
-        private void DebugMethod()
+        public void DebugMethod()
         {
-            Console.WriteLine("The debug is used to view Debug info");
-            Console.Clear();
-            Console.WriteLine("Name Info : NAN(return 0),Value(return 1),Special Name : (return +10)");
-            Console.WriteLine("CommandRead  : NAN(return), Value(1-5)");
-            Console.ReadKey();
-            Console.Clear();
-            Console.WriteLine("Do you want to open Alpha builds or open different states?");
-            Console.WriteLine("Type Alpha for Alpha builds or States for opening states");
-            string ans = Console.ReadLine();
-            if (ans == "Alpha")
-            {
-                Console.WriteLine("What Alpha build do you want to open");
-                ProcessHandler handler = new ProcessHandler();
-                handler.ProcessHandle();
-                Console.ReadKey();
-                Console.WriteLine("Do you want to exit?");
-                string ansd = Console.ReadLine();
-                if (ansd == "Yes")
-                {
-                    viOne v = new viOne();
-                    v.vi();
-                }
-                else if (ansd == "No")
-                {
-                         DebugMethod();
-                }
-
-            }
-            else if (ans == "States")
-            {
-                Console.WriteLine("You can open the following States : ");
-                Console.ReadKey();
-                Console.WriteLine("Notes"); // About TerminalX(Not complete)
-                Console.WriteLine("Start"); // Start Menu(Not complete)
-                Console.WriteLine("MainTerminal"); // Starting of the program(Not complete)
-                Console.ReadKey();
-                Console.Clear();
-                Console.Write("> ");
-                var Tread = Console.ReadLine();
-                if (Tread == "Notes")
-                {
-                    CommandAllReplica c = new CommandAllReplica();
-                    c.NotesRe();
-                    Console.ReadKey();
-                    Console.WriteLine("Do you want to exit?");
-                    var cr = Console.ReadLine();
-                    if (cr == "Yes" || cr == "yes")
-                    {
-                        vi();
-                    }
+            Thread.Sleep(1000);
+            DebugManager manager = new DebugManager();
+            manager.Debug();
 
 
-                }
-                else if (Tread == "Start")
-                {
-                    CommandAllReplica c = new CommandAllReplica();
-                    c.StartRe();
+            
 
-                }
-                else if (Tread == "MainTerminal")
-                {
-                    CommandAllReplica l = new CommandAllReplica();
-                    l.MainTerminalRe();
-
-                }
-
-            }
+            
         }
 
 
