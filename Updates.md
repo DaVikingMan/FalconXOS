@@ -19,3 +19,5 @@ The main developements main objective is to add
 You can see the developement of this project 
 <a href = "https://github.com/DaVikingMan/TerminalXOS/projects/1">here</a>
 
+Note : The next update will take some time as it will add the main part of this app, the Operating Shell.
+Some bug fixes might be released, but the next feature update will be the 'operating shell' update.
