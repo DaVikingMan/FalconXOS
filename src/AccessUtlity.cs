@@ -14,7 +14,7 @@ namespace src
             string terminalcommand = Console.ReadLine();
             if(terminalcommand == "scp -access")
             {
-                Console.WriteLine("Tyoe the project name(dont include file extensio)");
+                Console.WriteLine("Type the project name(dont include file extensions)");
                 Console.Write(">");
                 string yUCommand = Console.ReadLine();
                 string filePathY = $@"{FileK}/{yUCommand}.txt";
@@ -32,6 +32,7 @@ namespace src
                     if(Hjcommand == "1")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
 
                     string[] a = 
@@ -49,13 +50,22 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
 
                     }else if(Hjcommand == "2")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
                     string[] a = 
                     {
@@ -73,14 +83,24 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
 
                     }else if(Hjcommand == "3")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
+                    Console.Write(">");
                     string cthree = Console.ReadLine();
                     string[] a = 
                     {
@@ -99,15 +119,26 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
                         
                     }else if(Hjcommand == "4")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
+                    Console.Write(">");
                     string cthree = Console.ReadLine();
+                    Console.Write(">");
                     string cfour = Console.ReadLine();
 
                     string[] a = 
@@ -128,16 +159,28 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
                         
                     }else if(Hjcommand == "5")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
+                    Console.Write(">");
                     string cthree = Console.ReadLine();
+                    Console.Write(">");
                     string cfour = Console.ReadLine();
+                    Console.Write(">");
                     string cfive = Console.ReadLine();
 
                     string[] a = 
@@ -158,17 +201,30 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
                         
                     }else if(Hjcommand == "6")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
+                    Console.Write(">");
                     string cthree = Console.ReadLine();
+                    Console.Write(">");
                     string cfour = Console.ReadLine();
+                    Console.Write(">");
                     string cfive = Console.ReadLine();
+                    Console.Write(">");
                     string csix = Console.ReadLine();
                     string[] a = 
                     {
@@ -189,18 +245,32 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
                         
                     }else if(Hjcommand == "7")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
+                    Console.Write(">");
                     string cthree = Console.ReadLine();
+                    Console.Write(">");
                     string cfour = Console.ReadLine();
+                    Console.Write(">");
                     string cfive = Console.ReadLine();
+                    Console.Write(">");
                     string csix = Console.ReadLine();
+                    Console.Write(">");
                     string cseven = Console.ReadLine();
 
                     string[] a = 
@@ -223,19 +293,34 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
                         
                     }else if(Hjcommand == "8")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
+                    Console.Write(">");
                     string cthree = Console.ReadLine();
+                    Console.Write(">");
                     string cfour = Console.ReadLine();
+                    Console.Write(">");
                     string cfive = Console.ReadLine();
+                    Console.Write(">");
                     string csix = Console.ReadLine();
+                    Console.Write(">");
                     string cseven = Console.ReadLine();
+                    Console.Write(">");
                     string ceight = Console.ReadLine();
 
                     string[] a = 
@@ -259,20 +344,36 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
                         
                     }else if(Hjcommand == "9")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
+                    Console.Write(">");
                     string cthree = Console.ReadLine();
+                    Console.Write(">");
                     string cfour = Console.ReadLine();
+                    Console.Write(">");
                     string cfive = Console.ReadLine();
+                    Console.Write(">");
                     string csix = Console.ReadLine();
+                    Console.Write(">");
                     string cseven = Console.ReadLine();
+                    Console.Write(">");
                     string ceight = Console.ReadLine();
+                    Console.Write(">");
                     string cnine = Console.ReadLine();
                     string[] a = 
                     {
@@ -296,21 +397,38 @@ namespace src
                     {
                         Utility l =new Utility();
                         l.VirtualUtility(FileK);
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
+                        Thread.Sleep(1000);
+
+                        AccessProject(FileK);
                     }
                     
                         
                     }else if(Hjcommand == "10")
                     {
                         Console.WriteLine("Start typing");
+                        Console.Write(">");
                     string cone = Console.ReadLine();
+                    Console.Write(">");
                     string ctwo = Console.ReadLine();
+                    Console.Write(">");
                     string cthree = Console.ReadLine();
+                    Console.Write(">");
                     string cfour = Console.ReadLine();
+                    Console.Write(">");
                     string cfive = Console.ReadLine();
+                    Console.Write(">");
                     string csix = Console.ReadLine();
+                    Console.Write(">");
                     string cseven = Console.ReadLine();
+                    Console.Write(">");
                     string ceight = Console.ReadLine();
+                    Console.Write(">");
                     string cnine = Console.ReadLine();
+                    Console.Write(">");
                     string cten = Console.ReadLine();
                     string[] a = 
                     {
@@ -338,14 +456,29 @@ namespace src
                     }else
                     {
                         Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning");
                         Thread.Sleep(100);
-                        AccessProject(filePathY);
+                        
+
+                        AccessProject(FileK);
                     }
                         
                     }
                     
 
-                }
+            }else if(hcommand == "/command Exit")
+            {
+                Console.WriteLine("Exiting");
+                Thread.Sleep(100);
+                AccessProject(FileK);
+
+            }else
+            {
+                Console.WriteLine("Wrong command");
+                Console.WriteLine("Returning");
+                Thread.Sleep(100);
+                AccessProject(FileK);
+            }
 
         }
     }
