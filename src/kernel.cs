@@ -33,6 +33,11 @@ namespace src
                 CommandsAll commandsAll = new CommandsAll();
                 commandsAll.Note();
                 
+            }else if(commandStart == "/skip -debug")
+            {
+                DebugManager manager = new DebugManager();
+                manager.Debug();
+                
             }
             
             else  // When the wrong command is executed
