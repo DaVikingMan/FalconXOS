@@ -82,4 +82,5 @@ So this is how TerminalXOS will executes commands
 # Other Topics
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
+<br>
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/AboutSpecialCommands.md">About special commands</a>
