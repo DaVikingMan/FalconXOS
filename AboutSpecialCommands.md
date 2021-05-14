@@ -20,5 +20,7 @@ these are used to enhance the '/command'
 /command executes with TerminalXOS related commands such as force exiting,
 <br>
 /skip executes command to skip to another class.
+<br>
+There is also '/state' which is also a 'command enhancer'
 
 There are many command enhancers, but they will be added at a later version.
