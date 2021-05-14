@@ -25,6 +25,36 @@ namespace src{
                     string filePath = $@"{Zcommand}/{h}.txt";
                     FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate);
                     fileStream.Close();
+                    Console.WriteLine("Do you want to add a file system(which will store file paths of your projects)?");
+                    string nread = Console.ReadLine();
+                    if(nread == "Yes")
+                    {
+                        Console.WriteLine("Initializing");
+                        Thread.Sleep(1000);
+                        Console.WriteLine("Adding object");
+                        Thread.Sleep(1000);
+                        Console.Clear();
+                        FileSystem filetake = new FileSystem();
+                        filetake.system(filePath); 
+
+                        
+                        
+                        
+                        
+                    }else if(nread == "No")
+                    {
+                        Console.WriteLine("Exiting");
+                        Thread.Sleep(100);
+                        Utility kUtlity = new Utility();
+                        kUtlity.VirtualUtility(Zcommand);
+
+
+                    }else
+                    {
+                        Console.WriteLine("Wrong command");
+                        Console.WriteLine("Returning back");
+                        Manager(Zcommand);
+                    } 
                     Console.WriteLine("Type Exit for finshing the request");
                     Console.Write(">");
                     string u = Console.ReadLine();
