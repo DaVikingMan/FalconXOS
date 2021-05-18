@@ -46,7 +46,7 @@ namespace src{
             }else if(y == "Exit") // When executing the 'Exit' command
             {
                 Console.WriteLine("Cya!");
-                Thread.Sleep(100);
+                Thread.Sleep(1000);
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
@@ -54,6 +54,10 @@ namespace src{
                Console.Write(">");
                string Jcommmand = Console.ReadLine();
                m.VirtualUtility(Jcommmand);    
+            }else if(y == "/close menu")
+            {
+                kernel k = new kernel();
+                k.KernelMain();
             }
             
             else{                                    // When the wrong command is executed
