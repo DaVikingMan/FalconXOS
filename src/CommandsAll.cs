@@ -83,11 +83,25 @@ namespace src
     {
         Console.Clear();
         Console.WriteLine("Which Writing Software do you want to open?");
+        Console.Write(">");
         string commandOpen = Console.ReadLine();
         if(commandOpen == "/command Exit")
         {
             viOne v = new viOne();
             v.vi();
+        }else if(commandOpen == "/version old")
+        {
+            Console.WriteLine("Opening");
+            Thread.Sleep(1000);
+            ProcessHandler handler = new ProcessHandler();
+            handler.ProcessWritePadUI();
+            Console.WriteLine("Exiting");
+            Thread.Sleep(1000);
+            viOne n = new viOne();
+            n.vi();
+            
+
+            
         }
         ProcessStartInfo startInfo = new ProcessStartInfo();
         startInfo.Arguments = $@"/C {commandOpen}";
@@ -104,7 +118,8 @@ namespace src
         }else if(rcommand == "Stay")
         {
             WriteConsolePad();
-        }else
+        }
+        else
         {
             Console.WriteLine("Wrong command");
             Thread.Sleep(100);
