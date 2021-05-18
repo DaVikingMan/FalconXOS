@@ -13,7 +13,7 @@ namespace src{
             
 
             Process proc = new Process();
-           startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/src";
+           startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/apps";
             startInfo.CreateNoWindow = true;
             startInfo.UseShellExecute = false;
             startInfo.FileName = "CMD.exe";
@@ -32,7 +32,7 @@ namespace src{
         {
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.FileName = "CMD.exe";
-            startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/src";
+            startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/apps";
             startInfo.Arguments = "/c java WritePad.java";
             startInfo.CreateNoWindow = true;
             startInfo.UseShellExecute = false;
