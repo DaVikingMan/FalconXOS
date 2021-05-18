@@ -21,3 +21,8 @@ You can see the developement of this project
 
 Note : The next update will take some time as it will add the main part of this app, the Operating Shell.
 Some bug fixes might be released, but the next feature update will be the 'operating shell' update.
+
+# Update b.1(Bug Fix)
+
+This update fixed some bugs and added a few features
+
