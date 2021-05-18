@@ -17,6 +17,8 @@ namespace src
             m.CreateNoWindow = false;
             m.FileName = "powershell.exe";
             Process.Start(m);
+
+            
         }
     }
     
