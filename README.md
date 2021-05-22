@@ -91,3 +91,4 @@ Note : You may have noticed that some Documentations and parts of different .md 
 Well, I wanted to change some of the Documentation and fix some grammatical errors.<br>
 The documentation and deleted parts will be re-added when TerminalXOS will be completely released.<br>
 This deletion was to ensure the smooth functioning of the app and to provide comprehensive Documentation which everyone can understand, when TerminalXOS is released completely.
+Sorry for the inconvenience.
