@@ -75,12 +75,15 @@ So this is how TerminalXOS will executes commands
 
 # For Further Reading on Operating Shell
 
-<a href = "https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SHELL.md">About Operating Shell and its principles</a>
+This link has been removed for now and will be added when TerminalXOS will be completely released.
 <br>
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/BranchManagement.md">About the Branches in this repository</a>
 
 # Other Topics
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
-<br>
-<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/AboutSpecialCommands.md">About special commands</a>
+The link and the documentation about the app has been removed for now and will be added when TerminalXOS will be fully released
+
+# Other Docs
+
+<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/CONTRIBUTING.md">For Contributing</a>
