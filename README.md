@@ -85,3 +85,8 @@ The link and the documentation about the app has been removed for now and will b
 # Other Docs
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/CONTRIBUTING.md">For Contributing</a>
+<br>
+Note : You may have noticed that some Documentations and parts of different .md files have been changed.<br>
+Well, I wanted to change some of the Documentation and fix some grammatical errors.<br>
+The documentation and deleted parts will be re-added when TerminalXOS will be completely released.<br>
+This deletion was to ensure the smooth functioning of the app and to provide comprehensive Documentation which everyone can understand, when TerminalXOS is released completely.
