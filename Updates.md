@@ -7,7 +7,7 @@ The main developements main objective is to add
 
 {
     <br>
-    -a built-in Terminal(Operating Shell)
+    -a built-in Terminal(Operating Shell, 'about Operating Shell' documentation will be re-added when TerminalXOS is fully released)
     <br>
     -a more cleaner UI
     <br>
