@@ -45,7 +45,7 @@ Well we wanted to make modify some principles used to make a terminal
 First, 
 
 Definition of Operating Shell-
-A Operating Shell is a supporting shell which gives command to a terminal which then gives command to the Operating system.
+This part has been removed and will be added when TerminalXOS will be completely released.
 
 
 This is different from a terminal as a terminal is a shell which directly gives command to the Operating System.
