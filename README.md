@@ -82,6 +82,7 @@ This link has been removed for now and will be added when TerminalXOS will be co
 # Other Topics
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
+<br>
 The link and the documentation about the app has been removed for now and will be added when TerminalXOS will be fully released
 
 # Other Docs
