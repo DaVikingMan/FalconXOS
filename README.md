@@ -61,11 +61,8 @@ If you notice the terminals which come with your Operating System(such as CMD fo
 
 
 For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
-
-So this is how TerminalXOS will executes commands
-:
-   command(In TerminalXOS) ---> command(execution in CMD(or any other terminal)) ---> Output(In TerminalXOS terminal)
-:
+<br>
+(This part has been removed and will be re-added when TerminalXOS will be complety released)
 
 # System requirements
 
