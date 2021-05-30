@@ -45,7 +45,7 @@ Well we wanted to make modify some principles used to make a terminal
 First, 
 
 Definition of Operating Shell-
-A Operating Shell is a supporting shell which gives command to a terminal which then gives command to the Operating system.
+This part has been removed and will be added when TerminalXOS will be completely released.
 
 
 This is different from a terminal as a terminal is a shell which directly gives command to the Operating System.
@@ -61,11 +61,8 @@ If you notice the terminals which come with your Operating System(such as CMD fo
 
 
 For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
-
-So this is how TerminalXOS will executes commands
-:
-   command(In TerminalXOS) ---> command(execution in CMD(or any other terminal)) ---> Output(In TerminalXOS terminal)
-:
+<br>
+(This part has been removed and will be re-added when TerminalXOS will be complety released)
 
 # System requirements
 
@@ -82,8 +79,16 @@ This link has been removed for now and will be added when TerminalXOS will be co
 # Other Topics
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
+<br>
 The link and the documentation about the app has been removed for now and will be added when TerminalXOS will be fully released
 
 # Other Docs
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/CONTRIBUTING.md">For Contributing</a>
+<br>
+<br>
+Note : You may have noticed that some Documentations and parts of different .md files have been changed.<br>
+Well, I wanted to change some of the Documentation and fix some grammatical errors.<br>
+The documentation and deleted parts will be re-added when TerminalXOS will be completely released.<br>
+This deletion was to ensure the smooth functioning of the app and to provide comprehensive Documentation which everyone can understand, when TerminalXOS is released completely.
+Sorry for the inconvenience.
