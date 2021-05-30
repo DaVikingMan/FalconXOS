@@ -42,60 +42,15 @@ namespace src
         public void ShortcutInteface()
         {
             Console.Clear();
-            Console.WriteLine("Do you want to create a new directory for storing the shortcuts or use an existing one");
-            string readt = Console.ReadLine();
-            if(readt == "new")
-            {
-                Console.Clear();
-            Console.WriteLine("Type the path where you want to store the directory(C:/exampleuser/exampledir)");
-            string secondaryDirectory = Console.ReadLine();
-            Console.WriteLine("Creating Directory for storing shortcuts....");
-            string dirs = $@"{secondaryDirectory}\Shortcuts";
-                if(Directory.Exists(dirs))
-                {
-
-                }else if(!Directory.Exists(dirs))
-                {
-                    Directory.CreateDirectory(dirs);
-                }
-            
-
-            Console.Clear();
-            Console.WriteLine("Creating file for storing shortcuts");
-            string dirfile = $@"{dirs}\shortcuts.txt";            
             
             
             
-            FileStream stream12 = new FileStream(dirfile , FileMode.OpenOrCreate);
-            stream12.Close();
-
-
-            Console.WriteLine("Type Exit");
-            Console.Write(">");
-            string Lcomamnd = Console.ReadLine();
-            if(Lcomamnd == "Exit")
-            {
-                ShortcutPage();
+            
+            
                 
-                    
-                
-                
-
-            }else
-            {
-                Console.WriteLine("Wrong command");
-                Console.WriteLine("Exiting as nothing exists after this in this utility");
-                Thread.Sleep(100);
-                ShortcutPage();
-            }
             
-
-            }else if(readt == "existing")
-            {
-                Console.Clear();
-            Console.WriteLine("Write the full path of the directory where the shortcuts are stored");
             
-            string secondaryDirectory = Console.ReadLine();
+            string secondaryDirectory = $"{Environment.CurrentDirectory}/data/Shortcuts";
             Console.WriteLine("Type the name of the file which you want to create(dont include file extension)");
             string secondaryFile = Console.ReadLine();
             Console.WriteLine("Creating File for storing shortcuts....");
@@ -149,20 +104,29 @@ namespace src
 
             
 
-        }
+        
         
         public void AlSharp()
         {
             
             Console.Clear();
-            Console.WriteLine("Type the path : ");
+            Console.WriteLine("Type the filename");
             
             var f = Console.ReadLine();
             if(f == "/command Exit")
             {
                 ShortcutPage();
             }
-            string filePath = $@"{f}";
+            string filePath = $@"{Environment.CurrentDirectory}/data/Shortcuts/{f}.txt";
+            if(!File.Exists(filePath))
+            {
+                Console.WriteLine("File doesn't exist");
+                Console.WriteLine(
+                    "Returning"
+                );
+                Thread.Sleep(1000);
+                AlSharp();
+            }
             var h = File.ReadAllText(filePath).ToArray();
             Console.WriteLine(h);
             if(h.Length == 1)
@@ -284,11 +248,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                    ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
 
             }else if(v == "run n<2>")
@@ -305,11 +268,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                    ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
                 
             }else if(v == "run n<3>")
@@ -326,11 +288,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                        ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
                 
             }else if(v == "run n<4>")
@@ -347,11 +308,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                        ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
                 
             }else if(v == "run n<5>")
@@ -368,11 +328,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                        ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
                 
             }else if(v == "run n<6>")
@@ -389,11 +348,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                        ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
                 
             }else if(v == "run n<7>")
@@ -410,11 +368,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                        ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
             }else if(v == "run n<8>")
             {
@@ -430,11 +387,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                        ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
             }else if(v == "run n<9>")
             {
@@ -450,11 +406,10 @@ namespace src
                 string command = Console.ReadLine();
                 if(command == "Exit")
                 {
-                    viOne m = new viOne();
-                    m.vi();
+                        ShortcutPage();
                 }else if(command == "Stay")
                 {
-                    ShortcutPage();
+                    AlSharp();
                 }
             }else if(v == "run n<10>")
             {
@@ -500,9 +455,9 @@ namespace src
         {
             Console.Clear();
             Console.Clear();
-            Console.WriteLine("Type the file path : ");
+            Console.WriteLine("Type the file name : ");
             string c = Console.ReadLine();
-            string filePath1 = $@"{c}";
+            string filePath1 = $@"{Environment.CurrentDirectory}/data/Shortcuts/{c}.txt";
             Console.WriteLine("type run -add");
             string y = Console.ReadLine();
             if(y == "run -add")
