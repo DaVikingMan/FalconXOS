@@ -281,7 +281,7 @@ namespace src
                 Console.WriteLine("Exiting");
                 Thread.Sleep(100);
                 Utility u = new Utility();
-                u.VirtualUtility(takePath);
+                u.VirtualUtility();
             }
             else
             {
