@@ -4,9 +4,9 @@ using System.Threading;
 namespace src 
 {
     class Utility{
-        public void VirtualUtility(string Yfile)
+        public void VirtualUtility()
         {
-            string filePathg = $@"{Yfile}";
+            string filePathg = $@"{Environment.CurrentDirectory}/data/Project Manager";
             Console.Clear();
             Console.WriteLine("Type 'sc -add' for creating a new project,\n 'sc -access' for adding the to-do list in the project,\n 'sc --viewp' for viewing the to-do list and '/command Exit' for exiting the utility");
             Console.Write(">");
@@ -31,7 +31,7 @@ namespace src
             {
                 Console.WriteLine("Wrong command");
                 Thread.Sleep(100);
-                VirtualUtility(Yfile);
+                VirtualUtility();
             }
             
         }
