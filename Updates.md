@@ -26,3 +26,6 @@ Some bug fixes might be released, but the next feature update will be the 'opera
 
 This update fixed some bugs and added a few features
 
+# Update b.2(Bug fix and some features were added)
+
+This update fixed some bugs and added a few features
