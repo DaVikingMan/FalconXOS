@@ -31,7 +31,7 @@ namespace src{
                if(hcommand == "Exit")
                {
                    Utility m = new Utility();
-                   m.VirtualUtility(dirFile);
+                   m.VirtualUtility();
                }else if(hcommand == "Stay")
                {
                    View(dirFile);
