@@ -50,10 +50,8 @@ namespace src{
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
-               Console.WriteLine("Type Directory Path(type full path)");
-               Console.Write(">");
-               string Jcommmand = Console.ReadLine();
-               m.VirtualUtility(Jcommmand);    
+               
+               m.VirtualUtility();    
             }else if(y == "/close menu")
             {
                 kernel k = new kernel();
