@@ -1,0 +1,1 @@
+This folder will store the shortcut files
