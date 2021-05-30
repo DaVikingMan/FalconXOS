@@ -46,7 +46,7 @@ namespace src{
                         Console.WriteLine("Exiting");
                         Thread.Sleep(100);
                         Utility kUtlity = new Utility();
-                        kUtlity.VirtualUtility(Zcommand);
+                        kUtlity.VirtualUtility();
 
 
                     }else
@@ -61,7 +61,7 @@ namespace src{
                     if(u == "Exit")
                     {
                         Utility kUtlity = new Utility();
-                        kUtlity.VirtualUtility(Zcommand);
+                        kUtlity.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -70,7 +70,7 @@ namespace src{
                         Console.WriteLine("Exiting the utility as no state exists after this");
                         Thread.Sleep(100);
                         Utility utility = new Utility();
-                        utility.VirtualUtility(Zcommand);
+                        utility.VirtualUtility();
                     }
                     
                 }
