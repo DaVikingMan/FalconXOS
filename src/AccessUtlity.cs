@@ -17,6 +17,8 @@ namespace src
                 Console.WriteLine("Type the project name(dont include file extensions)");
                 Console.Write(">");
                 string yUCommand = Console.ReadLine();
+
+               
                 string filePathY = $@"{FileK}/{yUCommand}.txt";
                 
                 Thread.Sleep(100);
@@ -49,7 +51,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -82,7 +84,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -118,7 +120,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -158,7 +160,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -200,7 +202,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -244,7 +246,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -292,7 +294,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -343,7 +345,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -396,7 +398,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
@@ -452,7 +454,7 @@ namespace src
                     if(mcommand == "Exit")
                     {
                         Utility l =new Utility();
-                        l.VirtualUtility(FileK);
+                        l.VirtualUtility();
                     }else
                     {
                         Console.WriteLine("Wrong command");
