@@ -1,1 +1,1 @@
-# This folder contains Project Manager and Shortcuts folder
+# This folder contains the Project Manager and Shortcuts folder
