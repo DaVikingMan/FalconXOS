@@ -1,6 +1,9 @@
-# TerminalXOS : a Operating Shell
+@Recent change- Renamed TerminalXOS to FalconXOS
 
-# Welcome to TerminalXOS
+# FalconXOS : a Operating Shell
+#FalconX Operating Shell(full form)
+
+# Welcome to FalconXOS
 
 Welcome to a more modern and better terminal
 
@@ -9,7 +12,7 @@ Welcome to a more modern and better terminal
 This part lists some of the future updates this project will have
 
 
-TerminalXOS is a terminal for the future
+FalconXOS is a terminal for the future
 
 It brings the 'live in the terminal' quote to reality
 This means that you will be able to do everything from the terminal
@@ -25,7 +28,7 @@ We want to make this app the best terminal possible
 
 This are some of the things which we will add in the upcoming updates
 
--A built-In terminal because as of now the app launches powershell by default
+-A built-In terminal(Operating Shell, this is a new tech and the docs about this will be added when FalconXOS will be completely released) because as of now the app launches powershell by default
 <br>
 -A package manager for the terminal
 <br>
@@ -38,13 +41,13 @@ Note : Terminal doesnt refer to the app but refers to a standalone terminal whic
 
 # Some FAQS
 
-You may have noticed that at the top of the README that it says TerminalXOS : a Operating Shell
+You may have noticed that at the top of the README that it says FalconXOS : a Operating Shell
 
 Well we wanted to make modify some principles used to make a terminal
 
 First, 
 
-Definition of Operating Shell-
+Defination of Operating Shell-
 This part has been removed and will be added when TerminalXOS will be completely released.
 
 
@@ -74,21 +77,21 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 
 This link has been removed for now and will be added when TerminalXOS will be completely released.
 <br>
-<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/BranchManagement.md">About the Branches in this repository</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/BranchManagement.md">About the Branches in this repository</a>
 
 # Other Topics
 
-<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
 <br>
 The link and the documentation about the app has been removed for now and will be added when TerminalXOS will be fully released
 
 # Other Docs
 
-<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/CONTRIBUTING.md">For Contributing</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/CONTRIBUTING.md">For Contributing</a>
 <br>
 <br>
 Note : You may have noticed that some Documentations and parts of different .md files have been changed.<br>
 Well, I wanted to change some of the Documentation and fix some grammatical errors.<br>
-The documentation and deleted parts will be re-added when TerminalXOS will be completely released.<br>
+The documentation and deleted parts will be re-added when FalconXOS will be completely released.<br>
 This deletion was to ensure the smooth functioning of the app and to provide comprehensive Documentation which everyone can understand, when TerminalXOS is released completely.
 Sorry for the inconvenience.
