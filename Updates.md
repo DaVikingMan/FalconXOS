@@ -29,3 +29,12 @@ This update fixed some bugs and added a few features
 # Update b.2(Bug fix and some features were added)
 
 This update fixed some bugs and added a few features
+
+# Update k.2(bug fix)
+
+-In this update some things were added.
+-TerminalXOS was renamed to 'FalconXOS'.
+
+That's all for this update.
+
+<b>@Note: The 'Operating Shell' update will take some time to complete.</b>
