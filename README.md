@@ -1,7 +1,7 @@
-<b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
+# <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
 
 # FalconXOS : a Operating Shell
-#FalconX Operating Shell(full form)
+# FalconX Operating Shell(full form)
 
 # Welcome to FalconXOS
 
