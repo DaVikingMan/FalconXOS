@@ -17,7 +17,7 @@ The main developements main objective is to add
 <b>
 
 You can see the developement of this project 
-<a href = "https://github.com/DaVikingMan/TerminalXOS/projects/1">here</a>
+<a href = "https://github.com/DaVikingMan/FalconXOS/projects/1">here</a>
 
 Note : The next update will take some time as it will add the main part of this app, the Operating Shell.
 Some bug fixes might be released, but the next feature update will be the 'operating shell' update.
@@ -38,3 +38,9 @@ This update fixed some bugs and added a few features
 That's all for this update.
 
 <b>@Note: The 'Operating Shell' update will take some time to complete.</b>
+
+# Update k.3(Bug and Less-Feature Update)
+
+-Added '--help'
+-Removed the starting text
+
