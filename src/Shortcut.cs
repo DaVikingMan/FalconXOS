@@ -11,7 +11,7 @@ namespace src
         public void ShortcutPage() // Start for the Shortcuts command
         {
             Console.Clear();
-            Console.WriteLine("Type 'scc --new' for a new instance of shortcut or type 'scc --runload' for running a created shortcut\nRun scc --o for adding shortcuts\nType '/command Exit' to exit");
+            Console.WriteLine("Type 'scc --new' for creating a new shortcut file or type 'scc --runload' for running a created shortcut\nRun scc --o for adding shortcuts\nType '/command Exit' to exit");
             
             Console.Write(">");
             string Kcommand = Console.ReadLine();
@@ -52,11 +52,17 @@ namespace src
             
             string secondaryDirectory = $"{Environment.CurrentDirectory}/data/Shortcuts";
             Console.WriteLine("Type the name of the file which you want to create(dont include file extension)");
+            Console.Write(">");
             string secondaryFile = Console.ReadLine();
             Console.WriteLine("Creating File for storing shortcuts....");
             string dirs = $@"{secondaryDirectory}\{secondaryFile}.txt";
             if(File.Exists(dirs))
             {
+                Console.WriteLine("The file of this name already exists");
+                Console.WriteLine("Returning back");
+                Thread.Sleep(1000);
+                ShortcutInteface();
+
 
             }else if(!File.Exists(dirs))
             {
@@ -111,7 +117,7 @@ namespace src
             
             Console.Clear();
             Console.WriteLine("Type the filename");
-            
+            Console.Write(">");
             var f = Console.ReadLine();
             if(f == "/command Exit")
             {
@@ -252,6 +258,11 @@ namespace src
                 }else if(command == "Stay")
                 {
                     AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
+                    AlSharp();
                 }
 
             }else if(v == "run n<2>")
@@ -271,6 +282,11 @@ namespace src
                     ShortcutPage();
                 }else if(command == "Stay")
                 {
+                    AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
                     AlSharp();
                 }
                 
@@ -292,6 +308,11 @@ namespace src
                 }else if(command == "Stay")
                 {
                     AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
+                    AlSharp();
                 }
                 
             }else if(v == "run n<4>")
@@ -311,6 +332,11 @@ namespace src
                         ShortcutPage();
                 }else if(command == "Stay")
                 {
+                    AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
                     AlSharp();
                 }
                 
@@ -332,6 +358,11 @@ namespace src
                 }else if(command == "Stay")
                 {
                     AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
+                    AlSharp();
                 }
                 
             }else if(v == "run n<6>")
@@ -351,6 +382,11 @@ namespace src
                         ShortcutPage();
                 }else if(command == "Stay")
                 {
+                    AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
                     AlSharp();
                 }
                 
@@ -372,6 +408,11 @@ namespace src
                 }else if(command == "Stay")
                 {
                     AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
+                    AlSharp();
                 }
             }else if(v == "run n<8>")
             {
@@ -390,6 +431,11 @@ namespace src
                         ShortcutPage();
                 }else if(command == "Stay")
                 {
+                    AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
                     AlSharp();
                 }
             }else if(v == "run n<9>")
@@ -410,6 +456,11 @@ namespace src
                 }else if(command == "Stay")
                 {
                     AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
+                    AlSharp();
                 }
             }else if(v == "run n<10>")
             {
@@ -428,6 +479,11 @@ namespace src
                     ShortcutPage();
                 }else if(command == "Stay")
                 {
+                    AlSharp();
+                }else
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(100);
                     AlSharp();
                 }
             }else if(v == "/command Exit")
@@ -456,19 +512,24 @@ namespace src
             Console.Clear();
             Console.Clear();
             Console.WriteLine("Type the file name : ");
+            Console.Write(">");
             string c = Console.ReadLine();
             string filePath1 = $@"{Environment.CurrentDirectory}/data/Shortcuts/{c}.txt";
             Console.WriteLine("type run -add");
+            Console.Write(">");
             string y = Console.ReadLine();
             if(y == "run -add")
             {
                 Console.WriteLine("Type -ss to see all the text in file or type -add to add");
+                Console.Write(">");
                 string v = Console.ReadLine();
                 if(v == "-add")
                 {
                     Console.WriteLine("Type the name which you want to add");
+                    Console.Write(">");
                     string n = Console.ReadLine();
                     Console.WriteLine("Type the exe file : ");
+                    Console.Write(">");
                     string l = Console.ReadLine();
                     string[] a = 
                     {
@@ -477,6 +538,7 @@ namespace src
                     };
                     File.AppendAllLines(filePath1, a);
                     Console.WriteLine("Type Exit");
+                    Console.Write(">");                         
                     string r = Console.ReadLine();
                     if(r == "Exit")
                     {
@@ -492,13 +554,18 @@ namespace src
                 {
                     string b = File.ReadAllText(filePath1);
                     Console.WriteLine(b);
-                    Console.ReadKey();
+                    Thread.Sleep(100);
                     Console.WriteLine("Type Exit or Stay");
+                    Console.Write(">");
                     string n = Console.ReadLine();
                     if(n == "Exit")
                     {
                         ShortcutPage();   
-                    }else
+                    }else if(n == "Stay")
+                    {
+                        e();
+                    }
+                    else
                     {
                         Console.WriteLine("Wrong command");
                         Thread.Sleep(100);
