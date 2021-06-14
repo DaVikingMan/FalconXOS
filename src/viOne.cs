@@ -30,7 +30,7 @@ namespace src
                         List<commands> cm = ListManager.Manager();
 
                         foreach(var m in cm){
-                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\n{m.command5}\n{m.command6}");
+                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\n{m.command5}");
 
                         }
                         Console.Write("> ");
@@ -68,11 +68,7 @@ namespace src
                             Console.ReadKey();
                             vi();
                         }
-                        else if(commandRead == "Debug") // Debug command is used for testing your own projects -- for adding your test add it in the test class
-                        {
-                            DebugMethod();
-
-                        }
+                        
                         else if(commandRead == "WritePad")
                         {
                             CommandsAll v = new CommandsAll();
@@ -102,17 +98,6 @@ namespace src
 
         }
 
-        public void DebugMethod()
-        {
-            Thread.Sleep(1000);
-            DebugManager manager = new DebugManager();
-            manager.Debug();
-
-
-            
-
-            
-        }
 
 
     }
