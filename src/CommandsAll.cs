@@ -82,7 +82,7 @@ namespace src
     public void WriteConsolePad() // 
     {
         Console.Clear();
-        Console.WriteLine("Which Writing Software do you want to open?");
+        Console.WriteLine("Do you want to start the old version or Normal version('Normal' for normal and '/version old' for old version)");
         Console.Write(">");
         string commandOpen = Console.ReadLine();
         if(commandOpen == "/command Exit")
@@ -102,13 +102,17 @@ namespace src
             
 
             
-        }
+        }else if(commandOpen == "Normal"){
+        Console.WriteLine("What writing software do you want to open?");
+        Console.WriteLine(">");
+        string readApp = Console.ReadLine();
         ProcessStartInfo startInfo = new ProcessStartInfo();
-        startInfo.Arguments = $@"/C {commandOpen}";
+        startInfo.Arguments = $@"/C {readApp}";
         startInfo.UseShellExecute = true;
         Process.Start(startInfo);
         Thread.Sleep(2000);
         Console.WriteLine("Type Exit or Stay");
+        Console.Write(">");
         string rcommand = Console.ReadLine();
         if(rcommand == "Exit")
         {
@@ -125,6 +129,16 @@ namespace src
             Thread.Sleep(100);
             WriteConsolePad();
         }
+        }
+        else
+        {
+            Console.WriteLine(
+                "Wrong command"
+            );
+            Thread.Sleep(100);
+            WriteConsolePad();
+        }
+        
 
     }
 
@@ -137,6 +151,7 @@ namespace src
         Process.Start(Fie);
         Thread.Sleep(2000);
         Console.WriteLine("Do you want to Exit or Stay");
+        Console.Write(">");
         string ansj = Console.ReadLine();
         if(ansj == "Exit")
         {
@@ -250,8 +265,8 @@ namespace src
         }
         else if(readInput == "Exit")
         {
-            kernel l = new kernel();
-            l.KernelMain();
+            Main l = new Main();
+            l.MainStart();
 
         }
         else if(readInput == "Copyright Info")
