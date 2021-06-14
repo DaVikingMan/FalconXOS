@@ -77,7 +77,8 @@ namespace src{
                 
             }else if(n == "/command Exit")
             {
-
+                   var k = new Utility();
+                   k.VirtualUtility();
             }else
             {
                 Console.WriteLine("Wrong command");
