@@ -11,7 +11,7 @@ namespace src
         {
             Console.Clear();
             Console.WriteLine("Checking :: ");
-            if(File.Exists(@$"{Environment.CurrentDirectory}\src\Test.cs"))
+            if(File.Exists(@$"{Environment.CurrentDirectory}\debug\Test.cs"))
             {
                 Console.WriteLine("'Test.cs' Exists");
 
@@ -22,7 +22,7 @@ namespace src
             Thread.Sleep(1000);
             Console.WriteLine("This method launches the Test class");
             Console.WriteLine("Add all the classes which you want to run in the test class(if you want to run an app of a different programming language then you can try the 'Process' method in C#)");
-            Console.WriteLine("Initializing and building 'Test.cs'");
+            Console.WriteLine("Initializing and running 'Test.cs'");
             Thread.Sleep(2000);
             Test test = new Test();
             test.TestMethod();
