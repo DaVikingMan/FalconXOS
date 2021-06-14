@@ -41,6 +41,13 @@ That's all for this update.
 
 # Update k.3(Bug and Less-Feature Update)
 
--Added '--help'
--Removed the starting text
+-Added '--help'.
+-Removed the starting text.
 
+# Update k.4
+
+-Added more functionality to '--help' command.
+-Fixed Bugs.
+-Moved Test to 'debug' folder.
+-'Debug' command can now be accessed in the Menu.
+-Fixed WritePad.
