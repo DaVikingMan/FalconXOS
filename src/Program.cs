@@ -9,9 +9,9 @@
             
             
             
-            kernel k = new kernel();
+            Main k = new Main();
 
-            k.KernelMain();
+            k.MainStart();
             
         }
     }
