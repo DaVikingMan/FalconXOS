@@ -27,7 +27,8 @@ namespace src
             {
                 ProjectView j = new ProjectView();
                 j.View(filePathg);
-            }else
+            }
+            else
             {
                 Console.WriteLine("Wrong command");
                 Thread.Sleep(100);
