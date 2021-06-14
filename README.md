@@ -91,6 +91,7 @@ The link and the documentation about the app has been removed for now and will b
 <br>
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/UFT.md">About UFT</a>
 <br>
+<br>
 Note : You may have noticed that some Documentations and parts of different .md files have been changed.<br>
 Well, I wanted to change some of the Documentation and fix some grammatical errors.<br>
 The documentation and deleted parts will be re-added when FalconXOS will be completely released.<br>
