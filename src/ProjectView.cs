@@ -12,8 +12,8 @@ namespace src{
         {
             
             Console.Clear();
-            Console.WriteLine("Type sc --view for viewing the file which you had specified in the start");
-            Console.WriteLine("sc --viewalt to view a different project");
+            Console.WriteLine("Type sc --view for viewing the file");
+            
             Console.Write(">");
             string Bcommand = Console.ReadLine();
             if(Bcommand == "sc --view")
@@ -27,6 +27,7 @@ namespace src{
                Console.WriteLine(t);
                Console.WriteLine("This was your list's to-do");
                Console.WriteLine("Type Exit or Stay");
+               Console.Write(">");
                string hcommand = Console.ReadLine();
                if(hcommand == "Exit")
                {
@@ -50,14 +51,6 @@ namespace src{
                    
                }
                   
-            }else if(Bcommand == "sc --viewalt"){
-                Console.WriteLine("Type the full path of the file which stores your project");
-                Console.Write(">");
-                string ReadR = Console.ReadLine();
-                File.ReadAllLines(ReadR);
-            
-            
-
             }else{
                 Console.WriteLine("Wrong command");
                 Thread.Sleep(1000);
