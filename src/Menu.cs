@@ -11,6 +11,7 @@ namespace src{
             Console.ForegroundColor = ConsoleColor.Cyan; // Sets the foregrounColor
             Console.WriteLine("Apps and other commands(type Apps for running this command)");
             Console.WriteLine("Shortcuts");
+            Console.WriteLine("Debug");
             Console.WriteLine("Terminal");
             Console.WriteLine("Project Manager");
             Console.WriteLine("Exit");
@@ -45,7 +46,7 @@ namespace src{
 
             }else if(y == "Exit") // When executing the 'Exit' command
             {
-                Console.WriteLine("Cya!");
+                
                 Thread.Sleep(1000);
             }else if(y == "Project Manager")
             {
@@ -54,8 +55,17 @@ namespace src{
                m.VirtualUtility();    
             }else if(y == "/close menu")
             {
-                kernel k = new kernel();
-                k.KernelMain();
+                Main k = new Main();
+                k.MainStart();
+            }else if(y == "Debug")
+            {
+                  var debug = new DebugManager();
+                  debug.Debug(); 
+            }else if(y == "--help")
+            {
+                Console.WriteLine("Mode                Description                       Command\n\n");
+                Console.WriteLine("--s             Starts UFT                   /close(forward : menu(End))");
+               
             }
             
             else{                                    // When the wrong command is executed
