@@ -4,6 +4,9 @@ using System.Diagnostics;
 using System.Threading;
 using System.IO;
 
+/*
+            This is the first class that starts when you run FalconXOS
+*/
 
 namespace src // Main namespace
 {
@@ -13,14 +16,14 @@ namespace src // Main namespace
         public void MainStart() // Main Method
         {
             
-                Console.Title = "FalconXOS"; // Sets the title
+                Console.Title = "FalconXOS(UFT)"; // Sets the title
             
             Console.ForegroundColor = ConsoleColor.White; // Sets the colour to the specified colour
             Console.Clear(); // Clears the console
             
-            
+            Console.WriteLine("You can see the available commands by running '--help'"); // Run this command if you want to see the all the available commands
             Console.Write(">");
-            string readFirstInput = Console.ReadLine();
+            string readFirstInput = Console.ReadLine(); // Waits for input
             if(readFirstInput == "--help")  // If the command is '--help'
             {
                 
@@ -39,38 +42,38 @@ namespace src // Main namespace
 
 
             string commandStart = Console.ReadLine();
-            if(commandStart == "start -uft n") // When the listed command is executed
+            if(commandStart == "start -uft n") // This commands goes to the menu
             {
                 
                 viOne v = new viOne();
-                v.Start();
-            }else if(commandStart == "/command Exit")
+                v.Start(); 
+            }else if(commandStart == "/command Exit") // This exits the UFT
             {
                 Thread.Sleep(1000);
 
-            }else if(commandStart == "/state note")
+            }else if(commandStart == "/state note") // This goes to the class 'Note' 
             {
                 Console.WriteLine("Starting class Note");
                 Thread.Sleep(100);
                 CommandsAll commandsAll = new CommandsAll();
                 commandsAll.Note();
                 
-            }else if(commandStart == "/skip -debug")
+            }else if(commandStart == "/skip -debug") // Goes to debug
             {
                 DebugManager manager = new DebugManager();
                 manager.Debug();
                 
-            }else if(commandStart == "/skip shortcut")
+            }else if(commandStart == "/skip shortcut") // Goes to shortcut
             {
                 Shortcut shortcut = new Shortcut();
                 shortcut.ShortcutPage();
 
-            }else if(commandStart == "/skip submenu")
+            }else if(commandStart == "/skip submenu") // Goes to submenu(viOne.cs)
             {
                 viOne v = new viOne();
                 v.vi();
 
-            }else if(commandStart == "/start terminal")
+            }else if(commandStart == "/start terminal") // Starts powershell
             {
                 close closeterminal = new close();
                 closeterminal.closeCommand();
@@ -84,7 +87,7 @@ namespace src // Main namespace
                 Thread.Sleep(100); // Waits for 100 milliseconds
                 MainStart();
             }
-            }else if(readFirstInput == "--howTo")
+            }else if(readFirstInput == "--howTo") // This command explains how to read '--help' commands
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("start(forward : -uft, End : n)");
@@ -93,10 +96,10 @@ namespace src // Main namespace
                 Console.WriteLine("Type '/Exit' to close");
                 Console.Write(">");
                 string gRead = Console.ReadLine();
-                if(gRead == "/Exit")
+                if(gRead == "/Exit") // This command is used to exit this command
                 {
                     MainStart();
-                }else
+                }else // If the command is wrong
                 {
                     Console.WriteLine("wrong command");
                     Thread.Sleep(100);
