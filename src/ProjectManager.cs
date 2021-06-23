@@ -3,15 +3,16 @@ using System.IO;
 using System.Threading;
 
 namespace src{
-    class ProjectManager
+    class ProjectManager // Executes when running Project Manager in the menu
     {
-        public void Manager(string Zcommand)
+        public void Manager(string Zcommand) // Main method of this class
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Clear();
             Console.WriteLine("Type scp -new for creating a new project(This is used to add the projects for better organization of the projects which you have created)");
             Console.Write(">");
             string n = Console.ReadLine();
-            if(n == "scp -new")
+            if(n == "scp -new") // If you want to create a new Project Manager file
             {
                 Console.WriteLine("Type the project's name : ");
                 string h = Console.ReadLine();
