@@ -1,34 +1,38 @@
 using System;
 using System.Diagnostics;
 
+/*
+      This command is used to execute commands to run 'MainMaker.java' and 'WritePad.java'
+*/
+
 namespace src{
 
     class ProcessHandler
     {
         
-        public void ProcessHandle()
+        public void ProcessHandle() // Runs MainMaker.java
         {
            
             ProcessStartInfo startInfo = new ProcessStartInfo();    
             
 
             Process proc = new Process();
-           startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/apps";
-            startInfo.CreateNoWindow = true;
-            startInfo.UseShellExecute = false;
-            startInfo.FileName = "CMD.exe";
+           startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/apps"; // Defines where MainMaker is located
+            startInfo.CreateNoWindow = true;  // Creates no Window
+            startInfo.UseShellExecute = false; // Tells the command to not use shell execute
+            startInfo.FileName = "CMD.exe"; // Tells to run the sepcified command in CMD(Command Prompt) 
             
            
-            startInfo.Arguments = "/c java MainMaker.java";
+            startInfo.Arguments = "/c java MainMaker.java"; // Specifies which command to run
             
 
             
             
             
             
-           Process.Start(startInfo);
+           Process.Start(startInfo); // Runs the command
         }
-        public void ProcessWritePadUI()
+        public void ProcessWritePadUI() // Used for running WritePad.java
         {
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.FileName = "CMD.exe";
