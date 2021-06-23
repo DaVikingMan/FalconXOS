@@ -6,6 +6,7 @@ namespace src
     class Utility{
         public void VirtualUtility()
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             string filePathg = $@"{Environment.CurrentDirectory}/data/Project Manager";
             Console.Clear();
             Console.WriteLine("Type 'sc -add' for creating a new project,\n 'sc -access' for adding the to-do list in the project,\n 'sc --viewp' for viewing the to-do list and '/command Exit' for exiting the utility");
