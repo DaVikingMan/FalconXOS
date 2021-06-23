@@ -6,18 +6,17 @@ using System.Diagnostics;
 using System.Timers;
 
 namespace src{
-    class ProjectView
+    class ProjectView // When you want to view the Project Manager files
     {
         public void View(string dirFile)
         {
             
             Console.Clear();
-            Console.WriteLine("Type sc --view for viewing the file");
+           
+           
             
-            Console.Write(">");
-            string Bcommand = Console.ReadLine();
-            if(Bcommand == "sc --view")
-            {
+            
+            
                Console.WriteLine("Type the project's name");
                Console.Write(">");
                string yCommand = Console.ReadLine();
@@ -51,11 +50,7 @@ namespace src{
                    
                }
                   
-            }else{
-                Console.WriteLine("Wrong command");
-                Thread.Sleep(1000);
-                View(dirFile);
-            }
+            
         }
     }
 }
