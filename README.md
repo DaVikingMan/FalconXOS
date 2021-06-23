@@ -90,6 +90,8 @@ The link and the documentation about the app has been removed for now and will b
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/CONTRIBUTING.md">For Contributing</a>
 <br>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/UFT.md">About UFT</a>
+<br>
 <br>
 Note : You may have noticed that some Documentations and parts of different .md files have been changed.<br>
 Well, I wanted to change some of the Documentation and fix some grammatical errors.<br>
