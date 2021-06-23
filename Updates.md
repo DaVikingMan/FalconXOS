@@ -51,3 +51,10 @@ That's all for this update.
 -Moved Test to 'debug' folder.
 -'Debug' command can now be accessed in the Menu.
 -Fixed WritePad.
+
+# Update k.5
+
+-Fixed alot of errors.
+-Simplified commands and removed unnecessary code.
+-Fixed 'Shortcuts'.
+-Added comments to most of the classes.
