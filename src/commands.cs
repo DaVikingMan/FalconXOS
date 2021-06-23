@@ -1,7 +1,8 @@
 namespace src
 {
+    
     // Initializes commands
-    public class commands{
+    public class commands{ // This metho contains all the properties which are used by 'ListManager'
        
             public string command1 { get; set; }
             public string command2 { get; set; }
