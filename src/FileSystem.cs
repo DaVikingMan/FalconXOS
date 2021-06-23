@@ -6,16 +6,16 @@ using System.Threading;
 
 namespace src
 {
-    class FileSystem
+    class FileSystem // Runs when you type 'yes' when you are prompted to create a File Manager during the Project file setup
     {
         public void system(string takePath)
         {
-            Console.WriteLine("How many filepaths do you want to write?");
-            Console.Write(">");
+            Console.WriteLine("How many filepaths do you want to write?(MAX : 8, MIN : 1)");
+            Console.Write(">"); // Asks the number of lines this file will store
             
             
-            string numH = Console.ReadLine();
-            if(numH == "1")
+            int numH = Convert.ToInt32(Console.ReadLine());
+            if(numH == 1)
             {
                 Console.Clear();
                 Console.WriteLine("You can start typing when the '>' symbol appears");
@@ -35,11 +35,11 @@ namespace src
                 File.AppendAllLines(takePath, listFile);
                 
 
-            }else if(numH == "2")
+            }else if(numH == 2)
             {
                 Console.Clear();
                 Console.WriteLine("You can start typing when the '>' symbol appears");
-                Thread.Sleep(2000);
+                Thread.Sleep(2000); 
                 Console.Clear();
                 Console.Write(">");
                 string readms = Console.ReadLine();
@@ -59,7 +59,7 @@ namespace src
                 
 
                 
-            }else if(numH == "3")
+            }else if(numH == 3)
             {
                 Console.Clear();
                 Console.WriteLine("You can start typing when the '>' symbol appears");
@@ -86,7 +86,7 @@ namespace src
                 
 
                 
-            }else if(numH == "4")
+            }else if(numH == 4)
             {
                 Console.Clear();
                 Console.WriteLine("You can start typing when the '>' symbol appears");
@@ -116,7 +116,7 @@ namespace src
                 
 
                 
-            }else if(numH == "5")
+            }else if(numH == 5)
             {
                 Console.Clear();
                 Console.WriteLine("You can start typing when the '>' symbol appears");
@@ -149,7 +149,7 @@ namespace src
                 
 
                 
-            }else if(numH == "6")
+            }else if(numH == 6)
             {
                 Console.Clear();
                 Console.WriteLine("You can start typing when the '>' symbol appears");
@@ -187,7 +187,7 @@ namespace src
                 
 
                 
-            }else if(numH == "7")
+            }else if(numH == 7)
             {
                 Console.Clear();
                 Console.WriteLine("You can start typing when the '>' symbol appears");
@@ -228,7 +228,7 @@ namespace src
                 
 
                 
-            }else if(numH == "8")
+            }else if(numH == 8) // If the specified number of lines is 8
             {
                 Console.Clear();
                 Console.WriteLine("You can start typing when the '>' symbol appears");
@@ -276,16 +276,25 @@ namespace src
                 
 
                 
-            }else if(numH == "/command Exit")
+            }else if(numH > 8 || numH == 0) // If the value is more than the MAX value or less than the MIN value
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Error: Value more than 8 or less 1 are not accepted");
+                Console.WriteLine("Returning");
+                Thread.Sleep(1000);
+                system(takePath);
+
+
+            }else if(Convert.ToString(numH) == "/command Exit") // Exits the command
             {
                 Console.WriteLine("Exiting");
                 Thread.Sleep(100);
                 Utility u = new Utility();
                 u.VirtualUtility();
             }
-            else
+            else // If the value is wrong
             {
-                Console.WriteLine("String not recognized");
+                Console.WriteLine("Integer not recognized");
                 Console.WriteLine("Value error");
                 Thread.Sleep(100);
                 Console.WriteLine("Returning");
