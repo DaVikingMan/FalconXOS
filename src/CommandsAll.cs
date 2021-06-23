@@ -4,6 +4,10 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 
+/*
+        This class contains all the commands which are found in the submenu
+*/
+
 namespace src
 {
     // All commands
@@ -11,15 +15,16 @@ namespace src
 {
     
 
-    public void TerminalInfo(string comment) // Lists the Operating Shell version and other details
+    public void TerminalInfo(string comment) // Lists the UFT version and other details
     {
         Console.Clear();
-        Console.WriteLine("The driver version's are as follows : \nApp versiom : v.2\nUtility version : v.4\nCommands version : v.5\nOverall version : vi.9");
+        Console.WriteLine("The UFT component's versions are as follows : \nUFT versiom : 1.2\nUtility version : 1.4\nCommands version : 1.5\nOverall version : 3.9");
         
-           Thread.Sleep(1000);
+           Thread.Sleep(100);
            Console.WriteLine("Type Exit or Stay");
+           Console.Write("> ");
            string ReadV = Console.ReadLine();
-           if(ReadV == "Exit")
+           if(ReadV == "Exit") // When you run 'Exit'
            {
                viOne v = new viOne();
                v.vi();
@@ -28,7 +33,7 @@ namespace src
            {
                TerminalInfo("Info");
 
-           }else
+           }else // If the command is wrong
            {
                Console.WriteLine("Wrong command");
                Thread.Sleep(100);
@@ -45,7 +50,7 @@ namespace src
         Console.WriteLine("This command is now replaced by the Project Manager command(which is located in the start menu)");
         Console.WriteLine("If you still want to run the ListMaker then we do have an earlier version of it\nType '/command Version'");
         string cRead = Console.ReadLine();
-        if(cRead == "/command Version")
+        if(cRead == "/command Version") // If you want to run the old version of this app
         {
             ProcessHandler handler = new ProcessHandler();
             handler.ProcessHandle();
@@ -61,7 +66,7 @@ namespace src
                 v.vi();
             }
 
-        }else if(cRead == "/command Reject")
+        }else if(cRead == "/command Reject") // If you want to exit
         {
             Console.WriteLine("Exiting ");
             Thread.Sleep(100);
@@ -79,7 +84,7 @@ namespace src
     }
         
 
-    public void WriteConsolePad() // 
+    public void WriteConsolePad() 
     {
         Console.Clear();
         Console.WriteLine("Do you want to start the old version or Normal version('Normal' for normal and '/version old' for old version)");
@@ -89,7 +94,7 @@ namespace src
         {
             viOne v = new viOne();
             v.vi();
-        }else if(commandOpen == "/version old")
+        }else if(commandOpen == "/version old") // If you want to run the old version
         {
             Console.WriteLine("Opening");
             Thread.Sleep(1000);
@@ -102,7 +107,7 @@ namespace src
             
 
             
-        }else if(commandOpen == "Normal"){
+        }else if(commandOpen == "Normal"){ // If you want to run the normal version
         Console.WriteLine("What writing software do you want to open?");
         Console.WriteLine(">");
         string readApp = Console.ReadLine();
@@ -142,7 +147,7 @@ namespace src
 
     }
 
-    public void RunCommand()
+    public void RunCommand() // If you want to run a app 
     {
         Console.Clear();
         Console.WriteLine("Type the exe file name of the file which you want to run");
@@ -170,31 +175,31 @@ namespace src
     }
 
 
-    public void Note() // Note feature(can only be accessed from the starting screen and from 'TheDebug' command)Not finished
+    public void Note() // Notes all the features of UFT
     {
         Console.Clear();
-        Console.WriteLine("Welcome to Note! The place where you can learn how to use TerminalXOS");
+        Console.WriteLine("Welcome to Note! The place where you can learn how to use FalconXOS");
         
         Console.WriteLine("What Note do you want to read?");
-        Console.WriteLine("TerminalInfo");
+        Console.WriteLine("UFTInfo");
         Console.WriteLine("CommandsInfo");
         Console.WriteLine("Exit");
-        Console.WriteLine("Copyright Info");
+        
         Thread.Sleep(1000);
         Console.Write("> ");
         var readInput = Console.ReadLine();
-        if(string.IsNullOrWhiteSpace(readInput))
+        if(string.IsNullOrWhiteSpace(readInput)) // If the input's value is null
         {
             Console.WriteLine("Kindly input value");
             Console.ReadKey();
             Note();
 
         }
-        else if(readInput == "TerminalInfo")
+        else if(readInput == "UFTInfo") 
         {
             Console.Clear();
-            Console.WriteLine("This note is about TerminalXOS");
-            Console.WriteLine("TerminalXOS is built using C# and vscode");
+            Console.WriteLine("This note is about FalconXOS's UFT");
+            Console.WriteLine("FalconXOS's UFT is built using C# and vscode");
             Thread.Sleep(100);
             Console.WriteLine("Do you want to see some rules?");
             dynamic check = Console.ReadLine();
@@ -209,6 +214,7 @@ namespace src
                 Console.WriteLine("If some features don't work as intended please write them in the issues section.");
                 
                 Console.WriteLine("Do you want to exit?");
+                Console.Write(">");
                 string b = Console.ReadLine();
                 if(b == "Yes")
                 {
@@ -222,7 +228,7 @@ namespace src
                     Note();
                     
                     
-                }else
+                }else // If the wrong command is executes
                 {
                     Console.WriteLine("Wrong command");
                     Thread.Sleep(100);
@@ -242,15 +248,16 @@ namespace src
             }
 
         }
-        else if(readInput == "CommandsInfo")
+        else if(readInput == "CommandsInfo") // This command lets you view the notes about 'commands'
         {
             Console.Clear();
             Console.WriteLine("The commands are written in the form of either different classes or different methods");
             Console.WriteLine("Commands perform different functions");
             Console.WriteLine("If you want to execute a command then you can write the command when you are prompted to");
             Console.WriteLine("Type Yes to exit");
+            Console.Write(">");
             string t = Console.ReadLine();
-            if(t == "Yes")
+            if(t == "Yes") // IF you execute the 'Yes' command
             {
                 Console.ReadKey();
                 Note();
@@ -263,20 +270,13 @@ namespace src
             }
 
         }
-        else if(readInput == "Exit")
+        else if(readInput == "Exit") // This command exits the 'note' and goes to the start screen
         {
             Main l = new Main();
             l.MainStart();
 
         }
-        else if(readInput == "Copyright Info")
-        {
-            Console.Clear();
-            Console.WriteLine("Copyright Re:Note(Method)");
-            Thread.Sleep(100);
-            Note();
-
-        }else
+        else
         {
             Console.WriteLine("Wrong command");
             Thread.Sleep(100);
