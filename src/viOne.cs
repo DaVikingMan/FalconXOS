@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 
+/*
+         This command contains the submenu
+*/
+
 namespace src
 {
     // Main class
     class viOne{
         public void Start()
         {
-            
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            // This is the first method which runs when you open the submenu
                 Console.Clear();
                 Menu mk = new Menu();
                 mk.MenuMain();
@@ -18,7 +23,7 @@ namespace src
           public void vi()
           {
 
-              Console.ForegroundColor = ConsoleColor.Cyan; // Sets the colour of the text to the colour specified
+              Console.ForegroundColor = ConsoleColor.Cyan; // Sets the colour of text to the colour specified
               
               
                     
@@ -30,7 +35,7 @@ namespace src
                         List<commands> cm = ListManager.Manager();
 
                         foreach(var m in cm){
-                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\n{m.command5}");
+                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\n{m.command5}"); // Lists the command from 'ListManager.cs'
 
                         }
                         Console.Write("> ");
@@ -49,7 +54,7 @@ namespace src
                         }
 
 
-                        else if(commandRead == "TerminalInfo") // If the user types the following command
+                        else if(commandRead == "UFT Info") // If the user types the following command
                         {
                             CommandsAll commands = new CommandsAll();
                             commands.TerminalInfo("");
