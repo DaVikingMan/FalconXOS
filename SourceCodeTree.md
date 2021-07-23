@@ -6,7 +6,7 @@ This is the basic project overview
     <br>
     -FalconXOS
     <br>
-       -'.github'
+       <br><br>-'.github'
        <br>
           -'ISSUE_TEMPLATE'
           <br>
