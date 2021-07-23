@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Every version of TerminalXOS supports security updates.
+Every version of FalconXOS supports security updates.
 The versions which will be released will also support security updates
 
 ## Reporting a Vulnerability
