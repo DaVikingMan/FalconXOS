@@ -56,17 +56,17 @@ This is different from a terminal as a terminal is a shell which directly gives 
 
 # Now you may ask that why build a Operating Shell?
 
-Because what I want to build is a ram-efficient , cpu-efficient and efficient terminal without sacrificing stability and performance.
+Because what I want to build is a ram-efficient and cpu-efficient terminal without sacrificing stability, performance and features.
 
 And this can only be done when we use the principles of Operating shell.
 
 
-If you notice the terminals which come with your Operating System(such as CMD for windows 10), they are actually the most ram-efficient but they compromise good UI and features.
+If you notice the terminals which come with your Operating System(such as CMD for windows 10 or konsole for kde), they are actually the most ram-efficient but they compromise good UI and features.
 
 
 For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 <br>
-(This part has been removed and will be re-added when TerminalXOS will be complety released)
+(This part has been removed and will be re-added when FalconXOS will be complety released)
 
 # System requirements
 
@@ -84,7 +84,7 @@ This link has been removed for now and will be added when TerminalXOS will be co
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
 <br>
-The link and the documentation about the app has been removed for now and will be added when TerminalXOS will be fully released
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/Alpha/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
 
 # Other Docs
 
@@ -93,8 +93,7 @@ The link and the documentation about the app has been removed for now and will b
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/UFT.md">About UFT</a>
 <br>
 <br>
-Note : You may have noticed that some Documentations and parts of different .md files have been changed.<br>
-Well, I wanted to change some of the Documentation and fix some grammatical errors.<br>
-The documentation and deleted parts will be re-added when FalconXOS will be completely released.<br>
-This deletion was to ensure the smooth functioning of the app and to provide comprehensive Documentation which everyone can understand, when FalconXOS is released completely.
-Sorry for the inconvenience.
+Some docs have been re-added.
+Note : The Operating Shell update will take some time to develop,
+Sorry for the inconvience
+The next 2 updates will mostly fix bugs and make the existing features more better
