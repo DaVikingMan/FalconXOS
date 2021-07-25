@@ -35,7 +35,7 @@ namespace src
                         List<commands> cm = ListManager.Manager();
 
                         foreach(var m in cm){
-                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}\n{m.command5}"); // Lists the command from 'ListManager.cs'
+                            Console.WriteLine($"{m.command1}\n{m.command2}\n{m.command3}\n{m.command4}"); // Lists the command from 'ListManager.cs'
 
                         }
                         Console.Write("> ");
@@ -79,10 +79,6 @@ namespace src
                             CommandsAll v = new CommandsAll();
                             v.WriteConsolePad();
 
-                        }else if(commandRead == "Run")
-                        {
-                            CommandsAll b = new CommandsAll();
-                            b.RunCommand();
                         }else
                         {
                             Console.WriteLine("Wrong command");
