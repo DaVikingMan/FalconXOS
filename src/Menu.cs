@@ -1,5 +1,6 @@
 using System;
 using System.Threading;
+using System.Diagnostics;
 
 namespace src{
     class Menu
@@ -9,9 +10,12 @@ namespace src{
             
             Console.Clear(); // Clears the console
             Console.ForegroundColor = ConsoleColor.Cyan; // Sets the foregrounColor
+            
             Console.WriteLine("Apps and other commands(type Apps for running this command)");
             Console.WriteLine("Shortcuts");
-            Console.WriteLine("Debug");
+            Console.WriteLine("Debug.cs");
+            Console.WriteLine("Debug.js");
+            Console.WriteLine("QuickRun(Type 'run')");
             Console.WriteLine("Terminal");
             Console.WriteLine("Project Manager");
             Console.WriteLine("Exit");
@@ -48,6 +52,7 @@ namespace src{
             {
                 
                 Thread.Sleep(1000);
+                Environment.Exit(0);
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
@@ -57,15 +62,35 @@ namespace src{
             {
                 Main k = new Main();
                 k.MainStart();
-            }else if(y == "Debug")
+            }else if(y == "Debug.cs")
             {
                   var debug = new DebugManager();
                   debug.Debug(); 
-            }else if(y == "--help")
+            }else if(y == "Debug.js")
+            {
+                var d = new DebugManager();
+                d.JsDebug();
+                
+            }
+            else if(y == "--help")
             {
                 Console.WriteLine("Mode                Description                       Command\n\n");
                 Console.WriteLine("--s             Starts UFT                   /close(forward : menu(End))");
                
+            }else if(y == "run")
+            {
+               var run = new QuickRun();
+               run.QuickRunMethod();   
+            }else if(y == "--access ch")
+            {
+                ProcessStartInfo s = new ProcessStartInfo();
+                s.CreateNoWindow = false;
+                s.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
+                s.FileName = "CMD.exe";
+                s.Arguments = "/C node changelog.js";
+                s.UseShellExecute = true;
+                Process.Start(s);
+                MenuMain();
             }
             
             else{                                    // When the wrong command is executed
