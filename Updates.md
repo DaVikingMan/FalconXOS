@@ -58,3 +58,10 @@ That's all for this update.
 -Simplified commands and removed unnecessary code.
 -Fixed 'Shortcuts'.
 -Added comments to most of the classes.
+
+Note : All changelogs of versions after .14 will be in the changelog.js
+which can be accessed by running '--access ch' in FalconXOS(UFT)'s menu
+
+# Release v.14
+
+The changelog can be accessed by running '--access ch' in the menu
