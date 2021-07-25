@@ -147,32 +147,7 @@ namespace src
 
     }
 
-    public void RunCommand() // If you want to run a app 
-    {
-        Console.Clear();
-        Console.WriteLine("Type the exe file name of the file which you want to run");
-        Console.Write(">");
-        string Fie = Console.ReadLine();
-        Process.Start(Fie);
-        Thread.Sleep(2000);
-        Console.WriteLine("Do you want to Exit or Stay");
-        Console.Write(">");
-        string ansj = Console.ReadLine();
-        if(ansj == "Exit")
-        {
-            viOne b = new viOne();
-            b.vi();            
-        }else if(ansj == "Stay")
-        {
-            RunCommand();
-
-        }else
-        {
-            Console.WriteLine("Wrong command");
-            Thread.Sleep(100);
-            RunCommand();
-        }
-    }
+    
 
 
     public void Note() // Notes all the features of UFT
