@@ -24,10 +24,32 @@ namespace src
             Console.WriteLine("This method launches the Test class");
             Console.WriteLine("Add all the classes which you want to run in the test class(Test.cs)(if you want to run an app of a different programming language then you can try the 'Process' method in C#)");
             Console.WriteLine("Running 'Test.cs'");
+            
             Thread.Sleep(2000);
             Test test = new Test();
             test.TestMethod();
 
+        }
+        public void JsDebug()
+        {
+            Console.WriteLine("Checking if Test.js exists in 'debug' folder");
+            
+            var env = $"{Environment.CurrentDirectory}/Debug/Test.js";
+            Thread.Sleep(2000);
+            if(File.Exists(env))
+            {
+                Console.WriteLine("File Exists : ");
+                Console.WriteLine("Starting");
+                ProcessStartInfo start = new ProcessStartInfo();
+                start.WorkingDirectory = $"{Environment.CurrentDirectory}/debug";
+                start.Arguments = $"node Test.js";
+                start.FileName = "powershell.exe";
+                start.UseShellExecute = true;
+                start.CreateNoWindow = true;
+                Process.Start(start);
+                var m = new Menu();
+                m.MenuMain();
+            }
         }
     }
 }
