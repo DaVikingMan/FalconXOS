@@ -36,6 +36,7 @@ namespace src // Main namespace
                 Console.WriteLine("--d             Skip to 'shortcut'           /skip(Forward : shortcut(End))");
                 Console.WriteLine("--d             Skip to submenu              /skip(Forward : submenu(End))");
                 Console.WriteLine("--d             Start Terminal(Powershell)   /start(Forward : terminal(End))");
+                Console.WriteLine("--d             Access the changelog         --access(Forward : ch(End))");
                 
                 Console.Write(">");
             
@@ -79,6 +80,17 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
                 
 
+            }else if(commandStart == "--access ch")
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
+                startInfo.Arguments = "/C node changelog.js";
+                startInfo.FileName = "CMD.exe";
+                startInfo.UseShellExecute = true;
+                startInfo.CreateNoWindow = false;
+                Process.Start(startInfo);
+                Console.WriteLine("Exiting  : ");
+                MainStart();
             }
             
             else  // When the wrong command is executed
@@ -142,6 +154,17 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
                 
 
+            }else if(readFirstInput == "--access ch")
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
+                startInfo.Arguments = "/C node changelog.js";
+                startInfo.FileName = "CMD.exe";
+                startInfo.UseShellExecute = true;
+                startInfo.CreateNoWindow = false;
+                Process.Start(startInfo);
+                Console.WriteLine("Exiting : ");
+                MainStart();
             }
             else
             {
