@@ -1,5 +1,9 @@
 # This documentation is about how this project has been arranged
 
+# * means that it is a file and the ''(without * means that it is a folder in the FalconXOS folder)
+
+Note : FalconXOS being the main folder neither has an * nor a ''
+
 This is the basic project overview
 {
     
