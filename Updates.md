@@ -65,3 +65,7 @@ which can be accessed by running '--access ch' in FalconXOS(UFT)'s menu
 # Release v.14
 
 The changelog can be accessed by running '--access ch' in the menu
+
+# Release v.15
+
+The changelog can be viewed by running '--access ch'
