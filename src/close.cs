@@ -15,7 +15,7 @@ namespace src
             m.WorkingDirectory = w;
             m.UseShellExecute = true;
             m.CreateNoWindow = false;
-            m.FileName = "powershell.exe";
+            m.FileName = "/bin/bash";
             Process.Start(m);
             Thread.Sleep(1000);
             Console.WriteLine("Exiting:");
