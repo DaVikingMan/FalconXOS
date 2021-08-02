@@ -1,11 +1,10 @@
-# System Requirements for Windows 10
+# System Requirements for GNU/Linux
 
-For Windows 10, you need .NET 5.0(this might work in earlier versions of .NET but this app was only tested using .NET 5)
+You need both dotnet(This was tested on v5.0) and java installed
 <br>
 For running changelog.js and debug.js, you need nodejs installed
-You also need CMD installed(all windows 10 installation have command prompt pre-installed)
+You also need bash(or any other shell)installed
 
 ---------------------------------------------------------------------------------
 
-Note : For now, FalconXOS has only support for Windows 10.
-Support for Linux and macOs will be added at a later version.
+
