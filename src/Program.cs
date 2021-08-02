@@ -9,7 +9,7 @@
             
             
             
-            Main k = new Main();
+            Main k = new Main(); // Create a new instance of main
 
             k.MainStart();
             
