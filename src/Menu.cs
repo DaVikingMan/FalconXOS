@@ -85,9 +85,9 @@ namespace src{
             {
                 ProcessStartInfo s = new ProcessStartInfo();
                 s.CreateNoWindow = false;
-                s.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
-                s.FileName = "CMD.exe";
-                s.Arguments = "/C node changelog.js";
+                s.WorkingDirectory = $@"{Environment.CurrentDirectory}/Changelog";
+                s.FileName = "/bin/bash";
+                s.Arguments = $"-c \"node changelog.js\"";
                 s.UseShellExecute = true;
                 Process.Start(s);
                 MenuMain();
