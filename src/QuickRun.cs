@@ -26,9 +26,9 @@ namespace src{
         public void RunFile(string path)
         {
             var start = new ProcessStartInfo();
-            start.Arguments = $"Start-process '{path}'";
+            start.Arguments = $"-c '{path}'";
             start.UseShellExecute = false;
-            start.FileName = "powershell.exe";
+            start.FileName = "/bin/bash";
             start.CreateNoWindow = true;
             Process.Start(start);
         }
