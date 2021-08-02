@@ -1,5 +1,6 @@
 # <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
 
+Note : The Linux-Alpha build is still in alpha stage and has some bugs
 
 # FalconXOS : a Operating Shell
 <b>FalconX Operating Shell(full form)</b>
