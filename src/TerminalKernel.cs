@@ -15,7 +15,7 @@ namespace src
             m.WorkingDirectory = w;
             m.UseShellExecute = true;
             m.CreateNoWindow = false;
-            m.FileName = "powershell.exe"; // Opens the specified terminal in working directory 'w'
+            m.FileName = ""; // Put the path of the terminal which you want to open
             Process.Start(m);
 
             
