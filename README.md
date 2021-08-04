@@ -78,7 +78,10 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/SourceCodeTree.md">Source Code Tree</a>
 
-<brs>
+# Release version overview
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/Release.md"Release overview</a>
+
+<br>
 
 
 # For Further Reading on Operating Shell
