@@ -3,11 +3,15 @@
 ### Branches
 Versions prior to .30 will be the alpha versions and will be in 'Alpha' branches
 <br>
+<br>
 Versions after .30 will be the beta versions and will be in the main branch
+<br>
 <br>
 Versions after .50 will have two branches, the 'nightly' branch where early features will be released and the main branch where the stable and complete features will be released
 <br>
+<br>
 Versions after version 1.0, will follow the same branch structure as .50
+<br>
 <br>
 
 ### Versions
