@@ -7,5 +7,5 @@ You also need bash(or any other shell)installed
 
 ---------------------------------------------------------------------------------
 
-The linux version of FalconXOS was tested of Fedora 34, but it should work on other distrubutions also
-If you encounter an error, you can report it in the 'issues' section
+Note : FalconXOS will now be tested on Arch Linux
+This should work on other distros also
