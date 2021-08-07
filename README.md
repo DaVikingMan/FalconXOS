@@ -71,12 +71,12 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 
 # System requirements
 
-<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SystemRequirements.md">System Requirements</a>
+<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Linux-Alpha/SystemRequirements.md">System Requirements</a>
 <br>
 
 # Source Code tree for FalconXOS
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/SourceCodeTree.md">Source Code Tree</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/SourceCodeTree.md">Source Code Tree</a>
 
 # Release version overview
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/Release.md">Release overview</a>
@@ -88,19 +88,19 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 
 This link has been removed for now and will be added when TerminalXOS will be completely released.
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/BranchManagement.md">About the Branches in this repository</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/BranchManagement.md">About the Branches in this repository</a>
 
 # Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/Updates.md">About the Developement of Operating Shell</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/Alpha/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
 
 # Other Docs
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/CONTRIBUTING.md">For Contributing</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/CONTRIBUTING.md">For Contributing</a>
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/UFT.md">About UFT</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/UFT.md">About UFT</a>
 <br>
 <br>
 Some docs have been re-added.
