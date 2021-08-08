@@ -7,10 +7,10 @@ namespace src{
     {
         public void MenuMain() // TerminalXOS's Menu
         {
-            
+
             Console.Clear(); // Clears the console
             Console.ForegroundColor = ConsoleColor.Cyan; // Sets the foregrounColor
-            
+
             Console.WriteLine("Apps and other commands(type Apps for running this command)");
             Console.WriteLine("Shortcuts");
             Console.WriteLine("Debug.cs");
@@ -50,14 +50,14 @@ namespace src{
 
             }else if(y == "Exit") // When executing the 'Exit' command
             {
-                
+
                 Thread.Sleep(1000);
                 Environment.Exit(0);
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
-               
-               m.VirtualUtility();    
+
+               m.VirtualUtility();
             }else if(y == "/close menu")
             {
                 Main k = new Main();
@@ -65,34 +65,43 @@ namespace src{
             }else if(y == "Debug.cs")
             {
                   var debug = new DebugManager();
-                  debug.Debug(); 
+                  debug.Debug();
             }else if(y == "Debug.js")
             {
                 var d = new DebugManager();
                 d.JsDebug();
-                
+
             }
             else if(y == "--help")
             {
                 Console.WriteLine("Mode                Description                       Command\n\n");
                 Console.WriteLine("--s             Starts UFT                   /close(forward : menu(End))");
-               
+
             }else if(y == "run")
             {
                var run = new QuickRun();
-               run.QuickRunMethod();   
+               run.QuickRunMethod();
             }else if(y == "--access ch")
             {
-                ProcessStartInfo s = new ProcessStartInfo();
-                s.CreateNoWindow = false;
-                s.WorkingDirectory = $@"{Environment.CurrentDirectory}/Changelog";
-                s.FileName = "/bin/bash";
-                s.Arguments = $"-c \"node changelog.js\"";
-                s.UseShellExecute = true;
-                Process.Start(s);
-                MenuMain();
+
+
+                    Console.WriteLine("Note : --access ch has some errors.Do you want to run it?");
+                    string readOutput = Console.ReadLine();
+                    if(readOutput == "Yes")
+		                {
+                       var run = new ChangelogRun();
+                       run.RunChangelog();
+
+		                }
+                    else
+                    {
+                        MenuMain();
+                    }
+
+
+
             }
-            
+
             else{                                    // When the wrong command is executed
                 Console.WriteLine("Wrong command");
                 Thread.Sleep(100);
@@ -101,5 +110,5 @@ namespace src{
         }
     }
 
-    
+
 }
