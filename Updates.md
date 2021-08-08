@@ -16,7 +16,7 @@ The main developements main objective is to add
 }
 <b>
 
-You can see the developement of this project 
+You can see the developement of this project
 <a href = "https://github.com/DaVikingMan/FalconXOS/projects/1">here</a>
 
 Note : The next update will take some time as it will add the main part of this app, the Operating Shell.
@@ -69,3 +69,18 @@ The changelog can be accessed by running '--access ch' in the menu
 # Release v.15
 
 The changelog can be viewed by running '--access ch'
+
+# Release v.15.2
+
+-This is a bug fix which addresses the issue with changelog.js.
+Although changelog.js still doesn't work in FalconXOS, you can run the RunChangelog.sh script to run it
+
+The shell script 'start' has also been added to run FalconXOS instead of running of 'dotnet run'
+In order to run these shell scripts, you need to:
+
+Give permission by running:
+'chmod +x <name of script>'
+And in order to run it:
+'./<name of script>'
+
+Note : Changelog of bug fix versions will not be written in changelog.js and only complete versions such as 'v.16' will be written.
