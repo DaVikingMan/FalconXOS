@@ -10,23 +10,23 @@ using System.IO;
 
 namespace src // Main namespace
 {
-    
+
     class Main // Starting class
     {
         public void MainStart() // Main Method
         {
-            
+
                 Console.Title = "FalconXOS(UFT)"; // Sets the title
-            
+
             Console.ForegroundColor = ConsoleColor.White; // Sets the colour to the specified colour
             Console.Clear(); // Clears the console
-            
+
             Console.WriteLine("You can see the available commands by running '--help'"); // Run this command if you want to see the all the available commands
             Console.Write(">");
             string readFirstInput = Console.ReadLine(); // Waits for input
             if(readFirstInput == "--help")  // If the command is '--help'
             {
-                
+
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Mode                Description                       Command\n\n");
                 Console.WriteLine("--s             Starts UFT                   start(forward : -uft, End : n)");
@@ -37,33 +37,33 @@ namespace src // Main namespace
                 Console.WriteLine("--d             Skip to submenu              /skip(Forward : submenu(End))");
                 Console.WriteLine("--d             Start Terminal(Powershell)   /start(Forward : terminal(End))");
                 Console.WriteLine("--d             Access the changelog         --access(Forward : ch(End))");
-                
+
                 Console.Write(">");
-            
+
 
 
             string commandStart = Console.ReadLine();
             if(commandStart == "start -uft n") // This commands goes to the menu
             {
-                
+
                 viOne v = new viOne();
-                v.Start(); 
+                v.Start();
             }else if(commandStart == "/command Exit") // This exits the UFT
             {
                 Thread.Sleep(1000);
 
-            }else if(commandStart == "/state note") // This goes to the class 'Note' 
+            }else if(commandStart == "/state note") // This goes to the class 'Note'
             {
                 Console.WriteLine("Starting class Note");
                 Thread.Sleep(100);
                 CommandsAll commandsAll = new CommandsAll();
                 commandsAll.Note();
-                
+
             }else if(commandStart == "/skip -debug") // Goes to debug
             {
                 DebugManager manager = new DebugManager();
                 manager.Debug();
-                
+
             }else if(commandStart == "/skip shortcut") // Goes to shortcut
             {
                 Shortcut shortcut = new Shortcut();
@@ -78,21 +78,21 @@ namespace src // Main namespace
             {
                 close closeterminal = new close();
                 closeterminal.closeCommand();
-                
+
 
             }else if(commandStart == "--access ch")
             {
                 ProcessStartInfo startInfo = new ProcessStartInfo();
-                startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
-                startInfo.Arguments = "/C node changelog.js";
-                startInfo.FileName = "CMD.exe";
+                startInfo.WorkingDirectory = $@"{Environment.CurrentDirectory}/Changelog";
+                startInfo.Arguments = $"-c \"node changelog.js\"";
+                startInfo.FileName = "/bin/bash";
                 startInfo.UseShellExecute = true;
                 startInfo.CreateNoWindow = false;
                 Process.Start(startInfo);
                 Console.WriteLine("Exiting  : ");
                 MainStart();
             }
-            
+
             else  // When the wrong command is executed
             {
                 Console.WriteLine("Wrong command");
@@ -119,7 +119,7 @@ namespace src // Main namespace
                 }
             }else if(readFirstInput == "start -uft n") // When the listed command is executed
             {
-                
+
                 viOne v = new viOne();
                 v.Start();
             }else if(readFirstInput == "/command Exit")
@@ -132,12 +132,12 @@ namespace src // Main namespace
                 Thread.Sleep(100);
                 CommandsAll commandsAll = new CommandsAll();
                 commandsAll.Note();
-                
+
             }else if(readFirstInput == "/skip -debug")
             {
                 DebugManager manager = new DebugManager();
                 manager.Debug();
-                
+
             }else if(readFirstInput == "/skip shortcut")
             {
                 Shortcut shortcut = new Shortcut();
@@ -152,19 +152,20 @@ namespace src // Main namespace
             {
                 close closeterminal = new close();
                 closeterminal.closeCommand();
-                
+
 
             }else if(readFirstInput == "--access ch")
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo();
-                startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
-                startInfo.Arguments = "/C node changelog.js";
-                startInfo.FileName = "CMD.exe";
-                startInfo.UseShellExecute = true;
-                startInfo.CreateNoWindow = false;
-                Process.Start(startInfo);
-                Console.WriteLine("Exiting : ");
-                MainStart();
+              Console.WriteLine("Note : --access ch has some errors.Do you want to run it?");
+              string readOutput = Console.ReadLine();
+              if(readOutput == "Yes"){
+                 var run = new ChangelogRun();
+                 run.RunChangelog();
+               }
+               else
+               {
+                  MainStart();
+               }
             }
             else
             {
@@ -172,12 +173,12 @@ namespace src // Main namespace
                 Thread.Sleep(100);
                 MainStart();
             }
-          
+
         }
 
 
-            
-            
+
+
 
     }
 }
