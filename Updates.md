@@ -79,7 +79,7 @@ The shell script 'start' has also been added to run FalconXOS instead of running
 In order to run these shell scripts, you need to:
 
 Give permission by running:
-chmod +x <name-of-script
+chmod +x name-of-script
 And in order to run it:
 ./name-of-script
 
