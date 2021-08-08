@@ -84,6 +84,7 @@ function MainMethod15()
 
 function Method1()
 {
+
 console.clear();
 console.log("The following changelogs are available : ");
 console.log("releasev.14");
@@ -101,19 +102,21 @@ var rkquestion = rl.createInterface({
 
 rkquestion.question(':', (answer) =>
 {
-   
+  
     if(answer == 14)
     {
+	console.clear();    
         MainMethod14();
         
         
     }else if(answer == 15)
     {
+	console.clear();
         MainMethod15();
         
     }else if(answer == "Exit")
     {
-        process.exit(0);
+             process.exit(0);      
     }
     else
     {
