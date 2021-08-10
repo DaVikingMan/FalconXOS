@@ -1,4 +1,4 @@
-# This file gives the overview of the release pattern of FalconXOS
+# This file gives the overview of the future release pattern of FalconXOS
 
 ### Branches
 Versions prior to .30 will be the alpha versions and will be in 'Alpha' branches
