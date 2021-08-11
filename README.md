@@ -69,6 +69,10 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 <br>
 (This part has been removed and will be re-added when FalconXOS will be complety released)
 
+# License
+
+FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE">MIT license</a>
+
 # System requirements
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Linux-Alpha/SystemRequirements.md">System Requirements</a>
