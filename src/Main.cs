@@ -154,18 +154,6 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
 
 
-            }else if(readFirstInput == "--access ch")
-            {
-              Console.WriteLine("Note : --access ch has some errors.Do you want to run it?");
-              string readOutput = Console.ReadLine();
-              if(readOutput == "Yes"){
-                 var run = new ChangelogRun();
-                 run.RunChangelog();
-               }
-               else
-               {
-                  MainStart();
-               }
             }
             else
             {
