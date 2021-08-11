@@ -7,5 +7,5 @@ You also need bash(or any other shell)installed
 
 ---------------------------------------------------------------------------------
 
-Note : FalconXOS will now be tested on Arch Linux
+Note : FalconXOS will now be tested on Pop_os(which is based on Ubuntu)
 This should work on other distros also
