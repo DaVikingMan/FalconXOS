@@ -81,27 +81,7 @@ namespace src{
             {
                var run = new QuickRun();
                run.QuickRunMethod();
-            }else if(y == "--access ch")
-            {
-
-
-                    Console.WriteLine("Note : --access ch has some errors.Do you want to run it?");
-                    string readOutput = Console.ReadLine();
-                    if(readOutput == "Yes")
-		                {
-                       var run = new ChangelogRun();
-                       run.RunChangelog();
-
-		                }
-                    else
-                    {
-                        MenuMain();
-                    }
-
-
-
             }
-
             else{                                    // When the wrong command is executed
                 Console.WriteLine("Wrong command");
                 Thread.Sleep(100);
