@@ -76,7 +76,7 @@ The changelog can be viewed by running '--access ch'
 Although changelog.js still doesn't work in FalconXOS, you can run the RunChangelog.sh script to run it
 
 The shell script 'start' has also been added to run FalconXOS instead of running of 'dotnet run'
-In order to run these shell scripts, you need to:
+If the shell script doesn't run and gives an error, you need to:
 
 Give permission by running:
 chmod +x name-of-script
@@ -84,3 +84,5 @@ And in order to run it:
 ./name-of-script
 
 Note : Changelog of bug fix versions will not be written in changelog.js and only complete versions such as 'v.16' will be written.
+
+
