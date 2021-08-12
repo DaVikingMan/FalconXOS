@@ -80,7 +80,22 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
 
 
-            }
+            }else if(commandStart == "--internal version" || commandStart == "--i ver")
+	    {
+		    Console.WriteLine("FalconXOS : version.16.1-Falcon");
+		    Console.WriteLine("Exit?");
+		    string read = Console.ReadLine();
+		    if(read == "Exit")
+		    {
+			    MainStart();
+		    }else
+		    {
+			    Console.WriteLine("Exiting");
+			    MainStart();
+		    }
+
+	    
+
 
             else  // When the wrong command is executed
             {
