@@ -87,10 +87,13 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 
 <br>
 
+# Update System for 'Eagle-Eye' versions
+
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/UpdateSystem.md">About Update System of 'Eagle-Eye'versions</a>
 
 # For Further Reading on Operating Shell
 
-This link has been removed for now and will be added when TerminalXOS will be completely released.
+This link has been removed for now and will be added when FalconXOS will be completely released.
 <br>
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/BranchManagement.md">About the Branches in this repository</a>
 
