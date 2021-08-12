@@ -36,7 +36,7 @@ This are some of the things which we will add in the upcoming updates
 <br>
 -Some utilities for enhancing the terminal. For example we will be adding a build tool called tr which will help you run your projects in a more enhanced way.
 <br>
--Full support for Linux and macOs(as for now this has only support for windows as this uses windows tools for execution)
+-Full support for macOS
 <br>
 Note : Terminal doesnt refer to the app but refers to a standalone terminal which will come up when executing the terminal command in the app's menu.
 
