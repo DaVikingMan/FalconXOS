@@ -15,7 +15,7 @@ namespace src // Main namespace
     {
         public void MainStart() // Main Method
         {
-
+ 
                 Console.Title = "FalconXOS(UFT)"; // Sets the title
 
             Console.ForegroundColor = ConsoleColor.White; // Sets the colour to the specified colour
@@ -80,17 +80,6 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
 
 
-            }else if(commandStart == "--access ch")
-            {
-                ProcessStartInfo startInfo = new ProcessStartInfo();
-                startInfo.WorkingDirectory = $@"{Environment.CurrentDirectory}/Changelog";
-                startInfo.Arguments = $"-c \"node changelog.js\"";
-                startInfo.FileName = "/bin/bash";
-                startInfo.UseShellExecute = true;
-                startInfo.CreateNoWindow = false;
-                Process.Start(startInfo);
-                Console.WriteLine("Exiting  : ");
-                MainStart();
             }
 
             else  // When the wrong command is executed
