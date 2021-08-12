@@ -82,14 +82,14 @@ namespace src // Main namespace
 
             }else if(commandStart == "--access ch")
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo();
-                startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
-                startInfo.Arguments = "/C node changelog.js";
-                startInfo.FileName = "CMD.exe";
-                startInfo.UseShellExecute = true;
-                startInfo.CreateNoWindow = false;
-                Process.Start(startInfo);
-                Console.WriteLine("Exiting  : ");
+                var mainChangelog = new RunChangelog();
+                mainChangelog.MainChangelog();
+                MainStart();
+            }else if(commandStart == "--internal version" || commandStart == "--i v")
+            {
+                Console.WriteLine("Version : .15.2-Windows");
+                Console.WriteLine("Exiting::");
+                Thread.Sleep(5000);
                 MainStart();
             }
             
@@ -164,6 +164,12 @@ namespace src // Main namespace
                 startInfo.CreateNoWindow = false;
                 Process.Start(startInfo);
                 Console.WriteLine("Exiting : ");
+                MainStart();
+            }else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
+            {
+                Console.WriteLine("Version : .15.2-Windows(Eagle-Eye)");
+                Console.WriteLine("Exiting::");
+                Thread.Sleep(5000);
                 MainStart();
             }
             else
