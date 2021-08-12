@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Note : point builds(such as 15.2)will not be added to changelog";
+echo "changelog.js will not have point versions(such as .15.3)"; 
 echo "Opening changelog.js";
 sleep 4
 node ./Changelog/changelog.js
