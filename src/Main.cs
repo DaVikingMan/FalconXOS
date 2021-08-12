@@ -82,7 +82,9 @@ namespace src // Main namespace
 
             }else if(commandStart == "--internal version" || commandStart == "--i ver")
 	    {
+		    Console.ForeGroundColor = ConsoleColor.Green;
 		    Console.WriteLine("FalconXOS : version.16.1-Falcon");
+		    Console.ForeGroundColor = ConsoleColor.White;
 		    Console.WriteLine("Exit?");
 		    string read = Console.ReadLine();
 		    if(read == "Exit")
