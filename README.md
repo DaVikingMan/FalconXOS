@@ -68,14 +68,18 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 <br>
 (This part has been removed and will be re-added when FalconXOS will be complety released)
 
+# License
+
+FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE">MIT license</a>
+
 # System requirements
 
-<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Alpha/SystemRequirements.md">System Requirements</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SystemRequirements.md">System Requirements</a>
 <br>
 
 # Source Code tree for FalconXOS
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/SourceCodeTree.md">Source Code Tree</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SourceCodeTree.md">Source Code Tree</a>
 
 <brs>
 
@@ -84,22 +88,21 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 
 This link has been removed for now and will be added when TerminalXOS will be completely released.
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/BranchManagement.md">About the Branches in this repository</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/BranchManagement.md">About the Branches in this repository</a>
 
 # Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/Updates.md">About the Developement of Operating Shell</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Updates.md">About the Developement of Operating Shell</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/Alpha/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
 
 # Other Docs
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/CONTRIBUTING.md">For Contributing</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CONTRIBUTING.md">For Contributing</a>
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Alpha/UFT.md">About UFT</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT</a>
 <br>
 <br>
 Some docs have been re-added.
 Note : The Operating Shell update will take some time to develop,
 Sorry for the inconvience
-The next 2 updates will mostly fix bugs and make the existing features more better
