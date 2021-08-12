@@ -5,7 +5,7 @@ using System.Diagnostics;
 namespace src{
     class Menu
     {
-        public void MenuMain() // TerminalXOS's Menu
+        public void MenuMain() // FalconXOS's Menu
         {
             
             Console.Clear(); // Clears the console
@@ -75,7 +75,7 @@ namespace src{
             else if(y == "--help")
             {
                 Console.WriteLine("Mode                Description                       Command\n\n");
-                Console.WriteLine("--s             Starts UFT                   /close(forward : menu(End))");
+                Console.WriteLine("--s             Goes back to the Main Menu                   /close(forward : menu(End))");
                
             }else if(y == "run")
             {
@@ -83,13 +83,14 @@ namespace src{
                run.QuickRunMethod();   
             }else if(y == "--access ch")
             {
-                ProcessStartInfo s = new ProcessStartInfo();
-                s.CreateNoWindow = false;
-                s.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
-                s.FileName = "CMD.exe";
-                s.Arguments = "/C node changelog.js";
-                s.UseShellExecute = true;
-                Process.Start(s);
+                var mainChangelog = new RunChangelog();
+                mainChangelog.MainChangelog();
+                MenuMain();
+            }else if(y == "--internal version" || y == "--i v")
+            {
+                Console.WriteLine("Version : .15.2-Windows(Eagle-Eye)");
+                Console.WriteLine("Exiting::");
+                Thread.Sleep(5000);
                 MenuMain();
             }
             
