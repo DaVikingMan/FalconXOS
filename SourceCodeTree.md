@@ -48,6 +48,7 @@ This is the basic project overview
              -*TerminalKernel.cs
              -*Utility.cs
              -*viOne.cs
+             -*RunChangelog.cs
         -*.gitignore
         -*AboutSpecialCommands.md
         -*BranchManagement.md
@@ -61,6 +62,7 @@ This is the basic project overview
         -*TerminalMainV.csproj
         -*UFT.md
         -*Updates.md
+        -*VersionOverview.md
         
 
 
