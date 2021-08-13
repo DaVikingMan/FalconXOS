@@ -82,23 +82,17 @@ namespace src // Main namespace
 
             }else if(commandStart == "--internal version" || commandStart == "--i ver")
 	    {
-		    Console.ForeGroundColor = ConsoleColor.Green;
-		    Console.WriteLine("FalconXOS : version.16.1-Falcon");
-		    Console.ForeGroundColor = ConsoleColor.White;
-		    Console.WriteLine("Exit?");
-		    string read = Console.ReadLine();
-		    if(read == "Exit")
-		    {
-			    MainStart();
-		    }else
-		    {
-			    Console.WriteLine("Exiting");
-			    MainStart();
-		    }
+		    Console.ForegroundColor = ConsoleColor.Green;
+		    Console.WriteLine("FalconXOS : version.16.2-Falcon");
+		    Console.ForegroundColor = ConsoleColor.White;
+		    Console.WriteLine("Exiting");
+		    Thread.Sleep(4000);
+		    MainStart();
+		    
 
 	    
 
-
+            }
             else  // When the wrong command is executed
             {
                 Console.WriteLine("Wrong command");
@@ -160,7 +154,17 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
 
 
-            }
+            }else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
+	    {
+		    Console.ForegroundColor = ConsoleColor.Green;
+		    Console.WriteLine("FalconXOS : version.16.2(Falcon)");
+		    Console.ForegroundColor = ConsoleColor.White;
+		    Console.WriteLine("Exiting");
+		    Thread.Sleep(4000);
+		    MainStart();
+
+	    }
+
             else
             {
                 Console.WriteLine("Wrong command");
