@@ -52,6 +52,40 @@ read.question(':', (ghanswer) =>
 
 }
 
+function MainMethod16()
+{
+	console.clear();
+        console.log(".16 fixed the following:\n\nFixed Changelog");
+	console.log("Fixed some errors in documentations");
+	console.log("\n\n.16 added the following:");
+	console.log("Added VersionOverview to give an overview of the current version");
+	console.log("Removed '--access ch' and add RunChangelog.sh to run changelog.js");
+	console.log("Added versions on top of start.sh");
+	console.log("Made a new branch for different versions :: The Linux-Alpha.15 branch contains Eagle-Eye versions which are stable and Linux-Alpha branch contains Falcon versions which are less stable but gets updates quicker");
+	console.log("Added Documentation about update systems 'Every commit:push' and 'Complete:push'");
+        console.log("End of Changelog(For version .16.1)");
+        var vquestion = rh.createInterface({
+              input : stdin,
+	      output : stdout,
+	      terminal : false
+	})
+        vquestion.question('Exit?', (answer) =>
+		{
+			if(answer == "Exit")
+			{
+                                 Method1();
+			}else
+			{
+				MainMethod16();
+			}
+
+
+		}
+	);
+}
+
+
+
 function MainMethod15()
 {
     console.clear();
@@ -89,6 +123,7 @@ console.clear();
 console.log("The following changelogs are available : ");
 console.log("releasev.14");
 console.log("releasev.15");
+console.log("releasev.16");
 console.log("Type the number of the release");
 console.log("");
 
@@ -114,7 +149,12 @@ rkquestion.question(':', (answer) =>
 	console.clear();
         MainMethod15();
         
-    }else if(answer == "Exit")
+    }else if(answer == "16")
+	{
+		MainMethod16();
+	}
+
+    else if(answer == "Exit")
     {
              process.exit(0);      
     }
