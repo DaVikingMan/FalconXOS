@@ -89,10 +89,16 @@ namespace src{
             }else if(y == "--internal version" || y == "--i v")
             {
                 Console.WriteLine("Version : .15.2-Windows(Eagle-Eye)");
+                
                 Console.WriteLine("Exiting::");
                 Thread.Sleep(5000);
                 MenuMain();
+            }else if(y == "/clear" || y == "--clear" || y == "--sh=clear")
+            {
+                Console.Clear();
+                MenuMain();
             }
+            
             
             else{                                    // When the wrong command is executed
                 Console.WriteLine("Wrong command");
