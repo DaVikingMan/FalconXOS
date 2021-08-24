@@ -188,7 +188,7 @@ namespace src // Main namespace
                 MainStart();
             }else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
             {
-                Console.WriteLine("Version : .15.2-Windows(Eagle-Eye)");
+                Console.WriteLine("Version : .16.1-Windows(Falcon)");
                 Console.WriteLine("Exiting::");
                 Thread.Sleep(5000);
                 MainStart();
