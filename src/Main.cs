@@ -3,6 +3,7 @@ using System.Diagnostics.Tracing;
 using System.Diagnostics;
 using System.Threading;
 using System.IO;
+using System.Collections.Generic;
 
 /*
             This is the first class that starts when you run FalconXOS
@@ -91,13 +92,26 @@ namespace src // Main namespace
                 Console.WriteLine("Exiting::");
                 Thread.Sleep(5000);
                 MainStart();
+            }else if(commandStart == "/clear" || commandStart == "--clear" || commandStart == "--sh=clear")
+            {
+                Console.Clear();
+                MainStart();
             }
             
             else  // When the wrong command is executed
             {
-                Console.WriteLine("Wrong command");
-                Thread.Sleep(100); // Waits for 100 milliseconds
-                MainStart();
+                
+                Error MainError = new Error();
+                List<error> mainError = ErrorList.MainList();
+                foreach(var inerror in mainError)
+                {
+                    MainError.MainErrorDetection(inerror.Error1);
+                    
+                }
+                Console.ReadKey();
+                    MainStart();
+                
+                
             }
             }else if(readFirstInput == "--howTo") // This command explains how to read '--help' commands
             {
@@ -113,8 +127,15 @@ namespace src // Main namespace
                     MainStart();
                 }else // If the command is wrong
                 {
-                    Console.WriteLine("wrong command");
-                    Thread.Sleep(100);
+                   Error MainError = new Error();
+                List<error> mainError = ErrorList.MainList();
+                foreach(var inerror in mainError)
+                {
+                    MainError.MainErrorDetection(inerror.Error2);
+                   
+                    
+                }
+                Console.ReadKey();
                     MainStart();
                 }
             }else if(readFirstInput == "start -uft n") // When the listed command is executed
@@ -171,12 +192,23 @@ namespace src // Main namespace
                 Console.WriteLine("Exiting::");
                 Thread.Sleep(5000);
                 MainStart();
+            }else if(readFirstInput == "/clear" || readFirstInput == "--clear" || readFirstInput == "--sh=clear")
+            {
+                Console.Clear();
+                MainStart();
             }
             else
             {
-                Console.WriteLine("Wrong command");
-                Thread.Sleep(100);
-                MainStart();
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Error MainError = new Error();
+                List<error> mainError = ErrorList.MainList();
+                foreach(var inerror in mainError)
+                {
+                    MainError.MainErrorDetection(inerror.Error1);
+                    
+                }
+                Console.ReadKey();
+                    MainStart();
             }
           
         }
