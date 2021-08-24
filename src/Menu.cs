@@ -88,7 +88,7 @@ namespace src{
                 MenuMain();
             }else if(y == "--internal version" || y == "--i v")
             {
-
+                Console.WriteLine("Internal Version - .16.2-Windows(Falcon)");
                 Console.WriteLine("Exiting::");
                 Thread.Sleep(5000);
                 MenuMain();
