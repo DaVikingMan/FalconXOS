@@ -177,14 +177,8 @@ namespace src // Main namespace
 
             }else if(readFirstInput == "--access ch")
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo();
-                startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
-                startInfo.Arguments = "/C node changelog.js";
-                startInfo.FileName = "CMD.exe";
-                startInfo.UseShellExecute = true;
-                startInfo.CreateNoWindow = false;
-                Process.Start(startInfo);
-                Console.WriteLine("Exiting : ");
+                var mainChangelog = new RunChangelog();
+                mainChangelog.MainChangelog();
                 MainStart();
             }else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
             {
