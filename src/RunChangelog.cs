@@ -14,8 +14,8 @@ namespace src
                 startInfo.UseShellExecute = true;
                 startInfo.CreateNoWindow = false;
                 Process.Start(startInfo);
-                Console.WriteLine("Exiting  : ");
-                MainChangelog();
+               
+                
         }
     }
 }
