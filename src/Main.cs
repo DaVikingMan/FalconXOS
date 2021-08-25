@@ -85,10 +85,11 @@ namespace src // Main namespace
             {
                 var mainChangelog = new RunChangelog();
                 mainChangelog.MainChangelog();
+		Console.ReadKey();
                 MainStart();
             }else if(commandStart == "--internal version" || commandStart == "--i v")
             {
-                Console.WriteLine("Version : .15.2-Windows");
+                Console.WriteLine("Version : .16.2-Windows");
                 Console.WriteLine("Exiting::");
                 Thread.Sleep(5000);
                 MainStart();
@@ -177,18 +178,13 @@ namespace src // Main namespace
 
             }else if(readFirstInput == "--access ch")
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo();
-                startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Changelog";
-                startInfo.Arguments = "/C node changelog.js";
-                startInfo.FileName = "CMD.exe";
-                startInfo.UseShellExecute = true;
-                startInfo.CreateNoWindow = false;
-                Process.Start(startInfo);
-                Console.WriteLine("Exiting : ");
+                var mainChangelog = new RunChangelog();
+                mainChangelog.MainChangelog();
+		        Console.ReadKey();
                 MainStart();
             }else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
             {
-                Console.WriteLine("Version : .16.1-Windows(Falcon)");
+                Console.WriteLine("Version : .16.2-Windows(Falcon)");
                 Console.WriteLine("Exiting::");
                 Thread.Sleep(5000);
                 MainStart();
