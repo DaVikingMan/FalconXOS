@@ -7,10 +7,8 @@ namespace src
     {
         public void MainChangelog()
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            Console.WriteLine(Environment.CurrentDirectory);
-            Console.ReadKey();
-                startInfo.WorkingDirectory = $@"{Environment.CurrentDirectory}/Changelog";
+            ProcessStartInfo startInfo = new ProcessStartInfo();           
+                startInfo.WorkingDirectory = $@"{Environment.CurrentDirectory}/src";
                 startInfo.FileName = "CMD.exe";
 		        startInfo.Arguments = "/C node changelog.js";
                 startInfo.UseShellExecute = true;
