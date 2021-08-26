@@ -81,12 +81,18 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
                 
 
-            }else if(commandStart == "--access ch" || commandStart == "/Exit")
+            }else if(commandStart == "--access ch")
             {
                 var mainChangelog = new RunChangelog();
                 mainChangelog.MainChangelog();
                 MainStart();
-            }else if(commandStart == "--internal version" || commandStart == "--i v")
+            }else if(commandStart == "--dev")
+            {
+                var runch = new RunChangelog();
+                runch.DevChangelog();
+                MainStart();
+            }
+            else if(commandStart == "--internal version" || commandStart == "--i v")
             {
                 Console.WriteLine("Version : .16.2-Windows");
                 Console.WriteLine("Exiting::");
@@ -180,7 +186,13 @@ namespace src // Main namespace
                 var mainChangelog = new RunChangelog();
                 mainChangelog.MainChangelog();
                 MainStart();
-            }else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
+            }else if(readFirstInput == "--dev")
+            {
+                var runch = new RunChangelog();
+                runch.DevChangelog();
+                MainStart();
+            }
+            else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
             {
                 Console.WriteLine("Version : .16.2-Windows(Falcon)");
                 Console.WriteLine("Exiting::");
