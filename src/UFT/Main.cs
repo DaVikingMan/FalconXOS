@@ -81,11 +81,10 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
                 
 
-            }else if(commandStart == "--access ch")
+            }else if(commandStart == "--access ch" || commandStart == "/Exit")
             {
                 var mainChangelog = new RunChangelog();
                 mainChangelog.MainChangelog();
-		Console.ReadKey();
                 MainStart();
             }else if(commandStart == "--internal version" || commandStart == "--i v")
             {
@@ -144,7 +143,7 @@ namespace src // Main namespace
                 
                 viOne v = new viOne();
                 v.Start();
-            }else if(readFirstInput == "/command Exit")
+            }else if(readFirstInput == "/command Exit" || readFirstInput == "/Exit")
             {
                 Thread.Sleep(1000);
 
@@ -180,7 +179,6 @@ namespace src // Main namespace
             {
                 var mainChangelog = new RunChangelog();
                 mainChangelog.MainChangelog();
-		        Console.ReadKey();
                 MainStart();
             }else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
             {
