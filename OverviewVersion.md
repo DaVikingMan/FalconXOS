@@ -8,5 +8,5 @@ Tested on : Pop_Os 21.04(based on Ubuntu)
 <br>
 Branch : Falcon
 <br>
-Version Codename : Falcon-Wing
+Version Codename : Clear-Sky
 <br>
