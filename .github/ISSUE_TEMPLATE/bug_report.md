@@ -1,11 +1,9 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+**name: |name of the bug report|**
+<br>
+**about: |About the issue|**
 
----
+
+
 
 **Describe the bug**
 A clear and concise description of what the bug is.
@@ -16,23 +14,24 @@ Steps to reproduce the behavior:
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
+<br>
+Note : It is optional for following the above format, you can use a format of your own choice
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Expected behavior**:
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**Operating System info**(This is only required if you are testing FalconXOS falcon versions and have found a bug)
+- OS name :
+- OS version : (Also add if it an ARM-based, x86 or x64)
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+
 
 **Additional context**
-Add any other context about the problem here.
+<br>
+Any additional comments can be added here
+<br>
+If you have fixed the issue by opening a pull request(or someone else has opened a pull request which fixed your issue), yoe can add a referrence to it here
+Like,
+<br>
+|insert pull request link| has fixed my issue
+
