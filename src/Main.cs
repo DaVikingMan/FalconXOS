@@ -42,7 +42,7 @@ namespace src // src is the namespace used for all .cs files
                 Console.WriteLine("--d             Skip to 'shortcut'           /skip(Forward : shortcut(End))");
                 Console.WriteLine("--d             Skip to submenu              /skip(Forward : submenu(End))");
                 Console.WriteLine("--d             Start Terminal(Powershell)   /start(Forward : terminal(End))");
-                Console.WriteLine("--d             Access the changelog         --access(Forward : ch(End))");
+               
 
                 Console.Write(">");
 
