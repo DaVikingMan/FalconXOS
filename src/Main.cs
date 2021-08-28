@@ -3,12 +3,18 @@ using System.Diagnostics.Tracing;
 using System.Diagnostics;
 using System.Threading;
 using System.IO;
+using System.Collections.Generic;
 
 /*
-            This is the first class that starts when you run FalconXOS
-*/
+*         
+*           Function : To start FalconXOS
+*           Main.cs is the first class which Program.cs loads
+*           This is also sometimes referred to as the starting screen
+*
+*           
+*    */
 
-namespace src // Main namespace
+namespace src // src is the namespace used for all .cs files
 {
 
     class Main // Starting class
@@ -48,7 +54,7 @@ namespace src // Main namespace
 
                 viOne v = new viOne();
                 v.Start();
-            }else if(commandStart == "/command Exit") // This exits the UFT
+            }else if(commandStart == "/command Exit" || commandStart == "/exit") // This exits the UFT
             {
                 Thread.Sleep(1000);
 
@@ -92,11 +98,22 @@ namespace src // Main namespace
 
 	    
 
-            }
+            }else if(commandStart == "/clear" || commandStart == "--clear" || commandStart == "-=sh=clear")
+	    {
+		    Console.Clear();
+		    MainStart();
+	    }
+	  
             else  // When the wrong command is executed
             {
-                Console.WriteLine("Wrong command");
-                Thread.Sleep(100); // Waits for 100 milliseconds
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                List<errorProperty> error = ErrorList.MainList();
+	        foreach(var errorc in error)
+		{
+			Console.WriteLine(errorc.Error1);
+		}
+	    	Console.ReadKey();
                 MainStart();
             }
             }else if(readFirstInput == "--howTo") // This command explains how to read '--help' commands
@@ -108,21 +125,29 @@ namespace src // Main namespace
                 Console.WriteLine("Type '/Exit' to close");
                 Console.Write(">");
                 string gRead = Console.ReadLine();
-                if(gRead == "/Exit") // This command is used to exit this command
+                if(gRead == "/exit") // This command is used to exit this command
                 {
                     MainStart();
                 }else // If the command is wrong
                 {
-                    Console.WriteLine("wrong command");
-                    Thread.Sleep(100);
-                    MainStart();
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                    List<errorProperty> error = ErrorList.MainList();
+		    foreach(var c in error)
+		    {
+			    Console.WriteLine(c.Error2);
+		    }
+
+                    Console.ReadKey();
+		    MainStart();
+                    
                 }
             }else if(readFirstInput == "start -uft n") // When the listed command is executed
             {
 
                 viOne v = new viOne();
                 v.Start();
-            }else if(readFirstInput == "/command Exit")
+            }else if(readFirstInput == "/command Exit" || readFirstInput == "/exit")
             {
                 Thread.Sleep(1000);
 
@@ -163,12 +188,22 @@ namespace src // Main namespace
 		    Thread.Sleep(4000);
 		    MainStart();
 
-	    }
+	     }else if(readFirstInput == "/clear" ||readFirstInput == "--clear" || readFirstInput == "-=sh=clear")
+            {
+                    Console.Clear();
+		    MainStart();
+            }
+
 
             else
             {
-                Console.WriteLine("Wrong command");
-                Thread.Sleep(100);
+                Console.ForegroundColor = ConsoleColor.Red;
+                List<errorProperty> errorb = ErrorList.MainList();
+		foreach(var k in errorb)
+		{
+			Console.WriteLine(k.Error1);
+		}
+                Console.ReadKey();
                 MainStart();
             }
 
