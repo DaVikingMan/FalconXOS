@@ -52,13 +52,13 @@ Note : The developement builds refer to the Falcon versions(master-Alpha and Lin
 <br>
 The same contributing guidelines will have to be followed
 Also make sure on which operating system you are testing the dev build
-For example : 
+For example :
 <br>
 OS : <insert os name here>
 OS version : <insert version here>
 
-And if you encountered an issue describe how you ran into the issue: 
-For example: 
+And if you encountered an issue describe how you ran into the issue:
+For example:
 Issue caused when I was <insert reason here>
 If you were using some kind of software which FalconXOS doesn't natively support
 For example : There is an issue where running FalconXOS in git bash(windows) throws an error while running the it in cmd or powershell doesn't
