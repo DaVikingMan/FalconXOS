@@ -1,6 +1,6 @@
-# <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
+# This is the Eagle-Eye version
 
-Note : The Linux-Alpha build is still in alpha stage and has some bugs
+# <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
 
 # FalconXOS : a Operating Shell
 <b>FalconX Operating Shell(full form)</b>
