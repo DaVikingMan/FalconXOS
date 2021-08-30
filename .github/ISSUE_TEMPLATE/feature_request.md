@@ -1,20 +1,15 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
+name: Name of the feature request(optional)
+about: About the feature report(optional)
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Describe the feature which you want to add**
+For example, The UI should be a bit more user-friendly
+If your feature is to fix an existing issue, add a link to it here
 
 **Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+For example, The text can be modern white while the background can be customizable from FalconXOS
+If you have already implemented the feature in your fork of FalconXOS and want to implement it to the main repository, you can create a pull request and add a link to it here
 
 **Additional context**
-Add any other context or screenshots about the feature request here.
+For example, the UI may not the suit the user so there should be a settings page
