@@ -12,6 +12,6 @@ Branch : Falcon
 <br>
 Platform : Windows
 <br>
-Tested on : Windows 11
+Tested on : Windows 10
 <br>
 Version codename : Silver-Titanium</b>
