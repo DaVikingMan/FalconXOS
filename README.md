@@ -27,9 +27,9 @@ And much more,
 
 # About the future of this app
 
-We want to make this app the best terminal possible
+I want to make this app the best terminal possible
 
-This are some of the things which we will add in the upcoming updates
+These are some of the things which we will add in the upcoming updates
 
 -A built-In terminal(Operating Shell, this is a new tech and the docs about this will be added when FalconXOS will be completely released) because as of now the app launches powershell by default
 <br>
@@ -46,15 +46,12 @@ Note : Terminal doesnt refer to the app but refers to a standalone terminal whic
 
 You may have noticed that at the top of the README that it says FalconXOS : a Operating Shell
 
-Well we wanted to make modify some principles used to make a terminal
+Well I wanted to make modify some principles used to make a terminal
 
 First, 
 
 Defination of Operating Shell-
 This part has been removed and will be added when FalconXOS will be completely released.
-
-
-This is different from a terminal as a terminal is a shell which directly gives command to the Operating System.
 
 # Now you may ask that why build a Operating Shell?
 
