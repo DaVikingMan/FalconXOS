@@ -2,7 +2,7 @@
 name: Name of the feature request(optional)
 about: About the feature report(optional)
 ---
-
+<pre>
 **Describe the feature which you want to add**
 For example, The UI should be a bit more user-friendly
 If your feature is to fix an existing issue, add a link to it here
@@ -13,3 +13,4 @@ If you have already implemented the feature in your fork of FalconXOS and want t
 
 **Additional context**
 For example, the UI may not the suit the user so there should be a settings page
+</pre>
