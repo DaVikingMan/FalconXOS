@@ -16,7 +16,7 @@ namespace src // Main namespace
     {
         public void MainStart() // Main Method
         {
-            
+            var signalverify = new SignalVerifier();
                 Console.Title = "FalconXOS(UFT)"; // Sets the title
             
             Console.ForegroundColor = ConsoleColor.White; // Sets the colour to the specified colour
@@ -44,7 +44,7 @@ namespace src // Main namespace
 
 
             string commandStart = Console.ReadLine();
-            if(commandStart == "start -uft n") // This commands goes to the menu
+            if(commandStart == "start -uft n" || commandStart == "/start") // This commands goes to the menu
             {
                 
                 viOne v = new viOne();
@@ -107,13 +107,10 @@ namespace src // Main namespace
             else  // When the wrong command is executed
             {
                 
-                Error MainError = new Error();
-                List<error> mainError = ErrorList.MainList();
-                foreach(var inerror in mainError)
-                {
-                    MainError.MainErrorDetection(inerror.Error1);
-                    
-                }
+                var gray = new Errortunnel();
+                      gray.AddInfo("/", 20);
+                      Console.ReadKey();
+                      MainStart();
                 Console.ReadKey();
                     MainStart();
                 
@@ -133,18 +130,14 @@ namespace src // Main namespace
                     MainStart();
                 }else // If the command is wrong
                 {
-                   Error MainError = new Error();
-                List<error> mainError = ErrorList.MainList();
-                foreach(var inerror in mainError)
-                {
-                    MainError.MainErrorDetection(inerror.Error2);
-                   
-                    
-                }
+                   var gray = new Errortunnel();
+                      gray.AddInfo("/", 20);
+                      Console.ReadKey();
+                      MainStart();
                 Console.ReadKey();
                     MainStart();
                 }
-            }else if(readFirstInput == "start -uft n") // When the listed command is executed
+            }else if(readFirstInput == "start -uft n" || readFirstInput == "/start") // When the listed command is executed
             {
                 
                 viOne v = new viOne();
@@ -202,17 +195,30 @@ namespace src // Main namespace
             {
                 Console.Clear();
                 MainStart();
+            }else if(readFirstInput == "-d info")
+            {
+                  signalverify.Verify("Request debug info!", 0);
+                  Thread.Sleep(2000);
+                  Console.WriteLine("Do you want to exit?");
+                  string read = Console.ReadLine();
+                  if(read == "/exit" || read == "Exit" || read == "exit")
+                  {
+                      MainStart();
+                  }else
+                  {
+                      var gray = new Errortunnel();
+                      gray.AddInfo("/", 20);
+                      Console.ReadKey();
+                      MainStart();
+
+                  }
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Error MainError = new Error();
-                List<error> mainError = ErrorList.MainList();
-                foreach(var inerror in mainError)
-                {
-                    MainError.MainErrorDetection(inerror.Error1);
-                    
-                }
+                var gray = new Errortunnel();
+                      gray.AddInfo("/", 20);
+                      Console.ReadKey();
+                      MainStart();
                 Console.ReadKey();
                     MainStart();
             }
