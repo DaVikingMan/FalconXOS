@@ -7,9 +7,12 @@ namespace src{
     {
         public void MenuMain() // FalconXOS's Menu
         {
+            var sendsignal = new SignalVerifier();
+            
             
             Console.Clear(); // Clears the console
             Console.ForegroundColor = ConsoleColor.Cyan; // Sets the foregrounColor
+            
             
             Console.WriteLine("Apps and other commands(type Apps for running this command)");
             Console.WriteLine("Shortcuts");
@@ -51,8 +54,7 @@ namespace src{
             }else if(y == "Exit") // When executing the 'Exit' command
             {
                 
-                Thread.Sleep(1000);
-                Environment.Exit(0);
+                sendsignal.Verify("Exit!", 0);
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
@@ -88,14 +90,28 @@ namespace src{
                 MenuMain();
             }else if(y == "--internal version" || y == "--i v")
             {
-                Console.WriteLine("Internal Version - .16.2-Windows(Falcon)");
-                Console.WriteLine("Exiting::");
-                Thread.Sleep(5000);
+                sendsignal.Verify("Give version!", 0);
+                
                 MenuMain();
             }else if(y == "/clear" || y == "--clear" || y == "--sh=clear")
             {
                 Console.Clear();
                 MenuMain();
+            }else if(y == "-d info")
+            {
+                sendsignal.Verify("Request debug info!", 20);
+                Thread.Sleep(2000);
+                Console.WriteLine("Do you want to exit?");
+                string readstring = Console.ReadLine();
+                if(readstring == "Exit" || readstring == "exit")
+                {
+                    MenuMain();
+                }else 
+                {
+                    Console.WriteLine("Wrong command");
+                    Thread.Sleep(200);
+                    MenuMain();
+                }
             }
             
             
