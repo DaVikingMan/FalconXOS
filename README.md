@@ -29,7 +29,7 @@ And much more,
 
 I want to make this app the best terminal possible
 
-These are some of the things which we will add in the upcoming updates
+These are some of the things which I will add in the upcoming updates
 
 -A built-In terminal(Operating Shell, this is a new tech and the docs about this will be added when FalconXOS will be completely released) because as of now the app launches powershell by default
 <br>
@@ -39,7 +39,7 @@ These are some of the things which we will add in the upcoming updates
 <br>
 -Full support for macOs(as for now FalconXOS only supports windows and Linux)
 <br>
-Note : Terminal doesnt refer to the app but refers to a standalone terminal which will come up when executing the terminal command in the app's menu.
+Note : Operating Shell doesn't refer to FalconXOS but refers to a standalone terminal which will come up when executing the terminal command in the app's menu.
 
 
 # Some FAQS
