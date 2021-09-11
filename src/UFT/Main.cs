@@ -94,7 +94,7 @@ namespace src // Main namespace
             }
             else if(commandStart == "--internal version" || commandStart == "--i v")
             {
-                Console.WriteLine("Version : .16.2-Windows");
+                Console.WriteLine("Version : .19.4-Windows");
                 Console.WriteLine("Exiting::");
                 Thread.Sleep(5000);
                 MainStart();
@@ -144,7 +144,8 @@ namespace src // Main namespace
                 v.Start();
             }else if(readFirstInput == "/command Exit" || readFirstInput == "/Exit")
             {
-                Thread.Sleep(1000);
+                var zero = new ZeroSignal();
+                signalverify.Verify("Exit!", 0);
 
             }else if(readFirstInput == "/state note")
             {
