@@ -11,7 +11,8 @@ using System.Diagnostics;
        Unsigned signals also don't display messages and are not reported by Shiro  if any errors are there.
        This allows you to develop a new error system for your signals more easily
       
-      It is recommended to either sign or unsign the signal
+      It is recommended to either sign or unsign the signal.
+      By default, the signals which are neither signed or unsigned are not accepted by FalconXOS
 */
 
 namespace src

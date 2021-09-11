@@ -26,12 +26,12 @@ namespace src
         public void AddInfo(string invokesignal, int errorsignal)
         {
             var shiroreceiver = new ShiroReceiver();
-            // determines which parts of Shiro to invoke
+            // Determines which parts of Shiro to invoke
 
-            string fullinvokecommand = "Send " + invokesignal;
+            string fullinvokecommand = "Send " + invokesignal; // A invoke command, will be used in the next version
             if(invokesignal.Contains(';'))
             {
-                Console.WriteLine("Signed by Kuroi");
+                Console.WriteLine("Signed by Kuroi"); // Signed by Kuroi means that is not a error
                 
                 
             }else if(invokesignal.Contains('/'))

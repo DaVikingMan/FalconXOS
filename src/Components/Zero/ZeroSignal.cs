@@ -12,7 +12,7 @@ namespace src
         {
                 if(receivestring == "Exit!")
                 {
-                    Console.WriteLine("Received , " + receivestring, " as a signal");
+                  
                     Console.WriteLine("Exiting :: ");
                     Thread.Sleep(2000);
                     Environment.Exit(0);
