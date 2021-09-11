@@ -67,6 +67,10 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 <br>
 (This part has been removed and will be re-added when FalconXOS will be complety released)
 
+## News board
+
+Current news - version .19.4 released in the Falcon branch(master-Alpha), version codename : Gray-Iron, September 10
+
 # License
 
 FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE">MIT license</a>
