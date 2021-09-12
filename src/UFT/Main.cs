@@ -1,12 +1,10 @@
 using System;
-using System.Diagnostics.Tracing;
 using System.Diagnostics;
 using System.Threading;
-using System.IO;
 using System.Collections.Generic;
 
 /*
-            This is the first class that starts when you run FalconXOS
+            This is the first class that Program.cs starts when you run FalconXOS
 */
 
 namespace src // Main namespace
@@ -94,21 +92,38 @@ namespace src // Main namespace
             }
             else if(commandStart == "--internal version" || commandStart == "--i v")
             {
-                Console.WriteLine("Version : .19.4-Windows");
-                Console.WriteLine("Exiting::");
-                Thread.Sleep(5000);
+                var signalreceiver = new SignalReceiver();
+                signalreceiver.sendsignal("Give version!", "/", 0);
                 MainStart();
             }else if(commandStart == "/clear" || commandStart == "--clear" || commandStart == "--sh=clear")
             {
                 Console.Clear();
                 MainStart();
+            }else if(commandStart == "-d info")
+            {
+                  var signalreceiver = new SignalReceiver();
+                  signalreceiver.sendsignal("Request debug info!", "/", 0); // For now error-handling is manual, as you have to add the errornum for the error. In the next release, the error-handling should be automatic
+                  Thread.Sleep(2000);
+                  Console.WriteLine("\nDo you want to exit?");
+                  string read = Console.ReadLine();
+                  if(read == "/exit" || read == "Exit" || read == "exit")
+                  {
+                      MainStart();
+                  }else
+                  {
+                      var errorinteractor = new ErrorInteractor();
+                      errorinteractor.VerifyError("/", 20, "None");
+                      Console.ReadKey();
+                      MainStart();
+
+                  }
             }
             
             else  // When the wrong command is executed
             {
                 
                 var gray = new Errortunnel();
-                      gray.AddInfo("/", 20);
+                      gray.AddInfo("/", 20, "None");
                       Console.ReadKey();
                       MainStart();
                 Console.ReadKey();
@@ -131,13 +146,13 @@ namespace src // Main namespace
                 }else // If the command is wrong
                 {
                    var gray = new Errortunnel();
-                      gray.AddInfo("/", 20);
+                      gray.AddInfo("/", 20, "None");
                       Console.ReadKey();
                       MainStart();
                 Console.ReadKey();
                     MainStart();
                 }
-            }else if(readFirstInput == "start -uft n" || readFirstInput == "/start") // When the listed command is executed
+            }else if(readFirstInput == "start -uft n" || readFirstInput == "/start" || readFirstInput == "/Start" || readFirstInput == "/Menu") // When the listed command is executed
             {
                 
                 viOne v = new viOne();
@@ -145,7 +160,7 @@ namespace src // Main namespace
             }else if(readFirstInput == "/command Exit" || readFirstInput == "/Exit")
             {
                 var zero = new ZeroSignal();
-                signalverify.Verify("Exit!", 0);
+                signalverify.Verify("Exit!");
 
             }else if(readFirstInput == "/state note")
             {
@@ -188,9 +203,8 @@ namespace src // Main namespace
             }
             else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
             {
-                Console.WriteLine("Version : .16.2-Windows(Falcon)");
-                Console.WriteLine("Exiting::");
-                Thread.Sleep(5000);
+                var signalreceiver = new SignalReceiver();
+                signalreceiver.sendsignal("Give version!", "/", 0);
                 MainStart();
             }else if(readFirstInput == "/clear" || readFirstInput == "--clear" || readFirstInput == "--sh=clear")
             {
@@ -198,17 +212,18 @@ namespace src // Main namespace
                 MainStart();
             }else if(readFirstInput == "-d info")
             {
-                  signalverify.Verify("Request debug info!", 0);
+                  var signalreceiver = new SignalReceiver();
+                  signalreceiver.sendsignal("Request debug info!", "/", 0);
                   Thread.Sleep(2000);
-                  Console.WriteLine("Do you want to exit?");
+                  Console.WriteLine("\nDo you want to exit?");
                   string read = Console.ReadLine();
                   if(read == "/exit" || read == "Exit" || read == "exit")
                   {
                       MainStart();
                   }else
                   {
-                      var gray = new Errortunnel();
-                      gray.AddInfo("/", 20);
+                      var errorinteractor = new ErrorInteractor();
+                      errorinteractor.VerifyError("/", 20, "None");
                       Console.ReadKey();
                       MainStart();
 
@@ -217,7 +232,7 @@ namespace src // Main namespace
             else
             {
                 var gray = new Errortunnel();
-                      gray.AddInfo("/", 20);
+                      gray.AddInfo("/", 20, "None");
                       Console.ReadKey();
                       MainStart();
                 Console.ReadKey();
