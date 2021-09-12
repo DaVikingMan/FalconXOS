@@ -38,11 +38,15 @@ There aren't really any other guidelines, the main thing is that you should foll
 
 ## If you are contributing documentation
 
-The same contributing guidelines should be followed for fixing and adding documentation
+The same contributing guidelines should be followed for fixing and adding documentation.
+  <br>
 Try to make the contribution which you are making as clear as possible by pointing them in the pull request.
 You can write something like:
-<documentation> : <fixed or added>
-<Write about the change>
+<br>
+documentation : fixed or added
+<br>
+Write about the change
+  <br>
 Although this is optional and you can make the changes visible by following any format of your choice
 
 ### If you are testing developement builds
@@ -53,13 +57,17 @@ The same contributing guidelines will have to be followed
 Also make sure on which operating system you are testing the dev build
 For example :
 <br>
-OS : <insert os name here>
-OS version : <insert version here>
+OS : insert os name here
+OS version : insert version here
 
 And if you encountered an issue describe how you ran into the issue:
+  <br>
 For example:
-Issue caused when I was <insert reason here>
-If you were using some kind of software which FalconXOS doesn't natively support
+  <br>
+Issue caused when I was |insert reason here|
+  <br>
+If you were using some kind of software which FalconXOS doesn't natively support.
 For example : There is an issue where running FalconXOS in git bash(windows) throws an error while running the it in cmd or powershell doesn't
-<Write the name of the app which you used to run FalconXOS> : <What did you do to run it>
+<Write the name of the app which you used to run FalconXOS> : |What did you do to run it|
+  <br>
 Although the second format after ':' is optional
