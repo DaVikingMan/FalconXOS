@@ -10,7 +10,7 @@ namespace src
             if(whattoinvoke == "Kuroi not invoked")
             {
                 var errorinfo = new ErrorInfo();
-                errorinfo.ErrorInfoContainer(errorstring, definatesignal);
+                errorinfo.ErrorInfoContainer(errorstring, definitesignal);
                   
             }else if(whattoinvoke == "Invoke Kuroi") // This is used for invoking Kuroi when a serious error has occured
             {
