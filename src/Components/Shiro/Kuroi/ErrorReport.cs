@@ -1,2 +1,2 @@
 // This file is used by Kuroi.
-// Kuroi will be added in the next version
+// Kuroi will be added in .19.8
