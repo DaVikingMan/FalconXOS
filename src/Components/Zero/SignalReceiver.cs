@@ -4,38 +4,28 @@ using System.Diagnostics;
 using System.Threading;
 
 // If errornum = 0, no error,
-// If any num matches the num of the unsigned integers in the list, that is an error
-// Checks if the signal is signed or unsigned
+// If any num matches the num of the integers in the list, that is an error
+// This is where the error signal to Gray and signal to Zero goes
+// If error is less than 20, it is not an error
 
 namespace src
 {
     class SignalReceiver
     {
-        public void sendsignal(string signedstring, string sendstring, object errornum)
+        public void sendsignal(string signal, string graysignal ,int errorstring)
         {
-            List<DetailErrorList> detailerror = ErrorInit.ErrorInitialize();
             
-            var zero = new ZeroSignal();
-            string stringsend = sendstring;
-            if(signedstring == "Signed")
-            {
-                    Console.WriteLine("Sending Signal to 'Zero'");
-                   
+            var errorInteractor = new ErrorInteractor();
+            var verifier = new SignalVerifier();
+            
+            
                     
-            }else if(signedstring == "Unsigned")
-            {
-                
-                Console.WriteLine("Sending a unsigned signal to 'Zero'");
-                zero.ReceiveSignal(sendstring);
-            }else
-            {
-                Console.WriteLine("FalconXOS doesn't accept signals which are neither signed or unsigned");
-                Console.WriteLine("Kindly sign or unsign the signal by adding either '!' or '#'");
-                Console.WriteLine("If you want to accept signals which are neither signed or unsigned, you can add rules for that in the RulesAdd() method in SignalVerifier and implement that rule in SignalReceiver.cs");
-                Thread.Sleep(5000);
-                Environment.Exit(0);
+                    errorInteractor.VerifyError(graysignal,errorstring, signal); // Checks the error if it has a error and if no error is detected, the signal is given to 'Zero'
+                    
+                    
 
-            }
+                    
+            
             
         }
     }
