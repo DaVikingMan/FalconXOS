@@ -54,7 +54,7 @@ namespace src{
             }else if(y == "Exit") // When executing the 'Exit' command
             {
                 
-                sendsignal.Verify("Exit!", 0);
+                sendsignal.Verify("Exit!");
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
@@ -90,8 +90,8 @@ namespace src{
                 MenuMain();
             }else if(y == "--internal version" || y == "--i v")
             {
-                sendsignal.Verify("Give version!", 0);
-                
+                var signalreceiver = new SignalReceiver();
+                signalreceiver.sendsignal("Give version!", "/", 0);
                 MenuMain();
             }else if(y == "/clear" || y == "--clear" || y == "--sh=clear")
             {
@@ -99,7 +99,7 @@ namespace src{
                 MenuMain();
             }else if(y == "-d info")
             {
-                sendsignal.Verify("Request debug info!", 20);
+                sendsignal.Verify("Request debug info!");
                 Thread.Sleep(2000);
                 Console.WriteLine("Do you want to exit?");
                 string readstring = Console.ReadLine();
