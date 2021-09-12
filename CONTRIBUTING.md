@@ -13,7 +13,6 @@ It is optional to write your email when signing
 When making a pull request, it is recommended to follow the format of the pull request.You must also follow contributing guidelines which are listed below
 
 ### Contributing guidelines
-<pre>
 -Do not write anything like 'This guy had made the issue worse so I am fixing this on behalf' kind of things, there should be no offense in the pull request.
 <br>
 -Try to make the pull request as clear as possible.
@@ -31,7 +30,6 @@ When making a pull request, it is recommended to follow the format of the pull r
 <br>
 -You must follow the contributing guidelines, if there are any things you think are wrong or should be added kindly create a pull request
 <br>
-</pre>
 The following guidelines are for both issues and pull requests
 <br>
 ### Some other guidelines
