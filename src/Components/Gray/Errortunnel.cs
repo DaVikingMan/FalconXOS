@@ -23,7 +23,7 @@ namespace src
                 string errostatus = "Not created by Kuroi";
             }
         }
-        public void AddInfo(string invokesignal, int errorsignal)
+        public void AddInfo(string invokesignal, int errorsignal, string actualsignal)
         {
             var shiroreceiver = new ShiroReceiver();
             // Determines which parts of Shiro to invoke
@@ -37,7 +37,7 @@ namespace src
             }else if(invokesignal.Contains('/'))
             {
                 
-                shiroreceiver.ErrorSignalReceiver("Kuroi not invoked", errorsignal);
+                shiroreceiver.ErrorSignalReceiver("Kuroi not invoked", errorsignal, actualsignal);
             }
         }
     }
