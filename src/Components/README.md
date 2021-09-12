@@ -6,4 +6,6 @@ The zero folder contains files related to the component 'Zero' and 'Shiro' conta
 
 The 'Gray' folder contains files related to the Gray component.
 This component controls the interaction between FalconXOS and Shiro.
+
+Files which are outside of either of these folders are independent components
 </pre>
