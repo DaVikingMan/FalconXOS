@@ -5,12 +5,12 @@ namespace src
 {
     class ShiroReceiver
     {
-        public void ErrorSignalReceiver(string whattoinvoke, int errorstring)
+        public void ErrorSignalReceiver(string whattoinvoke, int errorstring, string definitesignal) // Add definatesignal
         {
             if(whattoinvoke == "Kuroi not invoked")
             {
                 var errorinfo = new ErrorInfo();
-                errorinfo.ErrorInfoContainer(errorstring);
+                errorinfo.ErrorInfoContainer(errorstring, definatesignal);
                   
             }else if(whattoinvoke == "Invoke Kuroi") // This is used for invoking Kuroi when a serious error has occured
             {
