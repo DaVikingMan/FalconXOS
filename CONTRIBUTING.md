@@ -71,3 +71,9 @@ For example : There is an issue where running FalconXOS in git bash(windows) thr
 <Write the name of the app which you used to run FalconXOS> : |What did you do to run it|
   <br>
 Although the second format after ':' is optional
+  
+### How to contribute
+  
+You can create a new pull request or add a new issue if you have found a new issue.
+<br>
+If you are testing developement builds of FalconXOS(Falcon branch) and have found a issue and fixed the issue with the changes you made it is recommended to first open a new issue and then link it to the pull request that you have created
