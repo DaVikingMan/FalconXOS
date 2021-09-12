@@ -20,22 +20,16 @@ namespace src
     class SignalVerifier
     {
         
-        public void Verify(string filetoverify, int errorsignal)
+        public void Verify(string stringtoverify)
         {
             var zero = new ZeroSignal();
-            Console.WriteLine(filetoverify);
-            Console.WriteLine(errorsignal);
             var signal = new SignalReceiver();
-            string verifysign = filetoverify;
-            if(verifysign.Contains('#'))
+            if(stringtoverify.Contains('#'))
             {
-                signal.sendsignal("Unsigned", verifysign, errorsignal);
-            }else if(verifysign.Contains('!'))
+                // Add code for creating your own error handling system
+            }else if(stringtoverify.Contains('!'))
             {
-                var errortunnel = new Errortunnel();
-                
-                errortunnel.AddInfo("/", errorsignal);
-                zero.ReceiveSignal(filetoverify);
+                zero.ReceiveSignal(stringtoverify);
 
                 
             }else
