@@ -1,8 +1,6 @@
-# About release .19.4
+# About release .19.4.2
 
 <pre>
-This release is not complete.
-You might have noticed some code is not present or not used.
-These classes will be used in the next release .19.8
-Expected release date : Sunday
+This has fixed most of the incomplete files in .19.4.
+Kuroi will take some time to develop and is expected to be completed in .30
 </pre>
