@@ -7,13 +7,12 @@ It is not necessary to just contribute code to FalconXOS, you can contribute by 
 ## If you are contributing code
 
 To contribute code, you must first sign all your commits by adding:
-Signed by : <Username>
+Signed-off by : <Username>
 
 It is optional to write your email when signing
 When making a pull request, it is recommended to follow the format of the pull request.You must also follow contributing guidelines which are listed below
 
 ### Contributing guidelines
-
 -Do not write anything like 'This guy had made the issue worse so I am fixing this on behalf' kind of things, there should be no offense in the pull request.
 <br>
 -Try to make the pull request as clear as possible.
@@ -39,11 +38,15 @@ There aren't really any other guidelines, the main thing is that you should foll
 
 ## If you are contributing documentation
 
-The same contributing guidelines should be followed for fixing and adding documentation
+The same contributing guidelines should be followed for fixing and adding documentation.
+  <br>
 Try to make the contribution which you are making as clear as possible by pointing them in the pull request.
 You can write something like:
-<documentation> : <fixed or added>
-<Write about the change>
+<br>
+documentation : fixed or added
+<br>
+Write about the change
+  <br>
 Although this is optional and you can make the changes visible by following any format of your choice
 
 ### If you are testing developement builds
@@ -54,13 +57,23 @@ The same contributing guidelines will have to be followed
 Also make sure on which operating system you are testing the dev build
 For example :
 <br>
-OS : <insert os name here>
-OS version : <insert version here>
+OS : insert os name here
+OS version : insert version here
 
 And if you encountered an issue describe how you ran into the issue:
+  <br>
 For example:
-Issue caused when I was <insert reason here>
-If you were using some kind of software which FalconXOS doesn't natively support
+  <br>
+Issue caused when I was |insert reason here|
+  <br>
+If you were using some kind of software which FalconXOS doesn't natively support.
 For example : There is an issue where running FalconXOS in git bash(windows) throws an error while running the it in cmd or powershell doesn't
-<Write the name of the app which you used to run FalconXOS> : <What did you do to run it>
+<Write the name of the app which you used to run FalconXOS> : |What did you do to run it|
+  <br>
 Although the second format after ':' is optional
+  
+### How to contribute
+  
+You can create a new pull request or add a new issue if you have found a new issue.
+<br>
+If you are testing developement builds of FalconXOS(Falcon branch) and have found a issue and fixed the issue with the changes you made it is recommended to first open a new issue and then link it to the pull request that you have created
