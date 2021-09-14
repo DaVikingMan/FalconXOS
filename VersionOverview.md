@@ -1,15 +1,12 @@
 # Version Overview
 
-
-<br>
-<b>Internal Version(Actual Version) : .16.2
-<br>
+<pre>
+<b>
+Internal Version(Actual Version) : .19.4-Windows
+External version(developement version(updated every major release)) : .1-5<=>
 Platform : Windows
-Branch : Eagle-Eye
-<br>
+Branch : Falcon
 Platform : Windows
-<br>
 Tested on : Windows 10
-<br>
-Version codename : Silver
-</b>
+Version codename : Gray-Iron</b>
+</pre>
