@@ -21,7 +21,7 @@ Note : It is optional for following the above format, you can use a format of yo
 
 
 **Operating System info**(This is only required if you are testing FalconXOS falcon versions and have found a bug)
-- OS name :
+- OS name : 
 - OS version : (Also add if it an ARM-based, x86 or x64)
 
 
@@ -34,4 +34,3 @@ If you have fixed the issue by opening a pull request(or someone else has opened
 Like,
 <br>
 |insert pull request link| has fixed my issue
-
