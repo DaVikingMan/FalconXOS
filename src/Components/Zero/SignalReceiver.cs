@@ -20,7 +20,7 @@ namespace src
             
             
                     
-                    errorInteractor.VerifyError(graysignal,errorstring, signal); // Checks the error if it has a error and if no error is detected, the signal is given to 'Zero'
+                    errorInteractor.VerifyError(graysignal,errorstring, signal); // Checks the signal if it has an error then it is given to 'Shiro' and if no error is detected, the signal is given to 'Zero'
                     
                     
 
