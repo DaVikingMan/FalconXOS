@@ -2,7 +2,7 @@
 
 <pre>
 <b>
-Internal Version(Actual Version) : .19.4-Windows
+Internal Version(Actual Version) : .19.4.2-Windows
 External version(developement version(updated every major release)) : .1-5<=>
 Platform : Windows
 Branch : Falcon
