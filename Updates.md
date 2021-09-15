@@ -1,3 +1,4 @@
+### This file no longer gets updated, all changelogs from .14 are in the changelog.js file.
 # This documentation is about the updates of this repository
 
 This repository's base has been completed and now the main developement will start
