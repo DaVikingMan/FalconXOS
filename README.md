@@ -77,12 +77,12 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 
 # System requirements
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SystemRequirements.md">System Requirements</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SystemRequirements.md">System Requirements</a>
 <br>
 
 # Source Code tree for FalconXOS
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SourceCodeTree.md">Source Code Tree</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SourceCodeTree.md">Source Code Tree</a>
 
 <brs>
 
@@ -91,19 +91,19 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 
 This link has been removed for now and will be added when FalconXOS will be completely released.
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/BranchManagement.md">About the Branches in this repository</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/BranchManagement.md">About the Branches in this repository</a>
 
 # Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Updates.md">About the Developement of Operating Shell</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/Updates.md">About the Developement of Operating Shell</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
 
 # Other Docs
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CONTRIBUTING.md">For Contributing</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/CONTRIBUTING.md">For Contributing</a>
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/UFT.md">About UFT</a>
 <br>
 <br>
 Some docs have been re-added.
