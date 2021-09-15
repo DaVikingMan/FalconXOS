@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # This is the Eagle-Eye branch
+=======
+# This is the Falcon branch
+>>>>>>> master-Alpha
 
 # <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
 

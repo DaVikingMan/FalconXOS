@@ -15,4 +15,8 @@ Version : <OS version>
   <br>
 *Additional comments*
 <br>
+<<<<<<< HEAD
 <br>
+=======
+<br>
+>>>>>>> master-Alpha

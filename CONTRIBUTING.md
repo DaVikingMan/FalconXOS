@@ -76,4 +76,8 @@ Although the second format after ':' is optional
   
 You can create a new pull request or add a new issue if you have found a new issue.
 <br>
+<<<<<<< HEAD
 If you are testing developement builds of FalconXOS(Falcon branch) and have found a issue and fixed the issue with the changes you made it is recommended to first open a new issue and then link it to the pull request that you have created
+=======
+If you are testing developement builds of FalconXOS(Falcon branch) and have found a issue and fixed the issue with the changes you made it is recommended to first open a new issue and then link it to the pull request that you have created
+>>>>>>> master-Alpha
