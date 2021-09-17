@@ -8,7 +8,6 @@ This is the basic project overview
 {
     <pre>
     <b>
-    
     -FalconXOS
        -'.github'
           -'ISSUE_TEMPLATE'
