@@ -7,7 +7,7 @@ Note : FalconXOS being the main folder neither has an * nor a ''
 This is the basic project overview
 {
     <pre>
-    <b>
+    
     -FalconXOS
        -'.github'
           -'ISSUE_TEMPLATE'
@@ -98,7 +98,7 @@ This is the basic project overview
         -*Updates.md
         -*VersionOverview.md
         
-	</b>
+	
 	
 
 
