@@ -6,7 +6,7 @@
 'Not to be confused with normal terminals'
 </b>
 <br>
-UFT is the part which runs when you launch FalconXOS
+UFT is the first part which runs when you launch FalconXOS
 <br>
 <br>
 <b>Note : UFT is not Operating Shell.They are both different parts of FalconXOS.</b>
