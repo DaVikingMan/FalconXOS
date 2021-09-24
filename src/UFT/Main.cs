@@ -7,13 +7,18 @@ using System.Collections.Generic;
             This is the first class that Program.cs starts when you run FalconXOS
 */
 
-namespace src // Main namespace
+
+
+namespace src // Main namespace(this includes all the compoents and everything in the src folder(basicallly all the files that are programmed in C#))
 {
+    
     
     class Main // Starting class
     {
+         // Global variable(object) of class Main.Not initialized
         public void MainStart() // Main Method
         {
+            var componentInteractor = new ComponentInteractor(); // Initialze var componentinteractor
             var signalverify = new SignalVerifier();
                 Console.Title = "FalconXOS(UFT)"; // Sets the title
             
@@ -27,15 +32,15 @@ namespace src // Main namespace
             {
                 
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("Mode                Description                       Command\n\n");
-                Console.WriteLine("--s             Starts UFT                   start(forward : -uft, End : n)");
-                Console.WriteLine("--d             Exits the UFT                /command(forward : Exit(End))");
-                Console.WriteLine("--d             Go to 'note'                 /state(Forward : note(End))");
-                Console.WriteLine("--d             Skip to debug                /skip(Forward : -debug(End))");
-                Console.WriteLine("--d             Skip to 'shortcut'           /skip(Forward : shortcut(End))");
-                Console.WriteLine("--d             Skip to submenu              /skip(Forward : submenu(End))");
-                Console.WriteLine("--d             Start Terminal(Powershell)   /start(Forward : terminal(End))");
-                Console.WriteLine("--d             Access the changelog         --access(Forward : ch(End))");
+                Console.WriteLine("Description                       Command\n\n");
+                Console.WriteLine("Starts UFT                   start(forward : -uft, End : n)");
+                Console.WriteLine("Exits the UFT                /command(forward : Exit(End))");
+                Console.WriteLine("Go to 'note'                 /state(Forward : note(End))");
+                Console.WriteLine("Skip to debug                /skip(Forward : -debug(End))");
+                Console.WriteLine("Skip to 'shortcut'           /skip(Forward : shortcut(End))");
+                Console.WriteLine("Skip to submenu              /skip(Forward : submenu(End))");
+                Console.WriteLine("Start Terminal(Powershell)   /start(Forward : terminal(End))");
+                Console.WriteLine("Access the changelog         --access(Forward : ch(End))");
                 
                 Console.Write(">");
             
@@ -81,19 +86,17 @@ namespace src // Main namespace
 
             }else if(commandStart == "--access ch")
             {
-                var mainChangelog = new RunChangelog();
-                mainChangelog.MainChangelog();
+                componentInteractor.MainInteractor("Access Changelog!", "/", 0);
                 MainStart();
             }else if(commandStart == "--dev")
             {
-                var runch = new RunChangelog();
-                runch.DevChangelog();
+                componentInteractor.MainInteractor("Dev Changelog!", "/", 0);
                 MainStart();
             }
             else if(commandStart == "--internal version" || commandStart == "--i v")
             {
                 var signalreceiver = new SignalReceiver();
-                signalreceiver.sendsignal("Give version!", "/", 0);
+                componentInteractor.MainInteractor("Give version!", "/", 0);
                 MainStart();
             }else if(commandStart == "/clear" || commandStart == "--clear" || commandStart == "--sh=clear")
             {
@@ -102,32 +105,18 @@ namespace src // Main namespace
             }else if(commandStart == "-d info")
             {
                   var signalreceiver = new SignalReceiver();
-                  signalreceiver.sendsignal("Request debug info!", "/", 0); // For now error-handling is manual, as you have to add the errornum for the error. In the next release, the error-handling should be automatic
-                  Thread.Sleep(2000);
-                  Console.WriteLine("\nDo you want to exit?");
-                  string read = Console.ReadLine();
-                  if(read == "/exit" || read == "Exit" || read == "exit")
-                  {
-                      MainStart();
-                  }else
-                  {
-                      var errorinteractor = new ErrorInteractor();
-                      errorinteractor.VerifyError("/", 20, "None");
-                      Console.ReadKey();
-                      MainStart();
-
-                  }
+                  componentInteractor.MainInteractor("Request debug info!", "/", 0); // For now error-handling is manual, as you have to add the errornum for the error. In the next release, the error-handling should be automatic
+                  MainStart();
             }
             
             else  // When the wrong command is executed
             {
                 
                 var gray = new Errortunnel();
-                      gray.AddInfo("/", 20, "None");
-                      Console.ReadKey();
+                      gray.CheckInfo("/", 20, "None");
+                      
                       MainStart();
-                Console.ReadKey();
-                    MainStart();
+              
                 
                 
             }
@@ -146,11 +135,10 @@ namespace src // Main namespace
                 }else // If the command is wrong
                 {
                    var gray = new Errortunnel();
-                      gray.AddInfo("/", 20, "None");
-                      Console.ReadKey();
+                      gray.CheckInfo("/", 20, "None");
+                      
                       MainStart();
-                Console.ReadKey();
-                    MainStart();
+                
                 }
             }else if(readFirstInput == "start -uft n" || readFirstInput == "/start" || readFirstInput == "/Start" || readFirstInput == "/Menu") // When the listed command is executed
             {
@@ -192,19 +180,17 @@ namespace src // Main namespace
 
             }else if(readFirstInput == "--access ch")
             {
-                var mainChangelog = new RunChangelog();
-                mainChangelog.MainChangelog();
+                componentInteractor.MainInteractor("Access Changelog!", "/", 0);
                 MainStart();
             }else if(readFirstInput == "--dev")
             {
-                var runch = new RunChangelog();
-                runch.DevChangelog();
+                componentInteractor.MainInteractor("Dev Changelog!", "/", 0);
                 MainStart();
             }
             else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
             {
-                var signalreceiver = new SignalReceiver();
-                signalreceiver.sendsignal("Give version!", "/", 0);
+                
+                componentInteractor.MainInteractor("Give version!", "/", 0);
                 MainStart();
             }else if(readFirstInput == "/clear" || readFirstInput == "--clear" || readFirstInput == "--sh=clear")
             {
@@ -224,7 +210,7 @@ namespace src // Main namespace
                   {
                       var errorinteractor = new ErrorInteractor();
                       errorinteractor.VerifyError("/", 20, "None");
-                      Console.ReadKey();
+                      
                       MainStart();
 
                   }
@@ -232,11 +218,10 @@ namespace src // Main namespace
             else
             {
                 var gray = new Errortunnel();
-                      gray.AddInfo("/", 20, "None");
-                      Console.ReadKey();
+                      gray.CheckInfo("/", 20, "None");
+                     
                       MainStart();
-                Console.ReadKey();
-                    MainStart();
+                
             }
           
         }
