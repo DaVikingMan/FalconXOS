@@ -19,6 +19,7 @@ namespace src
              {
                  
                   Console.WriteLine("The input stream couldn't find a text that matches your input");
+                  Console.ReadKey();
                   
                   
            
