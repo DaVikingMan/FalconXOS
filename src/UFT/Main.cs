@@ -15,10 +15,10 @@ namespace src // Main namespace(this includes all the compoents and everything i
     
     class Main // Starting class
     {
-         // Global variable(object) of class Main.Not initialized
+         
         public void MainStart() // Main Method
         {
-            var componentInteractor = new ComponentInteractor(); // Initialze var componentinteractor
+            var componentInteractor = new ComponentInteractor();
             var signalverify = new SignalVerifier();
                 Console.Title = "FalconXOS(UFT)"; // Sets the title
             
