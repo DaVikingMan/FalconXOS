@@ -7,6 +7,7 @@ namespace src{
     {
         public void MenuMain() // FalconXOS's Menu
         {
+            var componentinteractor = new ComponentInteractor();
             var sendsignal = new SignalVerifier();
             
             
@@ -46,15 +47,15 @@ namespace src{
                      MenuMain();
                  }else
                  {
-                     Console.WriteLine("Wrong command");
-                     Thread.Sleep(100);
+                     var gray = new Errortunnel();
+                     gray.CheckInfo("/", 20, "None");
                      MenuMain();
                  }
 
-            }else if(y == "Exit") // When executing the 'Exit' command
+            }else if(y == "Exit" || y == "exit" || y == "/Exit" || y == "/exit") // When executing the 'Exit' command
             {
                 
-                sendsignal.Verify("Exit!");
+                componentinteractor.MainInteractor("Exit!", "/", 0);
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
@@ -76,8 +77,8 @@ namespace src{
             }
             else if(y == "--help")
             {
-                Console.WriteLine("Mode                Description                       Command\n\n");
-                Console.WriteLine("--s             Goes back to the Main Menu                   /close(forward : menu(End))");
+                Console.WriteLine("Description                       Command\n\n");
+                Console.WriteLine("Goes back to the Main Menu     /close(forward : menu(End))");
                
             }else if(y == "run")
             {
@@ -85,13 +86,17 @@ namespace src{
                run.QuickRunMethod();   
             }else if(y == "--access ch")
             {
-                var mainChangelog = new RunChangelog();
-                mainChangelog.MainChangelog();
+                componentinteractor.MainInteractor("Access Changelog!", "/", 0);
                 MenuMain();
-            }else if(y == "--internal version" || y == "--i v")
+            }else if(y == "--dev")
+            {
+                componentinteractor.MainInteractor("Dev Changelog!", "/", 0);
+                MenuMain();
+            }
+            else if(y == "--internal version" || y == "--i v")
             {
                 var signalreceiver = new SignalReceiver();
-                signalreceiver.sendsignal("Give version!", "/", 0);
+                componentinteractor.MainInteractor("Give version!", "/", 0);
                 MenuMain();
             }else if(y == "/clear" || y == "--clear" || y == "--sh=clear")
             {
@@ -99,25 +104,17 @@ namespace src{
                 MenuMain();
             }else if(y == "-d info")
             {
-                sendsignal.Verify("Request debug info!");
-                Thread.Sleep(2000);
-                Console.WriteLine("Do you want to exit?");
-                string readstring = Console.ReadLine();
-                if(readstring == "Exit" || readstring == "exit")
-                {
-                    MenuMain();
-                }else 
-                {
-                    Console.WriteLine("Wrong command");
-                    Thread.Sleep(200);
-                    MenuMain();
-                }
+                componentinteractor.MainInteractor("Request debug info!", "/", 0);
+                MenuMain();
+                
+            
             }
             
             
             else{                                    // When the wrong command is executed
-                Console.WriteLine("Wrong command");
-                Thread.Sleep(100);
+                var gray = new Errortunnel();
+                gray.CheckInfo("/", 20, "None");
+                
                 MenuMain();
             }
         }
