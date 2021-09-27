@@ -153,11 +153,14 @@ namespace src
     public void Note() // Notes all the features of UFT
     {
         Console.Clear();
-        Console.WriteLine("Welcome to Note! The place where you can learn how to use FalconXOS");
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine("Welcome to Note!") ;
         
         Console.WriteLine("What Note do you want to read?");
         Console.WriteLine("UFTInfo");
         Console.WriteLine("CommandsInfo");
+	Console.WriteLine("License");
+	Console.WriteLine("readme(file)");
         Console.WriteLine("Exit");
         
         Thread.Sleep(1000);
@@ -244,8 +247,40 @@ namespace src
                 Note();
             }
 
+	}
+	else if(readInput == "readme")
+	{
+             ProcessStartInfo start = new ProcessStartInfo();
+             start.Arguments = $"-c \"cat {Environment.CurrentDirectory}/README.md\"";
+             start.UseShellExecute = true;
+             start.FileName = "/bin/bash";
+             start.CreateNoWindow = true;
+            
+             var h = Process.Start(start);
+             Console.ReadKey();
+            h.Kill();
+                 Console.WriteLine("Type exit");
+                 Console.Write(">");
+                 string read = Console.ReadLine();
+                 if(read == "exit")
+                 {
+                     Note();
+                 }
         }
-        else if(readInput == "Exit") // This command exits the 'note' and goes to the start screen
+
+	else if(readInput == "License")
+	{
+		Console.WriteLine("FalconXOS is licensed under the MIT license, for the entire license you can check https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE");
+		Thread.Sleep(1000);
+		Console.WriteLine("Type exit");
+		Console.Write(">");
+		string response = Console.ReadLine();
+		if(response == "exit")
+		{
+                Note();
+		}
+	}
+        else if(readInput == "Exit" || readInput == "exit" || readInput == "/command Exit" || readInput == "-sh=exit") // This command exits the 'note' and goes to the start screen
         {
             Main l = new Main();
             l.MainStart();

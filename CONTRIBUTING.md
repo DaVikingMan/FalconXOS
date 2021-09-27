@@ -64,3 +64,4 @@ If you were using some kind of software which FalconXOS doesn't natively support
 For example : There is an issue where running FalconXOS in git bash(windows) throws an error while running the it in cmd or powershell doesn't
 <Write the name of the app which you used to run FalconXOS> : <What did you do to run it>
 Although the second format after ':' is optional
+

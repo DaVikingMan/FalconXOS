@@ -1,4 +1,6 @@
-# This is the Eagle-Eye version
+### This is the Falcon branch
+
+# <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
 
 # <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
 
@@ -87,9 +89,11 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 
 <br>
 
-# Update System for 'Eagle-Eye' versions
+# Update System for FalconXOS 'Falcon' versions
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/UpdateSystem.md">About Update System of 'Eagle-Eye'versions</a>
+<br>
+<br>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/VersionSystem.md">Update System</a>
 
 # For Further Reading on Operating Shell
 

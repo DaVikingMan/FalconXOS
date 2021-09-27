@@ -1,9 +1,12 @@
-# Version overview
+# Version Overview
 
-Internal Version(actual version) : .15.2
+Internal Version(actual version): .16.2
 <br>
 Platform : Linux
 <br>
-Branch : Eagle-Eye
+Tested on : Pop_Os 21.04(based on Ubuntu)
 <br>
-Version codename : Titanium
+Branch : Falcon
+<br>
+Version Codename : Clear-Sky
+<br>

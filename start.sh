@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "Current Version : v.15.2-Linux(Eagle-Eye)";
-echo "Starting FalconXOS";
+echo "Current Version : v.16.2-Linux(Falcon)";
 dotnet run
 
 
