@@ -86,6 +86,7 @@ function MainMethod16()
 
 
 
+
 function MainMethod15()
 {
     console.clear();
@@ -149,7 +150,8 @@ rkquestion.question(':', (answer) =>
 	console.clear();
         MainMethod15();
         
-    }else if(answer == "16")
+
+    }else if(answer == 16)
 	{
 		MainMethod16();
 	}
