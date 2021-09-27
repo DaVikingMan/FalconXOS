@@ -1,6 +1,4 @@
-### This is the Falcon branch
-
-# <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
+### This is the Eagle-Eye branch
 
 # <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
 
@@ -77,15 +75,15 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 
 # System requirements
 
-<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Linux-Alpha.15/SystemRequirements.md">System Requirements</a>
+<a href="https://github.com/DaVikingMan/TerminalXOS/blob/Linux/SystemRequirements.md">System Requirements</a>
 <br>
 
 # Source Code tree for FalconXOS
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/SourceCodeTree.md">Source Code Tree</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/SourceCodeTree.md">Source Code Tree</a>
 
 # Release version overview
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/Release.md">Release overview</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/Release.md">Release overview</a>
 
 <br>
 
@@ -93,25 +91,25 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 
 <br>
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/VersionSystem.md">Update System</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/VersionSystem.md">Update System</a>
 
 # For Further Reading on Operating Shell
 
 This link has been removed for now and will be added when FalconXOS will be completely released.
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/BranchManagement.md">About the Branches in this repository</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/BranchManagement.md">About the Branches in this repository</a>
 
 # Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/Updates.md">About the Developement of Operating Shell</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/Updates.md">About the Developement of Operating Shell</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/Linux/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
 
 # Other Docs
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/CONTRIBUTING.md">For Contributing</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/CONTRIBUTING.md">For Contributing</a>
 <br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha.15/UFT.md">About UFT</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/UFT.md">About UFT</a>
 <br>
 <br>
 Some docs have been re-added.
