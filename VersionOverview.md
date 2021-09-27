@@ -2,11 +2,10 @@
 
 <pre>
 <b>
-Internal Version(Actual Version) : .19.4.2-Windows
+Internal Version(Actual Version) : .19.4.2-GNU/Linux
 Developement Version : .1-5<=>
-Platform : Windows
+Platform : GNU/Linux
 Branch : Falcon
-Platform : Windows
-Tested on : Windows 10
-Version codename : Gray-Iron</b>
+Tested on : Pop_OS
+Version codename : Black-Rust</b>
 </pre>
