@@ -5,12 +5,16 @@ using System.Diagnostics;
 namespace src{
     class Menu
     {
-        public void MenuMain() // TerminalXOS's Menu
+        public void MenuMain() // FalconXOS's Menu
         {
-
+            var componentinteractor = new ComponentInteractor();
+            var sendsignal = new SignalVerifier();
+            
+            
             Console.Clear(); // Clears the console
             Console.ForegroundColor = ConsoleColor.Cyan; // Sets the foregrounColor
-
+            
+           
             Console.WriteLine("Apps and other commands(type Apps for running this command)");
             Console.WriteLine("Shortcuts");
             Console.WriteLine("Debug.cs");
@@ -43,16 +47,15 @@ namespace src{
                      MenuMain();
                  }else
                  {
-                     Console.WriteLine("Wrong command");
-                     Thread.Sleep(100);
+                     var gray = new Errortunnel();
+                     gray.CheckInfo("/", 20, "None");
                      MenuMain();
                  }
 
-            }else if(y == "Exit") // When executing the 'Exit' command
+            }else if(y == "Exit" || y == "exit" || y == "/Exit" || y == "/exit") // When executing the 'Exit' command
             {
-
-                Thread.Sleep(1000);
-                Environment.Exit(0);
+                
+                componentinteractor.MainInteractor("Exit!", "/", 0);
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
@@ -74,17 +77,45 @@ namespace src{
             }
             else if(y == "--help")
             {
-                Console.WriteLine("Mode                Description                       Command\n\n");
-                Console.WriteLine("--s             Starts UFT                   /close(forward : menu(End))");
-
+                Console.WriteLine("Description                       Command\n\n");
+                Console.WriteLine("Goes back to the Main Menu     /close(forward : menu(End))");
+               
             }else if(y == "run")
             {
                var run = new QuickRun();
-               run.QuickRunMethod();
+               run.QuickRunMethod();   
+            }else if(y == "--access ch")
+            {
+                componentinteractor.MainInteractor("Access Changelog!", "/", 0);
+                MenuMain();
+            }else if(y == "--dev")
+            {
+                componentinteractor.MainInteractor("Dev Changelog!", "/", 0);
+                MenuMain();
             }
+            else if(y == "--internal version" || y == "--i v")
+            {
+                var signalreceiver = new SignalReceiver();
+                componentinteractor.MainInteractor("Give version!", "/", 0);
+                MenuMain();
+            }else if(y == "/clear" || y == "--clear" || y == "--sh=clear")
+            {
+                Console.Clear();
+                MenuMain();
+            }else if(y == "-d info")
+            {
+                componentinteractor.MainInteractor("Request debug info!", "/", 0);
+                MenuMain();
+                
+            
+            }
+            
+            
+
             else{                                    // When the wrong command is executed
-                Console.WriteLine("Wrong command");
-                Thread.Sleep(100);
+                var gray = new Errortunnel();
+                gray.CheckInfo("/", 20, "None");
+                
                 MenuMain();
             }
         }

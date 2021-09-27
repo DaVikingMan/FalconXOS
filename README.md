@@ -1,4 +1,4 @@
-### This is the Falcon branch
+# This is the Falcon branch
 
 # <b>@Recent change- Renamed TerminalXOS to FalconXOS</b>
 
@@ -26,9 +26,9 @@ And much more,
 
 # About the future of this app
 
-We want to make this app the best terminal possible
+I want to make this app the best terminal possible
 
-This are some of the things which we will add in the upcoming updates
+These are some of the things which I will add in the upcoming updates
 
 -A built-In terminal(Operating Shell, this is a new tech and the docs about this will be added when FalconXOS will be completely released) because as of now the app launches powershell by default
 <br>
@@ -36,24 +36,21 @@ This are some of the things which we will add in the upcoming updates
 <br>
 -Some utilities for enhancing the terminal. For example we will be adding a build tool called tr which will help you run your projects in a more enhanced way.
 <br>
--Full support for macOS
+-Full support for macOs(as for now FalconXOS only supports windows and Linux)
 <br>
-Note : Terminal doesnt refer to the app but refers to a standalone terminal which will come up when executing the terminal command in the app's menu.
+Note : Operating Shell doesn't refer to FalconXOS but refers to a standalone terminal which will come up when executing the terminal command in the app's menu.
 
 
 # Some FAQS
 
 You may have noticed that at the top of the README that it says FalconXOS : a Operating Shell
 
-Well we wanted to make modify some principles used to make a terminal
+Well I wanted to make modify some principles used to make a terminal
 
 First, 
 
 Defination of Operating Shell-
 This part has been removed and will be added when FalconXOS will be completely released.
-
-
-This is different from a terminal as a terminal is a shell which directly gives command to the Operating System.
 
 # Now you may ask that why build a Operating Shell?
 
@@ -76,11 +73,13 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 # System requirements
 
 <a href="https://github.com/DaVikingMan/TerminalXOS/blob/Linux-Alpha/SystemRequirements.md">System Requirements</a>
+
 <br>
 
 # Source Code tree for FalconXOS
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/SourceCodeTree.md">Source Code Tree</a>
+
 
 # Release version overview
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/Release.md">Release overview</a>
@@ -110,6 +109,7 @@ This link has been removed for now and will be added when FalconXOS will be comp
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/CONTRIBUTING.md">For Contributing</a>
 <br>
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/UFT.md">About UFT</a>
+
 <br>
 <br>
 Some docs have been re-added.
