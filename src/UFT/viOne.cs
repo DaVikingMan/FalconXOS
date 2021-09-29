@@ -10,6 +10,12 @@ using System.Threading;
 namespace src
 {
     // Main class
+    // Vione is also a component of FalconXOS(codename : 'Old Gin(japanese for 'silver')')
+    /*
+      It maintains all the things related to FalconXOS's menu.
+      Although the main class for viOne doesn't have much code, it is one of the most important.
+      ViOne is pronounced as 'We one', as this component's work is not to support to FalconXOS but to unify it so that better communication with other components can be there.
+    */
     class viOne{
         public void Start()
         {
