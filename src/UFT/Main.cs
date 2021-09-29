@@ -40,8 +40,12 @@ namespace src // Main namespace
                 Console.Write(">");
             
 
-
+            Boolean devstatus = false;
             string commandStart = Console.ReadLine();
+            if(commandStart == "--devmode" || commandStart == "-sh=developer" || commandStart == "-sh=dev")
+            {
+                   devstatus = true;
+            }
             if(commandStart == "start -uft n" || commandStart == "/start") // This commands goes to the menu
             {
                 
@@ -79,12 +83,12 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
                 
 
-            }else if(commandStart == "--access ch")
+            }else if(commandStart == "--access ch" || commandStart == "-sh=oldch")
             {
                 var mainChangelog = new RunChangelog();
                 mainChangelog.MainChangelog();
                 MainStart();
-            }else if(commandStart == "--dev")
+            }else if(commandStart == "--runch" || commandStart == "-sh=ch") 
             {
                 var runch = new RunChangelog();
                 runch.DevChangelog();
@@ -164,7 +168,7 @@ namespace src // Main namespace
 
             }else if(readFirstInput == "/state note")
             {
-                Console.WriteLine("Starting class Note");
+                Console.WriteLine("Starting FalconXOS Note");
                 Thread.Sleep(100);
                 CommandsAll commandsAll = new CommandsAll();
                 commandsAll.Note();
@@ -190,18 +194,18 @@ namespace src // Main namespace
                 closeterminal.closeCommand();
                 
 
-            }else if(readFirstInput == "--access ch")
+            }else if(readFirstInput == "--access ch" || readFirstInput == "-sh=oldch")
             {
                 var mainChangelog = new RunChangelog();
                 mainChangelog.MainChangelog();
                 MainStart();
-            }else if(readFirstInput == "--dev")
+            }else if(readFirstInput == "--runch" || readFirstInput == "-sh=ch")
             {
                 var runch = new RunChangelog();
                 runch.DevChangelog();
                 MainStart();
             }
-            else if(readFirstInput == "--internal version" || readFirstInput == "--i v")
+            else if(readFirstInput == "--internal version" || readFirstInput == "--i v" || readFirstInput == "version")
             {
                 var signalreceiver = new SignalReceiver();
                 signalreceiver.sendsignal("Give version!", "/", 0);
