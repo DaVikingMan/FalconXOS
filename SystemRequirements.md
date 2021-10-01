@@ -1,6 +1,7 @@
 # System Requirements for Windows 10
 
 The system requirements are as follows : 
+<br>
 <b>
 -Node.js(latest version recommended)
 <br>
