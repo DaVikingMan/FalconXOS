@@ -4,6 +4,7 @@ const readline = require('readline');
 Main();
 function Main()
 {
+    console.clear();
     console.log("Falcon version : -.19.2\nExternal version : /4\nOverall version : .19.4.9");
 
     console.log('\nversion.16.2');
@@ -25,11 +26,11 @@ function Main()
 
             console.log('\n\nEnd of File');
             console.log('Type /exit');
-            r.question('\\ ', (response) =>
+            r.question('$  ', (response) =>
             {
                 if(response == "/exit")
                 {
-                    process.exit();
+                    Main();
                 }
             })
 
@@ -53,7 +54,7 @@ function Main()
 		    
 		    r.question('$', (answer) =>
 			    {
-				    process.exit(0);
+				   Main();
 			    })
 	    }else if(response == "Exit" || response == "exit")
         {
