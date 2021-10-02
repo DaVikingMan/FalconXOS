@@ -78,6 +78,15 @@ FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
 
 FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE">MIT license</a>
 
+# For contributing
+
+<b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CONTRIBUTING.md">contributing guidelines</a> before contributing.
+<br>
+FalconXOS also uses <a href="https://github.com/all-contributors/all-contributors">'All-contributors'</a> so that every contributor is recognized</b>
+<br>
+FalconXOS follows the <b>Contributor Covenant Code of Conduct</b>
+<b>
+
 # System requirements
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SystemRequirements.md">System Requirements</a>
