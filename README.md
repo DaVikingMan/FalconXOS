@@ -78,16 +78,16 @@ FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
 
 FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE">MIT license</a>
 
-# For contributing
+# For Contributing
 
 <b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CONTRIBUTING.md">contributing guidelines</a> before contributing.
 <br>
 FalconXOS also uses <a href="https://github.com/all-contributors/all-contributors">'All-contributors'</a> so that every contributor is recognized</b>
 <br>
-FalconXOS follows the <b>Contributor Covenant Code of Conduct</b>
+FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
 <b>
 
-# System requirements
+# System Requirements
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SystemRequirements.md">System Requirements</a>
 <br>
@@ -96,26 +96,19 @@ FalconXOS follows the <b>Contributor Covenant Code of Conduct</b>
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SourceCodeTree.md">Source Code Tree</a>
 
-
-# For Further Reading on Operating Shell
-
-This link has been removed for now and will be added when FalconXOS will be completely released.
-<br>
+  
+# FalconXOS branch system
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/BranchManagement.md">About the Branches in this repository</a>
 
 # Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Updates.md">About the Developement of Operating Shell</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Updates.md">About the Developement of Operating Shell(Not updated)</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a><p>This doc has been re-added</p>
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a>
 
 # Other Docs
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CONTRIBUTING.md">For Contributing</a>
-<br>
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT(User-friendly Terminal)</a>
 <br>
 <br>
 Some docs have been re-added.
-Note : The Operating Shell update will take some time to develop,
-Sorry for the inconvience
