@@ -17,5 +17,6 @@ The system requirements are as follows :
 -Windows Terminal(For windows 11 users it comes preinstalled and is the default terminal. For windows 10 users, this is optional.This is an optional system requirement for all version of Windows(including Windows 11))
   </b>
 <br>
-
+<br>
+Note : FalconXOS might work on earlier versions of Windows, but this repository is only tested on Windows 10
 
