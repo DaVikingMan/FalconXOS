@@ -7,7 +7,18 @@ It is not necessary to just contribute code to FalconXOS, you can contribute by 
 ## If you are contributing code
 
 To contribute code, you must first sign all your commits by adding:
-Signed-off by : <Username>
+<br>
+<b>Signed-off by : Username</b>
+<br>
+<b>Co-Authored by : Username of the person who helped to make this commit</b>(If you have made this commit by yourself, you don't need to include this)
+<br>
+  Note : This is if you are not signing your commits.
+<br>
+  If you want to sign your commits, see <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits">Signing commits</a>
+<br>
+  Also it isn't necessary to include these lines or sign commits.
+  <br>
+  It's just that everyone should know who has created or helped making this commit
 
 It is optional to write your email when signing
 When making a pull request, it is recommended to follow the format of the pull request.You must also follow contributing guidelines which are listed below
