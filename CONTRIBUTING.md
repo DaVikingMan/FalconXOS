@@ -1,3 +1,5 @@
+Note : For a more updated CONTRIBUTING.md, see the master branch's CONTRIBUTING.md
+<br>
 Thank you for taking interest in contributing to FalconXOS.
 
 ### Ways to Contribute
