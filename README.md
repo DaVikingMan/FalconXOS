@@ -14,6 +14,7 @@ The best thing is that it's open source so if you think that 'meh, this feature 
 <br>
 And if you want to bring the changes which you made to FalconXOS, you can do so.
 </b>
+For news related to FalconXOS, you can view the <a href="https://github.com/DaVikingMan/FalconXOS/master/Dashboard/mainnews.md">dashboard</a>
 # Note
 
 This part lists some of the future updates this project will have
