@@ -135,6 +135,28 @@ namespace src
             WriteConsolePad();
         }
         }
+	else if(commandOpen == "/version dev")
+	{
+		Console.WriteLine("In developemnt");
+		Console.WriteLine("Writing to the input stream");
+		Thread.Sleep(100);
+		Console.WriteLine("Opening a edit::access input stream in Falcon::input-edit");
+		Thread.Sleep(1000);
+		Console.WriteLine("Write ':goto' to start Falcon::Input-edit or type '/Exit' to exit");
+		string commandWrite = Console.ReadLine();
+		if(commandWrite == ":goto")
+		{
+			
+		}else if(commandWrite == "/Exit")
+		{
+			var back = new viOne();
+			back.vi();
+
+		}
+
+
+	}
+
         else
         {
             Console.WriteLine(
