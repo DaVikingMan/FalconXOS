@@ -1,6 +1,10 @@
 **name: |name of the bug report|**
 <br>
 **about: |About the issue|**
+
+
+
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
@@ -17,10 +21,12 @@ Note : It is optional for following the above format, you can use a format of yo
 
 
 **Operating System info**(This is only required if you are testing FalconXOS falcon versions and have found a bug)
-- OS name : 
+- OS name :
 - OS version : (Also add if it an ARM-based, x86 or x64)
 
-**Additional context**
+
+
+**Additional comments**
 <br>
 Any additional comments can be added here
 <br>

@@ -1,5 +1,7 @@
 # This documentation is about the updates of this repository
 
+### This file is no longer updated.For changelogs, run '--access ch' in FalconXOS
+
 This repository's base has been completed and now the main developement will start
 
 The main developements main objective is to add
@@ -7,7 +9,7 @@ The main developements main objective is to add
 
 {
     <br>
-    -a built-in Terminal(Operating Shell, 'about Operating Shell' documentation will be re-added when TerminalXOS is fully released)
+    -a built-in Terminal(Operating Shell, 'about Operating Shell' documentation will be re-added when FalconXOS is fully released)
     <br>
     -a more cleaner UI
     <br>
@@ -84,5 +86,3 @@ And in order to run it:
 ./name-of-script
 
 Note : Changelog of bug fix versions will not be written in changelog.js and only complete versions such as 'v.16' will be written.
-
-

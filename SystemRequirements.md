@@ -1,11 +1,15 @@
 # System Requirements for GNU/Linux
 
-You need both dotnet(This was tested on v5.0) and java installed
+The system requirements are as follows : 
+
+-Node.js(latest version recommended)
 <br>
-For running changelog.js and debug.js, you need nodejs installed
-You also need bash(or any other shell)installed
+-Dotnet(v5.0+, preview versions should also work)
+<br>
+-Java(latest version recommended)
+<br>
+-Bash
+<br>
 
----------------------------------------------------------------------------------
-
-Note : FalconXOS will now be tested on Pop_os(which is based on Ubuntu)
+Note : FalconXOS will now be tested on EndevourOs(which is based on Arch Linux)
 This should work on other distros also
