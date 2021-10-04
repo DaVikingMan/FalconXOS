@@ -80,6 +80,7 @@ FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
 
 FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/LICENSE">MIT license</a>
 
+
 ### For Contributing
 
 <b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/CONTRIBUTING.md">contributing guidelines</a> before contributing.
@@ -102,15 +103,21 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 ### FalconXOS branch system
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/BranchManagement.md">About the Branches in this repository</a>
 
+This link has been removed for now and will be added when FalconXOS will be completely released.
+
+
 ### Other Topics
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/Updates.md">About the Developement of Operating Shell(Not updated)</a>
 <br>
 <a href=https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/AboutSpecialCommands.md>About Special Commands</a>
 
+
 ### Other Docs
 
+
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/UFT.md">About UFT(User-friendly Terminal)</a>
+
 <br>
 <br>
 Some docs have been re-added.
