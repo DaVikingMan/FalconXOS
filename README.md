@@ -88,10 +88,6 @@ FalconXOS also uses <a href="https://github.com/all-contributors/all-contributor
 FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
 <b>
   
-# Code of conduct
-  
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CODE_OF_CONDUCT.md">Code of conduct</a>
-
 # System Requirements
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SystemRequirements.md">System Requirements</a>
