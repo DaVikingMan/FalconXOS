@@ -1,5 +1,5 @@
 # FalconXOS : a Operating Shell
-Welcome to the FalconXOS-GNU/Linux-Alpha repository!
+Welcome to the FalconXOS-GNU/Linux repository!
 <br>
 <br>
 FalconXOS is a terminal which redefines the meaning of terminal.It will have almost every tool you can imagine.
@@ -78,45 +78,45 @@ FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
 
 ### License
 
-FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/LICENSE">MIT license</a>
+FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/LICENSE">MIT license</a>
 
 
 ### For Contributing
 
-<b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/CONTRIBUTING.md">contributing guidelines</a> before contributing.
+<b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/CONTRIBUTING.md">contributing guidelines</a> before contributing.
 <br>
 FalconXOS also uses <a href="https://github.com/all-contributors/all-contributors">'All-contributors'</a> so that every contributor is recognized</b>
 <br>
-FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
+FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
 <b>
   
 ### System Requirements
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/SystemRequirements.md">System Requirements</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/SystemRequirements.md">System Requirements</a>
 <br>
 
 ### Source Code tree for FalconXOS
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/SourceCodeTree.md">Source Code Tree</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/SourceCodeTree.md">Source Code Tree</a>
 
   
 ### FalconXOS branch system
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/BranchManagement.md">About the Branches in this repository</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/BranchManagement.md">About the Branches in this repository</a>
 
 This link has been removed for now and will be added when FalconXOS will be completely released.
 
 
 ### Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/Updates.md">About the Developement of Operating Shell(Not updated)</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/Updates.md">About the Developement of Operating Shell(Not updated)</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/AboutSpecialCommands.md>About Special Commands</a>
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/Linux/AboutSpecialCommands.md>About Special Commands</a>
 
 
 ### Other Docs
 
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/UFT.md">About UFT(User-friendly Terminal)</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux/UFT.md">About UFT(User-friendly Terminal)</a>
 
 <br>
 <br>
