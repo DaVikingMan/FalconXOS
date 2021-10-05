@@ -5,6 +5,7 @@ News :
 FalconXOS's new component in-developement and name decided
 
 ----Start----
+<br>
 <b>
 FalconXOS's new component which will be used to run FalconXOS is now in-developement.
 <br>
@@ -22,5 +23,17 @@ If you want a renderer, you can integerate Yuki in your repository also.
 <br>
 That's all for today's 'extreme news'
 </b>
+<br>
 ----End----
 
+----Start----
+<br>
+<b>
+This news is about FalconXOS-Yuki.
+<br>
+This week(and probably the next)I will be working on the Yuki component so expect less updates on the FalconXOS repository.
+<br>
+If you want to know more about the Yuki component, see the previous news.
+</b>
+<br>
+----End----
