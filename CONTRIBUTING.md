@@ -30,7 +30,7 @@ When making a pull request, it is recommended to follow the format of the pull r
 <br>
 -Write what things are being affected by this contribution and if any issues are fixed.
 <br>
--Dont use bad words in the pull request or when publishing an issue
+-Don't use bad words in the pull request or when publishing an issue
 <br>
 -List what version of FalconXOS is being affected at the top
 <br>
@@ -88,5 +88,5 @@ Although the second format after ':' is optional
 You can create a new pull request or add a new issue if you have found a new issue.
 <br>
 
-If you are testing developement builds of FalconXOS(Falcon branch) and have found a issue and fixed the issue with the changes you made it is recommended to first open a new issue and then link it to the pull request that you have created
+If you are testing developement builds of FalconXOS(Falcon branch) and have found an issue and have fixed it with the changes you made it is recommended to first open a new issue and then link it to the pull request that you have created
 
