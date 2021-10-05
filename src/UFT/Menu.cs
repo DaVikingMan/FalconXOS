@@ -19,8 +19,8 @@ namespace src{
             Console.WriteLine("Shortcuts");
             Console.WriteLine("Debug.cs");
             Console.WriteLine("Debug.js");
-            Console.WriteLine("QuickRun(Type 'run')");
-            Console.WriteLine("Terminal");
+            Console.WriteLine("QuickRun('run')");
+            Console.WriteLine("Terminal(default)");
             Console.WriteLine("Project Manager");
             Console.WriteLine("Exit");
             Console.Write(">");
@@ -84,7 +84,7 @@ namespace src{
             {
                var run = new QuickRun();
                run.QuickRunMethod();   
-            }else if(y == "--access ch")
+            }else if(y == "--access ch" || y == "-=sh=oldch") 
             {
                 componentinteractor.MainInteractor("Access Changelog!", "/", 0);
                 MenuMain();

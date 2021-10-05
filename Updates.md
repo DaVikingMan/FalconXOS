@@ -1,3 +1,4 @@
+### This file no longer gets updated, all changelogs from .14 are in the changelog.js file.
 # This documentation is about the updates of this repository
 
 ### This file is no longer updated.For changelogs, run '--access ch' in FalconXOS

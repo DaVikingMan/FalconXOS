@@ -66,7 +66,7 @@ namespace src
                 v.vi();
             }
 
-        }else if(cRead == "/command Reject") // If you want to exit
+        }else if(cRead == "/command Reject" || cRead == "/Exit" || cRead == "exit" || cRead == "Exit" || cRead == "-state=down") // If you want to exit
         {
             Console.WriteLine("Exiting ");
             Thread.Sleep(100);

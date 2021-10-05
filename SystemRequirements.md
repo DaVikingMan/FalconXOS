@@ -15,5 +15,3 @@ The system requirements are as follows :
 <br>
 -Windows Terminal(For windows 11 users it comes preinstalled and is the default terminal. For windows 10 users, this is optional.This is an optional system requirement for all version of Windows(including Windows 11))
 <br>
-
-
