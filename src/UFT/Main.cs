@@ -111,6 +111,10 @@ namespace src // Main namespace(this includes all the compoents and everything i
                   var signalreceiver = new SignalReceiver();
                   componentInteractor.MainInteractor("Request debug info!", "/", 0); // For now error-handling is manual, as you have to add the errornum for the error. In the next release, the error-handling should be automatic
                   MainStart();
+            }else if(commandStart == "--devconsole")
+            {
+                   var devconsole = new dev.DevConsole();
+                   devconsole.MainConsole();
             }
             
             else  // When the wrong command is executed
@@ -218,7 +222,11 @@ namespace src // Main namespace(this includes all the compoents and everything i
                       MainStart();
 
                   }
-            }
+            }else if(readFirstInput == "--devconsole")
+            {
+                   var devconsole = new dev.DevConsole();
+                   devconsole.MainConsole();
+            } 
             else
             {
                 var gray = new Errortunnel();
