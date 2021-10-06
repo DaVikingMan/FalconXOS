@@ -1,6 +1,6 @@
 using System;
 
-namespace Falcon
+namespace Inputstream
 {
 	class Falcon
 	{ 
@@ -19,21 +19,22 @@ namespace Falcon
 		  public void EditInputstream()
 		  {
 			  InputStream input = new InputStream();
-			  input.EditInput
+			  input.EditInputstream();
 		  }
 	}
-	class InputStream:Falcon
+	class RedirectInput:Falcon
 	{
 		public static void MainInput()
 		{
 			Console.WriteLine(input);
 		}
-		public static void EditInput()
+		public virtual void EditInput()
 		{
                        input = Console.ReadLine();
-		       obj3 = input;
-		       var inputstream = new InputStream.InputStream.InputNon();
-		       inputstream(obj3);
+					   var b = Convert.ToString(obj3);
+		       b = Convert.ToString(input);
+		       var inputstream = new InputStream();
+		       inputstream.InputEdit(b);
 		}
 		
 
