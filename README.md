@@ -1,4 +1,5 @@
-# FalconXOS : a Operating Shell
+# Welcome to the FalconXOS repository(Falcon X Operating Shell)
+Note : This project is nowhere near complete and is in developement
 Welcome to the FalconXOS repository!
 <br>
 <br>
