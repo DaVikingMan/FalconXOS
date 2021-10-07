@@ -1,7 +1,5 @@
 # Welcome to the FalconXOS repository(Falcon X Operating Shell)
-Note : This project is nowhere near complete and is in developement
-<br>
-Welcome to the FalconXOS repository!
+Note : This project is nowhere near complete and is <b>in developement</b>
 <br>
 <br>
 FalconXOS is a terminal which redefines the meaning of terminal.It will have almost every tool you can imagine.
