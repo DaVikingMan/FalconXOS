@@ -78,7 +78,7 @@ FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
 
 ### License
 
-FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/LICENSE">MIT license</a>
+FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE">MIT license</a>
 
 ### For Contributing
 
@@ -92,26 +92,26 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 ### System Requirements
 
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SystemRequirements.md">System Requirements</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SystemRequirements.md">System Requirements</a>
 <br>
 
 ### Source Code tree for FalconXOS
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SourceCodeTree.md">Source Code Tree</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SourceCodeTree.md">Source Code Tree</a>
 
   
 ### FalconXOS branch system
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/BranchManagement.md">About the Branches in this repository</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/BranchManagement.md">About the Branches in this repository</a>
 
 ### Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/Updates.md">About the Developement of Operating Shell(Not updated)</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Updates.md">About the Developement of Operating Shell(Not updated)</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/AboutSpecialCommands.md>About Special Commands</a>
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a>
 
 ### Other Docs
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/UFT.md">About UFT(User-friendly Terminal)</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT(User-friendly Terminal)</a>
 
 <br>
 <br>
