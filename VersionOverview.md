@@ -5,7 +5,7 @@
 
 
 Internal Version(Actual Version) : .19.4.2-Windows
-External version(developement version(updated every major release)) : .1-5<=>
+Developement Version : .1-5<=>
 Platform : Windows
 Branch : Eagle-Eye
 Platform : Windows

@@ -55,7 +55,10 @@ function Main()
 			    {
 				    process.exit(0);
 			    })
-	    }
+	    }else if(response == "Exit" || response == "exit")
+        {
+            process.exit(0);
+        }
 
     })
 }

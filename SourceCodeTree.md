@@ -6,7 +6,7 @@ Note : FalconXOS being the main folder neither has an * nor a ''
 
 This is the basic project overview
 {
-    
+    <pre>
     
     -FalconXOS
        -'.github'
@@ -30,7 +30,14 @@ This is the basic project overview
              -*Read.md
        -'debug'
              -*Test.cs
+	     -*Test.js
+       -'docs'
+             -*AboutComponents.md
+	     -*AboutSignals.md
+	     -*ForDev.md
+             -*AboutSpecialCommands.md
        -'src'
+           -'UFT'
              -*AccessUtility.cs
              -*close.cs
              -*commands.cs
@@ -49,6 +56,33 @@ This is the basic project overview
              -*Utility.cs
              -*viOne.cs
              -*RunChangelog.cs
+	   -'Components'
+	       -'Shiro'
+	          -'Crowned'
+		     -*ErrorInfo.cs
+		     -*InfoList.cs
+		  -*ErrorInit.cs
+		  -*ErrorInteractor.cs
+		  -*ErrorList.cs
+		  -'Kuroi'
+		     -*ErrorReport.cs
+               -*README.md
+	       -'Zero'
+	          -'Crow'
+		     -*internalversion.cs // Not currently used
+		     -*ShiroReceiver.cs
+		     -*ShortcutSignal.cs
+		     -*Versioncodenamecheck.cs
+		  -'Main'
+		     -*ErrorReceiver.cs
+	          -*SignalReceiver.cs
+		  -*SignalVerifier.cs
+		  -*ZeroSignal.cs
+	       -'Gray'
+	          -*Errortunnel.cs
+	   -*changelog.js
+	   -*devchangelog.js
+	   -*README.md
         -*.gitignore
         -*AboutSpecialCommands.md
         -*BranchManagement.md
@@ -64,6 +98,8 @@ This is the basic project overview
         -*Updates.md
         -*VersionOverview.md
         
+	
+	
 
 
 }
