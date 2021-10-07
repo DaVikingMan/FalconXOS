@@ -82,11 +82,11 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 
 ### For Contributing
 
-<b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CONTRIBUTING.md">contributing guidelines</a> before contributing.
+<b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/CONTRIBUTING.md">contributing guidelines</a> before contributing.
 <br>
 FalconXOS also uses <a href="https://github.com/all-contributors/all-contributors">'All-contributors'</a> so that every contributor is recognized</b>
 <br>
-FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/master/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
+FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
 <b>
   
 ### System Requirements
