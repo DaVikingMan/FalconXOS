@@ -29,6 +29,8 @@ FalconXOS is nowhere near complete and is in alpha-stages.
 
 ### About the future of this app
 
+![title](img/PageGithub.png)
+
 I want to make FalconXOS the best terminal possible
 
 These are some of the things which I will add in the upcoming updates
