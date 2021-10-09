@@ -99,6 +99,9 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SourceCodeTree.md">Source Code Tree</a>
 
+### FalconXOS security policy
+
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SECURITY.md">Security Policy(Updated)</a>
   
 ### FalconXOS branch system
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/BranchManagement.md">About the Branches in this repository</a>
