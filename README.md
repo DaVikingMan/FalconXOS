@@ -30,7 +30,7 @@ FalconXOS is nowhere near complete and is in alpha-stages.
 ### About the future of this app
 
 ![title](img/PageGithub.png)
-<font size=10>'The current menu of FalconXOS, seen when running /Start'</font>
+<font size=5>'The current menu of FalconXOS, seen when running /Start'</font>
 
 I want to make FalconXOS the best terminal possible
 
