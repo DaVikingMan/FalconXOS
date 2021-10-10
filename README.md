@@ -33,7 +33,7 @@ FalconXOS is nowhere near complete and is in alpha-stages.
 <font size="5">'The current menu of FalconXOS, seen when running /Start'</font>
 ![FalconXOS's start image](img/PageREADMEMenu.png)
 'The current FalconXOS start screen'
-<br>
+
 I want to make FalconXOS the best terminal possible
 
 These are some of the things which I will add in the upcoming updates
