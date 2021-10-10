@@ -14,7 +14,7 @@ namespace Inputstream
 		{
 			
 			Console.WriteLine(inputedit);
-                        string inputread = inputedit; .
+                        string inputread = inputedit; 
 			// If the text is altered by WritePad, WritePad will use a new inputstream which is a copy of this inputstream
  
 		}
