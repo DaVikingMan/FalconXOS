@@ -10,7 +10,7 @@ And if you want to bring the changes which you made to FalconXOS, you can do so.
 <br>
 <br>
 <b>FalconXOS is still in alpha stages and is on version .19.
-  <br>
+ <br>
 For seeing when version 1(The first complete version of FalconXOS) will be released, you can check the README.md.
 <br>
 I will add version 1 when it will be released when it is complete.
@@ -72,11 +72,6 @@ If you notice the terminals which come with your Operating System(such as CMD fo
 For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 <br>
 (This part has been removed and will be re-added when FalconXOS will be complety released)
-
-### News board
-
-Current news - version .19.4 released in the Falcon branch(master-Alpha), version codename : Gray-Iron, September 10
-FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
 
 ### License
 
