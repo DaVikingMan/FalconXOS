@@ -14,13 +14,17 @@ namespace src{
             Console.Clear(); // Clears the console
             Console.ForegroundColor = ConsoleColor.Cyan; // Sets the foregrounColor
             
+
             
+
             Console.WriteLine("Apps and other commands(type Apps for running this command)");
             Console.WriteLine("Shortcuts");
             Console.WriteLine("Debug.cs");
             Console.WriteLine("Debug.js");
+
             Console.WriteLine("QuickRun('run')");
             Console.WriteLine("Terminal(default)");
+
             Console.WriteLine("Project Manager");
             Console.WriteLine("Exit");
             Console.Write(">");
@@ -59,8 +63,10 @@ namespace src{
             }else if(y == "Project Manager")
             {
                Utility m = new Utility();
+
                
                m.VirtualUtility();    
+
             }else if(y == "/close menu")
             {
                 Main k = new Main();
@@ -68,12 +74,16 @@ namespace src{
             }else if(y == "Debug.cs")
             {
                   var debug = new DebugManager();
+
                   debug.Debug(); 
+
             }else if(y == "Debug.js")
             {
                 var d = new DebugManager();
                 d.JsDebug();
+
                 
+
             }
             else if(y == "--help")
             {
@@ -84,7 +94,9 @@ namespace src{
             {
                var run = new QuickRun();
                run.QuickRunMethod();   
+
             }else if(y == "--access ch" || y == "-=sh=oldch") 
+
             {
                 componentinteractor.MainInteractor("Access Changelog!", "/", 0);
                 MenuMain();
@@ -111,6 +123,8 @@ namespace src{
             }
             
             
+
+
             else{                                    // When the wrong command is executed
                 var gray = new Errortunnel();
                 gray.CheckInfo("/", 20, "None");
@@ -119,6 +133,7 @@ namespace src{
             }
         }
     }
+
 
     
 }

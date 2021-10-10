@@ -1,6 +1,11 @@
 const { stdin, stdout } = require('process');
 const readline = require('readline');
 
+
+
+function MainRun()
+{
+
 var read = readline.createInterface({
     input : stdin,
     output : stdout
@@ -15,3 +20,5 @@ read.question('Exit?', (answer) =>
          process.exit();
      }
 })
+}
+MainRun();

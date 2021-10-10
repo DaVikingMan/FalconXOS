@@ -23,4 +23,7 @@ these are used to enhance the '/command'
 <br>
 There is also '/state' which is also a 'command enhancer'
 
+
+Command enhancers are those commands which enhance '/command'.
+Therefore, the base of /command will be followed in command enhancers
 There are many command enhancers, but they will be added at a later version.

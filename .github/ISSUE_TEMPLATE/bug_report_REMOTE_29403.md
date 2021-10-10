@@ -2,6 +2,9 @@
 <br>
 **about: |About the issue|**
 
+
+
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
@@ -22,6 +25,7 @@ Note : It is optional for following the above format, you can use a format of yo
 - OS version : (Also add if it an ARM-based, x86 or x64)
 
 
+
 **Additional context**
 <br>
 Any additional comments can be added here
@@ -29,5 +33,4 @@ Any additional comments can be added here
 If you have fixed the issue by opening a pull request(or someone else has opened a pull request which fixed your issue), yoe can add a referrence to it here
 Like,
 <br>
-
 |insert pull request link| has fixed my issue

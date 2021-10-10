@@ -1,4 +1,4 @@
-# System Requirements for Windows 10
+# System Requirements for GNU/Linux
 
 The system requirements are as follows : 
 
@@ -8,10 +8,9 @@ The system requirements are as follows :
 <br>
 -Java(latest version recommended)
 <br>
--CMD(preinstalled with windows 10)
+-Bash
 <br>
--Powershell(preinstalled with windows 10)
 
-<br>
--Windows Terminal(For windows 11 users it comes preinstalled and is the default terminal. For windows 10 users, this is optional.This is an optional system requirement for all version of Windows(including Windows 11))
-<br>
+Note : FalconXOS will now be tested on EndevourOs(which is based on Arch Linux)
+This should work on other distros also
+

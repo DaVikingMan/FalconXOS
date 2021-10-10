@@ -45,12 +45,14 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 Console.Write(">");
             
 
+
             Boolean devstatus = false;
             string commandStart = Console.ReadLine();
             if(commandStart == "--devmode" || commandStart == "-sh=developer" || commandStart == "-sh=dev")
             {
                    devstatus = true;
             }
+
             if(commandStart == "start -uft n" || commandStart == "/start") // This commands goes to the menu
             {
                 
@@ -88,11 +90,13 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 closeterminal.closeCommand();
                 
 
+
             }else if(commandStart == "--access ch" || commandStart == "-sh=oldch")
             {
                 componentInteractor.MainInteractor("Access Changelog!", "/", 0);
                 MainStart();
             }else if(commandStart == "--runch" || commandStart == "-sh=ch") 
+
             {
                 componentInteractor.MainInteractor("Dev Changelog!", "/", 0);
                 MainStart();
@@ -111,10 +115,12 @@ namespace src // Main namespace(this includes all the compoents and everything i
                   var signalreceiver = new SignalReceiver();
                   componentInteractor.MainInteractor("Request debug info!", "/", 0); // For now error-handling is manual, as you have to add the errornum for the error. In the next release, the error-handling should be automatic
                   MainStart();
+
             }else if(commandStart == "--devconsole")
             {
                    var devconsole = new dev.DevConsole();
                    devconsole.MainConsole();
+
             }
             
             else  // When the wrong command is executed
@@ -160,7 +166,9 @@ namespace src // Main namespace(this includes all the compoents and everything i
 
             }else if(readFirstInput == "/state note")
             {
+
                 Console.WriteLine("Starting FalconXOS Note");
+
                 Thread.Sleep(100);
                 CommandsAll commandsAll = new CommandsAll();
                 commandsAll.Note();
@@ -186,16 +194,20 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 closeterminal.closeCommand();
                 
 
+
             }else if(readFirstInput == "--access ch" || readFirstInput == "-sh=oldch")
             {
                 componentInteractor.MainInteractor("Access Changelog!", "/", 0);
                 MainStart();
             }else if(readFirstInput == "--runch" || readFirstInput == "-sh=ch")
+
             {
                 componentInteractor.MainInteractor("Dev Changelog!", "/", 0);
                 MainStart();
             }
+
             else if(readFirstInput == "--internal version" || readFirstInput == "--i v" || readFirstInput == "version")
+
             {
                 
                 componentInteractor.MainInteractor("Give version!", "/", 0);
@@ -222,11 +234,13 @@ namespace src // Main namespace(this includes all the compoents and everything i
                       MainStart();
 
                   }
+
             }else if(readFirstInput == "--devconsole")
             {
                    var devconsole = new dev.DevConsole();
                    devconsole.MainConsole();
             } 
+
             else
             {
                 var gray = new Errortunnel();
