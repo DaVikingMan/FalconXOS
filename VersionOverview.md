@@ -3,14 +3,11 @@
 <pre>
 <b>
 
-
-Internal Version(Actual Version) : .19.4.2-Windows
+Internal Version(Actual Version) : .19.4.2-GNU/Linux
 Developement Version : .1-5<=>
-Platform : Windows
-Branch : Eagle-Eye
-Platform : Windows
-Tested on : Windows 10
-Version codename : Gray-Iron</b>
-
+Platform : GNU/Linux
+Branch : Falcon
+Tested on : Arch Linux
+Version codename : Black-Rust</b>
 </pre>
-
+</b>

@@ -22,6 +22,7 @@ I will add version 1 when it will be released when it is complete.
                                       For news related to FalconXOS, you can view the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Dashboard/mainnews.md">dashboard</a>
 ### Note
 
+
 FalconXOS is nowhere near complete and is in alpha-stages.
   <br>
   Everything after this part lists the features that will be added in FalconXOS
@@ -96,6 +97,7 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SystemRequirements.md">System Requirements</a>
+FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/LICENSE">MIT license</a>
 <br>
 
 ### Source Code tree for FalconXOS
@@ -118,6 +120,7 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 ### Other Docs
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/UFT.md">About UFT(User-friendly Terminal)</a>
+
 
 <br>
 <br>
