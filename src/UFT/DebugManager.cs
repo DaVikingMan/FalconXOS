@@ -5,16 +5,19 @@ using System.Threading;
 
 namespace src
 {
-    public class DebugManager // This class is executed when you run the Debug command in the submenu
+
+    public class DebugManager // This class is executed when you run the 'Debug' command in the submenu
+
     {
         public void Debug()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Clear();
-            Console.WriteLine("Checking :: "); // Checks if Test.cs exists
+            Console.WriteLine("Checking :: "); // Checks if 'Test.cs' exists
             if(File.Exists(@$"{Environment.CurrentDirectory}\debug\Test.cs")) 
             {
-                Console.WriteLine("Test.cs Exists"); // Displays this if the file exists
+                Console.WriteLine("'Test.cs' Exists"); // Displays this if the file exists
+
 
             }else 
             {
@@ -34,7 +37,9 @@ namespace src
         {
             Console.WriteLine("Checking if Test.js exists in 'debug' folder");
             
-            var env = $"{Environment.CurrentDirectory}/debug/Test.js";
+
+            var env = $"{Environment.CurrentDirectory}/Debug/Test.js";
+
             Thread.Sleep(2000);
             if(File.Exists(env))
             {
@@ -42,8 +47,10 @@ namespace src
                 Console.WriteLine("Starting");
                 ProcessStartInfo start = new ProcessStartInfo();
                 start.WorkingDirectory = $"{Environment.CurrentDirectory}/debug";
+
                 start.Arguments = $"-c \"node Test.js\" ";
                 start.FileName = "/bin/bash";
+
                 start.UseShellExecute = true;
                 start.CreateNoWindow = true;
                 Process.Start(start);
@@ -52,5 +59,7 @@ namespace src
             }
         }
     }
+
 }
+
 

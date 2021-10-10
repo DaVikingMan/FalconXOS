@@ -26,6 +26,7 @@ namespace src{
         public void RunFile(string path)
         {
             var start = new ProcessStartInfo();
+
             start.Arguments = $"-c '{path}'";
             start.UseShellExecute = false;
             start.FileName = "/bin/bash";
@@ -33,4 +34,6 @@ namespace src{
             Process.Start(start);
         }
     }
+
 }
+

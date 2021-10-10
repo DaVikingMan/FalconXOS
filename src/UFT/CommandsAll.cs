@@ -66,7 +66,7 @@ namespace src
                 v.vi();
             }
 
-        }else if(cRead == "/command Reject") // If you want to exit
+        }else if(cRead == "/command Reject" || cRead == "/Exit" || cRead == "exit" || cRead == "Exit" || cRead == "-state=down") // If you want to exit
         {
             Console.WriteLine("Exiting ");
             Thread.Sleep(100);
@@ -135,6 +135,29 @@ namespace src
             WriteConsolePad();
         }
         }
+
+	else if(commandOpen == "/version dev")
+	{
+		Console.WriteLine("In developemnt");
+		Console.WriteLine("Writing to the input stream");
+		Thread.Sleep(100);
+		Console.WriteLine("Opening a edit::access input stream in Falcon::input-edit");
+		Thread.Sleep(1000);
+		Console.WriteLine("Write ':goto' to start Falcon::Input-edit or type '/Exit' to exit");
+		string commandWrite = Console.ReadLine();
+		if(commandWrite == ":goto")
+		{
+			
+		}else if(commandWrite == "/Exit")
+		{
+			var back = new viOne();
+			back.vi();
+
+		}
+
+
+	}
+
         else
         {
             Console.WriteLine(
@@ -153,12 +176,14 @@ namespace src
     public void Note() // Notes all the features of UFT
     {
         Console.Clear();
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("Welcome to Note!") ;
+
+        Console.WriteLine("Welcome to Note! The place where you can learn how to use FalconXOS");
+
         
         Console.WriteLine("What Note do you want to read?");
         Console.WriteLine("UFTInfo");
         Console.WriteLine("CommandsInfo");
+
 	Console.WriteLine("License");
 	Console.WriteLine("readme(file)");
         Console.WriteLine("Exit");
@@ -247,6 +272,7 @@ namespace src
                 Note();
             }
 
+
 	}
 	else if(readInput == "readme")
 	{
@@ -281,6 +307,7 @@ namespace src
 		}
 	}
         else if(readInput == "Exit" || readInput == "exit" || readInput == "/command Exit" || readInput == "-sh=exit") // This command exits the 'note' and goes to the start screen
+
         {
             Main l = new Main();
             l.MainStart();

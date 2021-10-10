@@ -1,3 +1,4 @@
+### This file no longer gets updated, all changelogs from .14 are in the changelog.js file.
 # This documentation is about the updates of this repository
 
 ### This file is no longer updated.For changelogs, run '--access ch' in FalconXOS
@@ -72,6 +73,7 @@ The changelog can be accessed by running '--access ch' in the menu
 
 The changelog can be viewed by running '--access ch'
 
+
 # Release v.15.2
 
 -This is a bug fix which addresses the issue with changelog.js.
@@ -86,3 +88,4 @@ And in order to run it:
 ./name-of-script
 
 Note : Changelog of bug fix versions will not be written in changelog.js and only complete versions such as 'v.16' will be written.
+

@@ -1,3 +1,5 @@
+Note : For a more updated CONTRIBUTING.md, see the master branch's CONTRIBUTING.md
+<br>
 Thank you for taking interest in contributing to FalconXOS.
 
 ### Ways to Contribute
@@ -7,7 +9,18 @@ It is not necessary to just contribute code to FalconXOS, you can contribute by 
 ## If you are contributing code
 
 To contribute code, you must first sign all your commits by adding:
-Signed-off by : <Username>
+<br>
+<b>Signed-off by : Username</b>
+<br>
+<b>Co-Authored by : Username of the person who helped to make this commit</b>(If you have made this commit by yourself, you don't need to include this)
+<br>
+  Note : This is if you are not signing your commits.
+<br>
+  If you want to sign your commits, see <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits">Signing commits</a>
+<br>
+  Also it isn't necessary to include these lines or sign commits.
+  <br>
+  It's just that everyone should know who has created or helped making this commit
 
 It is optional to write your email when signing
 When making a pull request, it is recommended to follow the format of the pull request.You must also follow contributing guidelines which are listed below
@@ -19,7 +32,7 @@ When making a pull request, it is recommended to follow the format of the pull r
 <br>
 -Write what things are being affected by this contribution and if any issues are fixed.
 <br>
--Dont use bad words in the pull request or when publishing an issue
+-Don't use bad words in the pull request or when publishing an issue
 <br>
 -List what version of FalconXOS is being affected at the top
 <br>
@@ -76,4 +89,5 @@ Although the second format after ':' is optional
   
 You can create a new pull request or add a new issue if you have found a new issue.
 <br>
+
 If you are testing developement builds of FalconXOS(Falcon branch) and have found a issue and fixed the issue with the changes you made it is recommended to first open a new issue and then link it to the pull request that you have created

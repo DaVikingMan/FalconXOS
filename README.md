@@ -1,5 +1,5 @@
-# FalconXOS : a Operating Shell
-Welcome to the FalconXOS-GNU/Linux-Alpha repository!
+# Welcome to the FalconXOS repository(Falcon X Operating Shell)
+Note : This project is nowhere near complete and is <b>in developement</b>
 <br>
 <br>
 FalconXOS is a terminal which redefines the meaning of terminal.It will have almost every tool you can imagine.
@@ -22,12 +22,16 @@ I will add version 1 when it will be released when it is complete.
                                       For news related to FalconXOS, you can view the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Dashboard/mainnews.md">dashboard</a>
 ### Note
 
+
 FalconXOS is nowhere near complete and is in alpha-stages.
   <br>
   Everything after this part lists the features that will be added in FalconXOS
   
 
 ### About the future of this app
+
+![FalconXOS's User-Friendly Terminal](img/PageGithub.png)
+<font size="5">'The current menu of FalconXOS, seen when running /Start'</font>
 
 I want to make FalconXOS the best terminal possible
 
@@ -78,45 +82,45 @@ FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
 
 ### License
 
-FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/LICENSE">MIT license</a>
-
+FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/LICENSE">MIT license</a>
 
 ### For Contributing
 
-<b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/CONTRIBUTING.md">contributing guidelines</a> before contributing.
+<b>Please read the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/CONTRIBUTING.md">contributing guidelines</a> before contributing.
 <br>
 FalconXOS also uses <a href="https://github.com/all-contributors/all-contributors">'All-contributors'</a> so that every contributor is recognized</b>
 <br>
-FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
+FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
 <b>
   
 ### System Requirements
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/SystemRequirements.md">System Requirements</a>
+
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SystemRequirements.md">System Requirements</a>
+FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/LICENSE">MIT license</a>
 <br>
 
 ### Source Code tree for FalconXOS
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/SourceCodeTree.md">Source Code Tree</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SourceCodeTree.md">Source Code Tree</a>
 
+### FalconXOS security policy
+
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SECURITY.md">Security Policy(Updated)</a>
   
 ### FalconXOS branch system
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/BranchManagement.md">About the Branches in this repository</a>
-
-This link has been removed for now and will be added when FalconXOS will be completely released.
-
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/BranchManagement.md">About the Branches in this repository</a>
 
 ### Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/Updates.md">About the Developement of Operating Shell(Not updated)</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/Updates.md">About the Developement of Operating Shell(Not updated)</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/AboutSpecialCommands.md>About Special Commands</a>
-
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/AboutSpecialCommands.md>About Special Commands</a>
 
 ### Other Docs
 
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/UFT.md">About UFT(User-friendly Terminal)</a>
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/UFT.md">About UFT(User-friendly Terminal)</a>
 
 <br>
 <br>
