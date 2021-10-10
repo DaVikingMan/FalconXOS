@@ -1,12 +1,10 @@
 # About the branches in this repository
 
-Before, the master branch was the default branch but now the Alpha branch is the default branch
+The master branch is FalconXOS for windows 
+master-Alpha is the testing branch for FalconXOS-Windows
 
-Now , the master branch has been deleted as it was quite difficult to maintain different versions of FalconXOS
-
-The Alpha branch is now classified as the 'main branch'
-When this app will have support for Linux and macOs, I will create a 'Linux-Build' and 'MacOs-Build' branch.
-
+The Linux branch is stable branch for GNU/Linux
+The Linux-Alpha branch is the testing branch for GNU/Linux
 
 
 Any other updates on the branch system will be added here.
