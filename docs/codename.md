@@ -16,6 +16,7 @@ Version codenamees :
 Current : Gray-Iron
 
 MainMaker : 'Ol'Crow'
+Inputstream : 'Golden Typewriter'
 ListMaker : 'Yer see,thou art old'
 Components(as a group) : 'Shadow'
 </pre>
