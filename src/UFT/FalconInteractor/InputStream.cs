@@ -3,7 +3,7 @@ using System;
 namespace Inputstream
 {
 	class InputStream:Falcon
-        {
+    {
 		
 		
 		public void InputNon(string inputreadonly) // The non-readable and accessable inputstream.Can only be used for accessing inputstream-non:edit
@@ -14,13 +14,14 @@ namespace Inputstream
 		{
 			
 			Console.WriteLine(inputedit);
-                        string inputread = inputedit; .
+                        string inputread = inputedit;
 			// If the text is altered by WritePad, WritePad will use a new inputstream which is a copy of this inputstream
  
 		}
 
 	}
-
-
 }
+
+
+
 
