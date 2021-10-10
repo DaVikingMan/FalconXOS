@@ -31,7 +31,7 @@ FalconXOS is nowhere near complete and is in alpha-stages.
 
 ![FalconXOS's User-Friendly Terminal](img/PageGithub.png)
 <font size="5">'The current menu of FalconXOS, seen when running /Start'</font>
-![FalconXOS's start image](img/PageREADMEMenu.png)
+![FalconXOS's start image](img/StartScreenREADME.png)
 'The current FalconXOS start screen'
 
 I want to make FalconXOS the best terminal possible
