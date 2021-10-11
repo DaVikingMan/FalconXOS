@@ -82,6 +82,7 @@ FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
 
 ### License
 
+
 FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/LICENSE">MIT license</a>
 
 ### For Contributing
@@ -91,9 +92,11 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 FalconXOS also uses <a href="https://github.com/all-contributors/all-contributors">'All-contributors'</a> so that every contributor is recognized</b>
 <br>
 FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
+
 <b>
   
 ### System Requirements
+
 
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SystemRequirements.md">System Requirements</a>
@@ -102,9 +105,11 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 
 ### Source Code tree for FalconXOS
 
+
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SourceCodeTree.md">Source Code Tree</a>
 
 ### FalconXOS security policy
+
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SECURITY.md">Security Policy(Updated)</a>
   
@@ -117,9 +122,11 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 <br>
 <a href=https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/AboutSpecialCommands.md>About Special Commands</a>
 
+
 ### Other Docs
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/UFT.md">About UFT(User-friendly Terminal)</a>
+
 
 
 <br>
