@@ -5,11 +5,7 @@
 *Files changed*
 <br>
 insert filename(If the files changed are too many, this is not required)
-<<<<<<< HEAD
-
-=======
   
->>>>>>> master-Alpha
 *Add what operating system you tested FalconXOS(Note : This is only required if you are testing FalconXOS(Falcon versions)and have found a bug)*
   <br>
 OS name : <name>
@@ -20,3 +16,4 @@ Version : <OS version>
 *Additional comments*
 <br>
 <br>
+

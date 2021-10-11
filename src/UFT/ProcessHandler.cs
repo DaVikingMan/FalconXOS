@@ -20,10 +20,12 @@ namespace src{
            startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/apps"; // Defines where MainMaker is located
             startInfo.CreateNoWindow = true;  // Creates no Window
             startInfo.UseShellExecute = false; // Tells the command to not use shell execute
+
             startInfo.FileName = "/bin/bash"; // Tells to run the sepcified command in CMD(Command Prompt) 
             
            
             startInfo.Arguments = "-c \"java MainMaker.java\""; // Specifies which command to run
+
             
 
             
@@ -35,12 +37,15 @@ namespace src{
         public void ProcessWritePadUI() // Used for running WritePad.java
         {
             ProcessStartInfo startInfo = new ProcessStartInfo();
+
             startInfo.FileName = "/bin/bash";
             startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/apps";
             startInfo.Arguments = "-c  \"java WritePad.java\"";
+
             startInfo.CreateNoWindow = true;
             startInfo.UseShellExecute = false;
             Process.Start(startInfo);
         }
     }
+
 }

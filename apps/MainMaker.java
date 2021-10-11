@@ -15,7 +15,7 @@ import javax.swing.plaf.basic.BasicBorders.ButtonBorder;
 
 
 
-class MainMaker
+class MainMaker // This class is no longer updated.It is recommended to use the MainMaker's Terminal form in FalconXOS
 {
     public static void main(String[] args) {
         // Window elements

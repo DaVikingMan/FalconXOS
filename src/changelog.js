@@ -52,6 +52,7 @@ read.question(':', (ghanswer) =>
 
 }
 
+
 function MainMethod16()
 {
 	console.clear();
@@ -83,6 +84,7 @@ function MainMethod16()
 		}
 	);
 }
+
 
 
 
@@ -120,6 +122,8 @@ function MainMethod15()
 function Method1()
 {
 
+
+
 console.clear();
 console.log("The following changelogs are available : ");
 console.log("releasev.14");
@@ -138,15 +142,22 @@ var rkquestion = rl.createInterface({
 
 rkquestion.question(':', (answer) =>
 {
-  
+
+   
     if(answer == 14)
     {
-	console.clear();    
         MainMethod14();
         
         
     }else if(answer == 15)
     {
+
+        MainMethod15();
+        
+    }else if(answer == "Exit")
+    {
+        process.exit(0);
+
 	console.clear();
         MainMethod15();
         
@@ -159,6 +170,7 @@ rkquestion.question(':', (answer) =>
     else if(answer == "Exit")
     {
              process.exit(0);      
+
     }
     else
     {

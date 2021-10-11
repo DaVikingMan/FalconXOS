@@ -13,3 +13,4 @@ The system requirements are as follows :
 
 Note : FalconXOS will now be tested on EndevourOs(which is based on Arch Linux)
 This should work on other distros also
+
