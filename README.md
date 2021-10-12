@@ -1,5 +1,4 @@
 # Welcome to the FalconXOS repository(Falcon X Operating Shell)
-
 FalconXOS is a terminal which redefines the meaning of terminal.It will have almost every tool you can imagine.
 <br>
 From compiling tools, to package manager and also user-extensions.
@@ -11,7 +10,7 @@ And if you want to bring the changes which you made to FalconXOS, you can do so.
 <br>
 <br>
 <b>FalconXOS is still in alpha stages and is on version .19.
-  <br>
+ <br>
 For seeing when version 1(The first complete version of FalconXOS) will be released, you can check the README.md.
 <br>
 I will add version 1 when it will be released when it is complete.
@@ -30,6 +29,8 @@ FalconXOS is nowhere near complete and is in alpha-stages.
 
 ![FalconXOS's User-Friendly Terminal](img/PageGithub.png)
 <font size="5">'The current menu of FalconXOS, seen when running /Start'</font>
+![FalconXOS's start image](img/StartScreenREADME.png)
+'The current FalconXOS start screen'
 
 I want to make FalconXOS the best terminal possible
 
@@ -73,14 +74,9 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 <br>
 (This part has been removed and will be re-added when FalconXOS will be complety released)
 
-### News board
-
-Current news - version .19.4 released in the Falcon branch(master-Alpha), version codename : Gray-Iron, September 10
-FalconXOS-Linux version .19.4 released in the Linux and Linux-Alpha branch
-
 ### License
 
-FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/LICENSE">MIT license</a>
+FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE">MIT license</a>
 
 ### For Contributing
 
@@ -94,30 +90,30 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 ### System Requirements
 
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SystemRequirements.md">System Requirements</a>
-FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/Linux-Alpha/LICENSE">MIT license</a>
+
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SystemRequirements.md">System Requirements</a>
 <br>
 
 ### Source Code tree for FalconXOS
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/SourceCodeTree.md">Source Code Tree</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SourceCodeTree.md">Source Code Tree</a>
 
 ### FalconXOS security policy
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SECURITY.md">Security Policy(Updated)</a>
   
 ### FalconXOS branch system
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/BranchManagement.md">About the Branches in this repository</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/BranchManagement.md">About the Branches in this repository</a>
 
 ### Other Topics
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/Updates.md">About the Developement of Operating Shell(Not updated)</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Updates.md">About the Developement of Operating Shell(Not updated)</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/AboutSpecialCommands.md>About Special Commands</a>
+<a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a>
 
 ### Other Docs
 
-<a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/UFT.md">About UFT(User-friendly Terminal)</a>
+<a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT(User-friendly Terminal)</a>
 
 
 <br>
