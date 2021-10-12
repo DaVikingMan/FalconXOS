@@ -10,7 +10,7 @@ namespace src
         public uint Error4 { get; set; }
 
         public uint ErrorLk { get; set; }
-        public uint ErrorTerminal { get; set; }
+        public uint ErrorConsole { get; set; }
         public uint ErrorRandom { get; set; }
         public uint FalconError { get; set; }
     }
