@@ -58,9 +58,10 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 
                 viOne v = new viOne();
                 v.Start(); 
-            }else if(commandStart == "/command Exit") // This exits the UFT
+            }else if(commandStart == "/command Exit" || commandStart == "exit" || commandStart == "/Exit") // This exits the UFT
             {
-                Thread.Sleep(1000);
+                var zero = new ZeroSignal();
+                signalverify.Verify("Exit!");
 
             }else if(commandStart == "/state note") // This goes to the class 'Note' 
             {
