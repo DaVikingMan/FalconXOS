@@ -26,6 +26,10 @@ namespace src
              }else if(erroruint == c.Error)
              {
                  Console.WriteLine("CS10 : The error occured due to a key-interrupt");
+             }else if(erroruint == c.ErrorConsole)
+             {
+                   Console.WriteLine("Violation of input :: No input of type string matches the input typed"); 
+                   Console.ReadKey();           
              }
              else
              {
