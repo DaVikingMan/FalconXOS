@@ -18,7 +18,7 @@ namespace src
                     Thread.Sleep(500);
                     Console.Clear();
                     var tempwrite = new Inputstream.TempWrite();
-                    tempwrite.TempSignal(true); // Removes all data from temp input stream
+                    tempwrite.TempSignal(true); // Removes all data from temp input stream  
                     Environment.Exit(0);
                     
                 }else if(receivestring == "Give version!") // This signal outputs the version of FalconXOS 
