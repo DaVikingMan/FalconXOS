@@ -39,6 +39,28 @@ namespace dev
          {
               var Mainc = new src.Main();
               Mainc.MainStart();
+         }else if(consoleread == "config")
+         {
+               var configvar = new config.configc();
+               configvar.MainConfig(true);
+         }else if(consoleread == "write::input" || consoleread == "write=to=input")
+         {
+             var inputStream = new Inputstream.InputStream();
+             Console.WriteLine("Console start :: dev");
+             Console.WriteLine("Debug log : clean");
+             Console.WriteLine("String input, only");
+             Console.Write("$");
+             string inputstream = Console.ReadLine(); 
+             inputStream.InputNon(inputstream);
+             Console.WriteLine("Written::to path");
+             Console.WriteLine("Exiting");
+             NonStartConsole();
+         }else
+         {
+             var gray = new src.Errortunnel();
+             gray.CheckInfo("/", 900, "None");
+             Console.Clear();
+             NonStartConsole();
          }
 
          }
@@ -69,6 +91,27 @@ namespace dev
          {
               var Mainc = new src.Main();
               Mainc.MainStart();
+         }else if(consoleread == "config")
+         {
+               var configvar = new config.configc();
+               configvar.MainConfig(true);
+         }else if(consoleread == "write::input" || consoleread == "write=to=input")
+         {
+             var inputStream = new Inputstream.InputStream();
+             Console.WriteLine("Console start :: dev");
+             Console.WriteLine("Debug log : clean");
+             Console.WriteLine("String input, only");
+             Console.Write("$");
+             string inputstream = Console.ReadLine(); 
+             inputStream.InputNon(inputstream);
+             Console.WriteLine("Written::to path");
+             Console.WriteLine("Exiting");
+             NonStartConsole();
+         }else
+         {
+             var gray = new src.Errortunnel();
+             gray.CheckInfo("/", 900, "None");
+             NonStartConsole();
          }
          }
     }

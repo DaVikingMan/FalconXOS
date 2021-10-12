@@ -9,8 +9,9 @@ namespace src
         {
             ProcessStartInfo startInfo = new ProcessStartInfo();           
                 startInfo.WorkingDirectory = $@"{Environment.CurrentDirectory}/src";
-                startInfo.FileName = "CMD.exe";
-		        startInfo.Arguments = "/C node changelog.js";
+
+                startInfo.FileName = "/bin/bash";
+		        startInfo.Arguments = "-c \"node changelog.js\"";
                 startInfo.UseShellExecute = true;
                 startInfo.CreateNoWindow = true;
                 Process.Start(startInfo);
@@ -21,8 +22,9 @@ namespace src
         { 
                 ProcessStartInfo startInfo = new ProcessStartInfo();           
                 startInfo.WorkingDirectory = $@"{Environment.CurrentDirectory}/src";
-                startInfo.FileName = "CMD.exe";
-		        startInfo.Arguments = "/C node devchangelog.js";
+
+                startInfo.FileName = $"/bin/bash";
+		        startInfo.Arguments = "-c \"node devchangelog.js\"";
                 startInfo.UseShellExecute = true;
                 startInfo.CreateNoWindow = true;
                 Process.Start(startInfo);
