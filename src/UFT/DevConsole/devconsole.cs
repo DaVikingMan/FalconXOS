@@ -39,6 +39,22 @@ namespace dev
          {
               var Mainc = new src.Main();
               Mainc.MainStart();
+         }else if(consoleread == "config")
+         {
+               var configvar = new config.configc();
+               configvar.MainConfig(true);
+         }else if(consoleread == "write::input" || consoleread == "write=to=input")
+         {
+             var tempwrite = new Inputstream.TempWrite();
+             Console.WriteLine("Console start :: dev");
+             Console.WriteLine("Debug log : clean");
+             Console.WriteLine("String input, only");
+             Console.Write("$");
+             string inputstream = Console.ReadLine(); 
+             tempwrite.WriteTemp(inputstream, false);
+             Console.WriteLine("Written::to path");
+             Console.WriteLine("Exiting");
+             NonStartConsole();
          }
 
          }
@@ -69,6 +85,22 @@ namespace dev
          {
               var Mainc = new src.Main();
               Mainc.MainStart();
+         }else if(consoleread == "config")
+         {
+               var configvar = new config.configc();
+               configvar.MainConfig(true);
+         }else if(consoleread == "write::input" || consoleread == "write=to=input")
+         {
+             var tempwrite = new Inputstream.TempWrite();
+             Console.WriteLine("Console start :: dev");
+             Console.WriteLine("Debug log : clean");
+             Console.WriteLine("String input, only");
+             Console.Write("$");
+             string inputstream = Console.ReadLine(); 
+             tempwrite.WriteTemp(inputstream, false);
+             Console.WriteLine("Written::to path");
+             Console.WriteLine("Exiting");
+             NonStartConsole();
          }
          }
     }
