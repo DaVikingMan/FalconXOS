@@ -37,3 +37,9 @@ If you want to know more about the Yuki component, see the previous news.
 </b>
 <br>
 ----End----
+
+----Start----
+
+FalconXOS-GNU/Linux(testing) is now on v.19.9
+<br>
+----End----

@@ -1,10 +1,11 @@
 # About the branches in this repository
 
-Before, the master branch was the default branch but now the Alpha branch is the default branch
+The master branch is FalconXOS for windows 
+master-Alpha is the testing branch for FalconXOS-Windows
 
-Now , the master branch has been deleted as it was quite difficult to maintain different versions of FalconXOS
+The Linux branch is stable branch for GNU/Linux
+The Linux-Alpha branch is the testing branch for GNU/Linux
 
-The Alpha branch is now classified as the 'main branch'
 
 All versions prior to v.30 will have the 'Alpha' name in the branch
 The 'Alpha' branch is for Windows while 'Linux-Alpha' is the Linux version

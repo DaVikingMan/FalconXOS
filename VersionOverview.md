@@ -3,11 +3,11 @@
 <pre>
 <b>
 
-Internal Version(Actual Version) : .19.4.2-GNU/Linux
+Internal Version(Actual Version) : .19.9-GNU/Linux
 Developement Version : .1-5<=>
-Platform : GNU/Linux
+Platform : Windows
 Branch : Falcon
-Tested on : Arch Linux
-Version codename : Black-Rust</b>
+Tested on : Windows 10
+Version codename : Dawn</b>
 </pre>
 </b>
