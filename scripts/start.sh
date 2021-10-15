@@ -1,5 +1,9 @@
 #!/bin/bash
 
-echo "FalconXOS Version 19.9-Linux(Falcon)"; # Echo(or print) the following
-dotnet run --project .. # Run dotnet run in the FalconXOS folder
-
+echo "FalconXOS-GNU/Linux :: version.21.19" # Print this text
+echo "Developement number : std::<<<<1.9>>>>"
+echo "Dotnet version  $(dotnet --version)"
+echo "Nodejs version $(node --version)"
+echo "Java version :  $(java --version)"
+sleep 3
+dotnet run --project ..
