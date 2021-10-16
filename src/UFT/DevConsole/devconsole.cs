@@ -21,12 +21,12 @@ namespace dev
 	     {
              List<string> commandslist = new List<string>();
          
-             commandslist.Add("/c cat mainnews.md");
+             commandslist.Add("-c \"cat mainnews.md\"");
                var startinfo = new ProcessStartInfo();
                startinfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Dashboard";
                startinfo.Arguments = commandslist[0];   
                
-               	startinfo.FileName = "powershell.exe";
+               	startinfo.FileName = "/bin/bash";
                    var read = Process.Start(startinfo);
                 //    read.Start();
               
@@ -51,12 +51,12 @@ namespace dev
 	     {
              List<string> commandslist = new List<string>();
          
-             commandslist.Add("/c cat mainnews.md");
+             commandslist.Add("-c \"cat mainnews.md\"");
                var startinfo = new ProcessStartInfo();
                startinfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Dashboard";
                startinfo.Arguments = commandslist[0];   
                
-               	startinfo.FileName = "powershell.exe";
+               	startinfo.FileName = "/bin/bash";
                    var read = Process.Start(startinfo);
                 //    read.Start();
               
