@@ -4,10 +4,10 @@ namespace src
 {
 	class InputWrite
 	{
-		explicit InputWrite(string stringtowrite)
+		InputWrite(string stringtowrite)
 		{
                       Console.WriteLine(stringtowrite);
-		}
+                }
 
 	}
 }
