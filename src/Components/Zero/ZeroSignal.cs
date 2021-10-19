@@ -24,9 +24,9 @@ namespace src
                 }else if(receivestring == "Give version!") // This signal outputs the version of FalconXOS 
                 {
                     
-                        Console.WriteLine("Version : .19.4-Windows(Falcon)");
-                        Console.WriteLine("Version codename : Gray-Iron");
-                        Console.WriteLine("Dev version : .19.4.2");
+                        Console.WriteLine("Version : .21.19-Windows(Falcon)");
+                        Console.WriteLine("Version codename : Black Snow");
+                        Console.WriteLine("Dev version : .21.19.9");
                         Console.ReadKey();
                         Thread.Sleep(5000);
                 }else if(receivestring == "Request debug info!") // This signal is used for showing debug info
