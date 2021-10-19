@@ -26,6 +26,7 @@ namespace src{
             Console.WriteLine("Terminal(default)");
 
             Console.WriteLine("Project Manager");
+            Console.WriteLine("Developer Console(--devconsole)");
             Console.WriteLine("Exit");
             Console.Write(">");
             string y = Console.ReadLine();
@@ -120,11 +121,11 @@ namespace src{
                 MenuMain();
                 
             
+            }else if(y == "--devconsole")
+            {
+                 var s = new dev.DevConsole();
+                 s.MainConsole();
             }
-            
-            
-
-
             else{                                    // When the wrong command is executed
                 var gray = new Errortunnel();
                 gray.CheckInfo("/", 20, "None");
