@@ -1,5 +1,5 @@
 # Welcome to the FalconXOS-Unix version repository(Falcon X Operating Shell)
-### This is the Unix version which technically shoudld work on all unix-like systems, such as macos and BSD
+### This is the Unix version which technically should work on all unix-like systems, such as macos and BSD
 FalconXOS is a terminal which redefines the meaning of terminal.It will have almost every tool you can imagine.
 <br>
 From compiling tools, to package manager and also user-extensions.
