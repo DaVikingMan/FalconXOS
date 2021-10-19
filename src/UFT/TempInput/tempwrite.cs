@@ -11,10 +11,10 @@ namespace Inputstream
                          string read = readwrite;
 						 if(ifwritepermanent == true)
 						 {
-                               File.WriteAllText("../FalconXOS/data/TempInputstream/main.inputstream", read);
+                               File.WriteAllText($"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream", read);
 						 }else if(ifwritepermanent == false)
 						 {
-							 File.WriteAllText("../FalconXOS/data/TempInputstream/main.inputstream", read);
+							 File.WriteAllText($"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream", read);
 							 
 
 						 }
