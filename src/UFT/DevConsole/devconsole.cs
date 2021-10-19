@@ -55,7 +55,14 @@ namespace dev
              Console.WriteLine("Written::to path");
              Console.WriteLine("Exiting");
              NonStartConsole();
-         }else
+         }else if(string.IsNullOrWhiteSpace(consoleread))
+         {
+             var gray = new src.Errortunnel();
+             gray.CheckInfo("/", 100, "None");
+             Console.Clear();
+             NonStartConsole();
+         }
+         else
          {
              var gray = new src.Errortunnel();
              gray.CheckInfo("/", 900, "None");
@@ -104,10 +111,18 @@ namespace dev
              Console.Write("$");
              string inputstream = Console.ReadLine(); 
              inputStream.InputNon(inputstream);
+            // src.InputWrite i = new src.InputWrite(inputstream);
              Console.WriteLine("Written::to path");
              Console.WriteLine("Exiting");
              NonStartConsole();
-         }else
+         }else if(string.IsNullOrWhiteSpace(consoleread))
+         {
+             var gray = new src.Errortunnel();
+             gray.CheckInfo("/", 100, "None");
+             Console.Clear();
+             NonStartConsole();
+         }
+         else
          {
              var gray = new src.Errortunnel();
              gray.CheckInfo("/", 900, "None");
