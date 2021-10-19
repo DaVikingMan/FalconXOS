@@ -9,8 +9,7 @@ namespace Inputstream
 		public void InputNon(string inputreadonly) // The non-readable and accessable inputstream.Can only be used for accessing inputstream-non:edit
 		{
                               
-							   var tempwrite = new TempWrite();
-							   tempwrite.WriteTemp(inputreadonly, false);
+							   src.InputWrite i = new src.InputWrite(inputreadonly);
 			       
 		}
 		public void InputEdit(string inputedit) // The editable inputstream which is later converted to Falcon::Input-!edit
