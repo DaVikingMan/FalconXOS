@@ -42,4 +42,14 @@ If you want to know more about the Yuki component, see the previous news.
 
 FalconXOS-GNU/Linux(testing) is now on v.19.9
 <br>
+-----End---
+
+----Start----
+
+Date of news : 21/October/2021
+
+This entire month and the half of November, there will be almost constant updates to FalconXOS, so make sure you check daily for updates in the repository.Updates are expected to be daily but there might be a day or two where I might not
+<br>
+release a feature.All updates that will be released will be crucial for FalconXOS.I might also release FalconXOS-Yuki(If I complete it that is).
+
 ----End----
