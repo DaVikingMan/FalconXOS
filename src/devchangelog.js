@@ -1,4 +1,5 @@
-const { stdin, stdout } = require('process');
+const { Console } = require('console');
+const { stdin, stdout, mainModule } = require('process');
 const readline = require('readline');
 
 Main();
@@ -6,7 +7,7 @@ function Main()
 {
 
     console.clear();
-    console.log("Falcon version : -.19.2\nExternal version : /4\nOverall version : .19.4.9");
+    console.log("Falcon version : -.21.19\nExternal version : /4\nOverall version : .21.19.9");
 
     console.log('\nversion.16.2');
     console.log('\nversion.19.4');
@@ -32,7 +33,14 @@ function Main()
             {
                 if(response == "/exit")
                 {
-                    process.exit();
+                    if(answer == "Exit")
+								{
+									Main();
+								}else
+								{
+									console.log("Wrong command : default action is exit");
+									Main();
+								}
 
                 }
             })
@@ -58,7 +66,14 @@ function Main()
 		    r.question('$', (answer) =>
 			    {
 
-				    process.exit(0);
+					if(answer == "Exit")
+					{
+						Main();
+					}else
+					{
+						console.log("Wrong command : default action is exit");
+						Main();
+					}
 
 			    })
 	    }else if(response == ".21.19" || response == "-ch=v+21.19")
@@ -86,10 +101,18 @@ function Main()
 		    console.log("Start developement of config console and .config files");
 		    console.log("Started developement of permanent input streams");
 		    
-		     r.question('$', (answer) =>
+		     r.question('Exit?', (answer) =>
                             {
+								if(answer == "Exit")
+								{
+									Main();
+								}else
+								{
+									console.log("Wrong command : default action is exit");
+									Main();
+								}
 
-                                    process.exit(0);
+                                    
 
                             })
 
@@ -97,7 +120,10 @@ function Main()
 	    else if(response == "Exit" || response == "exit")
         {
             process.exit(0);
-        }
+        }else
+		{
+			Main();
+		}
 
     })
 }
