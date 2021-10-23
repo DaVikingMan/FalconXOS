@@ -82,19 +82,33 @@ namespace dev
              gray.CheckInfo("/", 100, "None");
              Console.Clear();
              NonStartConsole();
-         }else if(consoleread == "--md=reader")
+         }else if(consoleread == "--open in" ||consoleread == "--md=reader in")
          {
                 var mdreader = new TermLibs.markdownreader();
-                Console.WriteLine("Provide a filename(default = FalconXOS/VersionOverview.md");
+                Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
                 Console.Write("$ ");
                 string read = Console.ReadLine();
                 if(read == "default")
                 {
-                     mdreader.read($"VersionOverview.md", "None");    
+                    var fileadd = new TermLibs.fileadd();
+                     fileadd.AddToString("VersionOverview.md", "None");    
                 }else
                 {
-                     mdreader.read($"VersionOverview.md", "None");
+                     var fileadd = new TermLibs.fileadd();
+                     fileadd.AddToString(read, "None");
                 }
+               
+         }else if(consoleread == "--open exit" ||consoleread == "--md=reader exit" )
+         {
+              var mdreader = new TermLibs.markdownreader();
+                Console.WriteLine("Provide a filename");
+                Console.Write("$ ");
+                string read = Console.ReadLine();
+                mdreader.read(read, "None");
+                
+                
+                     
+                
          }
          else
          {
@@ -155,7 +169,7 @@ namespace dev
              gray.CheckInfo("/", 100, "None");
              Console.Clear();
              NonStartConsole();
-         }else if(consoleread == "--md=reader")
+         }else if(consoleread == "--open in" ||consoleread == "--md=reader in")
          {
                 var mdreader = new TermLibs.markdownreader();
                 Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
@@ -163,12 +177,25 @@ namespace dev
                 string read = Console.ReadLine();
                 if(read == "default")
                 {
-                     mdreader.read($"VersionOverview.md", "None");    
+                    var fileadd = new TermLibs.fileadd();
+                     fileadd.AddToString("VersionOverview.md", "None");    
                 }else
                 {
-                     mdreader.read($"{Environment.CurrentDirectory}/VersionOverview.md", "None");
+                     var fileadd = new TermLibs.fileadd();
+                     fileadd.AddToString("VersionOverview.md", "None");
                 }
                
+         }else if(consoleread == "--open exit" ||consoleread == "--md=reader exit" )
+         {
+              var mdreader = new TermLibs.markdownreader();
+                Console.WriteLine("Provide a filename");
+                Console.Write("$ ");
+                string read = Console.ReadLine();
+                mdreader.read(read, "None");
+                
+                
+                     
+                
          }
          else
          {
