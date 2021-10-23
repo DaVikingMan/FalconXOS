@@ -24,12 +24,14 @@ namespace dev
 	     {
              List<string> commandslist = new List<string>();
 
+
              commandslist.Add("-c \"cat mainnews.md\"");
                var startinfo = new ProcessStartInfo();
                startinfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Dashboard";
                startinfo.Arguments = commandslist[0];
 
                	startinfo.FileName = @"/bin/bash";
+
                    var read = Process.Start(startinfo);
 
                    read.Close();
@@ -96,6 +98,7 @@ namespace dev
                var startinfo = new ProcessStartInfo();
                startinfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Dashboard";
                startinfo.Arguments = commandslist[0];
+
 
                	startinfo.FileName = "/bin/bash";
                    var read = Process.Start(startinfo);
