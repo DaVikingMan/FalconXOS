@@ -32,8 +32,7 @@ namespace TermLibs
                             Console.WriteLine("Md reader : version 9.1");
                             ProcessStartInfo start = new ProcessStartInfo();
                             start.FileName = "powershell.exe";
-                            start.Arguments = $"/c cat {Environment.CurrentDirectory}/{filename}";
-                            // start.UseShellExecute = true;
+                            start.Arguments = $"/c cat {filename}";
                             Process.Start(start);
                             Console.ReadKey();
                             
