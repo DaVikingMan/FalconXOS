@@ -2,11 +2,11 @@
 
 <pre>
 <b>
-Internal Version(Actual Version) : .21.19-GNU/Linux
+Internal Version(Actual Version) : .21.19-Windows
 Developement Version : 0x01<=>
-Platform : GNU/Linux
+Platform : Windows
 Branch : Falcon
-Tested on : Arch Linux
-Version codename : Silver-Sky</b>
+Tested on : Windows 10
+Version codename : Black-Rust/b>
 </pre>
 </b>
