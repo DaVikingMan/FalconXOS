@@ -10,7 +10,8 @@ namespace dev
     {
          public void MainConsole()
          {
-
+             Console.Clear();
+             Console.ForegroundColor = ConsoleColor.White;
      		 Console.WriteLine(Environment.CurrentDirectory);
              Console.WriteLine("devconsole :: Ignore debug for now, all debug messages are for when inputstream will be implemented");
              Console.WriteLine("Input :: ????");
@@ -25,12 +26,12 @@ namespace dev
              List<string> commandslist = new List<string>();
 
 
-             commandslist.Add("-c \"cat mainnews.md\"");
+             commandslist.Add("/c \"cat mainnews.md\"");
                var startinfo = new ProcessStartInfo();
                startinfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Dashboard";
                startinfo.Arguments = commandslist[0];
 
-               	startinfo.FileName = @"/bin/bash";
+               	startinfo.FileName = "powershell.exe";
 
                    var read = Process.Start(startinfo);
 
@@ -81,6 +82,19 @@ namespace dev
              gray.CheckInfo("/", 100, "None");
              Console.Clear();
              NonStartConsole();
+         }else if(consoleread == "--md=reader")
+         {
+                var mdreader = new TermLibs.markdownreader();
+                Console.WriteLine("Provide a filename(default = FalconXOS/VersionOverview.md");
+                Console.Write("$ ");
+                string read = Console.ReadLine();
+                if(read == "default")
+                {
+                     mdreader.read($"VersionOverview.md", "None");    
+                }else
+                {
+                     mdreader.read($"VersionOverview.md", "None");
+                }
          }
          else
          {
@@ -94,19 +108,20 @@ namespace dev
          public void NonStartConsole()
          {
              Console.Clear();
+             Console.ForegroundColor = ConsoleColor.White;
               Console.Write(">> ");
 	     string consoleread = Console.ReadLine();
 	     if(consoleread == "view @" || consoleread == "view news")
 	     {
              List<string> commandslist = new List<string>();
 
-             commandslist.Add("-c \"cat mainnews.md\"");
+             commandslist.Add("/c \"cat mainnews.md\"");
                var startinfo = new ProcessStartInfo();
                startinfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Dashboard";
                startinfo.Arguments = commandslist[0];
 
 
-               	startinfo.FileName = "/bin/bash";
+               	startinfo.FileName = "powershell.exe";
                    var read = Process.Start(startinfo);
 
                    read.Close();
@@ -131,7 +146,6 @@ namespace dev
              Console.Write("$");
              string inputstream = Console.ReadLine();
              inputStream.InputNon(inputstream);
-            // src.InputWrite i = new src.InputWrite(inputstream);
              Console.WriteLine("Written::to path");
              Console.WriteLine("Exiting");
              NonStartConsole();
@@ -141,6 +155,20 @@ namespace dev
              gray.CheckInfo("/", 100, "None");
              Console.Clear();
              NonStartConsole();
+         }else if(consoleread == "--md=reader")
+         {
+                var mdreader = new TermLibs.markdownreader();
+                Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
+                Console.Write("$ ");
+                string read = Console.ReadLine();
+                if(read == "default")
+                {
+                     mdreader.read($"VersionOverview.md", "None");    
+                }else
+                {
+                     mdreader.read($"{Environment.CurrentDirectory}/VersionOverview.md", "None");
+                }
+               
          }
          else
          {
