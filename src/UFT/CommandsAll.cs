@@ -112,7 +112,7 @@ namespace src
         Console.WriteLine(">");
         string readApp = Console.ReadLine();
         ProcessStartInfo startInfo = new ProcessStartInfo();
-        startInfo.Arguments = $@"/C {readApp}";
+        startInfo.Arguments = $@"-c {readApp}";
         startInfo.UseShellExecute = true;
         Process.Start(startInfo);
         Thread.Sleep(2000);
