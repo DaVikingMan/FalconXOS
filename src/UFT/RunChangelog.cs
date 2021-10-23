@@ -10,10 +10,10 @@ namespace src
             ProcessStartInfo startInfo = new ProcessStartInfo();           
                 startInfo.WorkingDirectory = $@"{Environment.CurrentDirectory}/src";
 
-                startInfo.FileName = "/bin/bash";
-		        startInfo.Arguments = "-c \"node changelog.js\"";
+                startInfo.FileName = "powershell.exe";
                 startInfo.UseShellExecute = true;
                 startInfo.CreateNoWindow = true;
+		        startInfo.Arguments = "/c \"node changelog.js\"";
                 Process.Start(startInfo);
                
                 
@@ -23,10 +23,10 @@ namespace src
                 ProcessStartInfo startInfo = new ProcessStartInfo();           
                 startInfo.WorkingDirectory = $@"{Environment.CurrentDirectory}/src";
 
-                startInfo.FileName = $"/bin/bash";
-		        startInfo.Arguments = "-c \"node devchangelog.js\"";
+                startInfo.FileName = $"powershell.exe";
                 startInfo.UseShellExecute = true;
                 startInfo.CreateNoWindow = true;
+		        startInfo.Arguments = "/c \"node devchangelog.js\"";
                 Process.Start(startInfo);
         }
     }

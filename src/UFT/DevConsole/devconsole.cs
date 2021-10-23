@@ -54,7 +54,7 @@ namespace dev
 		 if(readfirst == "alter .sh --start")
      {
 			 string[] a = {
-			        "#!/bin/bash",
+			        "#!powershell.exe",
 
 				 "echo FalconXOS-GNU/Linux Version.21.19-Falcon",
 			         "dotnet run --project .."
