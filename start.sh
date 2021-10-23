@@ -6,5 +6,6 @@ echo "Developement number : std::<<<<1.9>>>>"
 echo "Dotnet version  $(dotnet --version)"
 echo "Nodejs version $(node --version)"
 echo "Java version :  $(java --version)"
-dotnet run
+dotnet build
+dotnet bin/Debug/net5.0/TerminalMainV.dll
 
