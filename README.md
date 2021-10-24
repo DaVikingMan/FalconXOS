@@ -76,7 +76,9 @@ For example Command Prompt only uses 7mb of Ram and 0.1% cpu.
 
 ### License
 
+
 FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/LICENSE">MIT license</a>
+
 
 ### For Contributing
 
@@ -85,9 +87,11 @@ FalconXOS is licensed under the <a href="https://github.com/DaVikingMan/FalconXO
 FalconXOS also uses <a href="https://github.com/all-contributors/all-contributors">'All-contributors'</a> so that every contributor is recognized</b>
 <br>
 FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/master-Alpha/CODE_OF_CONDUCT.md">Contributor Covenant Code of Conduct</a></b>
+
 <b>
   
 ### System Requirements
+
 
 
 
@@ -96,9 +100,12 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 
 ### Source Code tree for FalconXOS
 
+
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SourceCodeTree.md">Source Code Tree</a>
 
+
 ### FalconXOS security policy
+
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SECURITY.md">Security Policy(Updated)</a>
   
@@ -111,9 +118,11 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 <br>
 <a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a>
 
+
 ### Other Docs
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT(User-friendly Terminal)</a>
+
 
 
 <br>

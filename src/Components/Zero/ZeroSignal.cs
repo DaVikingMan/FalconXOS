@@ -1,7 +1,11 @@
 using System;
 using System.Diagnostics;
 using System.Threading;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
 
+// C:\Github\FalconXOS\data\PermanentInputStream\permainput.inputstream
 // The signal when checked gets sent to ReceiveSignal method in Zero
 
 namespace src
@@ -18,15 +22,37 @@ namespace src
                     Thread.Sleep(500);
                     Console.Clear();
                     var tempwrite = new Inputstream.TempWrite();
-                    tempwrite.TempSignal(true); // Removes all data from temp input stream  
+                    List<string> filename = File.ReadAllLines($"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream").ToList();
+                    if(!File.Exists($"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream"))
+                    {
+                         File.Create($"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream");
+                    }
+                   
+		    if(filename.Count == 1)
+            {
+
+            
+                    
+                     // Removes all data from temp input stream  
                     Environment.Exit(0);
+            }
+		    else if(filename.Count == 0)
+            {
+                tempwrite.TempSignal(false);
+                string[] a = {""};
+                File.WriteAllLines($"{Environment.CurrentDirectory}/data/TempInputStream/main.inputstream", a);
+                    Environment.Exit(0);
+            }
+                    
+
+                    
                     
                 }else if(receivestring == "Give version!") // This signal outputs the version of FalconXOS 
                 {
                     
-                        Console.WriteLine("Version : .19.4-Windows(Falcon)");
-                        Console.WriteLine("Version codename : Gray-Iron");
-                        Console.WriteLine("Dev version : .19.4.2");
+                        Console.WriteLine("Version : .21.19-Windows(Falcon)");
+                        Console.WriteLine("Version codename : Black Snow");
+                        Console.WriteLine("Dev version : .21.19.9");
                         Console.ReadKey();
                         Thread.Sleep(5000);
                 }else if(receivestring == "Request debug info!") // This signal is used for showing debug info

@@ -2,12 +2,13 @@
 
 <pre>
 <b>
-
-Internal Version(Actual Version) : .19.9-GNU/Linux
-Developement Version : .1-5<=>
+Internal Version(Actual Version) : .23.9-Windows
+Developement Version : 0x09<=>
 Platform : Windows
 Branch : Falcon
 Tested on : Windows 10
-Version codename : Dawn</b>
+Version codename : Serious-Series</b>
 </pre>
 </b>
+
+The version codename is a one-punch man referrence

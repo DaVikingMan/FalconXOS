@@ -48,8 +48,8 @@ namespace src
                 ProcessStartInfo start = new ProcessStartInfo();
                 start.WorkingDirectory = $"{Environment.CurrentDirectory}/debug";
 
-                start.Arguments = $"-c \"node Test.js\" ";
-                start.FileName = "/bin/bash";
+                start.Arguments = $"/c \"node Test.js\" ";
+                start.FileName = "powershell.exe";
 
                 start.UseShellExecute = true;
                 start.CreateNoWindow = true;

@@ -16,7 +16,7 @@ namespace src
             m.UseShellExecute = true;
             m.CreateNoWindow = false;
 
-            m.FileName = "/bin/bash";
+            m.FileName = "powershell.exe";
 
             Process.Start(m);
             Thread.Sleep(1000);

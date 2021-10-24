@@ -11,10 +11,10 @@ namespace Inputstream
                          string read = readwrite;
 						 if(ifwritepermanent == true)
 						 {
-                               File.WriteAllText("../FalconXOS/data/TempInputstream/main.inputstream", read);
+                               File.AppendAllText($"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream", read);
 						 }else if(ifwritepermanent == false)
 						 {
-							 File.WriteAllText("../FalconXOS/data/TempInputstream/main.inputstream", read);
+							 File.AppendAllText($"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream", read);
 							 
 
 						 }
@@ -27,6 +27,13 @@ namespace Inputstream
 			if(istrue == true)
 			{
 				File.WriteAllText("../FalconXOS/data/TempInputstream/main.inputstream", null);
+			}else if(istrue == false) // data\PermanentInputStream\permainput.inputstream
+			{
+				string[] a = 
+				{
+                     "Delete:Stream"
+				};
+				File.WriteAllLines($@"{Environment.CurrentDirectory}\data\PermanentInputStream\permainput.inputstream", a);
 			}
 		}
 

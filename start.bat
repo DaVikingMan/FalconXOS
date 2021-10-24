@@ -1,3 +1,5 @@
 @Echo off
-echo FalconXOS Version 19.4-Windows(Falcon)
-dotnet run
+
+dotnet build
+echo FalconXOS-Windows Version - .21.19
+dotnet  bin/Debug/net5.0/TerminalMainV.dll
