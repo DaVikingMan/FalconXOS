@@ -21,10 +21,10 @@ namespace src{
             startInfo.CreateNoWindow = true;  // Creates no Window
             startInfo.UseShellExecute = false; // Tells the command to not use shell execute
 
-            startInfo.FileName = "powershell.exe"; // Tells to run the sepcified command in CMD(Command Prompt) 
+            startInfo.FileName = "/bin/bash"; // Tells to run the sepcified command in CMD(Command Prompt) 
             
            
-            startInfo.Arguments = "/c \"java MainMaker.java\""; // Specifies which command to run
+            startInfo.Arguments = "-c \"java MainMaker.java\""; // Specifies which command to run
 
             
 
@@ -38,9 +38,9 @@ namespace src{
         {
             ProcessStartInfo startInfo = new ProcessStartInfo();
 
-            startInfo.FileName = "powershell.exe";
+            startInfo.FileName = "/bin/bash";
             startInfo.WorkingDirectory = $"{Environment.CurrentDirectory}/apps";
-            startInfo.Arguments = "/c  \"java WritePad.java\"";
+            startInfo.Arguments = "-c  \"java WritePad.java\"";
 
             startInfo.CreateNoWindow = true;
             startInfo.UseShellExecute = false;
