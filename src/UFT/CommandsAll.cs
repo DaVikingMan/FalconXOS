@@ -279,7 +279,7 @@ namespace src
              ProcessStartInfo start = new ProcessStartInfo();
              start.Arguments = $"/c \"cat {Environment.CurrentDirectory}/README.md\"";
              start.UseShellExecute = true;
-             start.FileName = "powershell.exe";
+             start.FileName = "/bin/bash";
              start.CreateNoWindow = true;
             
              var h = Process.Start(start);
