@@ -2,11 +2,11 @@
 
 <pre>
 <b>
-Internal Version(Actual Version) : .23.9-Windows
+Internal Version(Actual Version) : .23.9-GNU/Linux
 Developement Version : 0x09<=>
-Platform : Windows
+Platform : GNU/Linux
 Branch : Falcon
-Tested on : Windows 10
+Tested on : Arch Linux
 Version codename : Serious-Series</b>
 </pre>
 </b>
