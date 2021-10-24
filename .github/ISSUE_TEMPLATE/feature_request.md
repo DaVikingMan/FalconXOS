@@ -1,7 +1,12 @@
 ---
 name: Name of the feature request(optional)
 about: About the feature report(optional)
+title: ''
+labels: ''
+assignees: ''
+
 ---
+
 <pre>
 **Describe the feature which you want to add**
 For example, The UI should be a bit more user-friendly
