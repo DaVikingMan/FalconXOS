@@ -10,3 +10,5 @@ Tested on : Windows 10
 Version codename : Serious-Series</b>
 </pre>
 </b>
+
+The version codename is a one-punch man referrence
