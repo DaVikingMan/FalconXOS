@@ -10,7 +10,8 @@ namespace dev
     {
          public void MainConsole()
          {
-
+             Console.Clear();
+             Console.ForegroundColor = ConsoleColor.White;
      		 Console.WriteLine(Environment.CurrentDirectory);
              Console.WriteLine("devconsole :: Ignore debug for now, all debug messages are for when inputstream will be implemented");
              Console.WriteLine("Input :: ????");
@@ -25,12 +26,12 @@ namespace dev
              List<string> commandslist = new List<string>();
 
 
-             commandslist.Add("-c \"cat mainnews.md\"");
+             commandslist.Add("/c \"cat mainnews.md\"");
                var startinfo = new ProcessStartInfo();
                startinfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Dashboard";
                startinfo.Arguments = commandslist[0];
 
-               	startinfo.FileName = @"/bin/bash";
+               	startinfo.FileName = "powershell.exe";
 
                    var read = Process.Start(startinfo);
 
@@ -53,7 +54,7 @@ namespace dev
 		 if(readfirst == "alter .sh --start")
      {
 			 string[] a = {
-			        "#!/bin/bash",
+			        "#!powershell.exe",
 
 				 "echo FalconXOS-GNU/Linux Version.21.19-Falcon",
 			         "dotnet run --project .."
@@ -75,8 +76,41 @@ namespace dev
              Console.WriteLine("Written::to path");
              Console.WriteLine("Exiting");
              NonStartConsole();
-
-         }else
+         }else if(string.IsNullOrWhiteSpace(consoleread))
+         {
+             var gray = new src.Errortunnel();
+             gray.CheckInfo("/", 100, "None");
+             Console.Clear();
+             NonStartConsole();
+         }else if(consoleread == "--open in" ||consoleread == "--md=reader in")
+         {
+                var mdreader = new TermLibs.markdownreader();
+                Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
+                Console.Write("$ ");
+                string read = Console.ReadLine();
+                if(read == "default")
+                {
+                    var fileadd = new TermLibs.fileadd();
+                     fileadd.AddToString("VersionOverview.md", "None");    
+                }else
+                {
+                     var fileadd = new TermLibs.fileadd();
+                     fileadd.AddToString(read, "None");
+                }
+               
+         }else if(consoleread == "--open exit" ||consoleread == "--md=reader exit" )
+         {
+              var mdreader = new TermLibs.markdownreader();
+                Console.WriteLine("Provide a filename");
+                Console.Write("$ ");
+                string read = Console.ReadLine();
+                mdreader.read(read, "None");
+                
+                
+                     
+                
+         }
+         else
          {
              var gray = new src.Errortunnel();
              gray.CheckInfo("/", 900, "None");
@@ -88,19 +122,20 @@ namespace dev
          public void NonStartConsole()
          {
              Console.Clear();
+             Console.ForegroundColor = ConsoleColor.White;
               Console.Write(">> ");
 	     string consoleread = Console.ReadLine();
 	     if(consoleread == "view @" || consoleread == "view news")
 	     {
              List<string> commandslist = new List<string>();
 
-             commandslist.Add("-c \"cat mainnews.md\"");
+             commandslist.Add("/c \"cat mainnews.md\"");
                var startinfo = new ProcessStartInfo();
                startinfo.WorkingDirectory = $"{Environment.CurrentDirectory}/Dashboard";
                startinfo.Arguments = commandslist[0];
 
 
-               	startinfo.FileName = "/bin/bash";
+               	startinfo.FileName = "powershell.exe";
                    var read = Process.Start(startinfo);
 
                    read.Close();
@@ -128,7 +163,41 @@ namespace dev
              Console.WriteLine("Written::to path");
              Console.WriteLine("Exiting");
              NonStartConsole();
-         }else
+         }else if(string.IsNullOrWhiteSpace(consoleread))
+         {
+             var gray = new src.Errortunnel();
+             gray.CheckInfo("/", 100, "None");
+             Console.Clear();
+             NonStartConsole();
+         }else if(consoleread == "--open in" ||consoleread == "--md=reader in")
+         {
+                var mdreader = new TermLibs.markdownreader();
+                Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
+                Console.Write("$ ");
+                string read = Console.ReadLine();
+                if(read == "default")
+                {
+                    var fileadd = new TermLibs.fileadd();
+                     fileadd.AddToString("VersionOverview.md", "None");    
+                }else
+                {
+                     var fileadd = new TermLibs.fileadd();
+                     fileadd.AddToString("VersionOverview.md", "None");
+                }
+               
+         }else if(consoleread == "--open exit" ||consoleread == "--md=reader exit" )
+         {
+              var mdreader = new TermLibs.markdownreader();
+                Console.WriteLine("Provide a filename");
+                Console.Write("$ ");
+                string read = Console.ReadLine();
+                mdreader.read(read, "None");
+                
+                
+                     
+                
+         }
+         else
          {
              var gray = new src.Errortunnel();
              gray.CheckInfo("/", 900, "None");

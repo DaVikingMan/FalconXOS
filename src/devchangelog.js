@@ -1,4 +1,5 @@
-const { stdin, stdout } = require('process');
+const { Console } = require('console');
+const { stdin, stdout, mainModule } = require('process');
 const readline = require('readline');
 
 Main();
@@ -6,10 +7,11 @@ function Main()
 {
 
     console.clear();
-    console.log("Falcon version : -.19.2\nExternal version : /4\nOverall version : .19.4.9");
+    console.log("Falcon version : -.21.19\nExternal version : /4\nOverall version : .21.19.9");
 
     console.log('\nversion.16.2');
     console.log('\nversion.19.4');
+    console.log("\nversion.21.19");
     var r = readline.createInterface({
          input : stdin,
          output : stdout
@@ -31,7 +33,14 @@ function Main()
             {
                 if(response == "/exit")
                 {
-                    process.exit();
+                    if(answer == "Exit")
+								{
+									Main();
+								}else
+								{
+									console.log("Wrong command : default action is exit");
+									Main();
+								}
 
                 }
             })
@@ -57,13 +66,64 @@ function Main()
 		    r.question('$', (answer) =>
 			    {
 
-				    process.exit(0);
+					if(answer == "Exit")
+					{
+						Main();
+					}else
+					{
+						console.log("Wrong command : default action is exit");
+						Main();
+					}
 
 			    })
-	    }else if(response == "Exit" || response == "exit")
+	    }else if(response == ".21.19" || response == "-ch=v+21.19")
+	    {
+		    console.log("This was a big release and many features were added");
+		    console.log("Some of them were : ");
+		    console.log("Added TermLib, the custom library which will used by FalconXOS's UFT");
+		    console.log("Added Inputstream");
+		    console.log("Added Devconsole\n     Added commands : view news\n    Added write::input for manually writing to inputstream");
+		    console.log("Plan the format of .config files");
+		    console.log("Added Inputstream components");
+		    console.log("Added new errors");
+		    console.log("Added Devconsole errors");
+		    console.log("Enhance the error system");
+		    console.log("Simplify code");
+		    console.log("Fixed many bugs\n     FalconXOS unable to start");
+		    console.log("Fix Documentation\n    Make the README more better\n    Update the security policy\n    Add a code of conduct and contributing guidelines\n    Removed unused documenation");
+		    console.log("Added new commands\n    /Exit\n    /Start and --dev");
+		    console.log("Implement the error system in more parts of FalconXOS's UFT");
+		    console.log("Added -sh commands for almost all commands");
+		    console.log("Make UFT more user-friendly");
+		    console.log("Remove unused workflows");
+		    console.log("Update the system requirements");
+		    console.log("Added config console");
+		    console.log("Start developement of config console and .config files");
+		    console.log("Started developement of permanent input streams");
+		    
+		     r.question('Exit?', (answer) =>
+                            {
+								if(answer == "Exit")
+								{
+									Main();
+								}else
+								{
+									console.log("Wrong command : default action is exit");
+									Main();
+								}
+
+                                    
+
+                            })
+
+	    }
+	    else if(response == "Exit" || response == "exit")
         {
             process.exit(0);
-        }
+        }else
+		{
+			Main();
+		}
 
     })
 }
