@@ -2,13 +2,11 @@
 
 <pre>
 <b>
-Internal Version(Actual Version) : .23.9-Windows
+Internal Version(Actual Version) : .23.9-Unix
 Developement Version : 0x09<=>
-Platform : Windows
+Platform : Unix-like OSes
 Branch : Falcon
-Tested on : Windows 10
-Version codename : Serious-Series</b>
+Tested on : Arch Linux
+Version codename : Mad Dog</b>
 </pre>
 </b>
-
-The version codename is a one-punch man referrence
