@@ -112,7 +112,7 @@ namespace src
         Console.WriteLine(">");
         string readApp = Console.ReadLine();
         ProcessStartInfo startInfo = new ProcessStartInfo();
-        startInfo.Arguments = $@"/C {readApp}";
+        startInfo.Arguments = $@"-c {readApp}";
         startInfo.UseShellExecute = true;
         Process.Start(startInfo);
         Thread.Sleep(2000);
@@ -277,9 +277,9 @@ namespace src
 	else if(readInput == "readme")
 	{
              ProcessStartInfo start = new ProcessStartInfo();
-             start.Arguments = $"-c \"cat {Environment.CurrentDirectory}/README.md\"";
+             start.Arguments = $"/c \"cat {Environment.CurrentDirectory}/README.md\"";
              start.UseShellExecute = true;
-             start.FileName = "/bin/bash";
+             start.FileName = "powershell.exe";
              start.CreateNoWindow = true;
             
              var h = Process.Start(start);
