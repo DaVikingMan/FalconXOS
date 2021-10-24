@@ -2,11 +2,11 @@
 
 <pre>
 <b>
-Internal Version(Actual Version) : .21.19-Windows
+Internal Version(Actual Version) : .23.99-Windows
 Developement Version : 0x01<=>
 Platform : Windows
 Branch : Falcon
 Tested on : Windows 10
-Version codename : Black-Rust/b>
+Version codename : Serious-Series</b>
 </pre>
 </b>
