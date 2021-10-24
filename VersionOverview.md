@@ -2,12 +2,13 @@
 
 <pre>
 <b>
-
-Internal Version(Actual Version) : .21.19-Unix
-Developement Version : 0x01<=>
-Platform : Unix
+Internal Version(Actual Version) : .23.9-Windows
+Developement Version : 0x09<=>
+Platform : Windows
 Branch : Falcon
-Tested on : Arch Linux/FreeBSD
-Version codename : Rising-Rain</b>
+Tested on : Windows 10
+Version codename : Serious-Series</b>
 </pre>
 </b>
+
+The version codename is a one-punch man referrence

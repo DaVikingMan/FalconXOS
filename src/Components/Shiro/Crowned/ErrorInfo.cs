@@ -30,6 +30,10 @@ namespace src
              {
                    Console.WriteLine("Violation of input :: No input of type string matches the input typed"); 
                    Console.ReadKey();           
+             }else if(erroruint == c.ErrorLk)
+             {
+                 Console.WriteLine("Violation of Whitespace entries : whitespace inputs are not accepted");
+                 Console.ReadKey();
              }
              else
              {
