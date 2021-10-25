@@ -27,9 +27,11 @@ namespace src
                 writer.Write(writestring, "Temp" , true, $"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Clear();
-                Console.WriteLine("Welcome to FalconXOS's User-Friendly Terminal");
-                Console.WriteLine("FalconXOS is currently in Alpha stages and under extreme developement");
-                Console.WriteLine("If you want to contribute to FalconXOS, then it is recommended to read the contributing guidelines prior to contributing\n\n");
+                Console.WriteLine("Welcome to FalconXOS's User-Friendly Terminal, a user-friendly terminal");
+                Console.WriteLine("Important : As you know, FalconXOS has been in developement for 6 months and many of the main features have not been released");
+                Console.WriteLine("As I am working alone the features take time to release.So if you know someone who is interested in contributing or if you are interested in contributing, Thanks a lot!This will help releasing features more faster and efficiently.\nAlso it is recommended to read the README to see where FalconXOS is and what it aims to be.");
+                Console.WriteLine("\n\nFalconXOS is currently in Alpha stages and under extreme developement");
+                
                 Console.WriteLine("Press any key to continue to start screen");
                 Console.ReadKey();
                 var main = new Main();
