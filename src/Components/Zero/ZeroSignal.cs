@@ -39,8 +39,6 @@ namespace src
 		    else if(filename.Count == 0)
             {
                 tempwrite.TempSignal(false);
-                string[] a = {""};
-                File.WriteAllLines($"{Environment.CurrentDirectory}/data/TempInputStream/main.inputstream", a);
                     Environment.Exit(0);
             }
                     
