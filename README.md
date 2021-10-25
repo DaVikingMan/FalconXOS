@@ -1,13 +1,4 @@
 # Welcome to the FalconXOS repository(Falcon X Operating Shell)
-### FalconXOS is looking for contributors 
-Note : FalconXOS had been started being developed 6 months and still most of the main features are still not released.
-<br>
-FalconXOS is looking for people those who want to contribute and make the feature releases more faster and reliable.
-<br>
-Please read this file(README.md)before contributing as it lists how much features have already been added to FalconXOS and what features will be added.
-<br>
-<br>
-<br>
 FalconXOS is a terminal which redefines the meaning of terminal.It will have almost every tool you can imagine.
 <br>
 From compiling tools, to package manager and also user-extensions.
@@ -26,6 +17,14 @@ I will add version 1 when it will be released when it is complete.
 <br>
   <br>
                                       For news related to FalconXOS, you can view the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Dashboard/mainnews.md">dashboard</a>
+
+### FalconXOS is looking for contributors 
+Note : FalconXOS had been started being developed 6 months and still most of the main features are still not released.
+<br>
+FalconXOS is looking for people those who want to contribute and make the feature releases more faster and reliable.
+<br>
+Please read this file(README.md)before contributing as it lists how much features have already been added to FalconXOS and what features will be added.
+
 ### Note
 
 
