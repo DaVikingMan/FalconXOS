@@ -1,4 +1,5 @@
 # Welcome to the FalconXOS repository(Falcon X Operating Shell)
+### FalconXOS is looking for contributors 
 Note : FalconXOS had been started being developed 6 months and still most of the main features are still not released.
 <br>
 FalconXOS is looking for people those who want to contribute and make the feature releases more faster and reliable.
