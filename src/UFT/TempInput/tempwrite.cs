@@ -27,7 +27,7 @@ namespace Inputstream
 			if(istrue == true)
 			{
 				File.WriteAllText("../FalconXOS/data/TempInputstream/main.inputstream", null);
-			}else if(istrue == false) // data\PermanentInputStream\permainput.inputstream
+			}else if(istrue == false)
 			{
 				string[] a = 
 				{
