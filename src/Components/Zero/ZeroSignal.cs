@@ -32,15 +32,15 @@ namespace src
             {
 
             
-                    
+                  tempwrite.TempSignal(true);
                      // Removes all data from temp input stream  
                     Environment.Exit(0);
             }
 		    else if(filename.Count == 0)
             {
                 tempwrite.TempSignal(false);
-                string[] a = {"Delete :Stream"};
-                File.WriteAllLines($"{Environment.CurrentDirectory}/data/TempInputStream/main.inputstream", a);
+                tempwrite.TempSignal(true);
+                
                     Environment.Exit(0);
             }
                     
