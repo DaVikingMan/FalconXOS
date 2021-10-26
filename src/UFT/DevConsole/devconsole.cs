@@ -50,17 +50,18 @@ namespace dev
                configvar.MainConfig(true);
          }else if(consoleread == "write::input" || consoleread == "write=to=input")
          {
+             Console.Write("Input(s) expected : alter .sh --start or enter : ");
 		 string readfirst = Console.ReadLine();
 		 if(readfirst == "alter .sh --start")
      {
 			 string[] a = {
-			        "#!powershell.exe",
+			        "#!/bin/bash",
 
 				 "echo FalconXOS-GNU/Linux Version.21.19-Falcon",
 			         "dotnet run --project .."
 			 };
 			 File.WriteAllLines($"{Environment.CurrentDirectory}/scripts/start.sh", a);
-             Environment.Exit(0);
+             NonStartConsole();
      }
 	     else
 	     {
@@ -153,6 +154,23 @@ namespace dev
                configvar.MainConfig(true);
          }else if(consoleread == "write::input" || consoleread == "write=to=input")
          {
+             Console.Write("Input(s) expected : alter .sh --start or enter : ");
+             string readfirst = Console.ReadLine();
+		 if(readfirst == "alter .sh --start")
+     {
+         Console.WriteLine("This is for debugging purposes");
+			
+             string[] a = {
+			        "#!/bin/bash",
+
+				 "echo FalconXOS-GNU/Linux Version.21.19-Falcon",
+			         "dotnet run --project .."
+			 };
+			 File.WriteAllLines($"{Environment.CurrentDirectory}/scripts/start.sh", a);
+             NonStartConsole();
+     }
+	     else
+	     {
              var inputStream = new Inputstream.InputStream();
              Console.WriteLine("Console start :: dev");
              Console.WriteLine("Debug log : clean");
@@ -160,6 +178,8 @@ namespace dev
              Console.Write("$");
              string inputstream = Console.ReadLine();
              inputStream.InputNon(inputstream);
+
+	     }
              Console.WriteLine("Written::to path");
              Console.WriteLine("Exiting");
              NonStartConsole();
