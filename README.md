@@ -130,6 +130,10 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 ### Other Docs
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT(User-friendly Terminal)</a>
+ <br>
+<a href="/docs/AltREADME.md">Alternate README which you can use if you have forked this repository</a>
+ <br>
+<a href="/docs/ForDevelopement.md">For debugging FalconXOS</a>
 
 
 
