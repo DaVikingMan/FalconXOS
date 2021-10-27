@@ -2,6 +2,7 @@
 
 This is an alternate README which you can use if you have forked this repository : 
 <pre>
+<b>
 Licensed under the MIT License, FalconXOS is an open source terminal-like application that aims to redefine its core's meaning.FalconXOS is not just a terminal but a set of command-line tools which are designed with developers in mind.It includes features like a custom shell, Operating Shell, a user-friendly Terminal, UFT and tools like gen and build-c.
 <br>
 <br>
@@ -15,6 +16,7 @@ I don't hold any responsibility for misuse of FalconXOS.
 <br>
 In developement.FalconXOS is not complete and some of the ideas listed above are not added.
 </pre>
+</b>
 --End of AltREADME--
 
 <br>
