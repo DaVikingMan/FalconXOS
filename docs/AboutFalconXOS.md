@@ -1,6 +1,6 @@
 # About FalconXOS and the project
 
-Okay, I just wanted to tell everyone that FalconXOS isn't a terminal.
+I just wanted to tell everyone that FalconXOS isn't a terminal.
 <br>
 Its completely different from a terminal.
 <br>
