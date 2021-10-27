@@ -124,7 +124,7 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Updates.md">About the Developement of Operating Shell(Not updated)</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a>
+<a href="/docs/AboutSpecialCommands.md">About Special Commands</a>
 
 
 ### Other Docs
