@@ -136,4 +136,3 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 
 <br>
 <br>
-Some docs have been re-added.
