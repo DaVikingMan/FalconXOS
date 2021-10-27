@@ -35,7 +35,7 @@ FalconXOS is nowhere near complete and is in alpha-stages.
 
 ### About the future of this app
 
-![FalconXOS's User-Friendly Terminal](/img/PageGithub.png)
+![FalconXOS's User-Friendly Terminal](/img/MainPage.png)
 <font size="5">'The current menu of FalconXOS-Windows, seen when running /Start.Ran on windows terminal preview and git bash'</font>
 ![FalconXOS's start image](img/StartScreenREADME.png)
 'The current FalconXOS start screen.Ran on windows terminal preview and git bash'
