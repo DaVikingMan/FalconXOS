@@ -19,7 +19,7 @@ I will add version 1 when it will be released when it is complete.
                                       For news related to FalconXOS, you can view the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Dashboard/mainnews.md">dashboard</a>
 
 ### FalconXOS is looking for contributors 
-Note : FalconXOS had been started being developed 6 months and still most of the main features are still not released.
+Note : FalconXOS's developement had started 6 months ago and most of the main features are still not released.
 <br>
 FalconXOS is looking for people those who want to contribute and make the feature releases more faster and reliable.
 <br>
