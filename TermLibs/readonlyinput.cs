@@ -11,7 +11,8 @@ namespace startfi
         {
             List<string> file = File.ReadAllLines($"{Environment.CurrentDirectory}/data/debuglogs/debug.log").ToList();
             List<string> filelist = filestring.ToList();
-            if(file.Contains(filestring))
+            string filestringlist = filestring.ToString();
+            if(file.Contains(filestringlist))
             {
                     File.WriteAllLines($"{Environment.CurrentDirectory}/data/debuglogs/debug.log", filestring);
                     Console.WriteLine("Written to log : expected to be written to temp inputstream");
