@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 
 namespace Inputstream
 {
@@ -27,13 +29,11 @@ namespace Inputstream
 			if(istrue == true)
 			{
 				File.WriteAllText("../FalconXOS/data/TempInputstream/main.inputstream", null);
-			}else if(istrue == false) // data\PermanentInputStream\permainput.inputstream
+				List<string> all = File.ReadAllLines($"{Environment.CurrentDirectory}/data/config/config.configc").ToList();
+				File.AppendAllText($"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream", "Done:Note");
+			}else if(istrue == false)
 			{
-				string[] a = 
-				{
-                     "Delete:Stream"
-				};
-				File.WriteAllLines($@"{Environment.CurrentDirectory}\data\PermanentInputStream\permainput.inputstream", a);
+				
 			}
 		}
 

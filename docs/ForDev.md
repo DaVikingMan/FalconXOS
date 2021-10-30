@@ -14,3 +14,9 @@ As of now, FalconXOS runs using CMD, powershell, bash or zsh(in linux version)
 This part of FalconXOS will probably be coded using C++
 </b>
 </pre>
+
+<pre>
+<b>
+This release(.23.9)fixed a ton of bugs and introduced a lot of features
+</b>
+</pre>

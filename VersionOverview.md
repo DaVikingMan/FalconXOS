@@ -2,11 +2,11 @@
 
 <pre>
 <b>
-Internal Version(Actual Version) : .23.9-Unix
+Internal Version(Actual Version) : .27.9-GNU/Linux
 Developement Version : 0x09<=>
-Platform : Unix-like OSes
+Platform : GNU/Linux
 Branch : Falcon
 Tested on : Arch Linux
-Version codename : Mad Dog</b>
+Version codename : Cold Sun</b>
 </pre>
 </b>

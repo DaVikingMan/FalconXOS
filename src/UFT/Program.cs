@@ -9,10 +9,10 @@ namespace src // default namespace
     {
         public static void Main(string[] args) // string args is not used
         {
-            string file = $"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream";
-            var readlist = File.ReadAllLines(file).ToList();
-            var startup = new StartCheck();
-            startup.StartUpCheck();
+            // string file = $"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream";
+            // var readlist = File.ReadAllLines(file).ToList();
+            var startfi = new startfi.startfi();
+            startfi.FalconFirmware(null);
             
             
            
