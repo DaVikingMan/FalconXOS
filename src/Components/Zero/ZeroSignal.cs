@@ -28,17 +28,17 @@ namespace src
                          File.Create($"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream");
                     }
                    
-		    if(filename.Count == 1)
+		    if(filename.Contains("Done:Note"))
             {
 
             
-                  tempwrite.TempSignal(true);
+                //   tempwrite.TempSignal(true);
                      // Removes all data from temp input stream  
                     Environment.Exit(0);
             }
-		    else if(filename.Count == 0)
+		    else if(filename[1] == "Write:Note")
             {
-                tempwrite.TempSignal(false);
+                // tempwrite.TempSignal(false);
                 tempwrite.TempSignal(true);
                 
                     Environment.Exit(0);
