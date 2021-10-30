@@ -277,7 +277,7 @@ namespace src
 	else if(readInput == "readme")
 	{
              ProcessStartInfo start = new ProcessStartInfo();
-             start.Arguments = $"/c \"cat {Environment.CurrentDirectory}/README.md\"";
+             start.Arguments = $"-c \"cat {Environment.CurrentDirectory}/README.md\"";
              start.UseShellExecute = true;
              start.FileName = "/bin/bash";
              start.CreateNoWindow = true;

@@ -7,8 +7,8 @@ namespace TermLibs
 		public void AddToString(string filename, string specialstring)
 		{
                         string completefullpath = $"{Environment.CurrentDirectory}/{filename}";
-						var markdownreader = new markdownreader();
-						markdownreader.read(completefullpath, specialstring);
+						var filereader = new filereader();
+						filereader.read(completefullpath, specialstring);
 		}
 			
 	}
