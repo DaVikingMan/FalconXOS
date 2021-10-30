@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace TermLibs
 {
-          class markdownreader
+          class filereader
           {
                     public virtual void read(string filename, string specialstring)
                     {
@@ -29,7 +29,7 @@ namespace TermLibs
                             }
                         }else if(specialstring == "None" || specialstring == "none")
                         {
-                            Console.WriteLine("Md reader : version 9.1");
+                            Console.Clear();
                             ProcessStartInfo start = new ProcessStartInfo();
                             start.FileName = "powershell.exe";
                             start.Arguments = $"/c cat {filename}";
@@ -45,6 +45,7 @@ namespace TermLibs
                     }
                     public void readVoid(string filename, string specialstring)
                     {
+                        Console.Clear();
                         Console.WriteLine("Leave blank if you want to see another file or exit");
                         Console.Write(">");
                         string reader = Console.ReadLine();
@@ -54,8 +55,26 @@ namespace TermLibs
                               devconsole.NonStartConsole();
                         }else if(string.IsNullOrWhiteSpace(reader))
                         {
-                            read(filename, specialstring);
+                            AfterMath();
                         }
+                    }
+                    public void AfterMath()
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Insert filename to view");
+                        Console.Write(">");
+                        string filename = Console.ReadLine();
+                        if(filename == "exit")
+                        {
+                            var dev = new dev.DevConsole();
+                            dev.NonStartConsole();
+                        }
+                        ProcessStartInfo start = new ProcessStartInfo();
+                        start.FileName = "powershell.exe";
+                        start.Arguments = $"/c cat {filename}";
+                        Process.Start(start);
+                        readVoid("", "");
+                        
                     }
           }
 
