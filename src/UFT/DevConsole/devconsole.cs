@@ -12,12 +12,11 @@ namespace dev
          {
              Console.Clear();
              Console.ForegroundColor = ConsoleColor.White;
-     		 Console.WriteLine(Environment.CurrentDirectory);
              Console.WriteLine("devconsole :: Ignore debug for now, all debug messages are for when inputstream will be implemented");
              Console.WriteLine("Input :: ????");
              Console.WriteLine("InputStream Chosen : readonly-edit::");
              Console.WriteLine("Done :: Opened Console:Dev, Console:Input, Receive:Input");
-             Thread.Sleep(2000);
+             Thread.Sleep(100);
              Console.Clear();
              Console.Write(">> ");
 	     string consoleread = Console.ReadLine();
@@ -42,8 +41,9 @@ namespace dev
 
 	     }else if(consoleread == "::exit" || consoleread == "exit" || consoleread == "devconsole::exit")
          {
-              var Mainc = new src.Main();
-              Mainc.MainStart();
+             Console.Clear();
+             var start = new startfi.startfi();
+             start.NonAddStart();
          }else if(consoleread == "config")
          {
                var configvar = new config.configc();
@@ -85,7 +85,7 @@ namespace dev
              NonStartConsole();
          }else if(consoleread == "--open in" ||consoleread == "--md=reader in")
          {
-                var mdreader = new TermLibs.markdownreader();
+                var mdreader = new TermLibs.filereader();
                 Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
                 Console.Write("$ ");
                 string read = Console.ReadLine();
@@ -101,7 +101,7 @@ namespace dev
                
          }else if(consoleread == "--open exit" ||consoleread == "--md=reader exit" )
          {
-              var mdreader = new TermLibs.markdownreader();
+              var mdreader = new TermLibs.filereader();
                 Console.WriteLine("Provide a filename");
                 Console.Write("$ ");
                 string read = Console.ReadLine();
@@ -146,8 +146,13 @@ namespace dev
 
 	     }else if(consoleread == "::exit" || consoleread == "exit" || consoleread == "devconsole::exit")
          {
-              var Mainc = new src.Main();
-              Mainc.MainStart();
+            
+             Console.Clear();
+             var start = new startfi.startfi();
+             start.NonAddStart();
+
+            //   var Mainc = new src.Main();
+            //   Mainc.MainStart();
          }else if(consoleread == "config")
          {
                var configvar = new config.configc();
@@ -191,7 +196,7 @@ namespace dev
              NonStartConsole();
          }else if(consoleread == "--open in" ||consoleread == "--md=reader in")
          {
-                var mdreader = new TermLibs.markdownreader();
+                var mdreader = new TermLibs.filereader();
                 Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
                 Console.Write("$ ");
                 string read = Console.ReadLine();
@@ -207,7 +212,7 @@ namespace dev
                
          }else if(consoleread == "--open exit" ||consoleread == "--md=reader exit" )
          {
-              var mdreader = new TermLibs.markdownreader();
+              var mdreader = new TermLibs.filereader();
                 Console.WriteLine("Provide a filename");
                 Console.Write("$ ");
                 string read = Console.ReadLine();
