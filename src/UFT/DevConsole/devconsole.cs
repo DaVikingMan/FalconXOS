@@ -12,12 +12,11 @@ namespace dev
          {
              Console.Clear();
              Console.ForegroundColor = ConsoleColor.White;
-     		 Console.WriteLine(Environment.CurrentDirectory);
              Console.WriteLine("devconsole :: Ignore debug for now, all debug messages are for when inputstream will be implemented");
              Console.WriteLine("Input :: ????");
              Console.WriteLine("InputStream Chosen : readonly-edit::");
              Console.WriteLine("Done :: Opened Console:Dev, Console:Input, Receive:Input");
-             Thread.Sleep(2000);
+             Thread.Sleep(100);
              Console.Clear();
              Console.Write(">> ");
 	     string consoleread = Console.ReadLine();
@@ -42,14 +41,16 @@ namespace dev
 
 	     }else if(consoleread == "::exit" || consoleread == "exit" || consoleread == "devconsole::exit")
          {
-              var Mainc = new src.Main();
-              Mainc.MainStart();
+             Console.Clear();
+             var start = new startfi.startfi();
+             start.NonAddStart();
          }else if(consoleread == "config")
          {
                var configvar = new config.configc();
                configvar.MainConfig(true);
          }else if(consoleread == "write::input" || consoleread == "write=to=input")
          {
+             Console.Write("Input(s) expected : alter .sh --start or enter : ");
 		 string readfirst = Console.ReadLine();
 		 if(readfirst == "alter .sh --start")
      {
@@ -60,7 +61,7 @@ namespace dev
 			         "dotnet run --project .."
 			 };
 			 File.WriteAllLines($"{Environment.CurrentDirectory}/scripts/start.sh", a);
-             Environment.Exit(0);
+             NonStartConsole();
      }
 	     else
 	     {
@@ -84,7 +85,7 @@ namespace dev
              NonStartConsole();
          }else if(consoleread == "--open in" ||consoleread == "--md=reader in")
          {
-                var mdreader = new TermLibs.markdownreader();
+                var mdreader = new TermLibs.filereader();
                 Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
                 Console.Write("$ ");
                 string read = Console.ReadLine();
@@ -100,7 +101,7 @@ namespace dev
                
          }else if(consoleread == "--open exit" ||consoleread == "--md=reader exit" )
          {
-              var mdreader = new TermLibs.markdownreader();
+              var mdreader = new TermLibs.filereader();
                 Console.WriteLine("Provide a filename");
                 Console.Write("$ ");
                 string read = Console.ReadLine();
@@ -145,14 +146,36 @@ namespace dev
 
 	     }else if(consoleread == "::exit" || consoleread == "exit" || consoleread == "devconsole::exit")
          {
-              var Mainc = new src.Main();
-              Mainc.MainStart();
+            
+             Console.Clear();
+             var start = new startfi.startfi();
+             start.NonAddStart();
+
+            //   var Mainc = new src.Main();
+            //   Mainc.MainStart();
          }else if(consoleread == "config")
          {
                var configvar = new config.configc();
                configvar.MainConfig(true);
          }else if(consoleread == "write::input" || consoleread == "write=to=input")
          {
+             Console.Write("Input(s) expected : alter .sh --start or enter : ");
+             string readfirst = Console.ReadLine();
+		 if(readfirst == "alter .sh --start")
+     {
+         Console.WriteLine("This is for debugging purposes");
+			
+             string[] a = {
+			        "#!/bin/bash",
+
+				 "echo FalconXOS-GNU/Linux Version.21.19-Falcon",
+			         "dotnet run --project .."
+			 };
+			 File.WriteAllLines($"{Environment.CurrentDirectory}/scripts/start.sh", a);
+             NonStartConsole();
+     }
+	     else
+	     {
              var inputStream = new Inputstream.InputStream();
              Console.WriteLine("Console start :: dev");
              Console.WriteLine("Debug log : clean");
@@ -160,6 +183,8 @@ namespace dev
              Console.Write("$");
              string inputstream = Console.ReadLine();
              inputStream.InputNon(inputstream);
+
+	     }
              Console.WriteLine("Written::to path");
              Console.WriteLine("Exiting");
              NonStartConsole();
@@ -171,7 +196,7 @@ namespace dev
              NonStartConsole();
          }else if(consoleread == "--open in" ||consoleread == "--md=reader in")
          {
-                var mdreader = new TermLibs.markdownreader();
+                var mdreader = new TermLibs.filereader();
                 Console.WriteLine("Provide a filename according to FalconXOS/(default = FalconXOS/VersionOverview.md");
                 Console.Write("$ ");
                 string read = Console.ReadLine();
@@ -187,7 +212,7 @@ namespace dev
                
          }else if(consoleread == "--open exit" ||consoleread == "--md=reader exit" )
          {
-              var mdreader = new TermLibs.markdownreader();
+              var mdreader = new TermLibs.filereader();
                 Console.WriteLine("Provide a filename");
                 Console.Write("$ ");
                 string read = Console.ReadLine();

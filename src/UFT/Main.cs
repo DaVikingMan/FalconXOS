@@ -61,8 +61,8 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 v.Start(); 
             }else if(commandStart == "/command Exit" || commandStart == "exit" || commandStart == "/Exit") // This exits the UFT
             {
-                var zero = new ZeroSignal();
-                signalverify.Verify("Exit!");
+                var start = new startfi.startfi();
+                start.NonAddStart();
 
             }else if(commandStart == "/state note") // This goes to the class 'Note' 
             {
@@ -163,8 +163,8 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 v.Start();
             }else if(readFirstInput == "/command Exit" || readFirstInput == "/Exit")
             {
-                var zero = new ZeroSignal();
-                signalverify.Verify("Exit!");
+                var start = new startfi.startfi();
+                start.NonAddStart();
 
             }else if(readFirstInput == "/state note")
             {

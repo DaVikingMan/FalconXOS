@@ -9,7 +9,7 @@ namespace src
 		{
 					  var originalpath = @$"{Environment.CurrentDirectory}\data\TempInputstream\main.inputstream";
 					  File.WriteAllText(originalpath, stringtowrite); // This works in non-parallel mode, parallel mode is when multiple text can be written into the file
-					  Console.ReadKey();
+					   
         }
 
 	}
