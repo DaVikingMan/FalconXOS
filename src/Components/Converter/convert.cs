@@ -9,8 +9,8 @@ namespace src
     {
         public void convertClass()
         {
-            string _path = $@"{Environment.CurrentDirectory}\data\config\config.configc";
-            List<string> readpath = File.ReadAllLines($"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream").ToList();
+            string _path = $@"{Environment.CurrentDirectory}/data/config/config.configc";
+            List<string> readpath = File.ReadAllLines($@"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream").ToList();
 
             File.WriteAllLines(_path , readpath);
         }

@@ -14,8 +14,8 @@ namespace src
               Console.Clear();
 
             List<string> templist = File.ReadAllLines($"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream").ToList();
-            List<string> permalist = File.ReadAllLines($@"{Environment.CurrentDirectory}\data\PermanentInputStream\permainput.inputstream").ToList();
-            List<string> configlist = File.ReadAllLines($@"{Environment.CurrentDirectory}\data\config\config.configc").ToList();
+            List<string> permalist = File.ReadAllLines($@"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream").ToList();
+            List<string> configlist = File.ReadAllLines($@"{Environment.CurrentDirectory}/data/config/config.configc").ToList();
             
             
             if(permalist.Count == 0)
@@ -27,7 +27,7 @@ namespace src
                 
             }else if(permalist.Count > 0)
             {
-                List<string> listconfig = File.ReadAllLines($@"{Environment.CurrentDirectory}\data\config\config.configc").ToList();
+                List<string> listconfig = File.ReadAllLines($@"{Environment.CurrentDirectory}/data/config/config.configc").ToList();
                 if(listconfig.Contains("Done:Note"))
                 {
 
@@ -39,7 +39,7 @@ namespace src
                 
             }
 
-            List<string> afterconfiglist = File.ReadAllLines($@"{Environment.CurrentDirectory}\data\config\config.configc").ToList();
+            List<string> afterconfiglist = File.ReadAllLines($@"{Environment.CurrentDirectory}/data/config/config.configc").ToList();
             
                 
                 
