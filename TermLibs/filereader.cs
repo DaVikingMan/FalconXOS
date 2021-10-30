@@ -71,7 +71,7 @@ namespace TermLibs
                         }
                         ProcessStartInfo start = new ProcessStartInfo();
                         start.FileName = "powershell.exe";
-                        start.Arguments = $"/c cat {filename}";
+                        start.Arguments = $"-c cat {filename}";
                         Process.Start(start);
                         readVoid("", "");
                         
