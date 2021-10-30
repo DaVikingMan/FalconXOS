@@ -17,6 +17,14 @@ I will add version 1 when it will be released when it is complete.
 <br>
   <br>
                                       For news related to FalconXOS, you can view the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Dashboard/mainnews.md">dashboard</a>
+
+### FalconXOS is looking for contributors 
+Note : FalconXOS's developement had started 6 months ago and most of the main features are still not released.
+<br>
+FalconXOS is looking for people those who want to contribute and make the feature releases more faster and reliable.
+<br>
+Please read this file(README.md)before contributing as it lists how much features have already been added to FalconXOS and what features will be added.
+
 ### Note
 
 
@@ -27,10 +35,10 @@ FalconXOS is nowhere near complete and is in alpha-stages.
 
 ### About the future of this app
 
-![FalconXOS's User-Friendly Terminal](img/PageGithub.png)
-<font size="5">'The current menu of FalconXOS, seen when running /Start'</font>
+![FalconXOS's User-Friendly Terminal](/img/MainPage.png)
+<font size="5">'The current menu of FalconXOS-Windows, seen when running /Start.Ran on windows terminal preview and git bash'</font>
 ![FalconXOS's start image](img/StartScreenREADME.png)
-'The current FalconXOS start screen'
+'The current FalconXOS start screen.Ran on windows terminal preview and git bash'
 
 I want to make FalconXOS the best terminal possible
 
@@ -92,9 +100,6 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
   
 ### System Requirements
 
-
-
-
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/SystemRequirements.md">System Requirements</a>
 <br>
 
@@ -116,15 +121,18 @@ FalconXOS follows the <b><a href="https://github.com/DaVikingMan/FalconXOS/blob/
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Updates.md">About the Developement of Operating Shell(Not updated)</a>
 <br>
-<a href=https://github.com/DaVikingMan/FalconXOS/blob/master/AboutSpecialCommands.md>About Special Commands</a>
+<a href="/docs/AboutSpecialCommands.md">About Special Commands</a>
 
 
 ### Other Docs
 
 <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/UFT.md">About UFT(User-friendly Terminal)</a>
+ <br>
+<a href="/docs/AltREADME.md">Alternate README which you can use if you have forked this repository</a>
+ <br>
+<a href="/docs/ForDevelopement.md">For debugging FalconXOS</a>
 
 
 
 <br>
 <br>
-Some docs have been re-added.
