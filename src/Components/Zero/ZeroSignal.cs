@@ -5,9 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 
-// C:\Github\FalconXOS\data\PermanentInputStream\permainput.inputstream
-// The signal when checked gets sent to ReceiveSignal method in Zero
-
 namespace src
 {
     class ZeroSignal
@@ -50,11 +47,10 @@ namespace src
                 }else if(receivestring == "Give version!") // This signal outputs the version of FalconXOS 
                 {
                     
-                        Console.WriteLine("Version : .21.19-Windows(Falcon)");
-                        Console.WriteLine("Version codename : Black Snow");
-                        Console.WriteLine("Dev version : .21.19.9");
+                        Console.WriteLine("Version : .27.9-Windows(Falcon)");
+                        Console.WriteLine("Version codename : Cold Sun");
+                        Console.WriteLine("Dev version : .23.9.9");
                         Console.ReadKey();
-                        Thread.Sleep(5000);
                 }else if(receivestring == "Request debug info!") // This signal is used for showing debug info
                 {
                     Console.WriteLine("The following debug info is available");
