@@ -7,14 +7,14 @@ namespace startfi
 {
     class readonlyinput // Alternate name for writefi//memory
     {
-        public void StartRemove(string[] filestring, bool isplanned)
+        public void StartRemove(object[] filestring, bool isplanned)
         {
             List<string> file = File.ReadAllLines($"{Environment.CurrentDirectory}/data/debuglogs/debug.log").ToList();
-            List<string> filelist = filestring.ToList();
+            List<object> filelist = filestring.ToList();
             string filestringlist = filestring.ToString();
             if(!file.Contains(filestringlist))
             {
-                    File.WriteAllLines($"{Environment.CurrentDirectory}/data/debuglogs/debug.log", filestring);
+                    File.WriteAllText($"{Environment.CurrentDirectory}/data/debuglogs/debug.log", filestringlist);
                     Console.WriteLine("Written to log : expected to be written to temp inputstream");
                     
                     if(isplanned == true)
