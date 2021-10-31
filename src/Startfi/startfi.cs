@@ -26,8 +26,8 @@ namespace startfi
                  Console.WriteLine("Writing to this.log, see list of log mirrors in /docs/listofdebugs.doc(not .md)");
                  Thread.Sleep(10);
                  var writefi = new readonlyinput();
-                 object[] debuglog = {
-                     DateTime.UtcNow,
+                 string[] debuglog = {
+                     DateTime.Now.ToString(),
                      "Started Startfi : 1",
                      "Started StartupCheck : 1",
                      "Started readonlyinput : 1",
