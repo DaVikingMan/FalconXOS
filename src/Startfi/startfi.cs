@@ -72,7 +72,6 @@ namespace startfi
                      signalverify.Verify("Exit!");
                      Environment.ExitCode = 0;
                      Console.WriteLine("FalconXOS exited with : " +  Environment.ExitCode);
-                     
                      Environment.Exit(0);
                      
                  }else if(input == "version" || input == "--v")
