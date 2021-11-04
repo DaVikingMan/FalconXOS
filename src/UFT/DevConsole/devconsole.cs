@@ -116,7 +116,13 @@ namespace dev
              Console.ResetColor();
              Console.Clear();
              NonStartConsole();
-         }
+         }else if(consoleread == "doc devconsole")
+	 {
+		 var doccommand = new src.docconsole();
+		 doccommand.MainReader("devconsole");
+
+	 }
+
          else
          {
              var gray = new src.Errortunnel();
@@ -233,7 +239,11 @@ namespace dev
              Console.ResetColor();
              Console.Clear();
              NonStartConsole();
-         }
+	 }else if(consoleread == "doc devconsole")
+	 {
+		 var doc = new src.docconsole();
+		 doc.MainReader("devconsole");
+	 }
          else
          {
              var gray = new src.Errortunnel();
