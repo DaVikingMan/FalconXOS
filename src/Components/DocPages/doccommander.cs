@@ -7,9 +7,9 @@ namespace src
 	{
 		public void MainReader(string filetoread)
 		{
-		  
+		 
 	         	ProcessStartInfo start = new ProcessStartInfo();
-start.Arguments = $"-c \"cat {Environment.CurrentDirectory}/src/Components/DocPages/docpages/{filetoread}.md\"";
+start.Arguments = $"-c \"cat {Environment.CurrentDirectory}/src/Components/DocPages/docpages/{filetoread}.docpage\"";
          		start.FileName = "/bin/bash";
 		        start.UseShellExecute = true;
                 	// start.CreateNoWindow = false;
