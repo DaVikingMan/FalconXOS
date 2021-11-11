@@ -1,5 +1,5 @@
 # Welcome to the FalconXOS repository(Falcon X Operating Shell)
-FalconXOS is a terminal or more precisely a to-be set of command line tools which redefines the meaning of the command line.It will have almost every tool you can imagine.
+FalconXOS is a terminal or more to be more precise, a to-be set of command line tools which redefines the meaning of the command line.It will have almost every tool you can imagine.
 <br>
 It will have user-extensions, compiling tools and unique re-engineered tools which already exist<br>
 <br>
