@@ -1,20 +1,15 @@
 # Welcome to the FalconXOS repository(Falcon X Operating Shell)
-FalconXOS is a terminal which redefines the meaning of terminal.It will have almost every tool you can imagine.
+FalconXOS is a terminal or more precisely a to-be set of command line tools which redefines the meaning of the command line.It will have almost every tool you can imagine.
 <br>
-From compiling tools, to package manager and also user-extensions.
+It will have user-extensions, compiling tools and unique re-engineered tools which already exist<br>
 <br>
-The best thing is that it's open source so if you think that 'meh, this feature doesn't show its true potential', you can always add code.
-<br>
-And if you want to bring the changes which you made to FalconXOS, you can do so.
+FalconXOS is also open-source and free and free I mean free as in freedom.
 </b>
 <br>
 <br>
-<b>FalconXOS is still in alpha stages and is on version .19.
+<b>FalconXOS is still in alpha stages and is in extreme developement.
  <br>
-For seeing when version 1(The first complete version of FalconXOS) will be released, you can check the README.md.
-<br>
-I will add version 1 when it will be released when it is complete.
-<br>
+Version 1 or the first out-of-beta version of FalconXOS is not currently released.
   <br>
                                       For news related to FalconXOS, you can view the <a href="https://github.com/DaVikingMan/FalconXOS/blob/master/Dashboard/mainnews.md">dashboard</a>
 
