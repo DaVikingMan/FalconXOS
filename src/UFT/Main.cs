@@ -61,8 +61,7 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 v.Start(); 
             }else if(commandStart == "/command Exit" || commandStart == "exit" || commandStart == "/Exit") // This exits the UFT
             {
-                var start = new startfi.startfi();
-                start.NonAddStart();
+                componentInteractor.MainInteractor("Exit!", "/", 0);
 
             }else if(commandStart == "/state note") // This goes to the class 'Note' 
             {
@@ -123,6 +122,10 @@ namespace src // Main namespace(this includes all the compoents and everything i
                    var devconsole = new dev.DevConsole();
                    devconsole.MainConsole();
 
+            }else if(readFirstInput == "close")
+            {
+                  var start = new startfi.startfi();
+                  start.NonAddStart();   
             }
             
             else  // When the wrong command is executed
@@ -163,8 +166,7 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 v.Start();
             }else if(readFirstInput == "/command Exit" || readFirstInput == "/Exit")
             {
-                var start = new startfi.startfi();
-                start.NonAddStart();
+                componentInteractor.MainInteractor("Exit!", "/", 0);
 
             }else if(readFirstInput == "/state note")
             {
@@ -175,7 +177,12 @@ namespace src // Main namespace(this includes all the compoents and everything i
                 CommandsAll commandsAll = new CommandsAll();
                 commandsAll.Note();
                 
-            }else if(readFirstInput == "/skip -debug")
+            }else if(readFirstInput == "close")
+            {
+                  var start = new startfi.startfi();
+                  start.NonAddStart();   
+            }
+            else if(readFirstInput == "/skip -debug")
             {
                 DebugManager manager = new DebugManager();
                 manager.Debug();
