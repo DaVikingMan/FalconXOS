@@ -27,8 +27,8 @@ namespace src{
         {
             var start = new ProcessStartInfo();
 
-            start.Arguments = $"/c '{path}'";
-            start.UseShellExecute = false;
+            start.Arguments = $"/c {path}";
+            start.UseShellExecute = true;
             start.FileName = "powershell.exe";
             start.CreateNoWindow = true;
             Process.Start(start);
