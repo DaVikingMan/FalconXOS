@@ -66,7 +66,13 @@ namespace src
                 {
                     var changelog = new RunChangelog();
                     changelog.DevChangelog();
-                }
+                }else if(receivestring == "About!")
+		{
+			Console.WriteLine("FalconXOS, a to-be set of cli tools");
+			Console.WriteLine("In alpha stages.Credits : DaVikingMan, developer of the Falcon's project(internal name)");
+			Console.WriteLine("'In developement'");
+			Console.ReadKey();
+		}
         }
         
     }
