@@ -88,7 +88,13 @@ namespace startfi
                      Console.WriteLine(unixdate + " UnixEpoch");
                      Console.WriteLine(date + " Utc");
                      NonAddStart();
-                 }
+                 }else if(input == "about")
+		 {
+			  var signalverify = new src.SignalVerifier();
+                     signalverify.Verify("About!");
+		     NonAddStart();
+
+		 }
                  else
                  {
                       Console.WriteLine("Startfi checking modern inputstreams and errors");
@@ -158,6 +164,14 @@ namespace startfi
                      Console.WriteLine(date + " Utc");
                      NonAddStart();
                  }
+		 else if(input == "about")
+                 {
+                          var signalverify = new src.SignalVerifier();
+                     signalverify.Verify("About!");
+		     NonAddStart();
+ 
+                 }
+
                  else
                  {
                       Console.WriteLine("Startfi checking modern inputstreams and errors");
