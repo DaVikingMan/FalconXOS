@@ -1,5 +1,7 @@
 See https://github.com/DaVikingMan/FalconXOS/commit/cc244ca7b1a2ab4268d1a71ce10c72106209645e for the current state of the project
 <a href="https://github.com/DaVikingMan/Yuki">Yuki component</a>
+<br>
+This is the same as the master branch just with a different license. If you prefer this license, then you can use this version instead of the master branch
 
 # Welcome to the FalconXOS repository(Falcon X Operating Shell)
 FalconXOS is a terminal or more to be more precise, a to-be set of command line tools which redefines the meaning of the command line.It will have almost every tool you can imagine.
