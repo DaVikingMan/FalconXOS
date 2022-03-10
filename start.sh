@@ -7,5 +7,5 @@ echo "Dotnet version  $(dotnet --version)"
 echo "Nodejs version $(node --version)"
 echo "Java version :  $(java --version)"
 dotnet build
-dotnet bin/Debug/net5.0/TerminalMainV.dll
+dotnet run bin/Debug/net5.0/TerminalMainV.dll
 

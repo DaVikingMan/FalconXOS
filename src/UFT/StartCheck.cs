@@ -43,29 +43,26 @@ namespace src
             
                 
                 
-                Console.ReadKey();
+                
             
            
             if(afterconfiglist.Count != 0)
             {
                     if(afterconfiglist[0] == "Delete:Stream" && afterconfiglist.Contains("Done:Note"))
                     {
-                        // var conver1 = new src.convert();
-                        // conver1.convertClass();
                         Console.WriteLine("Done!");
                         
 
                     }else if(afterconfiglist[0] == "Delete:Stream" && afterconfiglist[1] == "Write:Note")
                     {
-                        var conver2 = new src.convert();
-                        // conver2.convertClass();
-                        // writer.Write(writestring, "Temp" , true, $"{Environment.CurrentDirectory}/data/TempInputstream/main.inputstream");
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Console.Clear();
                         Console.WriteLine("Welcome to FalconXOS's User-Friendly Terminal, a user-friendly terminal");
                         Console.WriteLine("Important : As you know, FalconXOS has been in developement for 6 months and many of the main features have not been released");
                         Console.WriteLine("As I am working alone the features take time to release.So if you know someone who is interested in contributing or if you are interested in contributing, Thanks a lot!This will help release features more faster and efficiently.\nAlso it is recommended to read the README to see where FalconXOS is and what it aims to be.");
                         Console.WriteLine("\n\nFalconXOS is currently in Alpha stages and under extreme developement");
+                        Console.ReadKey();
                         
                         
                                     

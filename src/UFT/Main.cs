@@ -25,7 +25,7 @@ namespace src // Main namespace(this includes all the compoents and everything i
             Console.ForegroundColor = ConsoleColor.White; // Sets the colour to the specified colour
             Console.Clear(); // Clears the console
             
-            
+            Console.WriteLine("Time of login " + DateTime.Now);
             Console.WriteLine("You can see the available commands by running '--help'"); // Run this command if you want to see the all the available commands
             Console.Write(">");
             string readFirstInput = Console.ReadLine(); // Waits for input

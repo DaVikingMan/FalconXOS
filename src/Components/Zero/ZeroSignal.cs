@@ -46,8 +46,8 @@ namespace src
                     
                 }else if(receivestring == "Give version!") // This signal outputs the version of FalconXOS 
                 {
-                    
-                        Console.WriteLine("Version : .27.9-GNU/Linux(Falcon)");
+                   
+                        Console.WriteLine("Version : Developement-GNU/Linux(Falcon)");
                         Console.WriteLine("Version codename : Cold Sun");
                         Console.WriteLine("Dev version : .27.9.9");
                         Console.ReadKey();
@@ -66,7 +66,13 @@ namespace src
                 {
                     var changelog = new RunChangelog();
                     changelog.DevChangelog();
-                }
+                }else if(receivestring == "About!")
+		{
+			Console.WriteLine("FalconXOS, a to-be set of cli tools");
+			Console.WriteLine("In alpha stages.Credits : DaVikingMan, developer of the Falcon's project(internal name)");
+			Console.WriteLine("'In developement'");
+			Console.ReadKey();
+		}
         }
         
     }

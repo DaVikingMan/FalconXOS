@@ -18,6 +18,7 @@ namespace dev
              Console.WriteLine("Done :: Opened Console:Dev, Console:Input, Receive:Input");
              Thread.Sleep(100);
              Console.Clear();
+             Console.WriteLine("Time of login " + DateTime.Now);
              Console.Write(">> ");
 	     string consoleread = Console.ReadLine();
 	     if(consoleread == "view @" || consoleread == "view news")
@@ -110,7 +111,18 @@ namespace dev
                 
                      
                 
-         }
+         }else if(consoleread == "clear")
+         {
+             Console.ResetColor();
+             Console.Clear();
+             NonStartConsole();
+         }else if(consoleread == "doc devconsole")
+	 {
+		 var doccommand = new src.docconsole();
+		 doccommand.MainReader("devconsole");
+
+	 }
+
          else
          {
              var gray = new src.Errortunnel();
@@ -123,6 +135,7 @@ namespace dev
          public void NonStartConsole()
          {
              Console.Clear();
+             Console.WriteLine("Time of login " + DateTime.Now);
              Console.ForegroundColor = ConsoleColor.White;
               Console.Write(">> ");
 	     string consoleread = Console.ReadLine();
@@ -221,7 +234,16 @@ namespace dev
                 
                      
                 
-         }
+         }else if(consoleread == "clear")
+         {
+             Console.ResetColor();
+             Console.Clear();
+             NonStartConsole();
+	 }else if(consoleread == "doc devconsole")
+	 {
+		 var doc = new src.docconsole();
+		 doc.MainReader("devconsole");
+	 }
          else
          {
              var gray = new src.Errortunnel();

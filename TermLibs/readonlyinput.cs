@@ -11,10 +11,11 @@ namespace startfi
         {
             List<string> file = File.ReadAllLines($"{Environment.CurrentDirectory}/data/debuglogs/debug.log").ToList();
             List<string> filelist = filestring.ToList();
+            List<string> fileleat;
             string filestringlist = filestring.ToString();
             if(!file.Contains(filestringlist))
             {
-                    File.WriteAllLines($"{Environment.CurrentDirectory}/data/debuglogs/debug.log", filestring);
+                    File.WriteAllLines($"{Environment.CurrentDirectory}/data/debuglogs/debug.log", filelist);
                     Console.WriteLine("Written to log : expected to be written to temp inputstream");
                     
                     if(isplanned == true)

@@ -9,7 +9,7 @@ namespace startfi
     class startfi{
          public virtual void FalconFirmware( string specialtext )
          {
-             
+             Console.Clear();   
              Console.WriteLine(specialtext);
              Console.WriteLine("Loading some areas of FalconXOS : no implementation found of this pattern found : dev build : .221.4/Half-Ogre");
              Thread.Sleep(10);
@@ -27,6 +27,7 @@ namespace startfi
                  Thread.Sleep(10);
                  var writefi = new readonlyinput();
                  string[] debuglog = {
+                     DateTime.Now.ToString(),
                      "Started Startfi : 1",
                      "Started StartupCheck : 1",
                      "Started readonlyinput : 1",
@@ -34,13 +35,12 @@ namespace startfi
                      "All done! Waiting for next : user input(1)"
                  };
                  writefi.StartRemove(debuglog, true);
-                 Thread.Sleep(100);
                  Console.Clear();
                  Console.WriteLine("Jumped to debug console : turbulent terminal");
                  Console.Write(">> ");
                  string input = Console.ReadLine();
                  if(input == "--help")
-                 {
+		 {
                        Console.WriteLine("Input 1 : --devconsole");
                        Console.WriteLine("Input 2 : default");
                        Console.WriteLine("Input 2 : --set=default=<devconsole || uft>");
@@ -61,7 +61,6 @@ namespace startfi
                      List<string> offile = File.ReadAllLines($"{Environment.CurrentDirectory}/data/TempInputStream/main.inputstream").ToList();
                      List<string> ofperma = File.ReadAllLines($"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream").ToList();
                      Console.WriteLine($"{offile.Count} and {ofperma.Count}");
-                     Console.ReadKey();
                      NonAddStart();
                  }else if(input == "clear")
                  {
@@ -73,15 +72,34 @@ namespace startfi
                      signalverify.Verify("Exit!");
                      Environment.ExitCode = 0;
                      Console.WriteLine("FalconXOS exited with : " +  Environment.ExitCode);
-                     
                      Environment.Exit(0);
                      
-                 }
+                 }else if(input == "version" || input == "--v")
+                 {
+                   Console.WriteLine("FalconXOS User-Friendly Terminal version : .71.9");
+                   Console.WriteLine("FalconXOS version : .27.9/Cold Sun");
+                   Console.WriteLine("Startfi/Half-Ogre and Ogre components version : .24.5/Beast");
+                   
+                   NonAddStart();
+                 }else if(input == "time")
+                 {
+                     DateTime date = DateTime.Now;
+                     DateTime unixdate = DateTime.UnixEpoch;
+                     Console.WriteLine(unixdate + " UnixEpoch");
+                     Console.WriteLine(date + " Utc");
+                     NonAddStart();
+                 }else if(input == "about")
+		 {
+			  var signalverify = new src.SignalVerifier();
+                     signalverify.Verify("About!");
+		     NonAddStart();
+
+		 }
                  else
                  {
                       Console.WriteLine("Startfi checking modern inputstreams and errors");
                       Console.WriteLine("Using old error system");
-                      Console.Clear();
+                      Thread.Sleep(10);
                       Console.WriteLine("Violation of ogre components : no list of strings found which match this input typed");
                       Console.ReadKey();
                       NonAddStart();
@@ -92,7 +110,6 @@ namespace startfi
          }
         public void NonAddStart()
         {
-            
             Console.ResetColor();
             Console.WriteLine("Turbulent Terminal : At /start/volume/FalconFirmware");
                Console.Write(">> ");
@@ -119,8 +136,7 @@ namespace startfi
                      List<string> offile = File.ReadAllLines($"{Environment.CurrentDirectory}/data/TempInputStream/main.inputstream").ToList();
                      List<string> ofperma = File.ReadAllLines($"{Environment.CurrentDirectory}/data/PermanentInputStream/permainput.inputstream").ToList();
                      Console.WriteLine($"{offile.Count} and {ofperma.Count}");
-                     Console.ReadKey();
-                     NonAddStart();
+                    NonAddStart();
                  }else if(input == "clear")
                  {
                      Console.Clear();
@@ -133,14 +149,35 @@ namespace startfi
                      Console.WriteLine("FalconXOS exited with : " +  Environment.ExitCode);
                      
                      Environment.Exit(0);
+                 }else if(input == "version" || input == "--v")
+                 {
+                   Console.WriteLine("FalconXOS User-Friendly Terminal version : .71.9");
+                   Console.WriteLine("FalconXOS version : .27.9/Cold Sun");
+                   Console.WriteLine("Startfi/Half-Ogre and Ogre components version : .24.5/Beast");
+                   NonAddStart();
+                 }else if(input == "time")
+                 {
+                     
+                     DateTime date = DateTime.Now;
+                     DateTime unixdate = DateTime.UnixEpoch;
+                     Console.WriteLine(unixdate + " UnixEpoch");
+                     Console.WriteLine(date + " Utc");
+                     NonAddStart();
                  }
+		 else if(input == "about")
+                 {
+                          var signalverify = new src.SignalVerifier();
+                     signalverify.Verify("About!");
+		     NonAddStart();
+ 
+                 }
+
                  else
                  {
                       Console.WriteLine("Startfi checking modern inputstreams and errors");
                       Console.WriteLine("Using old error system");
-                      Console.Clear();
+                      Thread.Sleep(10);
                       Console.WriteLine("Violation of ogre components : no list of strings found which match this input typed");
-                      Console.ReadKey();
                       NonAddStart();
                  }  
         }
